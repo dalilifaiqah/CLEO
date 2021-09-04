@@ -75,9 +75,9 @@ input[type=checkbox]:not(old){
     background       : transparent;
     vertical-align   : bottom;
   }
-  input[type=checkbox]:not(old):checked + label > span,{
+  input[type=checkbox]:not(old):checked + label > span{
     background       : transparent;
-  }
+}
   input[type=checkbox]:not(old):checked + label > span:before{
       content     : '\f26b';
       display     : block;

@@ -52,7 +52,7 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="images/icon1.png">
-    <title>Cleo</title>
+    <title>CLEO</title>
 
     <!-- Font Icon -->
     <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
@@ -69,9 +69,9 @@ session_start();
                 <form method="POST" id="signup-form" class="signup-form">
                     <h2>Sign up </h2>
                     <p class="desc">Create a new account for <span>CLEO</span></p>
-                    <!--<div class="form-group">
-                        <input type="text" class="form-input" name="name" id="name" placeholder="Your Name"/>
-                    </div>-->
+                    <div class="form-group">
+                        <input type="text" class="form-input" name="name" id="name" placeholder="Username"/>
+                    </div>
                     <div class="form-group">
                         <input type="text" class="form-input" name="email" id="text" placeholder="Email"/>
                     </div>

@@ -62,7 +62,7 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="images/icon1.png">
-    <title>Cleo</title>
+    <title>CLEO</title>
 
     <!-- Font Icon -->
     <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
@@ -83,7 +83,7 @@ session_start();
                         <!--<input type="text" class="form-input" name="name" id="name" placeholder="Your Name"/>-->
                     </div>
                     <div class="form-group">
-                        <input type="email" class="form-input" name="email" id="email" placeholder="Email"/>
+                        <input type="email" class="form-input" name="email" id="email" placeholder="Email / Username"/>
                     </div>
                     <div class="form-group">
                         <input type="text" class="form-input" name="password" id="password" placeholder="Password"/>

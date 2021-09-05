@@ -1,3 +1,50 @@
+<?php 
+session_start();
+
+	include("connection.php");
+	include("functions.php");
+
+
+	if($_SERVER['REQUEST_METHOD'] == "POST")
+	{
+		//something was posted
+		$email = $_POST['email'];
+		$password = $_POST['password'];
+
+		if(!empty($email) && !empty($password))
+		{
+
+			//save to database
+			$user_id = random_num(20);
+			$query = "insert into customer (user_id,email,password) values ('$user_id','$email','$password')";
+ 
+			mysqli_query($con, $query);
+
+			header("Location: CustomerLogin.php");
+			die;
+		}else
+		{
+			echo "Please enter some valid information!";
+		}
+	}
+?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,16 +73,16 @@
                         <input type="text" class="form-input" name="name" id="name" placeholder="Your Name"/>
                     </div>-->
                     <div class="form-group">
-                        <input type="email" class="form-input" name="email" id="email" placeholder="Email"/>
+                        <input type="text" class="form-input" name="email" id="text" placeholder="Email"/>
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-input" name="password" id="password" placeholder="Password"/>
+                        <input type="password" class="form-input" name="password" id="password" placeholder="Password"/>
                         <span toggle="#password" class="zmdi zmdi-eye field-icon toggle-password"></span>
                     </div>
-                    <div class="form-group">
+                    <!--<div class="form-group">
                         <input type="text" class="form-input" name="confirmpassword" id="confirmpassword" placeholder="Confirm Password"/>
                         <span toggle="#confirmpassword" class="zmdi zmdi-eye field-icon toggle-password"></span>
-                    </div>
+                    </div>-->
                     <!--<div class="form-group">
                         <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
                         <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>
@@ -43,7 +90,7 @@
                     <div class="form-group">
                         
                         <input type="submit" name="submit" id="submit" class="form-submit submit" value="Sign up"/>
-                        <a href="Login.html" class="submit-link submit">Log In</a>
+                        <a href="CustomerLogin.php" class="submit-link submit">Log In</a>
                     </div>
                     <div class="form-group">
                         <a href="/MasterCLEO/Moderna-pro/Guesthomepage.html" class="submit-link submit">Back to website</a>

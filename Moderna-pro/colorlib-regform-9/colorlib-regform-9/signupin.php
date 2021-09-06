@@ -19,7 +19,7 @@
 
         <div class="container">
             <div class="signup-content">
-                <form action=/MasterCLEO/Moderna-pro/colorlib-regform-9/colorlib-regform-9/CustomerDB.php method="POST" id="signup-form" class="signup-form">
+                <form action=/MasterCLEO/Moderna-pro/CustomerDB.php method="POST" id="signup-form" class="signup-form">
                     <h2>Sign up </h2>
                     <p class="desc">Create a new account for <span>CLEO</span></p>
                     <div class="form-group">

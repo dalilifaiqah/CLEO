@@ -35,7 +35,7 @@
 	              <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
 	            </div>
 	            <div class="form-group">
-	            	<button type="submit" class="form-control btn btn-primary submit px-3">Sign In</button>
+	            	<button onclick="location.href='../../2_admin_pages_here/startbootstrap-sb-admin-2-gh-pages/index.html'" type="submit" class="form-control btn btn-primary submit px-3">Sign In</button>
 	            </div>
 	            <div class="form-group d-md-flex">
 	            	<!--<div class="w-50">
@@ -51,7 +51,7 @@
 	          </form>
 	          <!--<p class="w-100 text-center">&mdash; Or Sign In With &mdash;</p>-->
 	          <div class="social d-flex text-center">
-	          	<a href="/MasterCLEO/Moderna-pro/Guesthomepage.html" class="px-2 py-2 mr-md-1 rounded"> Back to Website</a>
+	          	<a href="../../Guesthomepage.php" class="px-2 py-2 mr-md-1 rounded"> Back to Website</a>
 	          	<!--<a href="#" class="px-2 py-2 ml-md-1 rounded"><span class="ion-logo-twitter mr-2"></span> Twitter</a>
 				<span class="ion-logo-facebook mr-2"></span>-->
 	          </div>

@@ -338,13 +338,16 @@
             </ul>
           </div>
 
-          <div class="col-lg-3 col-md-6 footer-contact">
+          <div class="col-lg-3 col-md-6 footer-links">
             <h4>Contact Us</h4>
             <p>
               <strong>Phone:</strong> +1 5589 55488 55<br>
               <strong>Email:</strong> dalilifaiqah@gmail.com<br>
-            </p>
-
+            </p><br>
+            <h4>Admin</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="login-form-20/login-form-20/Adminlogin.php">Admin Log In</a></li>
+            </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-info">

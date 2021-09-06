@@ -93,7 +93,7 @@ session_start();
                         <a href="CustomerLogin.php" class="submit-link submit">Log In</a>
                     </div>
                     <div class="form-group">
-                        <a href="/MasterCLEO/Moderna-pro/Guesthomepage.php" class="submit-link submit">Back to website</a>
+                        <a href="../../Guesthomepage.php" class="submit-link submit">Back to website</a>
                     </div>
                 </form>
             </div>

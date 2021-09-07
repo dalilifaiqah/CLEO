@@ -43,14 +43,14 @@
     <div class="container d-flex justify-content-between align-items-center">
 
       <div class="logo">
-        <h1 class="text-light"><a href="Guesthomepage.php"><span>CLEO</span></a></h1>
+        <h1 class="text-light"><a href="index.html"><span>CLEO</span></a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="" href="Guesthomepage.php">Home</a></li>
+          <li><a class="" href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
@@ -73,8 +73,8 @@
               <li><a href="#">Drop Down 4</a></li>
             </ul>
           </li>
-          <li><a class="active" href="contact.html">Contact Us &nbsp;&nbsp;&nbsp;</a></li>
-          <li><a href="colorlib-regform-9\colorlib-regform-9\CustomerLogin.php" class="sign-up-btn">Log in / Sign up</a></li>
+          <li><a class="active" href="contact.html">Contact Us</a></li>
+          <li><a href="colorlib-regform-9\colorlib-regform-9\signupin.html">Sign in / Sign up</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -134,7 +134,8 @@
           </div>
 
           <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+
+            <form action="/MasterCLEO/contact.php" method="POST"  class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -150,12 +151,10 @@
                 <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
               </div>
               <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <button type="submit">Send Message</button>
             </form>
+            
           </div>
 
         </div>
@@ -207,28 +206,31 @@
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
-            <h4>What We Sell</h4>
+            <h4>Our Services</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Player Accounts</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Skins</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
             </ul>
           </div>
 
-          <div class="col-lg-3 col-md-6 footer-links">
+          <div class="col-lg-3 col-md-6 footer-contact">
             <h4>Contact Us</h4>
             <p>
+              A108 Adam Street <br>
+              New York, NY 535022<br>
+              United States <br><br>
               <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> dalilifaiqah@gmail.com<br>
-            </p><br>
-            <h4>Admin</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="login-form-20/login-form-20/Adminlogin.php">Admin Log In</a></li>
-            </ul>
+              <strong>Email:</strong> info@example.com<br>
+            </p>
+
           </div>
 
           <div class="col-lg-3 col-md-6 footer-info">
             <h3>About CLEO</h3>
-            <p>CLEO is a place where Malaysian video gamers come together to explore and find their perfect in-game materials to bring up their in game experiences to the next level.</p>
+            <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
             <div class="social-links mt-3">
               <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
               <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
@@ -256,7 +258,6 @@
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/purecounter/purecounter.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>

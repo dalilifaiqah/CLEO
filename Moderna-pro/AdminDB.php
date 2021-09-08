@@ -1,34 +1,60 @@
 <?php
-
-if(isset($_POST['login'])) {
+if (isset($_POST['signup'])) {
+    signup($_POST['signup']);
+}else if(isset($_POST['login'])) {
     login($_POST['login']);
 }
 ?>
 
 <?php
+    function signup()
+    {
+        //1.connect to mysql
+        $servername = "localhost"; 
+        $username = "admin1";
+        $password = "admin1"; 
+        $dbname = "cleo";
+        $con2 = new mysqli($servername, $username, $password, $dbname);
+
+        if (!$con2){
+            echo "error";
+        }else{
+            
+        //2.construct sql statement
+        $name=$_POST['name'];
+        $email=$_POST['email'];
+        $password=$_POST['password'];
+
+        $sql = "INSERT INTO admin (name,email,password)
+                values('$name','$email','$password')";
+
+                if ($con2 ->query($sql) ==true) {
+                     echo "Sign up successfully";
+                     header("Location: /MasterCLEO/Moderna-pro/colorlib-regform-9/colorlib-regform-9/CustomerLogin.php");
+                }else{
+                    echo "error";
+                }            
+        }
+    }
+
     function login(){
         $servername = "localhost"; 
         $username = "admin1";
         $password = "admin1"; 
         $dbname = "cleo";
-        $con = new mysqli($servername, $username, $password, $dbname);
+        $sql2 = new mysqli($servername, $username, $password, $dbname);
 
-        if (!$con){
-            echo "error";
-        }else{
+        $email = $sql2->real_escape_string($_POST['email']);
+        $password = $sql2->real_escape_string($_POST['password']);
 
-        $email = $_POST['email'];
-        $password = $_POST['password'];
-
-        $result = $sql->query("SELECT * FROM admin WHERE email = '$email' AND password = '$password' ");
-        $count = mysqli_num_rows($result);
+        $result2 = $sql2->query("SELECT * FROM admin WHERE email = '$email' AND password = '$password' ");
+        $count2 = mysqli_num_rows($result2);
 
         if($count2 == 1){
             //$row = $result->fetch_assoc();
             header("Location: Guesthomepage.php");
         }else{
             echo '<br>Login failed';
-        }
         }
     }
 ?>

@@ -28,8 +28,9 @@
 				<div class="col-md-6 col-lg-4">
 					<div class="login-wrap p-0">
 		      	<h3 class="mb-4 text-center">Log In</h3>
-
-		    <form action=/MasterCLEO/Moderna-pro/AdminDB.php class="signin-form">
+				  
+			<div class="signin-content">
+				  <form action=/MasterCLEO/Moderna-pro/AdminDB.php method="POST" id="signin-form" class="signin-form">
 		      		<div class="form-group">
 		      			<input type="email" name="email" class="form-control" placeholder="Email" required>
 		      		</div>
@@ -61,6 +62,7 @@
 	          </div>
 		      </div>
 				</div>
+			</div>	
 			</div>
 		</div>
 	</section>

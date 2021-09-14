@@ -970,12 +970,12 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Facts
+# Facts 68A4C4
 --------------------------------------------------------------*/
 .facts .counters span {
   font-size: 48px;
   display: block;
-  color: #68A4C4;
+  color: #e090e7;
 }
 
 .facts .counters p {

@@ -55,10 +55,10 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="active " href="Guesthomepage.php">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
+          <li><a href="1about.html">About Us</a></li>
           <!--<li><a href="services.html">Services</a></li>-->
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="team.html">Team</a></li>
+          <li><a href="1products.html">Products</a></li>
+          <li><a href="1team.html">Team</a></li>
           <!--<li><a href="blog.html">Blog</a></li>-->
           <!--<li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -105,7 +105,7 @@
         <div class="carousel-container">
           <h2 class="animate__animated animate__fadeInDown">Game Accounts</h2>
           <p class="animate__animated animate__fadeInUp">Feeling bad with your current game progress and have some extra cash in hand? No worries cause you can level up your game with top players' accounts that are sold!</p>
-          <a href="" class="btn-get-started animate__animated animate__fadeInUp">Read More</a>
+          <a href="1products.html" class="btn-get-started animate__animated animate__fadeInUp">Read More</a>
         </div>
       </div>
 
@@ -114,7 +114,7 @@
         <div class="carousel-container">
           <h2 class="animate__animated animate__fadeInDown">Skins</h2>
           <p class="animate__animated animate__fadeInUp">Bored with your old or existing skins? Get some refreshment to the eyes with our collection of awesome skins.</p>
-          <a href="" class="btn-get-started animate__animated animate__fadeInUp">Read More</a>
+          <a href="1products.html" class="btn-get-started animate__animated animate__fadeInUp">Read More</a>
         </div>
       </div>
 
@@ -139,7 +139,7 @@
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up">
             <div class="icon-box icon-box-pink">
               <div class="icon"><i class="fab fa-vuejs"></i></div>
-              <h4 class="title"><a href="">VALORANT</a></h4>
+              <h4 class="title"><a href="https://playvalorant.com/en-us/">VALORANT</a></h4>
               <p class="description">Valorant is a team-based first-person hero shooter set in the near future. Players play as one of a set of agents, characters designed based on several countries and cultures around the world.</p>
             </div>
           </div>
@@ -147,7 +147,7 @@
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
             <div class="icon-box icon-box-cyan">
               <div class="icon"><i class="fas fa-meteor"></i></div>
-              <h4 class="title"><a href="">APEX LEGEND</a></h4>
+              <h4 class="title"><a href="https://www.ea.com/en-gb/games/apex-legends">APEX LEGEND</a></h4>
               <p class="description">Apex Legends is an online multiplayer battle royale game featuring squads of three players using pre-made characters with distinctive abilities, called "Legends", similar to those of hero shooters.</p>
             </div>
           </div>
@@ -155,7 +155,7 @@
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
             <div class="icon-box icon-box-green">
               <div class="icon"><i class="fas fa-fighter-jet"></i></i></div>
-              <h4 class="title"><a href="">PUBG MOBILE</a></h4>
+              <h4 class="title"><a href="https://www.pubgmobile.com/en-US/home.shtml">PUBG MOBILE</a></h4>
               <p class="description">PlayerUnknown's Battleground or PUBG is a battle royale game. In a battle royale game, a player is left with up to 100 other players in a large map.</p>
             </div>
           </div>
@@ -163,7 +163,7 @@
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
             <div class="icon-box icon-box-pink">
               <div class="icon"><i class="fas fa-gamepad"></i></div>
-              <h4 class="title"><a href="">GENSHIN IMPACT</a></h4>
+              <h4 class="title"><a href="https://genshin.mihoyo.com/pc-launcher/?utm_source=SEA_google_NZMY_SEM_brand_1022&mhy_trace_channel=ga_channel&new=1&gclid=Cj0KCQjwkIGKBhCxARIsAINMioKl-4sQkEmHOLFYt374rGdGxG-802liQPoAmNg9OZ7W7nXsTSjwFQQaApcTEALw_wcB#/">GENSHIN IMPACT</a></h4>
               <p class="description">Genshin Impact is an open-world action role-playing game that allows the player to control one of four interchangeable characters in a party.</p>
             </div>
           </div>
@@ -172,7 +172,7 @@
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
             <div class="icon-box icon-box-blue">
               <div class="icon"><i class="fas fa-dragon"></i></div>
-              <h4 class="title"><a href="">MOBILE LEGEND</a></h4>
+              <h4 class="title"><a href="https://m.mobilelegends.com/en">MOBILE LEGEND</a></h4>
               <p class="description">Mobile Legends: Bang Bang is a multiplayer online battle arena (MOBA) game designed for mobile phones.</p>
             </div>
           </div>
@@ -323,7 +323,7 @@
             <h4>Useful Links</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="Guesthomepage.php">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="1about.html">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="1about.html">About Us</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="1team.html">Team</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="1contact.html">Contact Us</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="https://www.freeprivacypolicy.com/live/02e3012e-de66-4b6a-a831-8de595a84496">Terms and Condition</a></li>
@@ -345,7 +345,7 @@
             Jalan Rejang 4, Taman Setapak Jaya, <br>
             54100 Kuala Lumpur,<br>
             Wilayah Persekutuan Kuala Lumpur<br><br>
-            <strong>Email:</strong> cleosheesh@gmail.com<br>
+            <strong>Email:</strong><a href="mailto: cleosheesh@gmail.com"> cleosheesh@gmail.com</a><br>
             </p><br>
             <h4>Admin</h4>
             <ul>

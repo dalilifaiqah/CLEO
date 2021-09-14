@@ -299,7 +299,7 @@
   <!-- ======= Footer ======= -->
   <footer id="footer" class="section-bg2" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
 
-    <div class="footer-newsletter">
+    <!--<div class="footer-newsletter">
       <div class="container">
         <div class="row">
           <div class="col-lg-6">
@@ -313,7 +313,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div>-->
 
     <div class="footer-top">
       <div class="container">
@@ -322,11 +322,12 @@
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="Guesthomepage.php">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="1about.html">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="1team.html">Team</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="1contact.html">Contact Us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://www.freeprivacypolicy.com/live/02e3012e-de66-4b6a-a831-8de595a84496">Terms and Condition</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://www.freeprivacypolicy.com/live/3629ced9-9e17-40cc-abbf-dfd879b204e8">Privacy policy</a></li>
             </ul>
           </div>
 

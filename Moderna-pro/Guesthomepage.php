@@ -47,7 +47,7 @@
     <div class="container d-flex justify-content-between align-items-center">
 
       <div class="logo">
-        <h1 class="text-light"><a href="Guesthomepage.php"><span>CLEO</span></a></h1>
+        <h1 style="font-family: Arial"class="text-light"><a href="Guesthomepage.php"><span>CLEO</span></a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!--<a href="index.html"><img src="assets/img/icon1.png" alt="" class="img-fluid"></a>-->
       </div>
@@ -55,12 +55,12 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="active " href="Guesthomepage.php">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <!--<li><a href="services.html">Services</a></li>-->
           <li><a href="portfolio.html">Portfolio</a></li>
           <li><a href="team.html">Team</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+          <!--<li><a href="blog.html">Blog</a></li>-->
+          <!--<li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
               <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
@@ -76,8 +76,8 @@
               <li><a href="#">Drop Down 3</a></li>
               <li><a href="#">Drop Down 4</a></li>
             </ul>
-          </li>
-          <li><a href="contact.html">Contact Us &nbsp;&nbsp;&nbsp;</a></li>
+          </li>-->
+          <li><a href="1contact.html">Contact Us &nbsp;&nbsp;&nbsp;</a></li>
           <li><a href="colorlib-regform-9\colorlib-regform-9\CustomerLogin.php" class="sign-up-btn">Log in / Sign up</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -341,8 +341,10 @@
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Contact Us</h4>
             <p>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> dalilifaiqah@gmail.com<br>
+            Jalan Rejang 4, Taman Setapak Jaya, <br>
+            54100 Kuala Lumpur,<br>
+            Wilayah Persekutuan Kuala Lumpur<br><br>
+            <strong>Email:</strong> cleosheesh@gmail.com<br>
             </p><br>
             <h4>Admin</h4>
             <ul>
@@ -354,10 +356,10 @@
             <h3>About CLEO</h3>
             <p>CLEO is a place where Malaysian video gamers come together to explore and find their perfect in-game materials to bring up their in game experiences to the next level.</p>
             <div class="social-links mt-3">
-              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              <a href="https://twitter.com/" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="https://www.facebook.com/" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="https://www.instagram.com/" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="https://www.linkedin.com/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
             </div>
           </div>
 

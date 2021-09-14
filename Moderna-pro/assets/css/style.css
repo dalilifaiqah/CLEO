@@ -1523,7 +1523,7 @@ section {
   color: #444;
   text-align: center;
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
-  padding: 20px 0 30px 0;
+  padding: 123px 0 122px 0;
   margin-bottom: 30px;
 }
 
@@ -1549,6 +1549,21 @@ section {
   margin-bottom: 0;
 }
 
+.contact .info-box h2{
+  font-size: 32px;
+  color: #68A4C4;
+  border-radius: 50%;
+  padding: 8px;
+  border: 2px dotted #a2cce3;
+}
+
+.contact .warnabutton {
+  background: #68A4C4;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  /*transition: 0.4s;*/
+}
 .contact .php-email-form {
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
   padding: 30px;

@@ -48,10 +48,11 @@
 									  <span class="checkmark"></span>
 									</label>
 								</div>-->
-								<div class="w-100 text-md-center">
+								<!--<div class="w-100 text-md-center">
 									<a href="ForgotPasswordAdmin.html" style="color: #fbceb5"><br>Forgot Password</a>
 									
-								</div>
+								</div>-->
+								
 	            </div>
 	          </form>
 	          <!--<p class="w-100 text-center">&mdash; Or Sign In With &mdash;</p>-->

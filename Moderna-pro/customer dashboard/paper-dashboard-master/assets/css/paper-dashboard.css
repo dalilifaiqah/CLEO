@@ -422,13 +422,13 @@ Copyright (c) 2015 Daniel Eden
     top: 1px; }
 
 .btn-primary {
-  background-color: #51cbce;
+  background-color: #ffc107;
   color: #FFFFFF; }
   .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .btn-primary:active:focus, .btn-primary:active:hover, .btn-primary.active:focus, .btn-primary.active:hover,
   .show > .btn-primary.dropdown-toggle,
   .show > .btn-primary.dropdown-toggle:focus,
   .show > .btn-primary.dropdown-toggle:hover {
-    background-color: #34b5b8 !important;
+    background-color: #eeca5e !important;
     color: #FFFFFF !important;
     box-shadow: none !important; }
   .btn-primary:not([data-action]):hover {
@@ -999,7 +999,7 @@ fieldset[disabled]
     .form-control:focus ~ .input-group-append .input-group-text,
     .form-control:focus + .input-group-prepend .input-group-text,
     .form-control:focus ~ .input-group-prepend .input-group-text {
-      border: 1px solid #ccc;
+      border: 1px solid #fff;
       border-left: none;
       background-color: transparent; }
   .has-success .form-control,
@@ -1124,7 +1124,8 @@ fieldset[disabled]
 .input-group.no-border .form-control,
 .input-group.no-border .form-control + .input-group-prepend .input-group-text,
 .input-group.no-border .form-control + .input-group-append .input-group-text {
-  background-color: rgba(222, 222, 222, 0.3);
+  /*background-color: rgba(222, 222, 222, 0.3);*/
+  background-color: #fff;
   border: medium none; }
   .form-group.no-border .form-control:focus, .form-group.no-border .form-control:active, .form-group.no-border .form-control:active,
   .form-group.no-border .form-control + .input-group-prepend .input-group-text:focus,
@@ -1371,9 +1372,9 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400; }
 
 a {
-  color: #51cbce; }
+  color: #000; }
   a:hover, a:focus {
-    color: #51cbce; }
+    color: #66635e; }
 
 h1, .h1 {
   font-size: 3.5em;
@@ -1430,14 +1431,14 @@ p.description {
 .card-description,
 .footer-big p,
 .card .footer .stats {
-  color: #9A9A9A;
+  color: #000;
   font-weight: 300; }
 
 .category,
 .card-category {
   text-transform: capitalize;
   font-weight: 400;
-  color: #9A9A9A;
+  color: #000000;
   font-size: 0.7142em; }
 
 .card-category {
@@ -1783,7 +1784,7 @@ a[data-toggle="collapse"][aria-expanded="true"] .caret,
     .navbar .input-group .form-group-addon,
     .navbar .input-group .input-group-prepend .input-group-text,
     .navbar .input-group .input-group-append .input-group-text {
-      color: #66615B; }
+      color: #000; }
       .navbar .form-group .form-group-addon i,
       .navbar .form-group .input-group-prepend .input-group-text i,
       .navbar .form-group .input-group-append .input-group-text i,
@@ -1903,14 +1904,14 @@ a[data-toggle="collapse"][aria-expanded="true"] .caret,
     box-shadow: none;
     border-bottom: 1px solid #ddd; }
     .navbar.navbar-transparent a:not(.dropdown-item):not(.btn) {
-      color: #66615B; }
+      color: #FFFFFF; }
       .navbar.navbar-transparent a:not(.dropdown-item):not(.btn).disabled {
         opacity: .5;
         color: #66615B; }
     .navbar.navbar-transparent .button-bar {
       background: #66615B; }
     .navbar.navbar-transparent .nav-item .nav-link:not(.btn) {
-      color: #66615B; }
+      color: #fff; }
     .navbar.navbar-transparent .nav-item.active .nav-link:not(.btn),
     .navbar.navbar-transparent .nav-item .nav-link:not(.btn):focus,
     .navbar.navbar-transparent .nav-item .nav-link:not(.btn):hover,
@@ -3632,7 +3633,7 @@ License - nucleoapp.com/license/
 .card {
   border-radius: 12px;
   box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
-  background-color: #FFFFFF;
+  background-color: #ca8bb7;
   color: #252422;
   margin-bottom: 20px;
   position: relative;
@@ -3688,7 +3689,7 @@ License - nucleoapp.com/license/
   .card label {
     font-size: 0.8571em;
     margin-bottom: 5px;
-    color: #9A9A9A; }
+    color: #000; }
   .card .card-footer {
     background-color: transparent;
     border: 0; }
@@ -3801,14 +3802,14 @@ License - nucleoapp.com/license/
     .card-stats .card-body .numbers p {
       margin-bottom: 0; }
     .card-stats .card-body .numbers .card-category {
-      color: #9A9A9A;
+      color: #000000;
       font-size: 16px;
       line-height: 1.4em; }
 
 .card-stats .card-footer {
   padding: 0px 15px 15px; }
   .card-stats .card-footer .stats {
-    color: #9A9A9A; }
+    color: #000000; }
   .card-stats .card-footer hr {
     margin-top: 10px;
     margin-bottom: 15px; }

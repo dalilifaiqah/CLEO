@@ -1,0 +1,1486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>CLEO Add New Product</title>
+
+    <!-- Favicon -->
+	<!--<link rel="icon" href="https://demo.activeitzone.com/ecommerce/public/uploads/all/4xnLnzEeu3dFKDGSBMlvLXPLGXFdHEkvqBSZREmO.png">-->
+	<!--<title>Active eCommerce | Demo of Active eCommerce CMS</title>-->
+
+	<!-- google font -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700">
+
+	<!-- aiz core css -->
+	<link rel="stylesheet" href="https://demo.activeitzone.com/ecommerce/public/assets/css/vendors.css">
+    <link rel="stylesheet" href="https://demo.activeitzone.com/ecommerce/public/assets/css/aiz-core.css">
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <div class="sidebar-brand-icon rotate-n-15">
+                    <i class="fas fa-laugh-wink"></i>
+                </div>
+                <div class="sidebar-brand-text mx-3">CLEO Admin</div>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+
+            <!-- Divider -->
+            <!--<hr class="sidebar-divider">-->
+
+            <!-- Heading -->
+            <!--<div class="sidebar-heading">
+                Interface
+            </div>-->
+
+            <!-- Nav Item - Customer's List -->
+            <li class="nav-item">
+                <a class="nav-link" href="customer-list-table.html">
+                    <i class="fas fa-fw fa-chart-area"></i>
+                    <span>Customer List</span></a>
+            </li>
+
+            <!-- Nav Item - Product's List Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
+                    aria-expanded="true" aria-controls="collapseUtilities">
+                    <i class="fas fa-fw fa-wrench"></i>
+                    <span>Product List</span>
+                </a>
+                <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Video Games:</h6>
+                        <a class="collapse-item" href="genshin-product-list.html">Genshin Impact</a>
+                        <a class="collapse-item" href="valorant-product-list.html">Valorant</a>
+                        <a class="collapse-item" href="mobilelegends-product-list.html">Mobile Legends</a>
+                        <a class="collapse-item" href="pubg-product-list.html">PUBG</a>
+                        <a class="collapse-item" href="apexlegends-product-list.html">Apex Legends</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Nav Item - Feedbacks -->
+            <li class="nav-item">
+                <a class="nav-link" href="feedback-list.html">
+                    <i class="fas fa-fw fa-chart-area"></i>
+                    <span>Feedbacks</span></a>
+            </li>
+
+            <!-- Nav Item - Order Purchase -->
+            <li class="nav-item">
+                <a class="nav-link" href="order-purchase-list.html">
+                    <i class="fas fa-fw fa-chart-area"></i>
+                    <span>Order Purchase</span></a>
+            </li>
+
+            <!-- Divider -->
+            <!--<hr class="sidebar-divider">-->
+
+            <!-- Heading -->
+            <!--<div class="sidebar-heading">
+                Addons
+            </div>-->
+
+            <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block">
+
+            <!-- Sidebar Toggler (Sidebar) -->
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-custompurple2 topbar mb-4 static-top shadow">
+
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    <!-- Topbar Search -->
+                    <form
+                        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                        <div class="input-group">
+                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
+                                aria-label="Search" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="button">
+                                    <i class="fas fa-search fa-sm"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+
+                        <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+                        <li class="nav-item dropdown no-arrow d-sm-none">
+                            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-search fa-fw"></i>
+                            </a>
+                            <!-- Dropdown - Messages -->
+                            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                                aria-labelledby="searchDropdown">
+                                <form class="form-inline mr-auto w-100 navbar-search">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control bg-light border-0 small"
+                                            placeholder="Search for..." aria-label="Search"
+                                            aria-describedby="basic-addon2">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="button">
+                                                <i class="fas fa-search fa-sm"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+
+                        <!-- Nav Item - Alerts -->
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-bell fa-fw"></i>
+                                <!-- Counter - Alerts -->
+                                <span class="badge badge-danger badge-counter">3+</span>
+                            </a>
+                            <!-- Dropdown - Alerts -->
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="alertsDropdown">
+                                <h6 class="dropdown-header">
+                                    Alerts Center
+                                </h6>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-primary">
+                                            <i class="fas fa-file-alt text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">December 12, 2019</div>
+                                        <span class="font-weight-bold">A new monthly report is ready to download!</span>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-success">
+                                            <i class="fas fa-donate text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">December 7, 2019</div>
+                                        $290.29 has been deposited into your account!
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-warning">
+                                            <i class="fas fa-exclamation-triangle text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">December 2, 2019</div>
+                                        Spending Alert: We've noticed unusually high spending for your account.
+                                    </div>
+                                </a>
+                                <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                            </div>
+                        </li>
+
+                        <!-- Nav Item - Messages -->
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-envelope fa-fw"></i>
+                                <!-- Counter - Messages -->
+                                <span class="badge badge-danger badge-counter">7</span>
+                            </a>
+                            <!-- Dropdown - Messages -->
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="messagesDropdown">
+                                <h6 class="dropdown-header">
+                                    Message Center
+                                </h6>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="img/undraw_profile_1.svg"
+                                            alt="...">
+                                        <div class="status-indicator bg-success"></div>
+                                    </div>
+                                    <div class="font-weight-bold">
+                                        <div class="text-truncate">Hi there! I am wondering if you can help me with a
+                                            problem I've been having.</div>
+                                        <div class="small text-gray-500">Emily Fowler · 58m</div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="img/undraw_profile_2.svg"
+                                            alt="...">
+                                        <div class="status-indicator"></div>
+                                    </div>
+                                    <div>
+                                        <div class="text-truncate">I have the photos that you ordered last month, how
+                                            would you like them sent to you?</div>
+                                        <div class="small text-gray-500">Jae Chun · 1d</div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="img/undraw_profile_3.svg"
+                                            alt="...">
+                                        <div class="status-indicator bg-warning"></div>
+                                    </div>
+                                    <div>
+                                        <div class="text-truncate">Last month's report looks great, I am very happy with
+                                            the progress so far, keep up the good work!</div>
+                                        <div class="small text-gray-500">Morgan Alvarez · 2d</div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="https://source.unsplash.com/Mv9hjnEUHR4/60x60"
+                                            alt="...">
+                                        <div class="status-indicator bg-success"></div>
+                                    </div>
+                                    <div>
+                                        <div class="text-truncate">Am I a good boy? The reason I ask is because someone
+                                            told me that people say this to all dogs, even if they aren't good...</div>
+                                        <div class="small text-gray-500">Chicken the Dog · 2w</div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
+                            </div>
+                        </li>
+
+                        <div class="topbar-divider d-none d-sm-block"></div>
+
+                        <!-- Nav Item - User Information -->
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="mr-2 d-none d-lg-inline text-white small">Douglas McGee</span>
+                                <img class="img-profile rounded-circle"
+                                    src="img/undraw_profile.svg">
+                            </a>
+                            <!-- Dropdown - User Information -->
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="profile_with_data_and_skills.html">
+                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Profile
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Settings
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Activity Log
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Logout
+                                </a>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </nav>
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
+                <div class="aiz-main-content">
+                    <div class="px-15px px-lg-25px">
+                        <div class="aiz-titlebar text-left mt-2 mb-3">
+        <h5 class="mb-0 h6">Add New Product</h5>
+    </div>
+    <div class="">
+        <form class="form form-horizontal mar-top" action="https://demo.activeitzone.com/ecommerce/products/store" method="POST" enctype="multipart/form-data" id="choice_form">
+            <div class="row gutters-5">
+                <div class="col-lg-8">
+                    <input type="hidden" name="_token" value="TH9f8WjAlhD1DNiM4FWTmgRjdRx3avBpd3nOHLDQ">                <input type="hidden" name="added_by" value="admin">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="mb-0 h6">Product Information</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group row">
+                                <label class="col-md-3 col-from-label">Product Name <span class="text-danger">*</span></label>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control" name="name" placeholder="Product Name" onchange="update_sku()" required="">
+                                </div>
+                            </div>
+                            <div class="form-group row" id="category">
+                                <label class="col-md-3 col-from-label">Category <span class="text-danger">*</span></label>
+                                <div class="col-md-8">
+                                    <div class="dropdown bootstrap-select form-control aiz-"><select class="form-control aiz-selectpicker" name="category_id" id="category_id" data-live-search="true" required="" tabindex="-98">
+                                                                            <option value="1">Women Clothing &amp; Fashion</option>
+                                                                            <option value="13">-- Hot Categories</option>
+                <option value="59">---- Party Dress</option>
+                    <option value="60">---- Beauty &amp; Health</option>
+                    <option value="61">---- Women shoe</option>
+                    <option value="62">---- Sleeping Dress</option>
+                    <option value="63">---- Casual Dress</option>
+                    <option value="78">---- Hoodies &amp; Sweatshirts</option>
+                    <option value="79">---- Jackets</option>
+                    <option value="80">---- T-shirts</option>
+                    <option value="81">---- Shirts</option>
+                    <option value="82">---- Socks</option>
+                                                                                    <option value="14">-- Wedding &amp; events</option>
+                <option value="64">---- Wedding Dresses</option>
+                    <option value="65">---- Evening Dresses</option>
+                    <option value="66">---- Prom Dresses</option>
+                    <option value="67">---- Bridesmaid Dresses</option>
+                                                                                    <option value="15">-- Bottom</option>
+                <option value="68">---- Skirts</option>
+                    <option value="69">---- Leggings</option>
+                    <option value="70">---- Jeans</option>
+                    <option value="71">---- Pant &amp; caprices</option>
+                    <option value="72">---- Shorts</option>
+                    <option value="86">---- Formal Pants</option>
+                    <option value="87">---- Casual pants</option>
+                    <option value="88">---- Cargo pants</option>
+                    <option value="89">---- Jeans</option>
+                                                                                    <option value="16">-- Tops &amp; sets</option>
+                <option value="73">---- Tank tops</option>
+                    <option value="74">---- Suit &amp; sets</option>
+                                                                                    <option value="17">-- Accessories</option>
+                <option value="75">---- Eyewear &amp; accessories</option>
+                    <option value="76">---- Hats &amp; Caps</option>
+                    <option value="77">---- Gloves</option>
+                    <option value="93">---- Watch</option>
+                    <option value="94">---- Wallet</option>
+                    <option value="95">---- Belt</option>
+                    <option value="96">---- Hats &amp; Cap</option>
+                                                                                    <option value="244">-- Women Watch</option>
+                                                                                <option value="245">-- Women Dress</option>
+                                                                                                                    <option value="2">Men Clothing &amp; Fashion</option>
+                                                                            <option value="18">-- Hot Categories</option>
+                                                                                <option value="19">-- Outwear &amp; jackets</option>
+                <option value="83">---- Genuine Leather</option>
+                    <option value="84">---- Suit &amp; Blazer</option>
+                    <option value="85">---- Wool &amp; Blends</option>
+                                                                                    <option value="20">-- Bottom</option>
+                                                                                <option value="21">-- Underwear &amp; Loungewear Accessories</option>
+                <option value="90">---- Shorts</option>
+                    <option value="91">---- Boxers</option>
+                    <option value="92">---- Men sleep &amp; lounge</option>
+                                                                                    <option value="22">-- Accessories</option>
+                                                                                <option value="247">-- Men Formal Dress</option>
+                                                                                                                    <option value="3">Computer &amp; Accessories</option>
+                                                                            <option value="23">-- Laptop &amp; Accessories</option>
+                <option value="97">---- Notebook</option>
+                    <option value="98">---- Netbook</option>
+                    <option value="99">---- Laptop Battery</option>
+                    <option value="100">---- Laptop Motherboard</option>
+                    <option value="101">---- Laptop Ram</option>
+                    <option value="102">---- Laptop bag</option>
+                                                                                    <option value="24">-- Gaming pc</option>
+                <option value="103">---- Gaming casing</option>
+                    <option value="104">---- Brand PC</option>
+                    <option value="105">---- Gaming Motherboard</option>
+                    <option value="106">---- GPU</option>
+                    <option value="107">---- Gaming cooling system</option>
+                    <option value="108">---- Gaming mouse</option>
+                    <option value="109">---- Gaming keyboard</option>
+                                                                                    <option value="25">-- Official Equipment</option>
+                <option value="110">---- Inkjet printer</option>
+                    <option value="111">---- Laser printer</option>
+                    <option value="112">---- 3D printer</option>
+                    <option value="113">---- Scanners</option>
+                    <option value="114">---- Photocopy machine</option>
+                                                                                    <option value="26">-- Components &amp; Peripherals</option>
+                <option value="115">---- Processor</option>
+                    <option value="116">---- Motherboard</option>
+                    <option value="117">---- RAM</option>
+                    <option value="118">---- Graphics card</option>
+                    <option value="119">---- Cooling fan</option>
+                    <option value="120">---- Desktop casing</option>
+                    <option value="242">---- Spekar</option>
+                                                                                    <option value="250">-- TV $ Soundbox</option>
+                                                                                                                    <option value="4">Automobile &amp; Motorcycle</option>
+                                                                            <option value="27">-- Racing car</option>
+                <option value="121">---- Formula Racing</option>
+                    <option value="122">---- Sports car racing</option>
+                    <option value="123">---- Stock car racing</option>
+                    <option value="124">---- Drag racing</option>
+                    <option value="125">---- Rallying</option>
+                                                                                    <option value="28">-- Four Seater sedan</option>
+                <option value="126">---- Luxury car</option>
+                    <option value="127">---- Taxi</option>
+                    <option value="128">---- Hybrid car</option>
+                    <option value="129">---- Gasoline car</option>
+                                                                                    <option value="29">-- SUV</option>
+                <option value="130">---- Luxury SUV</option>
+                    <option value="131">---- Off-road SUV</option>
+                    <option value="132">---- Midsize SUV</option>
+                    <option value="133">---- Mini SUV</option>
+                                                                                    <option value="30">-- Motor bike</option>
+                <option value="134">---- Racing Bike</option>
+                    <option value="135">---- Adventure Touring Bikes</option>
+                    <option value="136">---- Choppers, Cruisers</option>
+                    <option value="137">---- Cruisers</option>
+                    <option value="138">---- Power Cruisers</option>
+                    <option value="139">---- Motocross Bikes</option>
+                                                                                                                        <option value="5">Kids &amp; toy</option>
+                                                                            <option value="31">-- Baby Clothing</option>
+                <option value="140">---- Baby Dresses</option>
+                    <option value="141">---- Baby rompers</option>
+                    <option value="142">---- Baby pants</option>
+                    <option value="143">---- Baby outwear</option>
+                    <option value="147">---- Jeans</option>
+                                                                                    <option value="32">-- Boys Clothing</option>
+                <option value="144">---- Clothing sets</option>
+                    <option value="145">---- T-shirts</option>
+                    <option value="146">---- Hoodies</option>
+                                                                                    <option value="33">-- Girls Clothing</option>
+                <option value="148">---- Dresses</option>
+                    <option value="149">---- Clothing set</option>
+                    <option value="150">---- Tops</option>
+                    <option value="151">---- Sleeping wear</option>
+                                                                                    <option value="34">-- Shoes &amp; Bag</option>
+                <option value="152">---- Babyâ€™s first walker</option>
+                    <option value="153">---- Babyâ€™s Shoe</option>
+                    <option value="154">---- Girlâ€™s Shoe</option>
+                    <option value="155">---- School bag</option>
+                    <option value="156">---- Babyâ€™s wallet</option>
+                                                                                    <option value="35">-- Baby &amp; Mother</option>
+                <option value="157">---- Nappy Changing</option>
+                    <option value="158">---- Baby Care</option>
+                    <option value="159">---- Backpacks &amp; Carriers</option>
+                    <option value="160">---- Maternity</option>
+                                                                                    <option value="246">-- Baby Dress</option>
+                                                                                <option value="248">-- Doll</option>
+                                                                                                                    <option value="6">Sports &amp; outdoor</option>
+                                                                            <option value="36">-- Swimming</option>
+                <option value="161">---- Bikini set</option>
+                    <option value="162">---- One piece suits</option>
+                    <option value="163">---- Two piece suits</option>
+                    <option value="164">---- Menâ€™s swimwear</option>
+                    <option value="165">---- Childrenâ€™s swimwear</option>
+                                                                                    <option value="37">-- Cycling</option>
+                <option value="166">---- Bicycles</option>
+                    <option value="167">---- Bicycle Frames</option>
+                    <option value="168">---- Bicycle Lights</option>
+                    <option value="169">---- Bicycle Helmets</option>
+                    <option value="170">---- Cycling Jerseys</option>
+                    <option value="171">---- Cycling Eye wear</option>
+                                                                                    <option value="38">-- Sneakers</option>
+                <option value="172">---- Running Shoes</option>
+                    <option value="173">---- Hiking Shoes</option>
+                    <option value="174">---- Soccer Shoes</option>
+                    <option value="175">---- Basketball Shoes</option>
+                                                                                    <option value="39">-- Fishing</option>
+                <option value="176">---- Fishing Reels</option>
+                    <option value="177">---- Fishing Lures</option>
+                    <option value="178">---- Fishing Lines</option>
+                    <option value="179">---- Fishing Rods</option>
+                                                                                                                        <option value="7">Jewelry &amp; Watches</option>
+                                                                            <option value="40">-- Wedding &amp; Engagement</option>
+                <option value="180">---- Bridal Jewelry Sets</option>
+                    <option value="181">---- Engagement Rings</option>
+                    <option value="182">---- Wedding Hair Jewelry</option>
+                                                                                    <option value="41">-- Menâ€™s watch</option>
+                <option value="183">---- Smart watch</option>
+                    <option value="184">---- Mechanical watch</option>
+                    <option value="185">---- Digital watch</option>
+                    <option value="186">---- Sports watch</option>
+                                                                                    <option value="42">-- Women watch</option>
+                <option value="187">---- Sports Watches</option>
+                    <option value="188">---- Women's Bracelet Watches</option>
+                    <option value="189">---- Dress Watches</option>
+                                                                                    <option value="43">-- Fashion Jewelry</option>
+                <option value="190">---- Necklaces &amp; Pendants</option>
+                    <option value="191">---- Hot Rings</option>
+                    <option value="192">---- Trendy Earrings</option>
+                    <option value="193">---- Bracelets &amp; Bangles</option>
+                                                                                                                        <option value="8">Cellphones &amp; Tabs</option>
+                                                                            <option value="44">-- Mobile Phones</option>
+                <option value="194">---- Basic phone</option>
+                    <option value="195">---- Android phone</option>
+                    <option value="196">---- iOS phone</option>
+                    <option value="197">---- Windows Phone</option>
+                                                                                    <option value="45">-- Mobile Phone Parts</option>
+                <option value="198">---- Mobile Phone LCDs</option>
+                    <option value="199">---- Mobile Phone Batteries</option>
+                    <option value="200">---- Mobile Phone Touch, SIM Card &amp; Tools</option>
+                    <option value="201">---- SIM Card &amp; Tools</option>
+                                                                                    <option value="46">-- Mobile Phone Accessories</option>
+                <option value="202">---- Power Bank</option>
+                    <option value="203">---- Screen Protectors</option>
+                    <option value="204">---- Mobile Phone Cables</option>
+                    <option value="205">---- Holders &amp; Stands</option>
+                                                                                    <option value="47">-- Tablets &amp; accessories</option>
+                <option value="206">---- iOS Tablet</option>
+                    <option value="207">---- Android Tablet</option>
+                    <option value="208">---- Tablet accessories</option>
+                                                                                                                        <option value="9">Beauty, Health &amp; Hair</option>
+                                                                            <option value="48">-- Makeup</option>
+                <option value="209">---- Eyes</option>
+                    <option value="210">---- Lips</option>
+                    <option value="211">---- Face</option>
+                    <option value="212">---- Makeup Tools</option>
+                                                                                    <option value="49">-- Skin Care</option>
+                <option value="213">---- Face</option>
+                    <option value="214">---- Eyes</option>
+                    <option value="215">---- Body</option>
+                    <option value="216">---- Skin Care Tools</option>
+                                                                                    <option value="50">-- Nail Art &amp; Tools</option>
+                <option value="217">---- Nail Gel</option>
+                    <option value="218">---- Nail Drill</option>
+                    <option value="219">---- Nail Dryer</option>
+                    <option value="220">---- Nail Glitter</option>
+                                                                                                                        <option value="10">Home Improvement &amp; Tools</option>
+                                                                            <option value="51">-- Indoor Lighting</option>
+                <option value="221">---- Ceiling Lights</option>
+                    <option value="222">---- Wall Lamps</option>
+                    <option value="223">---- Night Lights</option>
+                                                                                    <option value="52">-- Outdoor Lighting</option>
+                <option value="224">---- Flashlights &amp; Torches</option>
+                    <option value="225">---- Solar Lamps</option>
+                    <option value="226">---- Underwater Lights</option>
+                                                                                    <option value="53">-- LED Lighting</option>
+                <option value="227">---- LED Strips</option>
+                    <option value="228">---- LED Downlights</option>
+                    <option value="229">---- LED Panel Lights</option>
+                    <option value="230">---- LED Spotlights</option>
+                    <option value="231">---- LED Bar Lights</option>
+                                                                                    <option value="249">-- Tools</option>
+                                                                                                                    <option value="11">Home decoration &amp; Appliance</option>
+                                                                            <option value="54">-- Home Decor</option>
+                <option value="232">---- Painting &amp; Calligraphy</option>
+                    <option value="233">---- Wall Stickers</option>
+                    <option value="234">---- Wall Clock</option>
+                                                                                    <option value="55">-- Home Textile</option>
+                <option value="235">---- Cushions</option>
+                    <option value="236">---- Bedding Set</option>
+                    <option value="237">---- Beach Towels</option>
+                                                                                    <option value="56">-- Furniture</option>
+                <option value="238">---- Home Furniture</option>
+                    <option value="239">---- Office Furniture</option>
+                    <option value="240">---- Outdoor Furniture</option>
+                    <option value="241">---- Top Furniture Stores</option>
+                                                                                                                        <option value="12">Toy</option>
+                                                                            <option value="57">-- Baby Toy</option>
+                                                                                                                </select><button type="button" class="btn dropdown-toggle btn-light" data-toggle="dropdown" role="combobox" aria-owns="bs-select-1" aria-haspopup="listbox" aria-expanded="false" data-id="category_id" title="Women Clothing &amp; Fashion"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">Women Clothing &amp; Fashion</div></div> </div></button><div class="dropdown-menu "><div class="bs-searchbox"><input type="search" class="form-control" autocomplete="off" role="combobox" aria-label="Search" aria-controls="bs-select-1" aria-autocomplete="list"></div><div class="inner show" role="listbox" id="bs-select-1" tabindex="-1"><ul class="dropdown-menu inner show" role="presentation"></ul></div></div></div>
+                                </div>
+                            </div>
+                            <div class="form-group row" id="brand">
+                                <label class="col-md-3 col-from-label">Brand</label>
+                                <div class="col-md-8">
+                                    <div class="dropdown bootstrap-select form-control aiz-"><select class="form-control aiz-selectpicker" name="brand_id" id="brand_id" data-live-search="true" tabindex="-98">
+                                        <option value="">Select Brand</option>
+                                                                            <option value="1">Ford</option>
+                                                                            <option value="2">Chevrolet</option>
+                                                                            <option value="3">Audi</option>
+                                                                            <option value="4">Hyundai</option>
+                                                                            <option value="5">Nissan</option>
+                                                                            <option value="6">BMW</option>
+                                                                            <option value="7">Mercedes-Benz</option>
+                                                                            <option value="8">Toyota</option>
+                                                                            <option value="9">Suzuki</option>
+                                                                            <option value="10">Mitsubishi</option>
+                                                                            <option value="11">Honda</option>
+                                                                            <option value="12">Volvo</option>
+                                                                            <option value="13">Yamaha</option>
+                                                                            <option value="14">Brighton</option>
+                                                                            <option value="15">Tanishq</option>
+                                                                            <option value="16">Victoria's Secret</option>
+                                                                            <option value="17">Dior</option>
+                                                                            <option value="18">Bucketfeet</option>
+                                                                            <option value="19">JLO</option>
+                                                                            <option value="20">En'or</option>
+                                                                            <option value="21">Rolex</option>
+                                                                            <option value="22">Polo</option>
+                                                                            <option value="23">Aigner</option>
+                                                                            <option value="24">Omega</option>
+                                                                            <option value="25">Axe</option>
+                                                                            <option value="26">Addidas</option>
+                                                                            <option value="27">Nike</option>
+                                                                            <option value="28">Puma</option>
+                                                                            <option value="29">Reebok</option>
+                                                                            <option value="30">Samsung</option>
+                                                                            <option value="31">Apple</option>
+                                                                            <option value="32">Dell</option>
+                                                                            <option value="33">HP</option>
+                                                                            <option value="34">Acer</option>
+                                                                            <option value="35">Asus</option>
+                                                                            <option value="36">Sony</option>
+                                                                            <option value="37">Lenovo</option>
+                                                                            <option value="38">Corsair</option>
+                                                                            <option value="39">Microsoft</option>
+                                                                            <option value="40">Hitachi</option>
+                                                                            <option value="41">Lakme</option>
+                                                                            <option value="42">Logitech</option>
+                                                                            <option value="43">Calvin Klein</option>
+                                                                            <option value="44">Little live pets</option>
+                                                                            <option value="45">Baby TV</option>
+                                                                            <option value="46">Kickers</option>
+                                                                            <option value="47">lucky Brand</option>
+                                                                            <option value="48">Nihal</option>
+                                                                            <option value="49">ELLE</option>
+                                                                            <option value="50">The Crystal Bride</option>
+                                                                            <option value="51">DG</option>
+                                                                            <option value="52">Hudson</option>
+                                                                            <option value="53">Muratti</option>
+                                                                            <option value="54">Breitling</option>
+                                                                            <option value="55">Burberry</option>
+                                                                            <option value="56">Huwaei</option>
+                                                                            <option value="57">HTC</option>
+                                                                            <option value="58">Nokia</option>
+                                                                            <option value="59">Johnson's baby</option>
+                                                                            <option value="60">Cerelac</option>
+                                                                            <option value="61">Babies Outfits</option>
+                                                                            <option value="62">Pampers</option>
+                                                                            <option value="63">Toys Pino</option>
+                                                                            <option value="64">Belly Baby</option>
+                                                                            <option value="65">Baby Care</option>
+                                                                            <option value="66">Baby &amp; me</option>
+                                                                            <option value="67">Razer</option>
+                                                                            <option value="68">Loreal</option>
+                                                                            <option value="69">Dove</option>
+                                                                            <option value="70">NYX</option>
+                                                                            <option value="71">Guess</option>
+                                                                            <option value="72">Mac</option>
+                                                                            <option value="73">Flormar</option>
+                                                                            <option value="74">Sephora</option>
+                                                                            <option value="75">Urban Decay</option>
+                                                                            <option value="76">Maybeline</option>
+                                                                            <option value="77">Lexington</option>
+                                                                            <option value="78">Jade furniture</option>
+                                                                            <option value="80">Apato</option>
+                                                                            <option value="81">Brooks</option>
+                                                                            <option value="82">Decor</option>
+                                                                            <option value="83">IFD</option>
+                                                                            <option value="84">Interno</option>
+                                                                            <option value="85">Hilsdale</option>
+                                                                            <option value="86">Nicoletti</option>
+                                                                            <option value="87">Rolls royce</option>
+                                                                            <option value="88">Joules</option>
+                                                                            <option value="89">Alosa</option>
+                                                                            <option value="90">Denim</option>
+                                                                            <option value="91">One Plus</option>
+                                                                            <option value="92">Mercedes</option>
+                                                                            <option value="93">BAS Vampire</option>
+                                                                            <option value="94">WOODWORM</option>
+                                                                            <option value="95">Google</option>
+                                                                            <option value="96">Xiaomi</option>
+                                                                            <option value="97">Riyal Enfield</option>
+                                                                            <option value="98">Royal Enfield</option>
+                                                                            <option value="99">Philipps</option>
+                                                                            <option value="100">LOUIS-VUITTON</option>
+                                                                            <option value="101">Canon</option>
+                                                                        </select><button type="button" class="btn dropdown-toggle btn-light" data-toggle="dropdown" role="combobox" aria-owns="bs-select-2" aria-haspopup="listbox" aria-expanded="false" data-id="brand_id" title="Select Brand"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">Select Brand</div></div> </div></button><div class="dropdown-menu "><div class="bs-searchbox"><input type="search" class="form-control" autocomplete="off" role="combobox" aria-label="Search" aria-controls="bs-select-2" aria-autocomplete="list"></div><div class="inner show" role="listbox" id="bs-select-2" tabindex="-1"><ul class="dropdown-menu inner show" role="presentation"></ul></div></div></div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-md-3 col-from-label">Unit</label>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control" name="unit" placeholder="Unit (e.g. KG, Pc etc)" required="">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-md-3 col-from-label">Minimum Purchase Qty <span class="text-danger">*</span></label>
+                                <div class="col-md-8">
+                                    <input type="number" class="form-control" name="min_qty" value="1" min="1" required="" lang="en">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-md-3 col-from-label">Tags <span class="text-danger">*</span></label>
+                                <div class="col-md-8">
+                                    <tags class="tagify  form-control aiz-tag-input" aria-haspopup="listbox" aria-expanded="false" role="tagslist" tabindex="-1">
+                    <span data-placeholder="Type and hit enter to add a tag" aria-placeholder="Type and hit enter to add a tag" class="tagify__input" role="textbox" aria-autocomplete="both" aria-multiline="false" contenteditable=""></span>
+                </tags><input type="text" class="form-control aiz-tag-input" name="tags[]" placeholder="Type and hit enter to add a tag">
+                                    <small class="text-muted">This is used for search. Input those words by which cutomer can find this product.</small>
+                                </div>
+                            </div>
+    
+                                                                            <div class="form-group row">
+                                <label class="col-md-3 col-from-label">Barcode</label>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control" name="barcode" placeholder="Barcode">
+                                </div>
+                            </div>
+                            
+                                                                            <div class="form-group row">
+                                <label class="col-md-3 col-from-label">Refundable</label>
+                                <div class="col-md-8">
+                                    <label class="aiz-switch aiz-switch-success mb-0">
+                                        <input type="checkbox" name="refundable" checked="">
+                                        <span></span>
+                                    </label>
+                                </div>
+                            </div>
+                                                </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="mb-0 h6">Product Images</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group row">
+                                <label class="col-md-3 col-form-label" for="signinSrEmail">Gallery Images <small>(600x600)</small></label>
+                                <div class="col-md-8">
+                                    <div class="input-group" data-toggle="aizuploader" data-type="image" data-multiple="true">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text bg-soft-secondary font-weight-medium">Browse</div>
+                                        </div>
+                                        <div class="form-control file-amount">Choose File</div>
+                                        <input type="hidden" name="photos" class="selected-files">
+                                    </div>
+                                    <div class="file-preview box sm">
+                                    </div>
+                                    <small class="text-muted">These images are visible in product details page gallery. Use 600x600 sizes images.</small>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-md-3 col-form-label" for="signinSrEmail">Thumbnail Image <small>(300x300)</small></label>
+                                <div class="col-md-8">
+                                    <div class="input-group" data-toggle="aizuploader" data-type="image">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text bg-soft-secondary font-weight-medium">Browse</div>
+                                        </div>
+                                        <div class="form-control file-amount">Choose File</div>
+                                        <input type="hidden" name="thumbnail_img" class="selected-files">
+                                    </div>
+                                    <div class="file-preview box sm">
+                                    </div>
+                                    <small class="text-muted">This image is visible in all product box. Use 300x300 sizes image. Keep some blank space around main object of your image as we had to crop some edge in different devices to make it responsive.</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="mb-0 h6">Product Videos</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group row">
+                                <label class="col-md-3 col-from-label">Video Provider</label>
+                                <div class="col-md-8">
+                                    <div class="dropdown bootstrap-select form-control aiz-"><select class="form-control aiz-selectpicker" name="video_provider" id="video_provider" tabindex="-98">
+                                        <option value="youtube">Youtube</option>
+                                        <option value="dailymotion">Dailymotion</option>
+                                        <option value="vimeo">Vimeo</option>
+                                    </select><button type="button" class="btn dropdown-toggle btn-light" data-toggle="dropdown" role="combobox" aria-owns="bs-select-3" aria-haspopup="listbox" aria-expanded="false" data-id="video_provider" title="Youtube"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">Youtube</div></div> </div></button><div class="dropdown-menu "><div class="inner show" role="listbox" id="bs-select-3" tabindex="-1"><ul class="dropdown-menu inner show" role="presentation"></ul></div></div></div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-md-3 col-from-label">Video Link</label>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control" name="video_link" placeholder="Video Link">
+                                    <small class="text-muted">Use proper link without extra parameter. Don't use short share link/embeded iframe code.</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="mb-0 h6">Product Variation</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group row gutters-5">
+                                <div class="col-md-3">
+                                    <input type="text" class="form-control" value="Colors" disabled="">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="dropdown bootstrap-select show-tick disabled form-control aiz-"><select class="form-control aiz-selectpicker" data-live-search="true" data-selected-text-format="count" name="colors[]" id="colors" multiple="" disabled="" tabindex="-98">
+                                                                            <option value="#F0F8FF" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#F0F8FF'></span><span>AliceBlue</span></span>"></option>
+                                                                            <option value="#9966CC" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#9966CC'></span><span>Amethyst</span></span>"></option>
+                                                                            <option value="#FAEBD7" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#FAEBD7'></span><span>AntiqueWhite</span></span>"></option>
+                                                                            <option value="#00FFFF" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#00FFFF'></span><span>Aqua</span></span>"></option>
+                                                                            <option value="#7FFFD4" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#7FFFD4'></span><span>Aquamarine</span></span>"></option>
+                                                                            <option value="#F0FFFF" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#F0FFFF'></span><span>Azure</span></span>"></option>
+                                                                            <option value="#F5F5DC" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#F5F5DC'></span><span>Beige</span></span>"></option>
+                                                                            <option value="#FFE4C4" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#FFE4C4'></span><span>Bisque</span></span>"></option>
+                                                                            <option value="#000000" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#000000'></span><span>Black</span></span>"></option>
+                                                                            <option value="#FFEBCD" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#FFEBCD'></span><span>BlanchedAlmond</span></span>"></option>
+                                                                            <option value="#0000FF" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#0000FF'></span><span>Blue</span></span>"></option>
+                                                                            <option value="#8A2BE2" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#8A2BE2'></span><span>BlueViolet</span></span>"></option>
+                                                                            <option value="#A52A2A" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#A52A2A'></span><span>Brown</span></span>"></option>
+                                                                            <option value="#DEB887" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#DEB887'></span><span>BurlyWood</span></span>"></option>
+                                                                            <option value="#5F9EA0" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#5F9EA0'></span><span>CadetBlue</span></span>"></option>
+                                                                            <option value="#7FFF00" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#7FFF00'></span><span>Chartreuse</span></span>"></option>
+                                                                            <option value="#D2691E" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#D2691E'></span><span>Chocolate</span></span>"></option>
+                                                                            <option value="#FF7F50" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#FF7F50'></span><span>Coral</span></span>"></option>
+                                                                            <option value="#6495ED" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#6495ED'></span><span>CornflowerBlue</span></span>"></option>
+                                                                            <option value="#FFF8DC" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#FFF8DC'></span><span>Cornsilk</span></span>"></option>
+                                                                            <option value="#DC143C" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#DC143C'></span><span>Crimson</span></span>"></option>
+                                                                            <option value="#00FFFF" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#00FFFF'></span><span>Cyan</span></span>"></option>
+                                                                            <option value="#00008B" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#00008B'></span><span>DarkBlue</span></span>"></option>
+                                                                            <option value="#008B8B" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#008B8B'></span><span>DarkCyan</span></span>"></option>
+                                                                            <option value="#B8860B" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#B8860B'></span><span>DarkGoldenrod</span></span>"></option>
+                                                                            <option value="#A9A9A9" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#A9A9A9'></span><span>DarkGray</span></span>"></option>
+                                                                            <option value="#006400" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#006400'></span><span>DarkGreen</span></span>"></option>
+                                                                            <option value="#BDB76B" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#BDB76B'></span><span>DarkKhaki</span></span>"></option>
+                                                                            <option value="#8B008B" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#8B008B'></span><span>DarkMagenta</span></span>"></option>
+                                                                            <option value="#556B2F" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#556B2F'></span><span>DarkOliveGreen</span></span>"></option>
+                                                                            <option value="#FF8C00" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#FF8C00'></span><span>DarkOrange</span></span>"></option>
+                                                                            <option value="#9932CC" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#9932CC'></span><span>DarkOrchid</span></span>"></option>
+                                                                            <option value="#8B0000" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#8B0000'></span><span>DarkRed</span></span>"></option>
+                                                                            <option value="#E9967A" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#E9967A'></span><span>DarkSalmon</span></span>"></option>
+                                                                            <option value="#8FBC8F" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#8FBC8F'></span><span>DarkSeaGreen</span></span>"></option>
+                                                                            <option value="#483D8B" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#483D8B'></span><span>DarkSlateBlue</span></span>"></option>
+                                                                            <option value="#2F4F4F" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#2F4F4F'></span><span>DarkSlateGray</span></span>"></option>
+                                                                            <option value="#00CED1" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#00CED1'></span><span>DarkTurquoise</span></span>"></option>
+                                                                            <option value="#9400D3" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#9400D3'></span><span>DarkViolet</span></span>"></option>
+                                                                            <option value="#FF1493" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#FF1493'></span><span>DeepPink</span></span>"></option>
+                                                                            <option value="#00BFFF" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#00BFFF'></span><span>DeepSkyBlue</span></span>"></option>
+                                                                            <option value="#696969" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#696969'></span><span>DimGray</span></span>"></option>
+                                                                            <option value="#1E90FF" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#1E90FF'></span><span>DodgerBlue</span></span>"></option>
+                                                                            <option value="#B22222" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#B22222'></span><span>FireBrick</span></span>"></option>
+                                                                            <option value="#FFFAF0" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#FFFAF0'></span><span>FloralWhite</span></span>"></option>
+                                                                            <option value="#228B22" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#228B22'></span><span>ForestGreen</span></span>"></option>
+                                                                            <option value="#FF00FF" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#FF00FF'></span><span>Fuchsia</span></span>"></option>
+                                                                            <option value="#DCDCDC" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#DCDCDC'></span><span>Gainsboro</span></span>"></option>
+                                                                            <option value="#F8F8FF" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#F8F8FF'></span><span>GhostWhite</span></span>"></option>
+                                                                            <option value="#FFD700" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#FFD700'></span><span>Gold</span></span>"></option>
+                                                                            <option value="#DAA520" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#DAA520'></span><span>Goldenrod</span></span>"></option>
+                                                                            <option value="#808080" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#808080'></span><span>Gray</span></span>"></option>
+                                                                            <option value="#008000" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#008000'></span><span>Green</span></span>"></option>
+                                                                            <option value="#ADFF2F" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#ADFF2F'></span><span>GreenYellow</span></span>"></option>
+                                                                            <option value="#F0FFF0" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#F0FFF0'></span><span>Honeydew</span></span>"></option>
+                                                                            <option value="#FF69B4" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#FF69B4'></span><span>HotPink</span></span>"></option>
+                                                                            <option value="#CD5C5C" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#CD5C5C'></span><span>IndianRed</span></span>"></option>
+                                                                            <option value="#4B0082" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#4B0082'></span><span>Indigo</span></span>"></option>
+                                                                            <option value="#FFFFF0" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#FFFFF0'></span><span>Ivory</span></span>"></option>
+                                                                            <option value="#F0E68C" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#F0E68C'></span><span>Khaki</span></span>"></option>
+                                                                            <option value="#E6E6FA" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#E6E6FA'></span><span>Lavender</span></span>"></option>
+                                                                            <option value="#FFF0F5" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#FFF0F5'></span><span>LavenderBlush</span></span>"></option>
+                                                                            <option value="#7CFC00" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#7CFC00'></span><span>LawnGreen</span></span>"></option>
+                                                                            <option value="#FFFACD" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#FFFACD'></span><span>LemonChiffon</span></span>"></option>
+                                                                            <option value="#ADD8E6" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#ADD8E6'></span><span>LightBlue</span></span>"></option>
+                                                                            <option value="#F08080" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#F08080'></span><span>LightCoral</span></span>"></option>
+                                                                            <option value="#E0FFFF" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#E0FFFF'></span><span>LightCyan</span></span>"></option>
+                                                                            <option value="#FAFAD2" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#FAFAD2'></span><span>LightGoldenrodYellow</span></span>"></option>
+                                                                            <option value="#90EE90" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#90EE90'></span><span>LightGreen</span></span>"></option>
+                                                                            <option value="#D3D3D3" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#D3D3D3'></span><span>LightGrey</span></span>"></option>
+                                                                            <option value="#FFB6C1" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#FFB6C1'></span><span>LightPink</span></span>"></option>
+                                                                            <option value="#FFA07A" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#FFA07A'></span><span>LightSalmon</span></span>"></option>
+                                                                            <option value="#FFA07A" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#FFA07A'></span><span>LightSalmon</span></span>"></option>
+                                                                            <option value="#20B2AA" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#20B2AA'></span><span>LightSeaGreen</span></span>"></option>
+                                                                            <option value="#87CEFA" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#87CEFA'></span><span>LightSkyBlue</span></span>"></option>
+                                                                            <option value="#778899" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#778899'></span><span>LightSlateGray</span></span>"></option>
+                                                                            <option value="#B0C4DE" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#B0C4DE'></span><span>LightSteelBlue</span></span>"></option>
+                                                                            <option value="#FFFFE0" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#FFFFE0'></span><span>LightYellow</span></span>"></option>
+                                                                            <option value="#00FF00" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#00FF00'></span><span>Lime</span></span>"></option>
+                                                                            <option value="#32CD32" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#32CD32'></span><span>LimeGreen</span></span>"></option>
+                                                                            <option value="#FAF0E6" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#FAF0E6'></span><span>Linen</span></span>"></option>
+                                                                            <option value="#FF00FF" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#FF00FF'></span><span>Magenta</span></span>"></option>
+                                                                            <option value="#800000" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#800000'></span><span>Maroon</span></span>"></option>
+                                                                            <option value="#66CDAA" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#66CDAA'></span><span>MediumAquamarine</span></span>"></option>
+                                                                            <option value="#0000CD" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#0000CD'></span><span>MediumBlue</span></span>"></option>
+                                                                            <option value="#BA55D3" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#BA55D3'></span><span>MediumOrchid</span></span>"></option>
+                                                                            <option value="#9370DB" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#9370DB'></span><span>MediumPurple</span></span>"></option>
+                                                                            <option value="#3CB371" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#3CB371'></span><span>MediumSeaGreen</span></span>"></option>
+                                                                            <option value="#7B68EE" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#7B68EE'></span><span>MediumSlateBlue</span></span>"></option>
+                                                                            <option value="#7B68EE" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#7B68EE'></span><span>MediumSlateBlue</span></span>"></option>
+                                                                            <option value="#00FA9A" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#00FA9A'></span><span>MediumSpringGreen</span></span>"></option>
+                                                                            <option value="#48D1CC" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#48D1CC'></span><span>MediumTurquoise</span></span>"></option>
+                                                                            <option value="#C71585" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#C71585'></span><span>MediumVioletRed</span></span>"></option>
+                                                                            <option value="#191970" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#191970'></span><span>MidnightBlue</span></span>"></option>
+                                                                            <option value="#F5FFFA" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#F5FFFA'></span><span>MintCream</span></span>"></option>
+                                                                            <option value="#FFE4E1" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#FFE4E1'></span><span>MistyRose</span></span>"></option>
+                                                                            <option value="#FFE4B5" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#FFE4B5'></span><span>Moccasin</span></span>"></option>
+                                                                            <option value="#FFDEAD" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#FFDEAD'></span><span>NavajoWhite</span></span>"></option>
+                                                                            <option value="#000080" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#000080'></span><span>Navy</span></span>"></option>
+                                                                            <option value="#FDF5E6" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#FDF5E6'></span><span>OldLace</span></span>"></option>
+                                                                            <option value="#808000" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#808000'></span><span>Olive</span></span>"></option>
+                                                                            <option value="#6B8E23" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#6B8E23'></span><span>OliveDrab</span></span>"></option>
+                                                                            <option value="#FFA500" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#FFA500'></span><span>Orange</span></span>"></option>
+                                                                            <option value="#FF4500" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#FF4500'></span><span>OrangeRed</span></span>"></option>
+                                                                            <option value="#DA70D6" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#DA70D6'></span><span>Orchid</span></span>"></option>
+                                                                            <option value="#EEE8AA" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#EEE8AA'></span><span>PaleGoldenrod</span></span>"></option>
+                                                                            <option value="#98FB98" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#98FB98'></span><span>PaleGreen</span></span>"></option>
+                                                                            <option value="#AFEEEE" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#AFEEEE'></span><span>PaleTurquoise</span></span>"></option>
+                                                                            <option value="#DB7093" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#DB7093'></span><span>PaleVioletRed</span></span>"></option>
+                                                                            <option value="#FFEFD5" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#FFEFD5'></span><span>PapayaWhip</span></span>"></option>
+                                                                            <option value="#FFDAB9" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#FFDAB9'></span><span>PeachPuff</span></span>"></option>
+                                                                            <option value="#CD853F" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#CD853F'></span><span>Peru</span></span>"></option>
+                                                                            <option value="#FFC0CB" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#FFC0CB'></span><span>Pink</span></span>"></option>
+                                                                            <option value="#DDA0DD" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#DDA0DD'></span><span>Plum</span></span>"></option>
+                                                                            <option value="#B0E0E6" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#B0E0E6'></span><span>PowderBlue</span></span>"></option>
+                                                                            <option value="#800080" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#800080'></span><span>Purple</span></span>"></option>
+                                                                            <option value="#FF0000" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#FF0000'></span><span>Red</span></span>"></option>
+                                                                            <option value="#BC8F8F" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#BC8F8F'></span><span>RosyBrown</span></span>"></option>
+                                                                            <option value="#4169E1" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#4169E1'></span><span>RoyalBlue</span></span>"></option>
+                                                                            <option value="#8B4513" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#8B4513'></span><span>SaddleBrown</span></span>"></option>
+                                                                            <option value="#FA8072" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#FA8072'></span><span>Salmon</span></span>"></option>
+                                                                            <option value="#F4A460" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#F4A460'></span><span>SandyBrown</span></span>"></option>
+                                                                            <option value="#2E8B57" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#2E8B57'></span><span>SeaGreen</span></span>"></option>
+                                                                            <option value="#FFF5EE" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#FFF5EE'></span><span>Seashell</span></span>"></option>
+                                                                            <option value="#A0522D" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#A0522D'></span><span>Sienna</span></span>"></option>
+                                                                            <option value="#C0C0C0" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#C0C0C0'></span><span>Silver</span></span>"></option>
+                                                                            <option value="#87CEEB" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#87CEEB'></span><span>SkyBlue</span></span>"></option>
+                                                                            <option value="#6A5ACD" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#6A5ACD'></span><span>SlateBlue</span></span>"></option>
+                                                                            <option value="#708090" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#708090'></span><span>SlateGray</span></span>"></option>
+                                                                            <option value="#FFFAFA" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#FFFAFA'></span><span>Snow</span></span>"></option>
+                                                                            <option value="#00FF7F" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#00FF7F'></span><span>SpringGreen</span></span>"></option>
+                                                                            <option value="#4682B4" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#4682B4'></span><span>SteelBlue</span></span>"></option>
+                                                                            <option value="#D2B48C" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#D2B48C'></span><span>Tan</span></span>"></option>
+                                                                            <option value="#008080" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#008080'></span><span>Teal</span></span>"></option>
+                                                                            <option value="#D8BFD8" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#D8BFD8'></span><span>Thistle</span></span>"></option>
+                                                                            <option value="#FF6347" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#FF6347'></span><span>Tomato</span></span>"></option>
+                                                                            <option value="#40E0D0" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#40E0D0'></span><span>Turquoise</span></span>"></option>
+                                                                            <option value="#EE82EE" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#EE82EE'></span><span>Violet</span></span>"></option>
+                                                                            <option value="#F5DEB3" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#F5DEB3'></span><span>Wheat</span></span>"></option>
+                                                                            <option value="#FFFFFF" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#FFFFFF'></span><span>White</span></span>"></option>
+                                                                            <option value="#F5F5F5" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#F5F5F5'></span><span>WhiteSmoke</span></span>"></option>
+                                                                            <option value="#FFFF00" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#FFFF00'></span><span>Yellow</span></span>"></option>
+                                                                            <option value="#9ACD32" data-content="<span><span class='size-15px d-inline-block mr-2 rounded border' style='background:#9ACD32'></span><span>YellowGreen</span></span>"></option>
+                                                                        </select><button type="button" class="btn dropdown-toggle disabled btn-light bs-placeholder" data-toggle="dropdown" role="combobox" aria-owns="bs-select-4" aria-haspopup="listbox" aria-expanded="false" data-id="colors" tabindex="-1" aria-disabled="true" title="Nothing selected"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">Nothing selected</div></div> </div></button><div class="dropdown-menu "><div class="bs-searchbox"><input type="search" class="form-control" autocomplete="off" role="combobox" aria-label="Search" aria-controls="bs-select-4" aria-autocomplete="list"></div><div class="inner show" role="listbox" id="bs-select-4" tabindex="-1" aria-multiselectable="true"><ul class="dropdown-menu inner show" role="presentation"></ul></div></div></div>
+                                </div>
+                                <div class="col-md-1">
+                                    <label class="aiz-switch aiz-switch-success mb-0">
+                                        <input value="1" type="checkbox" name="colors_active">
+                                        <span></span>
+                                    </label>
+                                </div>
+                            </div>
+    
+                            <div class="form-group row gutters-5">
+                                <div class="col-md-3">
+                                    <input type="text" class="form-control" value="Attributes" disabled="">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="dropdown bootstrap-select show-tick form-control aiz-"><select name="choice_attributes[]" id="choice_attributes" class="form-control aiz-selectpicker" data-selected-text-format="count" data-live-search="true" multiple="" data-placeholder="Choose Attributes" tabindex="-98">
+                                                                            <option value="1">Size</option>
+                                                                            <option value="2">Fabric</option>
+                                                                            <option value="4">Sleeve</option>
+                                                                            <option value="5">Wheel</option>
+                                                                            <option value="6">Liter</option>
+                                                                        </select><button type="button" class="btn dropdown-toggle btn-light bs-placeholder" data-toggle="dropdown" role="combobox" aria-owns="bs-select-5" aria-haspopup="listbox" aria-expanded="false" data-id="choice_attributes" title="Nothing selected"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">Nothing selected</div></div> </div></button><div class="dropdown-menu "><div class="bs-searchbox"><input type="search" class="form-control" autocomplete="off" role="combobox" aria-label="Search" aria-controls="bs-select-5" aria-autocomplete="list"></div><div class="inner show" role="listbox" id="bs-select-5" tabindex="-1" aria-multiselectable="true"><ul class="dropdown-menu inner show" role="presentation"></ul></div></div></div>
+                                </div>
+                            </div>
+                            <div>
+                                <p>Choose the attributes of this product and then input values of each attribute</p>
+                                <br>
+                            </div>
+    
+                            <div class="customer_choice_options" id="customer_choice_options">
+    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="mb-0 h6">Product price + stock</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group row">
+                                <label class="col-md-3 col-from-label">Unit price <span class="text-danger">*</span></label>
+                                <div class="col-md-6">
+                                    <input type="number" min="0" value="0" step="0.01" placeholder="Unit price" name="unit_price" class="form-control" required="" lang="en">
+                                </div>
+                            </div>
+    
+                            <div class="form-group row">
+                                <label class="col-sm-3 control-label" for="start_date">Discount Date Range</label>
+                                <div class="col-sm-9">
+                                  <input type="text" class="form-control aiz-date-range" name="date_range" placeholder="Select Date" data-time-picker="true" data-format="DD-MM-Y HH:mm:ss" data-separator=" to " autocomplete="off">
+                                </div>
+                            </div>
+    
+                            <div class="form-group row">
+                                <label class="col-md-3 col-from-label">Discount <span class="text-danger">*</span></label>
+                                <div class="col-md-6">
+                                    <input type="number" min="0" value="0" step="0.01" placeholder="Discount" name="discount" class="form-control" required="" lang="en">
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="dropdown bootstrap-select form-control aiz-"><select class="form-control aiz-selectpicker" name="discount_type" tabindex="-98">
+                                        <option value="amount">Flat</option>
+                                        <option value="percent">Percent</option>
+                                    </select><button type="button" class="btn dropdown-toggle btn-light" data-toggle="dropdown" role="combobox" aria-owns="bs-select-6" aria-haspopup="listbox" aria-expanded="false" title="Flat"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">Flat</div></div> </div></button><div class="dropdown-menu "><div class="inner show" role="listbox" id="bs-select-6" tabindex="-1"><ul class="dropdown-menu inner show" role="presentation"></ul></div></div></div>
+                                </div>
+                            </div>
+    
+                                                        <div class="form-group row">
+                                    <label class="col-md-3 col-from-label">
+                                        Set Point
+                                    </label>
+                                    <div class="col-md-6">
+                                        <input type="number" min="0" value="0" step="1" placeholder="1" name="earn_point" class="form-control" lang="en">
+                                    </div>
+                                </div>
+                            
+                            <div id="show-hide-div">
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-from-label">Quantity <span class="text-danger">*</span></label>
+                                    <div class="col-md-6">
+                                        <input type="number" min="0" value="0" step="1" placeholder="Quantity" name="current_stock" class="form-control" required="" lang="en">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-from-label">
+                                        SKU
+                                    </label>
+                                    <div class="col-md-6">
+                                        <input type="text" placeholder="SKU" name="sku" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="sku_combination" id="sku_combination">
+    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="mb-0 h6">Product Description</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group row">
+                                <label class="col-md-3 col-from-label">Description</label>
+                                <div class="col-md-8">
+                                    <textarea class="aiz-text-editor" name="description" style="display: none;"></textarea><div class="note-editor note-frame card"><div class="note-dropzone"><div class="note-dropzone-message"></div></div><div class="note-toolbar card-header" role="toolbar"><div class="note-btn-group btn-group note-font"><button type="button" class="note-btn btn btn-light btn-sm note-btn-bold" tabindex="-1" title="" aria-label="Bold (CTRL+B)" data-original-title="Bold (CTRL+B)"><i class="note-icon-bold"></i></button><button type="button" class="note-btn btn btn-light btn-sm note-btn-underline" tabindex="-1" title="" aria-label="Underline (CTRL+U)" data-original-title="Underline (CTRL+U)"><i class="note-icon-underline"></i></button><button type="button" class="note-btn btn btn-light btn-sm note-btn-italic" tabindex="-1" title="" aria-label="Italic (CTRL+I)" data-original-title="Italic (CTRL+I)"><i class="note-icon-italic"></i></button><button type="button" class="note-btn btn btn-light btn-sm" tabindex="-1" title="" aria-label="Remove Font Style (CTRL+\)" data-original-title="Remove Font Style (CTRL+\)"><i class="note-icon-eraser"></i></button></div><div class="note-btn-group btn-group note-para"><button type="button" class="note-btn btn btn-light btn-sm" tabindex="-1" title="" aria-label="Unordered list (CTRL+SHIFT+NUM7)" data-original-title="Unordered list (CTRL+SHIFT+NUM7)"><i class="note-icon-unorderedlist"></i></button><button type="button" class="note-btn btn btn-light btn-sm" tabindex="-1" title="" aria-label="Ordered list (CTRL+SHIFT+NUM8)" data-original-title="Ordered list (CTRL+SHIFT+NUM8)"><i class="note-icon-orderedlist"></i></button><div class="note-btn-group btn-group"><button type="button" class="note-btn btn btn-light btn-sm dropdown-toggle" tabindex="-1" data-toggle="dropdown" title="" aria-label="Paragraph" data-original-title="Paragraph"><i class="note-icon-align-left"></i></button><div class="note-dropdown-menu dropdown-menu" role="list"><div class="note-btn-group btn-group note-align"><button type="button" class="note-btn btn btn-light btn-sm" tabindex="-1" title="" aria-label="Align left (CTRL+SHIFT+L)" data-original-title="Align left (CTRL+SHIFT+L)"><i class="note-icon-align-left"></i></button><button type="button" class="note-btn btn btn-light btn-sm" tabindex="-1" title="" aria-label="Align center (CTRL+SHIFT+E)" data-original-title="Align center (CTRL+SHIFT+E)"><i class="note-icon-align-center"></i></button><button type="button" class="note-btn btn btn-light btn-sm" tabindex="-1" title="" aria-label="Align right (CTRL+SHIFT+R)" data-original-title="Align right (CTRL+SHIFT+R)"><i class="note-icon-align-right"></i></button><button type="button" class="note-btn btn btn-light btn-sm" tabindex="-1" title="" aria-label="Justify full (CTRL+SHIFT+J)" data-original-title="Justify full (CTRL+SHIFT+J)"><i class="note-icon-align-justify"></i></button></div><div class="note-btn-group btn-group note-list"><button type="button" class="note-btn btn btn-light btn-sm" tabindex="-1" title="" aria-label="Outdent (CTRL+[)" data-original-title="Outdent (CTRL+[)"><i class="note-icon-align-outdent"></i></button><button type="button" class="note-btn btn btn-light btn-sm" tabindex="-1" title="" aria-label="Indent (CTRL+])" data-original-title="Indent (CTRL+])"><i class="note-icon-align-indent"></i></button></div></div></div></div><div class="note-btn-group btn-group note-style"><div class="note-btn-group btn-group"><button type="button" class="note-btn btn btn-light btn-sm dropdown-toggle" tabindex="-1" data-toggle="dropdown" title="" aria-label="Style" data-original-title="Style"><i class="note-icon-magic"></i></button><div class="note-dropdown-menu dropdown-menu dropdown-style" role="list" aria-label="Style"><a class="dropdown-item" href="#" data-value="p" role="listitem" aria-label="p"><p>Normal</p></a><a class="dropdown-item" href="#" data-value="blockquote" role="listitem" aria-label="blockquote"><blockquote class="blockquote">Blockquote</blockquote></a><a class="dropdown-item" href="#" data-value="pre" role="listitem" aria-label="pre"><pre>Code</pre></a><a class="dropdown-item" href="#" data-value="h1" role="listitem" aria-label="h1"><h1>Header 1</h1></a><a class="dropdown-item" href="#" data-value="h2" role="listitem" aria-label="h2"><h2>Header 2</h2></a><a class="dropdown-item" href="#" data-value="h3" role="listitem" aria-label="h3"><h3>Header 3</h3></a><a class="dropdown-item" href="#" data-value="h4" role="listitem" aria-label="h4"><h4>Header 4</h4></a><a class="dropdown-item" href="#" data-value="h5" role="listitem" aria-label="h5"><h5>Header 5</h5></a><a class="dropdown-item" href="#" data-value="h6" role="listitem" aria-label="h6"><h6>Header 6</h6></a></div></div></div><div class="note-btn-group btn-group note-color"><div class="note-btn-group btn-group note-color note-color-all"><button type="button" class="note-btn btn btn-light btn-sm note-current-color-button" tabindex="-1" title="" aria-label="Recent Color" data-original-title="Recent Color" data-backcolor="#FFFF00" data-forecolor="#000000"><i class="note-icon-font note-recent-color" style="background-color: rgb(255, 255, 0); color: rgb(0, 0, 0);"></i></button><button type="button" class="note-btn btn btn-light btn-sm dropdown-toggle" tabindex="-1" data-toggle="dropdown" title="" aria-label="More Color" data-original-title="More Color"></button><div class="note-dropdown-menu dropdown-menu" role="list"><div class="note-palette"><div class="note-palette-title">Background Color</div><div><button type="button" class="note-color-reset btn btn-light" data-event="backColor" data-value="inherit">Transparent</button></div><div class="note-holder" data-event="backColor"><div><button type="button" class="note-color-select btn btn-light" data-event="openPalette" data-value="backColorPicker">Select</button><input type="color" id="backColorPicker" class="note-btn note-color-select-btn" value="#FFFF00" data-event="backColorPalette"></div><div class="note-holder-custom" id="backColorPalette" data-event="backColor"><div class="note-color-palette"><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#FFFFFF" data-event="backColor" data-value="#FFFFFF" title="" aria-label="#FFFFFF" data-toggle="button" tabindex="-1" data-original-title="#FFFFFF"></button><button type="button" class="note-color-btn" style="background-color:#FFFFFF" data-event="backColor" data-value="#FFFFFF" title="" aria-label="#FFFFFF" data-toggle="button" tabindex="-1" data-original-title="#FFFFFF"></button><button type="button" class="note-color-btn" style="background-color:#FFFFFF" data-event="backColor" data-value="#FFFFFF" title="" aria-label="#FFFFFF" data-toggle="button" tabindex="-1" data-original-title="#FFFFFF"></button><button type="button" class="note-color-btn" style="background-color:#FFFFFF" data-event="backColor" data-value="#FFFFFF" title="" aria-label="#FFFFFF" data-toggle="button" tabindex="-1" data-original-title="#FFFFFF"></button><button type="button" class="note-color-btn" style="background-color:#FFFFFF" data-event="backColor" data-value="#FFFFFF" title="" aria-label="#FFFFFF" data-toggle="button" tabindex="-1" data-original-title="#FFFFFF"></button><button type="button" class="note-color-btn" style="background-color:#FFFFFF" data-event="backColor" data-value="#FFFFFF" title="" aria-label="#FFFFFF" data-toggle="button" tabindex="-1" data-original-title="#FFFFFF"></button><button type="button" class="note-color-btn" style="background-color:#FFFFFF" data-event="backColor" data-value="#FFFFFF" title="" aria-label="#FFFFFF" data-toggle="button" tabindex="-1" data-original-title="#FFFFFF"></button><button type="button" class="note-color-btn" style="background-color:#FFFFFF" data-event="backColor" data-value="#FFFFFF" title="" aria-label="#FFFFFF" data-toggle="button" tabindex="-1" data-original-title="#FFFFFF"></button></div></div></div><div class="note-palette"><div class="note-palette-title">Text Color</div><div><button type="button" class="note-color-reset btn btn-light" data-event="removeFormat" data-value="foreColor">Reset to default</button></div><div class="note-holder" data-event="foreColor"><div><button type="button" class="note-color-select btn btn-light" data-event="openPalette" data-value="foreColorPicker">Select</button><input type="color" id="foreColorPicker" class="note-btn note-color-select-btn" value="#000000" data-event="foreColorPalette"></div><div class="note-holder-custom" id="foreColorPalette" data-event="foreColor"><div class="note-color-palette"><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#FFFFFF" data-event="foreColor" data-value="#FFFFFF" title="" aria-label="#FFFFFF" data-toggle="button" tabindex="-1" data-original-title="#FFFFFF"></button><button type="button" class="note-color-btn" style="background-color:#FFFFFF" data-event="foreColor" data-value="#FFFFFF" title="" aria-label="#FFFFFF" data-toggle="button" tabindex="-1" data-original-title="#FFFFFF"></button><button type="button" class="note-color-btn" style="background-color:#FFFFFF" data-event="foreColor" data-value="#FFFFFF" title="" aria-label="#FFFFFF" data-toggle="button" tabindex="-1" data-original-title="#FFFFFF"></button><button type="button" class="note-color-btn" style="background-color:#FFFFFF" data-event="foreColor" data-value="#FFFFFF" title="" aria-label="#FFFFFF" data-toggle="button" tabindex="-1" data-original-title="#FFFFFF"></button><button type="button" class="note-color-btn" style="background-color:#FFFFFF" data-event="foreColor" data-value="#FFFFFF" title="" aria-label="#FFFFFF" data-toggle="button" tabindex="-1" data-original-title="#FFFFFF"></button><button type="button" class="note-color-btn" style="background-color:#FFFFFF" data-event="foreColor" data-value="#FFFFFF" title="" aria-label="#FFFFFF" data-toggle="button" tabindex="-1" data-original-title="#FFFFFF"></button><button type="button" class="note-color-btn" style="background-color:#FFFFFF" data-event="foreColor" data-value="#FFFFFF" title="" aria-label="#FFFFFF" data-toggle="button" tabindex="-1" data-original-title="#FFFFFF"></button><button type="button" class="note-color-btn" style="background-color:#FFFFFF" data-event="foreColor" data-value="#FFFFFF" title="" aria-label="#FFFFFF" data-toggle="button" tabindex="-1" data-original-title="#FFFFFF"></button></div></div></div><div class="note-color-palette"><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#000000" data-event="foreColor" data-value="#000000" title="" aria-label="Black" data-toggle="button" tabindex="-1" data-original-title="Black"></button><button type="button" class="note-color-btn" style="background-color:#424242" data-event="foreColor" data-value="#424242" title="" aria-label="Tundora" data-toggle="button" tabindex="-1" data-original-title="Tundora"></button><button type="button" class="note-color-btn" style="background-color:#636363" data-event="foreColor" data-value="#636363" title="" aria-label="Dove Gray" data-toggle="button" tabindex="-1" data-original-title="Dove Gray"></button><button type="button" class="note-color-btn" style="background-color:#9C9C94" data-event="foreColor" data-value="#9C9C94" title="" aria-label="Star Dust" data-toggle="button" tabindex="-1" data-original-title="Star Dust"></button><button type="button" class="note-color-btn" style="background-color:#CEC6CE" data-event="foreColor" data-value="#CEC6CE" title="" aria-label="Pale Slate" data-toggle="button" tabindex="-1" data-original-title="Pale Slate"></button><button type="button" class="note-color-btn" style="background-color:#EFEFEF" data-event="foreColor" data-value="#EFEFEF" title="" aria-label="Gallery" data-toggle="button" tabindex="-1" data-original-title="Gallery"></button><button type="button" class="note-color-btn" style="background-color:#F7F7F7" data-event="foreColor" data-value="#F7F7F7" title="" aria-label="Alabaster" data-toggle="button" tabindex="-1" data-original-title="Alabaster"></button><button type="button" class="note-color-btn" style="background-color:#FFFFFF" data-event="foreColor" data-value="#FFFFFF" title="" aria-label="White" data-toggle="button" tabindex="-1" data-original-title="White"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#FF0000" data-event="foreColor" data-value="#FF0000" title="" aria-label="Red" data-toggle="button" tabindex="-1" data-original-title="Red"></button><button type="button" class="note-color-btn" style="background-color:#FF9C00" data-event="foreColor" data-value="#FF9C00" title="" aria-label="Orange Peel" data-toggle="button" tabindex="-1" data-original-title="Orange Peel"></button><button type="button" class="note-color-btn" style="background-color:#FFFF00" data-event="foreColor" data-value="#FFFF00" title="" aria-label="Yellow" data-toggle="button" tabindex="-1" data-original-title="Yellow"></button><button type="button" class="note-color-btn" style="background-color:#00FF00" data-event="foreColor" data-value="#00FF00" title="" aria-label="Green" data-toggle="button" tabindex="-1" data-original-title="Green"></button><button type="button" class="note-color-btn" style="background-color:#00FFFF" data-event="foreColor" data-value="#00FFFF" title="" aria-label="Cyan" data-toggle="button" tabindex="-1" data-original-title="Cyan"></button><button type="button" class="note-color-btn" style="background-color:#0000FF" data-event="foreColor" data-value="#0000FF" title="" aria-label="Blue" data-toggle="button" tabindex="-1" data-original-title="Blue"></button><button type="button" class="note-color-btn" style="background-color:#9C00FF" data-event="foreColor" data-value="#9C00FF" title="" aria-label="Electric Violet" data-toggle="button" tabindex="-1" data-original-title="Electric Violet"></button><button type="button" class="note-color-btn" style="background-color:#FF00FF" data-event="foreColor" data-value="#FF00FF" title="" aria-label="Magenta" data-toggle="button" tabindex="-1" data-original-title="Magenta"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#F7C6CE" data-event="foreColor" data-value="#F7C6CE" title="" aria-label="Azalea" data-toggle="button" tabindex="-1" data-original-title="Azalea"></button><button type="button" class="note-color-btn" style="background-color:#FFE7CE" data-event="foreColor" data-value="#FFE7CE" title="" aria-label="Karry" data-toggle="button" tabindex="-1" data-original-title="Karry"></button><button type="button" class="note-color-btn" style="background-color:#FFEFC6" data-event="foreColor" data-value="#FFEFC6" title="" aria-label="Egg White" data-toggle="button" tabindex="-1" data-original-title="Egg White"></button><button type="button" class="note-color-btn" style="background-color:#D6EFD6" data-event="foreColor" data-value="#D6EFD6" title="" aria-label="Zanah" data-toggle="button" tabindex="-1" data-original-title="Zanah"></button><button type="button" class="note-color-btn" style="background-color:#CEDEE7" data-event="foreColor" data-value="#CEDEE7" title="" aria-label="Botticelli" data-toggle="button" tabindex="-1" data-original-title="Botticelli"></button><button type="button" class="note-color-btn" style="background-color:#CEE7F7" data-event="foreColor" data-value="#CEE7F7" title="" aria-label="Tropical Blue" data-toggle="button" tabindex="-1" data-original-title="Tropical Blue"></button><button type="button" class="note-color-btn" style="background-color:#D6D6E7" data-event="foreColor" data-value="#D6D6E7" title="" aria-label="Mischka" data-toggle="button" tabindex="-1" data-original-title="Mischka"></button><button type="button" class="note-color-btn" style="background-color:#E7D6DE" data-event="foreColor" data-value="#E7D6DE" title="" aria-label="Twilight" data-toggle="button" tabindex="-1" data-original-title="Twilight"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#E79C9C" data-event="foreColor" data-value="#E79C9C" title="" aria-label="Tonys Pink" data-toggle="button" tabindex="-1" data-original-title="Tonys Pink"></button><button type="button" class="note-color-btn" style="background-color:#FFC69C" data-event="foreColor" data-value="#FFC69C" title="" aria-label="Peach Orange" data-toggle="button" tabindex="-1" data-original-title="Peach Orange"></button><button type="button" class="note-color-btn" style="background-color:#FFE79C" data-event="foreColor" data-value="#FFE79C" title="" aria-label="Cream Brulee" data-toggle="button" tabindex="-1" data-original-title="Cream Brulee"></button><button type="button" class="note-color-btn" style="background-color:#B5D6A5" data-event="foreColor" data-value="#B5D6A5" title="" aria-label="Sprout" data-toggle="button" tabindex="-1" data-original-title="Sprout"></button><button type="button" class="note-color-btn" style="background-color:#A5C6CE" data-event="foreColor" data-value="#A5C6CE" title="" aria-label="Casper" data-toggle="button" tabindex="-1" data-original-title="Casper"></button><button type="button" class="note-color-btn" style="background-color:#9CC6EF" data-event="foreColor" data-value="#9CC6EF" title="" aria-label="Perano" data-toggle="button" tabindex="-1" data-original-title="Perano"></button><button type="button" class="note-color-btn" style="background-color:#B5A5D6" data-event="foreColor" data-value="#B5A5D6" title="" aria-label="Cold Purple" data-toggle="button" tabindex="-1" data-original-title="Cold Purple"></button><button type="button" class="note-color-btn" style="background-color:#D6A5BD" data-event="foreColor" data-value="#D6A5BD" title="" aria-label="Careys Pink" data-toggle="button" tabindex="-1" data-original-title="Careys Pink"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#E76363" data-event="foreColor" data-value="#E76363" title="" aria-label="Mandy" data-toggle="button" tabindex="-1" data-original-title="Mandy"></button><button type="button" class="note-color-btn" style="background-color:#F7AD6B" data-event="foreColor" data-value="#F7AD6B" title="" aria-label="Rajah" data-toggle="button" tabindex="-1" data-original-title="Rajah"></button><button type="button" class="note-color-btn" style="background-color:#FFD663" data-event="foreColor" data-value="#FFD663" title="" aria-label="Dandelion" data-toggle="button" tabindex="-1" data-original-title="Dandelion"></button><button type="button" class="note-color-btn" style="background-color:#94BD7B" data-event="foreColor" data-value="#94BD7B" title="" aria-label="Olivine" data-toggle="button" tabindex="-1" data-original-title="Olivine"></button><button type="button" class="note-color-btn" style="background-color:#73A5AD" data-event="foreColor" data-value="#73A5AD" title="" aria-label="Gulf Stream" data-toggle="button" tabindex="-1" data-original-title="Gulf Stream"></button><button type="button" class="note-color-btn" style="background-color:#6BADDE" data-event="foreColor" data-value="#6BADDE" title="" aria-label="Viking" data-toggle="button" tabindex="-1" data-original-title="Viking"></button><button type="button" class="note-color-btn" style="background-color:#8C7BC6" data-event="foreColor" data-value="#8C7BC6" title="" aria-label="Blue Marguerite" data-toggle="button" tabindex="-1" data-original-title="Blue Marguerite"></button><button type="button" class="note-color-btn" style="background-color:#C67BA5" data-event="foreColor" data-value="#C67BA5" title="" aria-label="Puce" data-toggle="button" tabindex="-1" data-original-title="Puce"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#CE0000" data-event="foreColor" data-value="#CE0000" title="" aria-label="Guardsman Red" data-toggle="button" tabindex="-1" data-original-title="Guardsman Red"></button><button type="button" class="note-color-btn" style="background-color:#E79439" data-event="foreColor" data-value="#E79439" title="" aria-label="Fire Bush" data-toggle="button" tabindex="-1" data-original-title="Fire Bush"></button><button type="button" class="note-color-btn" style="background-color:#EFC631" data-event="foreColor" data-value="#EFC631" title="" aria-label="Golden Dream" data-toggle="button" tabindex="-1" data-original-title="Golden Dream"></button><button type="button" class="note-color-btn" style="background-color:#6BA54A" data-event="foreColor" data-value="#6BA54A" title="" aria-label="Chelsea Cucumber" data-toggle="button" tabindex="-1" data-original-title="Chelsea Cucumber"></button><button type="button" class="note-color-btn" style="background-color:#4A7B8C" data-event="foreColor" data-value="#4A7B8C" title="" aria-label="Smalt Blue" data-toggle="button" tabindex="-1" data-original-title="Smalt Blue"></button><button type="button" class="note-color-btn" style="background-color:#3984C6" data-event="foreColor" data-value="#3984C6" title="" aria-label="Boston Blue" data-toggle="button" tabindex="-1" data-original-title="Boston Blue"></button><button type="button" class="note-color-btn" style="background-color:#634AA5" data-event="foreColor" data-value="#634AA5" title="" aria-label="Butterfly Bush" data-toggle="button" tabindex="-1" data-original-title="Butterfly Bush"></button><button type="button" class="note-color-btn" style="background-color:#A54A7B" data-event="foreColor" data-value="#A54A7B" title="" aria-label="Cadillac" data-toggle="button" tabindex="-1" data-original-title="Cadillac"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#9C0000" data-event="foreColor" data-value="#9C0000" title="" aria-label="Sangria" data-toggle="button" tabindex="-1" data-original-title="Sangria"></button><button type="button" class="note-color-btn" style="background-color:#B56308" data-event="foreColor" data-value="#B56308" title="" aria-label="Mai Tai" data-toggle="button" tabindex="-1" data-original-title="Mai Tai"></button><button type="button" class="note-color-btn" style="background-color:#BD9400" data-event="foreColor" data-value="#BD9400" title="" aria-label="Buddha Gold" data-toggle="button" tabindex="-1" data-original-title="Buddha Gold"></button><button type="button" class="note-color-btn" style="background-color:#397B21" data-event="foreColor" data-value="#397B21" title="" aria-label="Forest Green" data-toggle="button" tabindex="-1" data-original-title="Forest Green"></button><button type="button" class="note-color-btn" style="background-color:#104A5A" data-event="foreColor" data-value="#104A5A" title="" aria-label="Eden" data-toggle="button" tabindex="-1" data-original-title="Eden"></button><button type="button" class="note-color-btn" style="background-color:#085294" data-event="foreColor" data-value="#085294" title="" aria-label="Venice Blue" data-toggle="button" tabindex="-1" data-original-title="Venice Blue"></button><button type="button" class="note-color-btn" style="background-color:#311873" data-event="foreColor" data-value="#311873" title="" aria-label="Meteorite" data-toggle="button" tabindex="-1" data-original-title="Meteorite"></button><button type="button" class="note-color-btn" style="background-color:#731842" data-event="foreColor" data-value="#731842" title="" aria-label="Claret" data-toggle="button" tabindex="-1" data-original-title="Claret"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#630000" data-event="foreColor" data-value="#630000" title="" aria-label="Rosewood" data-toggle="button" tabindex="-1" data-original-title="Rosewood"></button><button type="button" class="note-color-btn" style="background-color:#7B3900" data-event="foreColor" data-value="#7B3900" title="" aria-label="Cinnamon" data-toggle="button" tabindex="-1" data-original-title="Cinnamon"></button><button type="button" class="note-color-btn" style="background-color:#846300" data-event="foreColor" data-value="#846300" title="" aria-label="Olive" data-toggle="button" tabindex="-1" data-original-title="Olive"></button><button type="button" class="note-color-btn" style="background-color:#295218" data-event="foreColor" data-value="#295218" title="" aria-label="Parsley" data-toggle="button" tabindex="-1" data-original-title="Parsley"></button><button type="button" class="note-color-btn" style="background-color:#083139" data-event="foreColor" data-value="#083139" title="" aria-label="Tiber" data-toggle="button" tabindex="-1" data-original-title="Tiber"></button><button type="button" class="note-color-btn" style="background-color:#003163" data-event="foreColor" data-value="#003163" title="" aria-label="Midnight Blue" data-toggle="button" tabindex="-1" data-original-title="Midnight Blue"></button><button type="button" class="note-color-btn" style="background-color:#21104A" data-event="foreColor" data-value="#21104A" title="" aria-label="Valentino" data-toggle="button" tabindex="-1" data-original-title="Valentino"></button><button type="button" class="note-color-btn" style="background-color:#4A1031" data-event="foreColor" data-value="#4A1031" title="" aria-label="Loulou" data-toggle="button" tabindex="-1" data-original-title="Loulou"></button></div></div></div></div><div class="note-color-palette"><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#000000" data-event="backColor" data-value="#000000" title="" aria-label="Black" data-toggle="button" tabindex="-1" data-original-title="Black"></button><button type="button" class="note-color-btn" style="background-color:#424242" data-event="backColor" data-value="#424242" title="" aria-label="Tundora" data-toggle="button" tabindex="-1" data-original-title="Tundora"></button><button type="button" class="note-color-btn" style="background-color:#636363" data-event="backColor" data-value="#636363" title="" aria-label="Dove Gray" data-toggle="button" tabindex="-1" data-original-title="Dove Gray"></button><button type="button" class="note-color-btn" style="background-color:#9C9C94" data-event="backColor" data-value="#9C9C94" title="" aria-label="Star Dust" data-toggle="button" tabindex="-1" data-original-title="Star Dust"></button><button type="button" class="note-color-btn" style="background-color:#CEC6CE" data-event="backColor" data-value="#CEC6CE" title="" aria-label="Pale Slate" data-toggle="button" tabindex="-1" data-original-title="Pale Slate"></button><button type="button" class="note-color-btn" style="background-color:#EFEFEF" data-event="backColor" data-value="#EFEFEF" title="" aria-label="Gallery" data-toggle="button" tabindex="-1" data-original-title="Gallery"></button><button type="button" class="note-color-btn" style="background-color:#F7F7F7" data-event="backColor" data-value="#F7F7F7" title="" aria-label="Alabaster" data-toggle="button" tabindex="-1" data-original-title="Alabaster"></button><button type="button" class="note-color-btn" style="background-color:#FFFFFF" data-event="backColor" data-value="#FFFFFF" title="" aria-label="White" data-toggle="button" tabindex="-1" data-original-title="White"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#FF0000" data-event="backColor" data-value="#FF0000" title="" aria-label="Red" data-toggle="button" tabindex="-1" data-original-title="Red"></button><button type="button" class="note-color-btn" style="background-color:#FF9C00" data-event="backColor" data-value="#FF9C00" title="" aria-label="Orange Peel" data-toggle="button" tabindex="-1" data-original-title="Orange Peel"></button><button type="button" class="note-color-btn" style="background-color:#FFFF00" data-event="backColor" data-value="#FFFF00" title="" aria-label="Yellow" data-toggle="button" tabindex="-1" data-original-title="Yellow"></button><button type="button" class="note-color-btn" style="background-color:#00FF00" data-event="backColor" data-value="#00FF00" title="" aria-label="Green" data-toggle="button" tabindex="-1" data-original-title="Green"></button><button type="button" class="note-color-btn" style="background-color:#00FFFF" data-event="backColor" data-value="#00FFFF" title="" aria-label="Cyan" data-toggle="button" tabindex="-1" data-original-title="Cyan"></button><button type="button" class="note-color-btn" style="background-color:#0000FF" data-event="backColor" data-value="#0000FF" title="" aria-label="Blue" data-toggle="button" tabindex="-1" data-original-title="Blue"></button><button type="button" class="note-color-btn" style="background-color:#9C00FF" data-event="backColor" data-value="#9C00FF" title="" aria-label="Electric Violet" data-toggle="button" tabindex="-1" data-original-title="Electric Violet"></button><button type="button" class="note-color-btn" style="background-color:#FF00FF" data-event="backColor" data-value="#FF00FF" title="" aria-label="Magenta" data-toggle="button" tabindex="-1" data-original-title="Magenta"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#F7C6CE" data-event="backColor" data-value="#F7C6CE" title="" aria-label="Azalea" data-toggle="button" tabindex="-1" data-original-title="Azalea"></button><button type="button" class="note-color-btn" style="background-color:#FFE7CE" data-event="backColor" data-value="#FFE7CE" title="" aria-label="Karry" data-toggle="button" tabindex="-1" data-original-title="Karry"></button><button type="button" class="note-color-btn" style="background-color:#FFEFC6" data-event="backColor" data-value="#FFEFC6" title="" aria-label="Egg White" data-toggle="button" tabindex="-1" data-original-title="Egg White"></button><button type="button" class="note-color-btn" style="background-color:#D6EFD6" data-event="backColor" data-value="#D6EFD6" title="" aria-label="Zanah" data-toggle="button" tabindex="-1" data-original-title="Zanah"></button><button type="button" class="note-color-btn" style="background-color:#CEDEE7" data-event="backColor" data-value="#CEDEE7" title="" aria-label="Botticelli" data-toggle="button" tabindex="-1" data-original-title="Botticelli"></button><button type="button" class="note-color-btn" style="background-color:#CEE7F7" data-event="backColor" data-value="#CEE7F7" title="" aria-label="Tropical Blue" data-toggle="button" tabindex="-1" data-original-title="Tropical Blue"></button><button type="button" class="note-color-btn" style="background-color:#D6D6E7" data-event="backColor" data-value="#D6D6E7" title="" aria-label="Mischka" data-toggle="button" tabindex="-1" data-original-title="Mischka"></button><button type="button" class="note-color-btn" style="background-color:#E7D6DE" data-event="backColor" data-value="#E7D6DE" title="" aria-label="Twilight" data-toggle="button" tabindex="-1" data-original-title="Twilight"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#E79C9C" data-event="backColor" data-value="#E79C9C" title="" aria-label="Tonys Pink" data-toggle="button" tabindex="-1" data-original-title="Tonys Pink"></button><button type="button" class="note-color-btn" style="background-color:#FFC69C" data-event="backColor" data-value="#FFC69C" title="" aria-label="Peach Orange" data-toggle="button" tabindex="-1" data-original-title="Peach Orange"></button><button type="button" class="note-color-btn" style="background-color:#FFE79C" data-event="backColor" data-value="#FFE79C" title="" aria-label="Cream Brulee" data-toggle="button" tabindex="-1" data-original-title="Cream Brulee"></button><button type="button" class="note-color-btn" style="background-color:#B5D6A5" data-event="backColor" data-value="#B5D6A5" title="" aria-label="Sprout" data-toggle="button" tabindex="-1" data-original-title="Sprout"></button><button type="button" class="note-color-btn" style="background-color:#A5C6CE" data-event="backColor" data-value="#A5C6CE" title="" aria-label="Casper" data-toggle="button" tabindex="-1" data-original-title="Casper"></button><button type="button" class="note-color-btn" style="background-color:#9CC6EF" data-event="backColor" data-value="#9CC6EF" title="" aria-label="Perano" data-toggle="button" tabindex="-1" data-original-title="Perano"></button><button type="button" class="note-color-btn" style="background-color:#B5A5D6" data-event="backColor" data-value="#B5A5D6" title="" aria-label="Cold Purple" data-toggle="button" tabindex="-1" data-original-title="Cold Purple"></button><button type="button" class="note-color-btn" style="background-color:#D6A5BD" data-event="backColor" data-value="#D6A5BD" title="" aria-label="Careys Pink" data-toggle="button" tabindex="-1" data-original-title="Careys Pink"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#E76363" data-event="backColor" data-value="#E76363" title="" aria-label="Mandy" data-toggle="button" tabindex="-1" data-original-title="Mandy"></button><button type="button" class="note-color-btn" style="background-color:#F7AD6B" data-event="backColor" data-value="#F7AD6B" title="" aria-label="Rajah" data-toggle="button" tabindex="-1" data-original-title="Rajah"></button><button type="button" class="note-color-btn" style="background-color:#FFD663" data-event="backColor" data-value="#FFD663" title="" aria-label="Dandelion" data-toggle="button" tabindex="-1" data-original-title="Dandelion"></button><button type="button" class="note-color-btn" style="background-color:#94BD7B" data-event="backColor" data-value="#94BD7B" title="" aria-label="Olivine" data-toggle="button" tabindex="-1" data-original-title="Olivine"></button><button type="button" class="note-color-btn" style="background-color:#73A5AD" data-event="backColor" data-value="#73A5AD" title="" aria-label="Gulf Stream" data-toggle="button" tabindex="-1" data-original-title="Gulf Stream"></button><button type="button" class="note-color-btn" style="background-color:#6BADDE" data-event="backColor" data-value="#6BADDE" title="" aria-label="Viking" data-toggle="button" tabindex="-1" data-original-title="Viking"></button><button type="button" class="note-color-btn" style="background-color:#8C7BC6" data-event="backColor" data-value="#8C7BC6" title="" aria-label="Blue Marguerite" data-toggle="button" tabindex="-1" data-original-title="Blue Marguerite"></button><button type="button" class="note-color-btn" style="background-color:#C67BA5" data-event="backColor" data-value="#C67BA5" title="" aria-label="Puce" data-toggle="button" tabindex="-1" data-original-title="Puce"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#CE0000" data-event="backColor" data-value="#CE0000" title="" aria-label="Guardsman Red" data-toggle="button" tabindex="-1" data-original-title="Guardsman Red"></button><button type="button" class="note-color-btn" style="background-color:#E79439" data-event="backColor" data-value="#E79439" title="" aria-label="Fire Bush" data-toggle="button" tabindex="-1" data-original-title="Fire Bush"></button><button type="button" class="note-color-btn" style="background-color:#EFC631" data-event="backColor" data-value="#EFC631" title="" aria-label="Golden Dream" data-toggle="button" tabindex="-1" data-original-title="Golden Dream"></button><button type="button" class="note-color-btn" style="background-color:#6BA54A" data-event="backColor" data-value="#6BA54A" title="" aria-label="Chelsea Cucumber" data-toggle="button" tabindex="-1" data-original-title="Chelsea Cucumber"></button><button type="button" class="note-color-btn" style="background-color:#4A7B8C" data-event="backColor" data-value="#4A7B8C" title="" aria-label="Smalt Blue" data-toggle="button" tabindex="-1" data-original-title="Smalt Blue"></button><button type="button" class="note-color-btn" style="background-color:#3984C6" data-event="backColor" data-value="#3984C6" title="" aria-label="Boston Blue" data-toggle="button" tabindex="-1" data-original-title="Boston Blue"></button><button type="button" class="note-color-btn" style="background-color:#634AA5" data-event="backColor" data-value="#634AA5" title="" aria-label="Butterfly Bush" data-toggle="button" tabindex="-1" data-original-title="Butterfly Bush"></button><button type="button" class="note-color-btn" style="background-color:#A54A7B" data-event="backColor" data-value="#A54A7B" title="" aria-label="Cadillac" data-toggle="button" tabindex="-1" data-original-title="Cadillac"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#9C0000" data-event="backColor" data-value="#9C0000" title="" aria-label="Sangria" data-toggle="button" tabindex="-1" data-original-title="Sangria"></button><button type="button" class="note-color-btn" style="background-color:#B56308" data-event="backColor" data-value="#B56308" title="" aria-label="Mai Tai" data-toggle="button" tabindex="-1" data-original-title="Mai Tai"></button><button type="button" class="note-color-btn" style="background-color:#BD9400" data-event="backColor" data-value="#BD9400" title="" aria-label="Buddha Gold" data-toggle="button" tabindex="-1" data-original-title="Buddha Gold"></button><button type="button" class="note-color-btn" style="background-color:#397B21" data-event="backColor" data-value="#397B21" title="" aria-label="Forest Green" data-toggle="button" tabindex="-1" data-original-title="Forest Green"></button><button type="button" class="note-color-btn" style="background-color:#104A5A" data-event="backColor" data-value="#104A5A" title="" aria-label="Eden" data-toggle="button" tabindex="-1" data-original-title="Eden"></button><button type="button" class="note-color-btn" style="background-color:#085294" data-event="backColor" data-value="#085294" title="" aria-label="Venice Blue" data-toggle="button" tabindex="-1" data-original-title="Venice Blue"></button><button type="button" class="note-color-btn" style="background-color:#311873" data-event="backColor" data-value="#311873" title="" aria-label="Meteorite" data-toggle="button" tabindex="-1" data-original-title="Meteorite"></button><button type="button" class="note-color-btn" style="background-color:#731842" data-event="backColor" data-value="#731842" title="" aria-label="Claret" data-toggle="button" tabindex="-1" data-original-title="Claret"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#630000" data-event="backColor" data-value="#630000" title="" aria-label="Rosewood" data-toggle="button" tabindex="-1" data-original-title="Rosewood"></button><button type="button" class="note-color-btn" style="background-color:#7B3900" data-event="backColor" data-value="#7B3900" title="" aria-label="Cinnamon" data-toggle="button" tabindex="-1" data-original-title="Cinnamon"></button><button type="button" class="note-color-btn" style="background-color:#846300" data-event="backColor" data-value="#846300" title="" aria-label="Olive" data-toggle="button" tabindex="-1" data-original-title="Olive"></button><button type="button" class="note-color-btn" style="background-color:#295218" data-event="backColor" data-value="#295218" title="" aria-label="Parsley" data-toggle="button" tabindex="-1" data-original-title="Parsley"></button><button type="button" class="note-color-btn" style="background-color:#083139" data-event="backColor" data-value="#083139" title="" aria-label="Tiber" data-toggle="button" tabindex="-1" data-original-title="Tiber"></button><button type="button" class="note-color-btn" style="background-color:#003163" data-event="backColor" data-value="#003163" title="" aria-label="Midnight Blue" data-toggle="button" tabindex="-1" data-original-title="Midnight Blue"></button><button type="button" class="note-color-btn" style="background-color:#21104A" data-event="backColor" data-value="#21104A" title="" aria-label="Valentino" data-toggle="button" tabindex="-1" data-original-title="Valentino"></button><button type="button" class="note-color-btn" style="background-color:#4A1031" data-event="backColor" data-value="#4A1031" title="" aria-label="Loulou" data-toggle="button" tabindex="-1" data-original-title="Loulou"></button></div></div></div></div></div></div></div><div class="note-btn-group btn-group note-table"><div class="note-btn-group btn-group"><button type="button" class="note-btn btn btn-light btn-sm dropdown-toggle" tabindex="-1" data-toggle="dropdown" title="" aria-label="Table" data-original-title="Table"><i class="note-icon-table"></i></button><div class="note-dropdown-menu dropdown-menu note-table" role="list" aria-label="Table"><div class="note-dimension-picker"><div class="note-dimension-picker-mousecatcher" data-event="insertTable" data-value="1x1" style="width: 10em; height: 10em;"><div class="note-dimension-picker-highlighted"><div class="note-dimension-picker-unhighlighted"></div><div class="note-dimension-display">1 x 1</div></div></div></div></div></div></div><div class="note-btn-group btn-group note-insert"><button type="button" class="note-btn btn btn-light btn-sm" tabindex="-1" title="" aria-label="Link (CTRL+K)" data-original-title="Link (CTRL+K)"><i class="note-icon-link"></i></button><button type="button" class="note-btn btn btn-light btn-sm" tabindex="-1" title="" aria-label="Picture" data-original-title="Picture"><i class="note-icon-picture"></i></button><button type="button" class="note-btn btn btn-light btn-sm" tabindex="-1" title="" aria-label="Video" data-original-title="Video"><i class="note-icon-video"></i></button></div><div class="note-btn-group btn-group note-view"><button type="button" class="note-btn btn btn-light btn-sm btn-fullscreen" tabindex="-1" title="" aria-label="Full Screen" data-original-title="Full Screen"><i class="note-icon-arrows-alt"></i></button><button type="button" class="note-btn btn btn-light btn-sm" tabindex="-1" title="" aria-label="Undo (CTRL+Z)" data-original-title="Undo (CTRL+Z)"><i class="note-icon-undo"></i></button><button type="button" class="note-btn btn btn-light btn-sm" tabindex="-1" title="" aria-label="Redo (CTRL+Y)" data-original-title="Redo (CTRL+Y)"><i class="note-icon-redo"></i></button></div></div><div class="note-editing-area"><div class="note-handle"><div class="note-control-selection"><div class="note-control-selection-bg"></div><div class="note-control-holder note-control-nw"></div><div class="note-control-holder note-control-ne"></div><div class="note-control-holder note-control-sw"></div><div class="note-control-sizing note-control-se"></div><div class="note-control-selection-info"></div></div></div><textarea class="note-codable" aria-multiline="true"></textarea><div class="note-editable card-block" role="textbox" aria-multiline="true" spellcheck="true" autocorrect="true" style="height: 200px;" contenteditable="true"><p><br></p></div></div><output class="note-status-output" role="status" aria-live="polite"><div class="note-statusbar" role="status"><output class="note-status-output" aria-live="polite"></output><div class="note-resizebar" aria-label="Resize"><div class="note-icon-bar"><div class="note-icon-bar"><div class="note-icon-bar"></div></div></div></div></div></output><div class="modal note-modal link-dialog" aria-hidden="false" tabindex="-1" role="dialog" aria-label="Insert Link"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h4 class="modal-title">Insert Link</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close" aria-hidden="true">×</button></div><div class="modal-body"><div class="form-group note-form-group"><label for="note-dialog-link-txt-16320853435371" class="note-form-label">Text to display</label><input id="note-dialog-link-txt-16320853435371" class="note-link-text form-control note-form-control note-input" type="text"></div><div class="form-group note-form-group"><label for="note-dialog-link-url-16320853435371" class="note-form-label">To what URL should this link go?</label><input id="note-dialog-link-url-16320853435371" class="note-link-url form-control note-form-control note-input" type="text" value="http://"></div><div class="form-check sn-checkbox-open-in-new-window"><label class="form-check-label"><input type="checkbox" class="form-check-input" checked="" aria-label="Open in new window" aria-checked="true"> Open in new window</label></div><div class="form-check sn-checkbox-use-protocol"><label class="form-check-label"><input type="checkbox" class="form-check-input" checked="" aria-label="Use default protocol" aria-checked="true"> Use default protocol</label></div></div><div class="modal-footer"><input type="button" href="#" class="btn btn-primary note-btn note-btn-primary note-link-btn" value="Insert Link" disabled=""></div></div></div></div><div class="note-popover popover in note-link-popover bottom"><div class="arrow"><div class="popover-content note-children-container"><span><a target="_blank"></a>&nbsp;</span><div class="note-btn-group btn-group note-link"><button type="button" class="note-btn btn btn-light btn-sm" tabindex="-1" title="" aria-label="Edit" data-original-title="Edit"><i class="note-icon-link"></i></button><button type="button" class="note-btn btn btn-light btn-sm" tabindex="-1" title="" aria-label="Unlink" data-original-title="Unlink"><i class="note-icon-chain-broken"></i></button></div></div></div></div><div class="modal note-modal" aria-hidden="false" tabindex="-1" role="dialog" aria-label="Insert Image"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h4 class="modal-title">Insert Image</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close" aria-hidden="true">×</button></div><div class="modal-body"><div class="form-group note-form-group note-group-select-from-files"><label for="note-dialog-image-file-16320853435371" class="note-form-label">Select from files</label><input id="note-dialog-image-file-16320853435371" class="note-image-input form-control-file note-form-control note-input" type="file" name="files" accept="image/*" multiple="multiple"></div><div class="form-group note-group-image-url"><label for="note-dialog-image-url-16320853435371" class="note-form-label">Image URL</label><input id="note-dialog-image-url-16320853435371" class="note-image-url form-control note-form-control note-input" type="text"></div></div><div class="modal-footer"><input type="button" href="#" class="btn btn-primary note-btn note-btn-primary note-image-btn" value="Insert Image" disabled=""></div></div></div></div><div class="note-popover popover in note-image-popover bottom"><div class="arrow"><div class="popover-content note-children-container"><div class="note-btn-group btn-group note-resize"><button type="button" class="note-btn btn btn-light btn-sm" tabindex="-1" title="" aria-label="Resize full" data-original-title="Resize full"><span class="note-fontsize-10">100%</span></button><button type="button" class="note-btn btn btn-light btn-sm" tabindex="-1" title="" aria-label="Resize half" data-original-title="Resize half"><span class="note-fontsize-10">50%</span></button><button type="button" class="note-btn btn btn-light btn-sm" tabindex="-1" title="" aria-label="Resize quarter" data-original-title="Resize quarter"><span class="note-fontsize-10">25%</span></button><button type="button" class="note-btn btn btn-light btn-sm" tabindex="-1" title="" aria-label="Original size" data-original-title="Original size"><i class="note-icon-rollback"></i></button></div><div class="note-btn-group btn-group note-float"><button type="button" class="note-btn btn btn-light btn-sm" tabindex="-1" title="" aria-label="Float Left" data-original-title="Float Left"><i class="note-icon-float-left"></i></button><button type="button" class="note-btn btn btn-light btn-sm" tabindex="-1" title="" aria-label="Float Right" data-original-title="Float Right"><i class="note-icon-float-right"></i></button><button type="button" class="note-btn btn btn-light btn-sm" tabindex="-1" title="" aria-label="Remove float" data-original-title="Remove float"><i class="note-icon-rollback"></i></button></div><div class="note-btn-group btn-group note-remove"><button type="button" class="note-btn btn btn-light btn-sm" tabindex="-1" title="" aria-label="Remove Image" data-original-title="Remove Image"><i class="note-icon-trash"></i></button></div></div></div></div><div class="note-popover popover in note-table-popover bottom"><div class="arrow"><div class="popover-content note-children-container"><div class="note-btn-group btn-group note-add"><button type="button" class="note-btn btn btn-light btn-sm btn-md" tabindex="-1" title="" aria-label="Add row below" data-original-title="Add row below"><i class="note-icon-row-below"></i></button><button type="button" class="note-btn btn btn-light btn-sm btn-md" tabindex="-1" title="" aria-label="Add row above" data-original-title="Add row above"><i class="note-icon-row-above"></i></button><button type="button" class="note-btn btn btn-light btn-sm btn-md" tabindex="-1" title="" aria-label="Add column left" data-original-title="Add column left"><i class="note-icon-col-before"></i></button><button type="button" class="note-btn btn btn-light btn-sm btn-md" tabindex="-1" title="" aria-label="Add column right" data-original-title="Add column right"><i class="note-icon-col-after"></i></button></div><div class="note-btn-group btn-group note-delete"><button type="button" class="note-btn btn btn-light btn-sm btn-md" tabindex="-1" title="" aria-label="Delete row" data-original-title="Delete row"><i class="note-icon-row-remove"></i></button><button type="button" class="note-btn btn btn-light btn-sm btn-md" tabindex="-1" title="" aria-label="Delete column" data-original-title="Delete column"><i class="note-icon-col-remove"></i></button><button type="button" class="note-btn btn btn-light btn-sm btn-md" tabindex="-1" title="" aria-label="Delete table" data-original-title="Delete table"><i class="note-icon-trash"></i></button></div></div></div></div><div class="modal note-modal" aria-hidden="false" tabindex="-1" role="dialog" aria-label="Insert Video"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h4 class="modal-title">Insert Video</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close" aria-hidden="true">×</button></div><div class="modal-body"><div class="form-group note-form-group row-fluid"><label for="note-dialog-video-url-16320853435371" class="note-form-label">Video URL <small class="text-muted">(YouTube, Vimeo, Vine, Instagram, DailyMotion or Youku)</small></label><input id="note-dialog-video-url-16320853435371" class="note-video-url form-control note-form-control note-input" type="text"></div></div><div class="modal-footer"><input type="button" href="#" class="btn btn-primary note-btn note-btn-primary note-video-btn" value="Insert Video" disabled=""></div></div></div></div><div class="modal note-modal" aria-hidden="false" tabindex="-1" role="dialog" aria-label="Help"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h4 class="modal-title">Help</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close" aria-hidden="true">×</button></div><div class="modal-body" style="max-height: 300px; overflow: scroll;"><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>ENTER</kbd></label><span>Insert Paragraph</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+Z</kbd></label><span>Undoes the last command</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+Y</kbd></label><span>Redoes the last command</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>TAB</kbd></label><span>Tab</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>SHIFT+TAB</kbd></label><span>Untab</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+B</kbd></label><span>Set a bold style</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+I</kbd></label><span>Set a italic style</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+U</kbd></label><span>Set a underline style</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+SHIFT+S</kbd></label><span>Set a strikethrough style</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+BACKSLASH</kbd></label><span>Clean a style</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+SHIFT+L</kbd></label><span>Set left align</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+SHIFT+E</kbd></label><span>Set center align</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+SHIFT+R</kbd></label><span>Set right align</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+SHIFT+J</kbd></label><span>Set full align</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+SHIFT+NUM7</kbd></label><span>Toggle unordered list</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+SHIFT+NUM8</kbd></label><span>Toggle ordered list</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+LEFTBRACKET</kbd></label><span>Outdent on current paragraph</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+RIGHTBRACKET</kbd></label><span>Indent on current paragraph</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+NUM0</kbd></label><span>Change current block's format as a paragraph(P tag)</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+NUM1</kbd></label><span>Change current block's format as H1</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+NUM2</kbd></label><span>Change current block's format as H2</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+NUM3</kbd></label><span>Change current block's format as H3</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+NUM4</kbd></label><span>Change current block's format as H4</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+NUM5</kbd></label><span>Change current block's format as H5</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+NUM6</kbd></label><span>Change current block's format as H6</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+ENTER</kbd></label><span>Insert horizontal rule</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+K</kbd></label><span>Show Link Dialog</span></div><div class="modal-footer"><p class="text-center"><a href="http://summernote.org/" target="_blank">Summernote 0.8.16</a> · <a href="https://github.com/summernote/summernote" target="_blank">Project</a> · <a href="https://github.com/summernote/summernote/issues" target="_blank">Issues</a></p></div></div></div></div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+    <!--                <div class="card">
+                        <div class="card-header">
+                            <h5 class="mb-0 h6">Product Shipping Cost</h5>
+                        </div>
+                        <div class="card-body">
+    
+                        </div>
+                    </div>-->
+    
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="mb-0 h6">PDF Specification</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group row">
+                                <label class="col-md-3 col-form-label" for="signinSrEmail">PDF Specification</label>
+                                <div class="col-md-8">
+                                    <div class="input-group" data-toggle="aizuploader" data-type="document">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text bg-soft-secondary font-weight-medium">Browse</div>
+                                        </div>
+                                        <div class="form-control file-amount">Choose File</div>
+                                        <input type="hidden" name="pdf" class="selected-files">
+                                    </div>
+                                    <div class="file-preview box sm">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="mb-0 h6">SEO Meta Tags</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group row">
+                                <label class="col-md-3 col-from-label">Meta Title</label>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control" name="meta_title" placeholder="Meta Title">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-md-3 col-from-label">Description</label>
+                                <div class="col-md-8">
+                                    <textarea name="meta_description" rows="8" class="form-control"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-md-3 col-form-label" for="signinSrEmail">Meta Image</label>
+                                <div class="col-md-8">
+                                    <div class="input-group" data-toggle="aizuploader" data-type="image">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text bg-soft-secondary font-weight-medium">Browse</div>
+                                        </div>
+                                        <div class="form-control file-amount">Choose File</div>
+                                        <input type="hidden" name="meta_img" class="selected-files">
+                                    </div>
+                                    <div class="file-preview box sm">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+    
+                <div class="col-lg-4">
+    
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="mb-0 h6">
+                                Shipping Configuration
+                            </h5>
+                        </div>
+    
+                        <div class="card-body">
+                                                    <div class="form-group row">
+                                <label class="col-md-6 col-from-label">Free Shipping</label>
+                                <div class="col-md-6">
+                                    <label class="aiz-switch aiz-switch-success mb-0">
+                                        <input type="radio" name="shipping_type" value="free" checked="">
+                                        <span></span>
+                                    </label>
+                                </div>
+                            </div>
+    
+                            <div class="form-group row">
+                                <label class="col-md-6 col-from-label">Flat Rate</label>
+                                <div class="col-md-6">
+                                    <label class="aiz-switch aiz-switch-success mb-0">
+                                        <input type="radio" name="shipping_type" value="flat_rate">
+                                        <span></span>
+                                    </label>
+                                </div>
+                            </div>
+    
+                            <div class="flat_rate_shipping_div" style="display: none">
+                                <div class="form-group row">
+                                    <label class="col-md-6 col-from-label">Shipping cost</label>
+                                    <div class="col-md-6">
+                                        <input type="number" min="0" value="0" step="0.01" placeholder="Shipping cost" name="flat_shipping_cost" class="form-control" required="" lang="en">
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="form-group row">
+                                <label class="col-md-6 col-from-label">Is Product Quantity Mulitiply</label>
+                                <div class="col-md-6">
+                                    <label class="aiz-switch aiz-switch-success mb-0">
+                                        <input type="checkbox" name="is_quantity_multiplied" value="1">
+                                        <span></span>
+                                    </label>
+                                </div>
+                            </div>
+                                                </div>
+                    </div>
+    
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="mb-0 h6">Low Stock Quantity Warning</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group mb-3">
+                                <label for="name">
+                                    Quantity
+                                </label>
+                                <input type="number" name="low_stock_quantity" value="1" min="0" step="1" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="mb-0 h6">
+                                Stock Visibility State
+                            </h5>
+                        </div>
+    
+                        <div class="card-body">
+    
+                            <div class="form-group row">
+                                <label class="col-md-6 col-from-label">Show Stock Quantity</label>
+                                <div class="col-md-6">
+                                    <label class="aiz-switch aiz-switch-success mb-0">
+                                        <input type="radio" name="stock_visibility_state" value="quantity" checked="">
+                                        <span></span>
+                                    </label>
+                                </div>
+                            </div>
+    
+                            <div class="form-group row">
+                                <label class="col-md-6 col-from-label">Show Stock With Text Only</label>
+                                <div class="col-md-6">
+                                    <label class="aiz-switch aiz-switch-success mb-0">
+                                        <input type="radio" name="stock_visibility_state" value="text">
+                                        <span></span>
+                                    </label>
+                                </div>
+                            </div>
+    
+                            <div class="form-group row">
+                                <label class="col-md-6 col-from-label">Hide Stock</label>
+                                <div class="col-md-6">
+                                    <label class="aiz-switch aiz-switch-success mb-0">
+                                        <input type="radio" name="stock_visibility_state" value="hide">
+                                        <span></span>
+                                    </label>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+    
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="mb-0 h6">Cash On Delivery</h5>
+                        </div>
+                        <div class="card-body">
+                                                        <div class="form-group row">
+                                    <label class="col-md-6 col-from-label">Status</label>
+                                    <div class="col-md-6">
+                                        <label class="aiz-switch aiz-switch-success mb-0">
+                                            <input type="checkbox" name="cash_on_delivery" value="1" checked="">
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                                </div>
+                    </div>
+    
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="mb-0 h6">Featured</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group row">
+                                <label class="col-md-6 col-from-label">Status</label>
+                                <div class="col-md-6">
+                                    <label class="aiz-switch aiz-switch-success mb-0">
+                                        <input type="checkbox" name="featured" value="1">
+                                        <span></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="mb-0 h6">Todays Deal</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group row">
+                                <label class="col-md-6 col-from-label">Status</label>
+                                <div class="col-md-6">
+                                    <label class="aiz-switch aiz-switch-success mb-0">
+                                        <input type="checkbox" name="todays_deal" value="1">
+                                        <span></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="mb-0 h6">Flash Deal</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group mb-3">
+                                <label for="name">
+                                    Add To Flash
+                                </label>
+                                <div class="dropdown bootstrap-select form-control aiz-"><select class="form-control aiz-selectpicker" name="flash_deal_id" id="flash_deal" tabindex="-98">
+                                    <option value="">Choose Flash Title</option>
+                                                                        <option value="1">
+                                            Winter Sell
+                                        </option>
+                                                                        <option value="2">
+                                            Falsh sale
+                                        </option>
+                                                                </select><button type="button" class="btn dropdown-toggle btn-light" data-toggle="dropdown" role="combobox" aria-owns="bs-select-7" aria-haspopup="listbox" aria-expanded="false" data-id="flash_deal" title="Choose Flash Title"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">Choose Flash Title</div></div> </div></button><div class="dropdown-menu "><div class="inner show" role="listbox" id="bs-select-7" tabindex="-1"><ul class="dropdown-menu inner show" role="presentation"></ul></div></div></div>
+                            </div>
+    
+                            <div class="form-group mb-3">
+                                <label for="name">
+                                    Discount
+                                </label>
+                                <input type="number" name="flash_discount" value="0" min="0" step="1" class="form-control">
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="name">
+                                    Discount Type
+                                </label>
+                                <div class="dropdown bootstrap-select form-control aiz-"><select class="form-control aiz-selectpicker" name="flash_discount_type" id="flash_discount_type" tabindex="-98">
+                                    <option value="">Choose Discount Type</option>
+                                    <option value="amount">Flat</option>
+                                    <option value="percent">Percent</option>
+                                </select><button type="button" class="btn dropdown-toggle btn-light" data-toggle="dropdown" role="combobox" aria-owns="bs-select-8" aria-haspopup="listbox" aria-expanded="false" data-id="flash_discount_type" title="Choose Discount Type"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">Choose Discount Type</div></div> </div></button><div class="dropdown-menu "><div class="inner show" role="listbox" id="bs-select-8" tabindex="-1"><ul class="dropdown-menu inner show" role="presentation"></ul></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="mb-0 h6">Estimate Shipping Time</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group mb-3">
+                                <label for="name">
+                                    Shipping Days
+                                </label>
+                                <div class="input-group">
+                                    <input type="number" class="form-control" name="est_shipping_days" min="1" step="1" placeholder="Shipping Days">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputGroupPrepend">Days</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="mb-0 h6">VAT &amp; Tax</h5>
+                        </div>
+                        <div class="card-body">
+                                                    <label for="name">
+                                Tax
+                                <input type="hidden" value="3" name="tax_id[]">
+                            </label>
+    
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <input type="number" min="0" value="0" step="0.01" placeholder="Tax" name="tax[]" class="form-control" required="" lang="en">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <div class="dropdown bootstrap-select form-control aiz-"><select class="form-control aiz-selectpicker" name="tax_type[]" tabindex="-98">
+                                        <option value="amount">Flat</option>
+                                        <option value="percent">Percent</option>
+                                    </select><button type="button" class="btn dropdown-toggle btn-light" data-toggle="dropdown" role="combobox" aria-owns="bs-select-9" aria-haspopup="listbox" aria-expanded="false" title="Flat"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">Flat</div></div> </div></button><div class="dropdown-menu "><div class="inner show" role="listbox" id="bs-select-9" tabindex="-1"><ul class="dropdown-menu inner show" role="presentation"></ul></div></div></div>
+                                </div>
+                            </div>
+                                                </div>
+                    </div>
+    
+                </div>
+                <div class="col-12">
+                    <div class="btn-toolbar float-right mb-3" role="toolbar" aria-label="Toolbar with button groups">
+                        <div class="btn-group mr-2" role="group" aria-label="First group">
+                            <button type="submit" name="button" value="draft" class="btn btn-warning">Save As Draft</button>
+                        </div>
+                        <div class="btn-group mr-2" role="group" aria-label="Third group">
+                            <button type="submit" name="button" value="unpublish" class="btn btn-primary">Save &amp; Unpublish</button>
+                        </div>
+                        <div class="btn-group" role="group" aria-label="Second group">
+                            <button type="submit" name="button" value="publish" class="btn btn-success">Save &amp; Publish</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    
+                    </div>
+                    <div class="bg-white text-center py-3 px-15px px-lg-25px mt-auto">
+                        <p class="mb-0">©  v5.2</p>
+                    </div>
+                </div>
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- End of Main Content -->
+
+            <!-- Footer -->
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright &copy; Your Website 2021</span>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" href="../../Guesthomepage.php">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="vendor/chart.js/Chart.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="js/demo/chart-area-demo.js"></script>
+    <script src="js/demo/chart-pie-demo.js"></script>
+
+</body>
+
+</html>

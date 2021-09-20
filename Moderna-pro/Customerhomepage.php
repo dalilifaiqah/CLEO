@@ -79,7 +79,7 @@
           </li>-->
           <li><a href="3contact.html">Contact Us</a></li>
           <li><a href="/MasterCLEO/Moderna-pro/customer dashboard/paper-dashboard-master/examples/3dashboard.html">My Dashboard  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
-          <li><a href="Guesthomepage.php" class="sign-up-btn">Log Out</a></li>
+          <li><a href="4logout.html" class="sign-up-btn">Log Out</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -267,7 +267,7 @@
         <div class="row">
           <div class="col-lg-6 video-box">
             <img src="assets/img/genshin.jpg" class="img-fluid" alt="">
-            <a href="assets/video/Genshin.mp4" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
+            <a href="assets/video/Genshin2.mp4" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
           </div>
 
           <div class="col-lg-6 d-flex flex-column justify-content-center p-5">

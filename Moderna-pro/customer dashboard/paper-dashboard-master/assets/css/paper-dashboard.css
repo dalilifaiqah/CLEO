@@ -245,7 +245,7 @@ Copyright (c) 2015 Daniel Eden
   font-weight: 600;
   font-size: 0.8571em;
   line-height: 1.35em;
-  text-transform: uppercase;
+  text-transform: capitalize;
   border: none;
   margin: 10px 1px;
   border-radius: 3px;
@@ -422,7 +422,7 @@ Copyright (c) 2015 Daniel Eden
     top: 1px; }
 
 .btn-primary {
-  background-color: #ffc107;
+  background-color: #ffbf00;
   color: #FFFFFF; }
   .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .btn-primary:active:focus, .btn-primary:active:hover, .btn-primary.active:focus, .btn-primary.active:hover,
   .show > .btn-primary.dropdown-toggle,
@@ -1446,7 +1446,7 @@ p.description {
 
 .text-primary,
 a.text-primary:focus, a.text-primary:hover {
-  color: #51cbce !important; }
+  color: #fff !important; }
 
 .text-info,
 a.text-info:focus, a.text-info:hover {
@@ -3307,7 +3307,7 @@ License - nucleoapp.com/license/
   .off-canvas-sidebar[data-active-color="danger"] .nav li.active > a[data-toggle="collapse"] i,
   .off-canvas-sidebar[data-active-color="danger"] .nav li.active > a[data-toggle="collapse"] ~ div > ul > li.active .sidebar-mini-icon,
   .off-canvas-sidebar[data-active-color="danger"] .nav li.active > a[data-toggle="collapse"] ~ div > ul > li.active > a {
-    color: #ef8157;
+    color: #ffbf00;
     opacity: 1; }
   .sidebar[data-active-color="default"] .nav li.active > a,
   .sidebar[data-active-color="default"] .nav li.active > a i,
@@ -3633,7 +3633,7 @@ License - nucleoapp.com/license/
 .card {
   border-radius: 12px;
   box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
-  background-color: #ca8bb7;
+  background-color: #90769e;
   color: #252422;
   margin-bottom: 20px;
   position: relative;

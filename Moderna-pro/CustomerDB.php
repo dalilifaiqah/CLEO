@@ -72,7 +72,7 @@ if (isset($_POST['signup'])) {
             $email = $row['email'];
     
             if ($verified == 1) {
-                header("Location:/MasterCLEO/Moderna-pro/Guesthomepage.php");
+                header("Location:/MasterCLEO/Moderna-pro/Customerhomepage.php");
                            
             } else {
                 echo  "Please verify your account and try again.";

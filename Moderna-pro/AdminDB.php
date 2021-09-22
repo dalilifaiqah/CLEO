@@ -52,7 +52,7 @@ if (isset($_POST['signup'])) {
 
         if($count2 == 1){
             //$row = $result->fetch_assoc();
-            header("Location: Guesthomepage.php");
+            header("Location: /MasterCLEO/Moderna-pro/2_admin_pages_here/startbootstrap-sb-admin-2-gh-pages/");
         }else{
             echo '<br>Login failed';
         }

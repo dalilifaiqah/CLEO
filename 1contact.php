@@ -21,7 +21,8 @@ if(!$con2){
 }
 
   if ($con2->query($sql) === TRUE){
-        echo "<h2>Thanks, your request has been submitted!</h2>";
+        //echo "<h2>Thanks, your request has been submitted!</h2>";
+        header("Location:/MasterCLEO/Moderna-pro/1successfulfeedback.html");
   }
 
 ?>

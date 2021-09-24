@@ -48,7 +48,9 @@
                         <a href="CustomerLogin.php" class="submit-link submit">Log In</a>
                     </div>
                     <div class="form-group">
-                        <a href="../../Guesthomepage.php" class="submit-link submit">Back to website</a>
+                        <!--<a href="../../Guesthomepage.php" class="submit-link submit">Back to website</a>-->
+                        <p>By clicking Sign Up, you agree to our <a href="https://www.freeprivacypolicy.com/live/02e3012e-de66-4b6a-a831-8de595a84496"> Terms and Condition</a> 
+                        and <a href="https://www.freeprivacypolicy.com/live/3629ced9-9e17-40cc-abbf-dfd879b204e8">Privacy Policy</a> . <p>
                     </div>
                 </form>
             </div>

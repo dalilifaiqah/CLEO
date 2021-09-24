@@ -325,8 +325,8 @@
                     <div class="card shadow mb-4">
                         <!-- Card Header - Dropdown -->
                         <div
-                            class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                            <h6 class="m-0 font-weight-bold text-primary">Revenue Sources</h6>
+                            class="card-header py-3 d-flex flex-row align-items-center justify-content-between" style="background-color: whitesmoke;">
+                            <h6 class="m-0 font-weight-bold text-primary">Total Product Sales</h6>
                             <!--<div class="dropdown no-arrow">
                                 <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -452,30 +452,28 @@
                         </div>
                     </div>
 
-                    <!-- Content Row -->
-
-                    <div class="row gutters-10">
-                        <div class="col-md-6">
-                            <div class="card">
-                                <div class="card-header">
-                                    <h6 class="mb-0 fs-14">Category wise product sale</h6>
-                                </div>
-                                <div class="card-body"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
-                                    <canvas id="graph-1" class="w-100 chartjs-render-monitor" style="display: block; height: 652px; width: 574px;" width="688" height="782"></canvas>
-                                </div>
-                            </div>
+                    <!-- Bar chart 1 -->
+                    <div class="card shadow mb-4">
+                        <div class="card-header card-header-color py-3" style="background-color: whitesmoke;">
+                            <h6 class="m-0 font-weight-bold text-primary">Category Wise Product Sales Revenue</h6>
                         </div>
-                        <div class="col-md-6">
-                            <div class="card">
-                                <div class="card-header">
-                                    <h6 class="mb-0 fs-14">Category wise product stock</h6>
-                                </div>
-                                <div class="card-body"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
-                                    <canvas id="graph-2" class="w-100 chartjs-render-monitor" style="display: block; height: 652px; width: 574px;" width="688" height="782"></canvas>
-                                </div>
+                        <div class="card-body">
+                            <div class="chart-bar"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+                                <canvas id="myBarChart" style="display: block; height: 320px; width: 826px;" class="chartjs-render-monitor" width="991" height="384"></canvas>
                             </div>
                         </div>
                     </div>
+                    <!-- Bar chart 2 -->
+                    <!--<div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary">Bar Chart</h6>
+                        </div>
+                        <div class="card-body">
+                            <div class="chart-bar"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+                                <canvas id="myBarChart" style="display: block; height: 320px; width: 826px;" class="chartjs-render-monitor" width="991" height="384"></canvas>
+                            </div>
+                        </div>
+                    </div>-->
 
                 </div>
                 <!-- /.container-fluid -->
@@ -542,6 +540,7 @@
     <!-- Page level custom scripts -->
     <script src="js/demo/chart-area-demo.js"></script>
     <script src="js/demo/chart-pie-demo.js"></script>
+    <script src="js/demo/chart-bar-demo.js"></script>
     <script src="js/demo/datatables-demo.js"></script>
 
     <!-- Scripts from orange ecommerce reference template

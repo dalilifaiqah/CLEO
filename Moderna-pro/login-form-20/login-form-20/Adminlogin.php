@@ -35,7 +35,7 @@
 		      			<input type="email" name="email" class="form-control" placeholder="Email" required>
 		      		</div>
 	            <div class="form-group">
-	              <input id="password-field" type="password" name="password" class="form-control" placeholder="Password" required>
+	              <input id="password-field" type="password" name="password" class="form-control" placeholder="Password" minlength = "6" required>
 	              <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
 	            </div>
 	            <div class="form-group">

@@ -29,7 +29,7 @@
                         <input type="text" class="form-input" name="email" id="email" placeholder="Email"/>
                     </div>
                     <div class="form-group">
-                        <input type="password" class="form-input" name="password" id="password" placeholder="Password"/>
+                        <input type="password" class="form-input" name="password" id="password" placeholder="Password" minlength = "6" required/>
                         <span toggle="#password" class="zmdi zmdi-eye field-icon toggle-password"></span>
                     </div>
                     <!--<div class="form-group">

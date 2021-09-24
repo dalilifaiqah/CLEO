@@ -7,11 +7,11 @@ var ctx = document.getElementById("myPieChart");
 var myPieChart = new Chart(ctx, {
   type: 'doughnut',
   data: {
-    labels: ["Direct", "Referral", "Social"],
+    labels: ["Genshin", "Valorant", "Mobile Legend", "PUBG", "Apex Legend"],
     datasets: [{
-      data: [55, 30, 15],
-      backgroundColor: ['#4e73df', '#1cc88a', '#36b9cc'],
-      hoverBackgroundColor: ['#2e59d9', '#17a673', '#2c9faf'],
+      data: [35, 10, 20, 25, 10],
+      backgroundColor: ['#F93822', '#D62598', '#4E008E', '#00249C', '#FFD700'],
+      hoverBackgroundColor: ['#F93822', '#D62598', '#4E008E', '#00249C', '#FFD700'],
       hoverBorderColor: "rgba(234, 236, 244, 1)",
     }],
   },

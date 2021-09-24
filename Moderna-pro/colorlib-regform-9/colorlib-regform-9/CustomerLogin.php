@@ -37,7 +37,7 @@
                         <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>
                     </div>-->
                     <div class="form-group">
-                        <a href="ForgotPasswordCust.html" style="color: saddlebrown;">Forgot password?</a>
+                        <a href="FPasswordCust.php" style="color: saddlebrown;">Forgot password?</a>
                     </div>
                     <div class="form-group">
                         

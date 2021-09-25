@@ -5,13 +5,14 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Portfolio Details - Moderna Bootstrap Template</title>
+  <title>CLEO</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+   <!-- Favicons -->
+   <link rel="icon" href="assets/img/icon1.png">
+   <!--<link href="assets/img/logo atas.png" rel="icon">
+   <link href="assets/img/logo atas.png" rel="logo-atas-icon">-->
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
@@ -39,11 +40,11 @@
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-center section-bg2">
+  <header id="header" class="fixed-top d-flex align-items-center ">
     <div class="container d-flex justify-content-between align-items-center">
 
       <div class="logo">
-        <h1 style="font-family: Arial" class="text-light"><a href="Customerhomepage.html"><span>CLEO</span></a></h1>
+        <h1 style="font-family: Arial" class="text-light"><a href="Guesthomepage.php"><span>CLEO</span></a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
@@ -53,7 +54,7 @@
           <li><a class="" href="Customerhomepage.php">Home</a></li>
           <li><a href="3about.html">About Us</a></li>
           <!--<li><a href="services.html">Services</a></li>-->
-          <li><a class="active" href="3products.html">Products</a></li>
+          <li><a href="3products.html">Products</a></li>
           <li><a href="3team.html">Team</a></li>
           <!--<li><a href="blog.html">Blog</a></li>-->
           <!--<li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
@@ -74,9 +75,9 @@
             </ul>
           </li>-->
           <li><a href="3contact.html">Contact Us</a></li>
-          <li class="dropdown"><a href="#"><span>username</span> <i class="bi bi-chevron-down"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </i></a>
+          <li class="dropdown"><a class="active"href="#"><span>username</span> <i class="bi bi-chevron-down"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </i></a>
             <ul>
-              <li><a href="3viewprofile.html">My Profile</a></li>
+              <li><a class="active" href="3viewprofile.html">My Profile</a></li>
               <li><a href="3cart.html">Cart</a></li>
               <li><a href="3purchasehistory.html">Purchase History</a></li>
             </ul>
@@ -92,71 +93,100 @@
 
   <main id="main">
 
-    <!-- ======= Our Portfolio Section ======= -->
+    <!-- ======= Contact Section ======= -->
     <section class="breadcrumbs">
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Portfolio Details</h2>
+          <h2>My Profile</h2>
           <ol>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li>Portfolio Details</li>
+            <li><a href="#">Home</a></li>
+            <li>My Profile</li>
           </ol>
         </div>
 
       </div>
-    </section><!-- End Our Portfolio Section -->
+    </section><!-- End Contact Section -->
 
-    <!-- ======= Portfolio Details Section ======= -->
-    <section id="portfolio-details" class="portfolio-details">
+    <!-- ======= Contact Section ======= -->
+    <section class="profile" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
       <div class="container">
 
-        <div class="row gy-4">
+        <div class="row">
 
-          <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper-container">
-              <div class="swiper-wrapper align-items-center">
+            <div class="col-lg-6">
 
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-1.jpg" alt="">
+                <div class="row">
+                    <div class="col-md-12 profile-user">
+                        <div class="info-box">
+                            <img class="avatar " src="/MasterCLEO/Moderna-pro/assets/img/team-3.jpg" alt="...">
+                            
+                            <!--<i class="bx bx-phone-call"></i>-->
+                            <h3>Manyok Granger</h3>
+                            <h4>@aimancomel</h4>
+                            <p class="font-family: Verdana, sans-serif">"When theres a will theres a way."</p>
+                            <!--<a href="mailto: cleosheesh@gmail.com"><p>cleosheesh@gmail.com</p></a>-->
+                        </div>
+                    </div>
                 </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-2.jpg" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-3.jpg" alt="">
-                </div>
-
-              </div>
-              <div class="swiper-pagination"></div>
             </div>
-          </div>
 
-          <div class="col-lg-4">
-            <div class="portfolio-info">
-              <h3>Project information</h3>
-              <ul>
-                <li><strong>Category</strong>: Web design</li>
-                <li><strong>Client</strong>: ASU Company</li>
-                <li><strong>Project date</strong>: 01 March, 2020</li>
-                <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
-              </ul>
+            <div class="col-lg-6 profile" >
+
+                <form action="/MasterCLEO/3contact.php" method="POST"  class="php-email-form" style="background-color: #fff;">
+                    <div class="row " >
+                        <div class="col-md-12 ">
+                            <h3>Profile Info</h3>
+                        </div>
+                        <div class="col-md-6">
+                            <p style="margin: 0 0 0 0;">Username</p>
+                            <input type="text" name="username" class="form-control" id="username" placeholder="aimancomel" disabled="">
+                        </div>
+                        <div class="col-md-6 ">
+                            <p style="margin: 0 0 0 0;">Email</p>
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Email" disabled="">
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p style="margin-top: 10px; margin-bottom: 0;">First Name</p>
+                            <input type="text" name="firstname" class="form-control" id="firstname" placeholder="Manyok" disabled="">
+                        </div>
+                        <div class="col-md-6 ">
+                            <p style="margin-top: 10px; margin-bottom: 0;">Last Name</p>
+                            <input type="text" class="form-control" name="lastname" id="lastname" placeholder="Granger" disabled="">
+                        </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                          <p style="margin-top: 20px; margin-bottom: 0;">About Me</p>
+                          <textarea class="form-control" name="aboutme" rows="3" id="aboutme" placeholder="When theres a will theres a way." disabled=""></textarea>
+                          
+                      </div>
+                    </div>
+                    <div class="my-3"></div>
+                    <br><br><br><br>
+                    
+                      <button class="warnabutton" type="submit">Edit Profile Info</button> &nbsp;&nbsp;
+                      <button class="warnabutton" type="submit">Edit Profiel Picture</button> &nbsp;&nbsp;
+                      <button class="warnabutton" type="submit">Change Password</button>
+                    
+                </form>
+            
             </div>
-            <div class="portfolio-description">
-              <h2>This is an example of portfolio detail</h2>
-              <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
-              </p>
-            </div>
-          </div>
 
         </div>
 
       </div>
-    </section><!-- End Portfolio Details Section -->
+    </section><!-- End Contact Section -->
+
+    <!-- ======= Map Section ======= -->
+    <!--<section class="map mt-2">
+      <div class="container-fluid p-0">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.2219901290355!2d-74.00369368400567!3d40.71312937933185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a23e28c1191%3A0x49f75d3281df052a!2s150%20Park%20Row%2C%20New%20York%2C%20NY%2010007%2C%20USA!5e0!3m2!1sen!2sbg!4v1579767901424!5m2!1sen!2sbg" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      </div>
+    </section> End Map Section -->
 
   </main><!-- End #main -->
 
@@ -186,10 +216,10 @@
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="Customerhomepage.php">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="3about.html">About Us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="3team.html">Team</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="3contact.html">Contact Us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="Guesthomepage.php">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="1about.html">About Us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="1team.html">Team</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="1contact.html">Contact Us</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="https://www.freeprivacypolicy.com/live/02e3012e-de66-4b6a-a831-8de595a84496">Terms and Condition</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="https://www.freeprivacypolicy.com/live/3629ced9-9e17-40cc-abbf-dfd879b204e8">Privacy policy</a></li>
             </ul>
@@ -206,10 +236,10 @@
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Contact Us</h4>
             <p>
-            Jalan Rejang 4, Taman Setapak Jaya, <br>
-            54100 Kuala Lumpur,<br>
-            Wilayah Persekutuan Kuala Lumpur<br><br>
-            <strong>Email:</strong><a href="mailto: cleosheesh@gmail.com"> cleosheesh@gmail.com</a><br>
+                Jalan Rejang 4, Taman Setapak Jaya, <br>
+                54100 Kuala Lumpur,<br>
+                Wilayah Persekutuan Kuala Lumpur<br><br>
+                <strong>Email:</strong><a href="mailto: cleosheesh@gmail.com"> cleosheesh@gmail.com</a><br>
             </p><br>
             <!--<h4>Admin</h4>
             <ul>
@@ -227,7 +257,8 @@
               <a href="https://www.linkedin.com/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
             </div>
           </div>
-
+          
+          
         </div>
       </div>
     </div>
@@ -247,7 +278,6 @@
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/purecounter/purecounter.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>

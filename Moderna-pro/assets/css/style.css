@@ -1661,6 +1661,179 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Profile
+--------------------------------------------------------------*/
+.profile {
+  padding-bottom: 30px;
+  background-color: #90769e;
+}
+
+.profile .avatar{
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-bottom: 15px; 
+    
+}
+
+.profile-user .avatar {
+  width: 124px;
+  height: 124px;
+  border: 1px solid #000000;
+  position: relative; }
+
+.profile .info-box {
+  color: #444;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  padding: 123px 0 122px 0;
+  margin-bottom: 30px;
+  background-color: #ffffff;
+}
+
+.profile .info-box i {
+  font-size: 32px;
+  color: #68A4C4;
+  border-radius: 50%;
+  padding: 8px;
+  border: 2px dotted #a2cce3;
+}
+
+.profile .info-box h3 {
+  font-size: 30px;
+  color: #666;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.profile .info-box h4{
+  font-size: 20px;
+  color: #4d5863;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.profile .info-box p {
+  padding: 0;
+  line-height: 24px;
+  font-size: 20px;
+  
+}
+
+.profile .info-box h2{
+  font-size: 32px;
+  color: #68A4C4;
+  border-radius: 50%;
+  padding: 8px;
+  border: 2px dotted #a2cce3;
+}
+
+.profile .warnabutton {
+  background: #68A4C4;
+  border-width: 1px;
+    border-radius: 30px;
+    padding-right: 23px;
+    padding-left: 23px;
+  /*transition: 0.4s;*/
+}
+.profile .php-email-form {
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.profile .php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.profile .php-email-form .error-message br + br {
+  margin-top: 25px;
+}
+
+.profile .php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.profile .php-email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.profile .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  -webkit-animation: animate-loading 1s linear infinite;
+  animation: animate-loading 1s linear infinite;
+}
+
+.profile .php-email-form input, .profile .php-email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+}
+
+.profile .php-email-form input::focus, .profile .php-email-form textarea::focus {
+  background-color: #68A4C4;
+}
+
+.profile .php-email-form input {
+  padding: 10px 15px;
+}
+
+.profile .php-email-form textarea {
+  padding: 12px 15px;
+}
+
+.profile .php-email-form button[type="submit"] {
+  background: #68A4C4;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+}
+
+.profile .php-email-form button[type="submit"]:hover {
+  background: #8dbad2;
+}
+
+@-webkit-keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*--------------------------------------------------------------
 # Map
 --------------------------------------------------------------*/
 .map {

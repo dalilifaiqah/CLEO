@@ -47,7 +47,7 @@
     <div class="container d-flex justify-content-between align-items-center">
 
       <div class="logo">
-        <h1 style="font-family: Arial"class="text-light"><a href="Customerhomepage.html"><span>CLEO</span></a></h1>
+        <h1 style="font-family: Arial"class="text-light"><a href="Customerhomepage.php"><span>CLEO</span></a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!--<a href="index.html"><img src="assets/img/icon1.png" alt="" class="img-fluid"></a>-->
       </div>
@@ -78,7 +78,7 @@
             </ul>
           </li>-->
           <li><a href="3contact.html">Contact Us</a></li>
-          <li class="dropdown"><a href="#"><span>username</span> <i class="bi bi-chevron-down"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </i></a>
+          <li class="dropdown"><a href="#"><span>Dalili</span> <i class="bi bi-chevron-down"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </i></a>
             <ul>
               <li><a href="3viewprofile.html">My Profile</a></li>
               <li><a href="3cart.html">Cart</a></li>

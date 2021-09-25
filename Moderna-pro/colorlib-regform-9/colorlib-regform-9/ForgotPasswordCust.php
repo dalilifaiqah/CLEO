@@ -18,9 +18,12 @@ if(!$con3){
   $sql = "UPDATE customer SET password = '$_POST[password]' WHERE email = '$_POST[email]'";
 }
 
-  if ($con3->query($sql) === TRUE){
-        echo "<h2>Your password has successfully changed!</h2>";
-  }
+if ($con3->query($sql) === TRUE){
+  header("Location: /MasterCLEO/Moderna-pro/4forgotpasswordS.html");
+        }else{
+            echo '<br>Login failed';
+        }
 
 ?>
+
 

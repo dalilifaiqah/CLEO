@@ -75,12 +75,12 @@ if (isset($_POST['signup'])) {
                 header("Location:/MasterCLEO/Moderna-pro/Customerhomepage.php");
                            
             } else {
-                echo  "Please verify your account and try again.";
+                header("Location:/MasterCLEO/Moderna-pro/customer%20email%20verification/Emailnotverified.html");
             }
             
         } else {
             //Invalid login
-            echo "Invalid login Credentials";
+            header("Location:4Loginfail.html");
         }
     }
 ?>

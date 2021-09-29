@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="images/icon1.png">
-    <title>CLEO</title>
+    <title>CLEO Sign Up</title>
 
     <!-- Font Icon -->
     <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
@@ -41,11 +41,10 @@
                         <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>
                     </div>-->
                     <div class="form-group">
-                        
+                        <a href="CustomerLogin.php" style="color: saddlebrown;">Already have an account?&nbsp;&nbsp;&nbsp;Log In here!</a>
+                    </div>
+                    <div class="form-group">
                         <input type="submit" name="signup" id="signup" class="form-submit submit" value="Sign up"/>
-                        
-                        
-                        <a href="CustomerLogin.php" class="submit-link submit">Log In</a>
                     </div>
                     <div class="form-group">
                         <!--<a href="../../Guesthomepage.php" class="submit-link submit">Back to website</a>-->

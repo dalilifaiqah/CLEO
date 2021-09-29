@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="images/icon1.png">
-    <title>CLEO</title>
+    <title>CLEO Log In</title>
 
     <!-- Font Icon -->
     <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
@@ -38,15 +38,20 @@
                     </div>-->
                     <div class="form-group">
                         <a href="FPasswordCust.php" style="color: saddlebrown;">Forgot password?</a>
+                        <br>
+                        <a href="signupin.php" style="color: saddlebrown;">Don't have an account yet?&nbsp;&nbsp;&nbsp;Sign Up!</a>
                     </div>
+                    
                     <div class="form-group">
-                        
                         <input type="submit" name="login" id="submit" class="form-submit submit" value="Log In"/>
-                        <a href="signupin.php" class="submit-link submit">Sign Up</a>
                     </div>
-                    <div class="form-group">
-                        <a href="../../Guesthomepage.php" class="submit-link submit"> Back to website </a>
+                    <div class="form-group" style="display: inline;">
+                        <a href="../../Customerhomepage.php">
+                            <img src="../../assets/img/home-icon.png" alt="Homepage" style="width:40px;height:40px;"></a>
+                        <!--<p id="clickpara" style="display:inline;cursor: pointer;">Homepage</p>-->
+                        <a href="../../Customerhomepage.php" style="color:white; underline:none;">Homepage</a>
                     </div>
+                    
                 </form>
             </div>
         </div>
@@ -56,5 +61,10 @@
     <!-- JS -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        document.QuerySelector(‘p#clickpara’).addEventListener("click",function() { // Add Something here to do on click 
+            
+        });
+    </script>
 </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
 </html>

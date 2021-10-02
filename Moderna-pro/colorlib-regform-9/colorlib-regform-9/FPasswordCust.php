@@ -19,7 +19,7 @@
         
         <div class="container">
             <div class="signup-content">
-                <form action=/MasterCLEO/Moderna-pro/colorlib-regform-9/colorlib-regform-9/ForgotPasswordCust.php method="POST" id="signup-form" class="signup-form">
+                <form action=/MasterCLEO/Moderna-pro/colorlib-regform-9/colorlib-regform-9/ForgotPasswordCust.php method="POST" id="signup-form" class="signup-form" style="margin-bottom:23px;">
                     <h2>Forgot Password </h2>
                     <p class="desc">Change to a new password for your <span>CLEO account</span></p>
                     <div class="form-group">
@@ -45,7 +45,7 @@
                         <input type="submit" name="confirmpassword" id="submit" class="form-submit submit" style="width: 40%;" value="Confirm Password"/>
                         <!--<a href="signupin.php" class="submit-link submit">Sign Up</a>-->
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" style="margin-bottom:28px">
                         <a href="CustomerLogin.php" class="submit-link submit"> Cancel</a>
                     </div>
                 </form>

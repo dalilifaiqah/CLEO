@@ -21,7 +21,7 @@
             <div class="signup-content">
                 <form action=/MasterCLEO/Moderna-pro/CustomerDB.php method="POST" id="signup-form" class="signup-form">
                     <h2>Sign up </h2>
-                    <p class="desc" style="margin-bottom: 22px;">Create a new account for <span>CLEO</span></p>
+                    <p class="desc" style="margin-bottom: 20px;">Create a new account for <span>CLEO</span></p>
                     <div class="form-group">
                         <input type="text" class="form-input" name="name" id="name" placeholder="Username"/>
                     </div>
@@ -40,13 +40,14 @@
                         <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
                         <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>
                     </div>-->
-                    <div class="form-group">
-                        <a href="CustomerLogin.php" style="color: saddlebrown;">Already have an account?&nbsp;&nbsp;&nbsp;Log In here!</a>
-                    </div>
+                    
                     <div class="form-group">
                         <input type="submit" name="signup" id="signup" class="form-submit submit" value="Sign up"/>
                     </div>
                     <div class="form-group">
+                        <a href="CustomerLogin.php" style="color: #422a24;">Already have an account? Log In here!</a>
+                    </div>
+                    <div class="form-group" >
                         <!--<a href="../../Guesthomepage.php" class="submit-link submit">Back to website</a>-->
                         <p>By clicking Sign Up, you agree to our <a href="https://www.freeprivacypolicy.com/live/02e3012e-de66-4b6a-a831-8de595a84496"> Terms and Conditions</a> 
                         and <a href="https://www.freeprivacypolicy.com/live/3629ced9-9e17-40cc-abbf-dfd879b204e8">Privacy Policy</a> . <p>

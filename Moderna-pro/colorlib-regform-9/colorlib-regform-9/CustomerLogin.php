@@ -12,6 +12,7 @@
 
     <!-- Main css -->
     <link rel="stylesheet" href="css/style.css">
+    
 </head>
 <body>
 
@@ -19,8 +20,16 @@
         
         <div class="container">
             <div class="signup-content">
-                <form action=/MasterCLEO/Moderna-pro/CustomerDB.php method="POST" id="signup-form" class="signup-form">
-                    <h2>Log In </h2>
+                <form action=/MasterCLEO/Moderna-pro/CustomerDB.php method="POST" id="signup-form" class="signup-form" style="margin-bottom:35px">
+                    <div class="form-group" style="display: inline;">
+                        <a href="../../Guesthomepage.php">
+                            <img src="../../assets/img/home-icon.png" alt="Homepage" align="right" style="width:20px;height:20px;"></a>
+                        <!--<p id="clickpara" style="display:inline;cursor: pointer;">Homepage</p>-->
+                        <!--<a href="../../Customerhomepage.php" style="color:white; underline:none;">Homepage</a>-->
+                    </div>
+                    <div>
+                        <h2>Log In </h2>
+                    </div>
                     <p class="desc">Log into an existing account in <span>CLEO</span></p>
                     <div class="form-group">
                         <!--<input type="text" class="form-input" name="name" id="name" placeholder="Your Name"/>-->
@@ -28,7 +37,7 @@
                     <div class="form-group">
                         <input type="email" class="form-input" name="email" id="email" placeholder="Email"/>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" style="margin-bottom: 32px">
                         <input type="password" class="form-input" name="password" id="password" placeholder="Password" minlength = "6" required/>
                         <span toggle="#password" class="zmdi zmdi-eye field-icon toggle-password"></span>
                     </div>
@@ -36,21 +45,18 @@
                         <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
                         <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>
                     </div>-->
-                    <div class="form-group">
-                        <a href="FPasswordCust.php" style="color: saddlebrown;">Forgot password?</a>
-                        <br>
-                        <a href="signupin.php" style="color: saddlebrown;">Don't have an account yet?&nbsp;&nbsp;&nbsp;Sign Up!</a>
-                    </div>
                     
-                    <div class="form-group">
+                    
+                    <div class="form-group" style="margin-bottom: 32px;">
                         <input type="submit" name="login" id="submit" class="form-submit submit" value="Log In"/>
                     </div>
-                    <div class="form-group" style="display: inline;">
-                        <a href="../../Customerhomepage.php">
-                            <img src="../../assets/img/home-icon.png" alt="Homepage" style="width:40px;height:40px;"></a>
-                        <!--<p id="clickpara" style="display:inline;cursor: pointer;">Homepage</p>-->
-                        <a href="../../Customerhomepage.php" style="color:white; underline:none;">Homepage</a>
+                    <div class="form-group" style="margin-bottom:5px">
+                        <a href="FPasswordCust.php" style="color: #422a24;">Forgot password?</a>
                     </div>
+                    <div class="form-group" style="margin-bottom:25.5px" >
+                        <a href="signupin.php" style="color: #422a24;">Don't have an account yet? Sign Up Now!</a>
+                    </div>
+                    
                     
                 </form>
             </div>

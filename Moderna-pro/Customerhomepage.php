@@ -1,6 +1,14 @@
+<?php
+$con = mysqli_connect("localhost","admin1","admin1","cleo"); 
+session_start(); 
+$email=$_SESSION['email']; 
+$query=mysqli_query($con,"SELECT * FROM customer WHERE email='$email' "); 
+$row=mysqli_fetch_array($query);
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -78,7 +86,7 @@
             </ul>
           </li>-->
           <li><a href="3contact.html">Contact Us</a></li>
-          <li class="dropdown"><a href="#"><span>Dalili</span> <i class="bi bi-chevron-down"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </i></a>
+          <li class="dropdown"><a href="#"><span><?php echo $row['name']; ?></span> <i class="bi bi-chevron-down"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </i></a>
             <ul>
               <li><a href="3viewprofile.html">My Profile</a></li>
               <li><a href="3cart.html">Cart</a></li>
@@ -86,7 +94,9 @@
             </ul>
           </li>
           <!--<li><a href="/MasterCLEO/Moderna-pro/customer dashboard/paper-dashboard-master/examples/3dashboard.html">My Dashboard  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>-->
-          <li><a href="4logout.html" class="sign-up-btn">Log Out</a></li>
+       <form action=/MasterCLEO/Moderna-pro/CustomerDB.php method="POST">
+          <li><input type="submit" name="logout" id="submit" class="form-submit submit" value="Log out"/></li>
+      </form>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->

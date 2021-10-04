@@ -1,10 +1,14 @@
 <?php
+session_start();
 if (isset($_POST['signup'])) {
     signup($_POST['signup']);
 }else if(isset($_POST['login'])) {
     login($_POST['login']);
+}else if(isset($_POST['logout'])) {
+    logout($_POST['logout']);
 }
 ?>
+
 
 <?php
     function signup()
@@ -54,6 +58,7 @@ if (isset($_POST['signup'])) {
     }
 
     function login(){
+        
         $servername = "localhost"; 
         $username = "admin1";
         $password = "admin1"; 
@@ -70,8 +75,9 @@ if (isset($_POST['signup'])) {
             $row = $resultSet->fetch_assoc();
             $verified = $row['verified'];
             $email = $row['email'];
+            $_SESSION['email'] = $email;
     
-            if ($verified == 1) {
+            if ($verified == 1) { 
                 header("Location:/MasterCLEO/Moderna-pro/Customerhomepage.php");
                            
             } else {
@@ -82,5 +88,11 @@ if (isset($_POST['signup'])) {
             //Invalid login
             header("Location:4Loginfail.html");
         }
+    }
+
+
+    function logout(){
+        session_destroy();
+        header("Location:4logout.html");
     }
 ?>

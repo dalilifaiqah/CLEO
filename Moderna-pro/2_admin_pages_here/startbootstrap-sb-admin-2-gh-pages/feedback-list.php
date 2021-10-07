@@ -8,16 +8,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../assets/img/CLEO-Logo.png">
-    <title>CLEO Apex Legends Product List</title>
 
-    <!-- Custom fonts for this template -->
+    <title>CLEO Feedback List</title>
+
+    <!-- google font -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700">
+
+	<!-- aiz core css -->
+	<link rel="stylesheet" href="css\active-ecommerce-cms\vendors.css">
+    <link rel="stylesheet" href="css\active-ecommerce-cms\aiz-core.css">
+
+    <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
 
-    <!-- Custom styles for this template -->
+    <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
 
     <!-- Custom styles for this page -->
@@ -36,7 +43,7 @@
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
                 <div class="sidebar-brand-icon">
-                    <img class="fas" src="../../assets/img/CLEO-Logo.png" alt="logo">
+                    <img src="../../assets/img/CLEO-Logo.png" alt="logo">
                     <!--<i class="fas fa-laugh-wink"></i>-->
                 </div>
                 <div class="sidebar-brand-text mx-3">CLEO Admin</div>
@@ -60,7 +67,7 @@
             </li>
 
             <!-- Nav Item - Product's List Collapse Menu -->
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
                     aria-expanded="true" aria-controls="collapseUtilities">
                     <i class="fas fa-fw fa-wrench"></i>
@@ -80,7 +87,7 @@
             </li>
 
             <!-- Nav Item - Feedbacks -->
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" href="feedback-list.html">
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>Feedbacks</span></a>
@@ -170,11 +177,12 @@
                         </li>
 
                         
+
                         <!-- Nav Item - User Information -->
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-white small">Douglas McGee</span>
+                                <span class="mr-2 d-none d-lg-inline text-white small">Afnan</span>
                                 <img class="img-profile rounded-circle"
                                     src="img/undraw_profile.svg">
                             </a>
@@ -201,140 +209,42 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">Apex Legends</h1>
+                    <h1 class="h3 mb-2 text-gray-800">Feedbacks</h1>
 
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3" style="background-color: whitesmoke;">
-                            <h6 class="m-0 font-weight-bold text-primary">Product List
-                                <a href="add-product-page.html" class="btn btn-success btn-icon-split" style="float: right;">
-                                    <span class="text">Add New Product</span>
-                                </a>
-                            </h6>
+                            <h6 class="m-0 font-weight-bold text-primary">Feedback List</h6>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                                    <col style="width: 15%;">
-                                    <col style="width: 10%;">
-                                    <col style="width: 10%;">
-                                    <col style="width: 10%;">
-                                    <col style="width: 15%;">
-                                    <col style="width: 15%;">
-                                    <col style="width: 10%;">
                                     <thead>
                                         <tr>
-                                            <th>Image</th>
+                                            <th>ID</th>
                                             <th>Name</th>
-                                            <th>Added by</th>
-                                            <th>Type</th>
-                                            <th>Info</th>
-                                            <th>Stock</th>
-                                            <th>Options</th>
+                                            <th>Email</th>
+                                            <th>Subjects</th>
+                                            <th>Messages</th>
                                         </tr>
                                     </thead>
-                                    <tfoot>
-                                        <tr>
-                                            <th>Image</th>
-                                            <th>Name</th>
-                                            <th>Added by</th>
-                                            <th>Type</th>
-                                            <th>Info</th>
-                                            <th>Stock</th>
-                                            <th>Options</th>
-                                        </tr>
-                                    </tfoot>
+                                    <?php
+                                    $conn = mysqli_connect("localhost","admin1","admin1","cleo");
+                                    if ($conn-> connect_error){
+                                        die("Connection failed:".$conn-> connect_error);
+                                    }
+                                    $sql = "SELECT id, name, email, subject, message from 3contactus";
+                                    $result = $conn-> query($sql);
+
+                                    if($result-> num_rows > 0) {
+                                        while ($row = $result-> fetch_assoc()) {
+                                            echo "<tr><td>".$row["id"]."</td><td>".$row["name"]."</td><td>".$row["email"]."</td>
+                                            <td>".$row["subject"]."</td><td>".$row["message"]."</td></tr>";
+                                        }
+                                    }
+                                    ?>
                                     <tbody>
-                                        <tr>
-                                            <td><img style="width:250px; height:187.5px"
-                                                src="../../assets/img/portfolio/size-formated/octane-apex.jpg"></td>
-                                            <td>Octane</td>
-                                            <td>Aimil</td>
-                                            <td>Apex Legends</td>
-                                            <td>Price:<br>Sales no.:</td>
-                                            <td>Total stock:</td>
-                                            <td>
-                                                <a href="#" class="btn btn-primary btn-icon-split">
-                                                    <span class="text">Edit</span>
-                                                </a>
-                                                <a href="#" class="btn btn-danger btn-icon-split">
-                                                    <span class="text">Del</span>
-                                                </a>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td><img style="width:250px; height:187.5px"
-                                                src="../../assets/img/portfolio/size-formated/fuse-apex.jpg"></td>
-                                            <td>Fuse</td>
-                                            <td>Aimil</td>
-                                            <td>Apex Legends</td>
-                                            <td>Price:<br>Sales no.:</td>
-                                            <td>Total stock:</td>
-                                            <td>
-                                                <a href="#" class="btn btn-primary btn-icon-split">
-                                                    <span class="text">Edit</span>
-                                                </a>
-                                                <a href="#" class="btn btn-danger btn-icon-split">
-                                                    <span class="text">Del</span>
-                                                </a>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td><img style="width:250px; height:187.5px"
-                                                src="../../assets/img/portfolio/size-formated/crypto-apex.jpg"></td>
-                                            <td>Crypto</td>
-                                            <td>Aimil</td>
-                                            <td>Apex Legends</td>
-                                            <td>Price:<br>Sales no.:</td>
-                                            <td>Total stock:</td>
-                                            <td>
-                                                <a href="#" class="btn btn-primary btn-icon-split">
-                                                    <span class="text">Edit</span>
-                                                </a>
-                                                <a href="#" class="btn btn-danger btn-icon-split">
-                                                    <span class="text">Del</span>
-                                                </a>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td><img style="width:250px; height:187.5px"
-                                                src="../../assets/img/portfolio/size-formated/caustic-apex.jpg"></td>
-                                            <td>Caustic</td>
-                                            <td>Aimil</td>
-                                            <td>Apex Legends</td>
-                                            <td>Price:<br>Sales no.:</td>
-                                            <td>Total stock:</td>
-                                            <td>
-                                                <a href="#" class="btn btn-primary btn-icon-split">
-                                                    <span class="text">Edit</span>
-                                                </a>
-                                                <a href="#" class="btn btn-danger btn-icon-split">
-                                                    <span class="text">Del</span>
-                                                </a>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td><img style="width:250px; height:187.5px"
-                                                src="../../assets/img/portfolio/size-formated/bloodhound-apex.jpg"></td>
-                                            <td>Bloodhound</td>
-                                            <td>Aimil</td>
-                                            <td>Apex Legends</td>
-                                            <td>Price:<br>Sales no.:</td>
-                                            <td>Total stock:</td>
-                                            <td>
-                                                <a href="#" class="btn btn-primary btn-icon-split">
-                                                    <span class="text">Edit</span>
-                                                </a>
-                                                <a href="#" class="btn btn-danger btn-icon-split">
-                                                    <span class="text">Del</span>
-                                                </a>
-                                            </td>
-                                        </tr>
-                                        
+                                      
                                     </tbody>
                                 </table>
                             </div>
@@ -346,19 +256,6 @@
 
             </div>
             <!-- End of Main Content -->
-
-            <!-- Footer -->
-            <footer class="sticky-footer bg-white">
-                <div class="container my-auto">
-                    <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2020</span>
-                    </div>
-                </div>
-            </footer>
-            <!-- End of Footer -->
-
-        </div>
-        <!-- End of Content Wrapper -->
 
     </div>
     <!-- End of Page Wrapper -->
@@ -383,7 +280,6 @@
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">No</button>
                     <a class="btn btn-primary" href="../../Guesthomepage.php">Yes</a>
-                </div>
             </div>
         </div>
     </div>

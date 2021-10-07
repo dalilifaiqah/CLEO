@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../assets/img/CLEO-Logo.png">
-    <title>CLEO PUBG Product List</title>
+    <title>CLEO Valorant Product List</title>
 
     <!-- Custom fonts for this template -->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -202,7 +202,7 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">PUBG</h1>
+                    <h1 class="h3 mb-2 text-gray-800">Valorant</h1>
 
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
@@ -216,125 +216,36 @@
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                                    <col style="width: 15%;">
-                                    <col style="width: 10%;">
-                                    <col style="width: 10%;">
-                                    <col style="width: 10%;">
-                                    <col style="width: 15%;">
-                                    <col style="width: 15%;">
-                                    <col style="width: 10%;">
+
                                     <thead>
                                         <tr>
-                                            <th>Image</th>
+                                            <th>ID</th>                                        
                                             <th>Name</th>
-                                            <th>Added by</th>
-                                            <th>Type</th>
-                                            <th>Info</th>
-                                            <th>Stock</th>
-                                            <th>Options</th>
+                                            <th>Added By</th>
+                                            <th>Price</th>
                                         </tr>
                                     </thead>
-                                    <tfoot>
-                                        <tr>
-                                            <th>Image</th>
-                                            <th>Name</th>
-                                            <th>Added by</th>
-                                            <th>Type</th>
-                                            <th>Info</th>
-                                            <th>Stock</th>
-                                            <th>Options</th>
-                                        </tr>
-                                    </tfoot>
+                                    <?php
+                                    $conn = mysqli_connect("localhost","admin1","admin1","cleo");
+                                    if ($conn-> connect_error){
+                                        die("Connection failed:".$conn-> connect_error);
+                                    }
+                                    $sql = "SELECT id, name, addby, tag from valodb";
+                                    $result = $conn-> query($sql);
+
+                                    if($result-> num_rows > 0) {
+                                        while ($row = $result-> fetch_assoc()) {
+                                            echo "<tr><td>".$row["id"]."</td><td>".$row["name"]."</td><td>".$row["addby"]."</td>
+                                            <td>".$row["tag"]."</td></tr>";
+                                        }
+                                    }
+                                    ?>
+
+
+
+                                   
                                     <tbody>
-                                        <tr>
-                                            <td><img style="width:250px; height:187.5px"
-                                                src="../../assets/img/portfolio/size-formated/scarL-pubg.jpg"></td>
-                                            <td>Scar L</td>
-                                            <td>Aimil</td>
-                                            <td>PUBG</td>
-                                            <td>Price:<br>Sales no.:</td>
-                                            <td>Total stock:</td>
-                                            <td>
-                                                <a href="#" class="btn btn-primary btn-icon-split">
-                                                    <span class="text">Edit</span>
-                                                </a>
-                                                <a href="#" class="btn btn-danger btn-icon-split">
-                                                    <span class="text">Del</span>
-                                                </a>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td><img style="width:250px; height:187.5px"
-                                                src="../../assets/img/portfolio/size-formated/scarL2-pubg.jpg"></td>
-                                            <td>Scar L 2</td>
-                                            <td>Aimil</td>
-                                            <td>PUBG</td>
-                                            <td>Price:<br>Sales no.:</td>
-                                            <td>Total stock:</td>
-                                            <td>
-                                                <a href="#" class="btn btn-primary btn-icon-split">
-                                                    <span class="text">Edit</span>
-                                                </a>
-                                                <a href="#" class="btn btn-danger btn-icon-split">
-                                                    <span class="text">Del</span>
-                                                </a>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td><img style="width:250px; height:187.5px"
-                                                src="../../assets/img/portfolio/size-formated/panskin-pubg.jpg"></td>
-                                            <td>Panskin</td>
-                                            <td>Aimil</td>
-                                            <td>PUBG</td>
-                                            <td>Price:<br>Sales no.:</td>
-                                            <td>Total stock:</td>
-                                            <td>
-                                                <a href="#" class="btn btn-primary btn-icon-split">
-                                                    <span class="text">Edit</span>
-                                                </a>
-                                                <a href="#" class="btn btn-danger btn-icon-split">
-                                                    <span class="text">Del</span>
-                                                </a>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td><img style="width:250px; height:187.5px"
-                                                src="../../assets/img/portfolio/size-formated/M16A4(2)-pubg.jpg"></td>
-                                            <td>M16A4</td>
-                                            <td>Aimil</td>
-                                            <td>PUBG</td>
-                                            <td>Price:<br>Sales no.:</td>
-                                            <td>Total stock:</td>
-                                            <td>
-                                                <a href="#" class="btn btn-primary btn-icon-split">
-                                                    <span class="text">Edit</span>
-                                                </a>
-                                                <a href="#" class="btn btn-danger btn-icon-split">
-                                                    <span class="text">Del</span>
-                                                </a>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td><img style="width:250px; height:187.5px"
-                                                src="../../assets/img/portfolio/size-formated/kar98(2)-pubg.jpg"></td>
-                                            <td>Kar98</td>
-                                            <td>Aimil</td>
-                                            <td>PUBG</td>
-                                            <td>Price:<br>Sales no.:</td>
-                                            <td>Total stock:</td>
-                                            <td>
-                                                <a href="#" class="btn btn-primary btn-icon-split">
-                                                    <span class="text">Edit</span>
-                                                </a>
-                                                <a href="#" class="btn btn-danger btn-icon-split">
-                                                    <span class="text">Del</span>
-                                                </a>
-                                            </td>
-                                        </tr>
+                                        
                                         
                                     </tbody>
                                 </table>

@@ -9,11 +9,12 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../assets/img/CLEO-Logo.png">
-    <title>CLEO Genshin Impact Product List</title>
+    <title>CLEO Apex Legends Product List</title>
 
     <!-- Custom fonts for this template -->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
 
     <!-- Custom styles for this template -->
@@ -35,7 +36,7 @@
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
                 <div class="sidebar-brand-icon">
-                    <img src="../../assets/img/CLEO-Logo.png" alt="logo">
+                    <img class="fas" src="../../assets/img/CLEO-Logo.png" alt="logo">
                     <!--<i class="fas fa-laugh-wink"></i>-->
                 </div>
                 <div class="sidebar-brand-text mx-3">CLEO Admin</div>
@@ -169,12 +170,11 @@
                         </li>
 
                         
-
                         <!-- Nav Item - User Information -->
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-white small">Afnan</span>
+                                <span class="mr-2 d-none d-lg-inline text-white small">Douglas McGee</span>
                                 <img class="img-profile rounded-circle"
                                     src="img/undraw_profile.svg">
                             </a>
@@ -201,12 +201,12 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">Genshin Impact</h1>
+                    <h1 class="h3 mb-2 text-gray-800">Game Points</h1>
 
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3" style="background-color: whitesmoke;">
-                            <h6 class="m-0 font-weight-bold text-primary">Product List
+                            <h6 class="m-0 font-weight-bold text-primary">Game Points Product List
                                 <a href="add-product-page.html" class="btn btn-success btn-icon-split" style="float: right;">
                                     <span class="text">Add New Product</span>
                                 </a>
@@ -215,125 +215,32 @@
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                                    <col style="width: 15%;">
-                                    <col style="width: 10%;">
-                                    <col style="width: 10%;">
-                                    <col style="width: 10%;">
-                                    <col style="width: 15%;">
-                                    <col style="width: 15%;">
-                                    <col style="width: 10%;">
+                                   
                                     <thead>
                                         <tr>
-                                            <th>Image</th>
+                                            <th>ID</th>
                                             <th>Name</th>
-                                            <th>Added by</th>
-                                            <th>Type</th>
-                                            <th>Info</th>
-                                            <th>Stock</th>
-                                            <th>Options</th>
+                                            <th>Added By</th>
+                                            <th>Price</th>
                                         </tr>
                                     </thead>
-                                    <tfoot>
-                                        <tr>
-                                            <th>Image</th>
-                                            <th>Name</th>
-                                            <th>Added by</th>
-                                            <th>Type</th>
-                                            <th>Info</th>
-                                            <th>Stock</th>
-                                            <th>Options</th>
-                                        </tr>
-                                    </tfoot>
+                                    <?php
+                                    $conn = mysqli_connect("localhost","admin1","admin1","cleo");
+                                    if ($conn-> connect_error){
+                                        die("Connection failed:".$conn-> connect_error);
+                                    }
+                                    $sql = "SELECT id, name, addby, tag from gamepointdb";
+                                    $result = $conn-> query($sql);
+
+                                    if($result-> num_rows > 0) {
+                                        while ($row = $result-> fetch_assoc()) {
+                                            echo "<tr><td>".$row["id"]."</td><td>".$row["name"]."</td><td>".$row["addby"]."</td>
+                                            <td>".$row["tag"]."</td></tr>";
+                                        }
+                                    }
+                                    ?>
+                                
                                     <tbody>
-                                        <tr>
-                                            <td><img style="width:250px; height:187.5px"
-                                                src="../../assets/img/portfolio/size-formated/zhongli-genshin.jpg"></td>
-                                            <td>Zhong Li</td>
-                                            <td>Aimil</td>
-                                            <td>Genshin</td>
-                                            <td>Price:<br>Sales no.:</td>
-                                            <td>Total stock:</td>
-                                            <td>
-                                                <a href="#" class="btn btn-primary btn-icon-split">
-                                                    <span class="text">Edit</span>
-                                                </a>
-                                                <a href="#" class="btn btn-danger btn-icon-split">
-                                                    <span class="text">Del</span>
-                                                </a>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td><img style="width:250px; height:187.5px"
-                                                src="../../assets/img/portfolio/size-formated/xiao-genshin.jpg"></td>
-                                            <td>Xiao</td>
-                                            <td>Aimil</td>
-                                            <td>Genshin</td>
-                                            <td>Price:<br>Sales no.:</td>
-                                            <td>Total stock:</td>
-                                            <td>
-                                                <a href="#" class="btn btn-primary btn-icon-split">
-                                                    <span class="text">Edit</span>
-                                                </a>
-                                                <a href="#" class="btn btn-danger btn-icon-split">
-                                                    <span class="text">Del</span>
-                                                </a>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td><img style="width:250px; height:187.5px"
-                                                src="../../assets/img/portfolio/size-formated/raidenshogun-genshin.jpg"></td>
-                                            <td>Raiden Shogun</td>
-                                            <td>Aimil</td>
-                                            <td>Genshin</td>
-                                            <td>Price:<br>Sales no.:</td>
-                                            <td>Total stock:</td>
-                                            <td>
-                                                <a href="#" class="btn btn-primary btn-icon-split">
-                                                    <span class="text">Edit</span>
-                                                </a>
-                                                <a href="#" class="btn btn-danger btn-icon-split">
-                                                    <span class="text">Del</span>
-                                                </a>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td><img style="width:250px; height:187.5px"
-                                                src="../../assets/img/portfolio/size-formated/klee-genshin.jpg"></td>
-                                            <td>Klee</td>
-                                            <td>Aimil</td>
-                                            <td>Genshin</td>
-                                            <td>Price:<br>Sales no.:</td>
-                                            <td>Total stock:</td>
-                                            <td>
-                                                <a href="#" class="btn btn-primary btn-icon-split">
-                                                    <span class="text">Edit</span>
-                                                </a>
-                                                <a href="#" class="btn btn-danger btn-icon-split">
-                                                    <span class="text">Del</span>
-                                                </a>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td><img style="width:250px; height:187.5px"
-                                                src="../../assets/img/portfolio/size-formated/kamisatoayaka-genshin.jpg"></td>
-                                            <td>Kamisatoayaka</td>
-                                            <td>Aimil</td>
-                                            <td>Genshin</td>
-                                            <td>Price:<br>Sales no.:</td>
-                                            <td>Total stock:</td>
-                                            <td>
-                                                <a href="#" class="btn btn-primary btn-icon-split">
-                                                    <span class="text">Edit</span>
-                                                </a>
-                                                <a href="#" class="btn btn-danger btn-icon-split">
-                                                    <span class="text">Del</span>
-                                                </a>
-                                            </td>
-                                        </tr>
                                         
                                     </tbody>
                                 </table>

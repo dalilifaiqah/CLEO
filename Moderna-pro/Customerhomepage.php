@@ -94,9 +94,9 @@ $row=mysqli_fetch_array($query);
             </ul>
           </li>
           <!--<li><a href="/MasterCLEO/Moderna-pro/customer dashboard/paper-dashboard-master/examples/3dashboard.html">My Dashboard  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>-->
-       <form action=/MasterCLEO/Moderna-pro/CustomerDB.php method="POST">
-          <li><input type="submit" name="logout" id="submit" class="form-submit submit" value="Log out"/></li>
-      </form>
+       <li><form action=/MasterCLEO/Moderna-pro/CustomerDB.php method="POST">
+          <input type="submit" name="logout" id="submit" class="form-submit submit sign-up-btn" style="" value="Log out"/>
+        </form></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->

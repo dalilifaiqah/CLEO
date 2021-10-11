@@ -234,6 +234,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   margin: 4px 2px;
   transition-duration: 0.4s;
   cursor: pointer;
+  background: none;
 }
 
 .navbar .sign-up-btn:hover{
@@ -1341,17 +1342,17 @@ section {
 
 .portfolio-info .p1button {
   background: #B7569A;
-  border-width: 1px;
+  border-width: 2px;
     border-color: #883C82;
-    height: 38px;
+    height: 40px;
     border-radius: 30px;
     padding-right: 23px;
     padding-left: 23px;
     /*padding: 10px 24px;*/
     color: #fff;
   /*transition: 0.4s;*/
-  
 }
+
 
 .portfolio .portfolio-item .portfolio-info h3 {
   font-size: 22px;
@@ -1439,6 +1440,12 @@ section {
   font-weight: 700;
   margin-bottom: 20px;
 }
+.portfolio-details .portfolio-description h3 {
+  font-size: 20px;
+  font-weight: 700;
+  /*margin-bottom: 20px;*/
+}
+
 
 .portfolio-details .portfolio-description p {
   padding: 0;

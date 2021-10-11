@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../assets/img/CLEO-Logo.png">
     <title>CLEO Valorant Product List</title>
-
+    <link rel="icon" href="../../assets/img/CLEO-Logo.png">
     <!-- Custom fonts for this template -->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link
@@ -70,18 +70,18 @@
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Video Games:</h6>
-                        <a class="collapse-item" href="genshin-product-list.html">Genshin Impact</a>
-                        <a class="collapse-item" href="valorant-product-list.html">Valorant</a>
-                        <a class="collapse-item" href="mobilelegends-product-list.html">Mobile Legends</a>
-                        <a class="collapse-item" href="pubg-product-list.html">PUBG</a>
-                        <a class="collapse-item" href="apexlegends-product-list.html">Apex Legends</a>
+                        <a class="collapse-item" href="genshin-product-list.php">Genshin Impact</a>
+                        <a class="collapse-item" href="valorant-product-list.php">Valorant</a>
+                        <a class="collapse-item" href="mobilelegends-product-list.php">Mobile Legends</a>
+                        <a class="collapse-item" href="pubg-product-list.php">PUBG</a>
+                        <a class="collapse-item" href="apexlegends-product-list.php">Apex Legends</a>
                     </div>
                 </div>
             </li>
 
             <!-- Nav Item - Feedbacks -->
             <li class="nav-item">
-                <a class="nav-link" href="feedback-list.html">
+                <a class="nav-link" href="feedback-list.php">
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>Feedbacks</span></a>
             </li>
@@ -216,13 +216,22 @@
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-
+                                    <col style="width: 15%;">
+                                    <col style="width: 10%;">
+                                    <col style="width: 10%;">
+                                    <col style="width: 10%;">
+                                    <col style="width: 15%;">
+                                    <col style="width: 15%;">
+                                    <col style="width: 10%;">
                                     <thead>
                                         <tr>
-                                            <th>ID</th>                                        
+                                            <th>Image</th>
                                             <th>Name</th>
-                                            <th>Added By</th>
-                                            <th>Price</th>
+                                            <th>Added by</th>
+                                            <th>Type</th>
+                                            <th>Info</th>
+                                            <th>Stock</th>
+                                            <th>Options</th>
                                         </tr>
                                     </thead>
                                     <?php

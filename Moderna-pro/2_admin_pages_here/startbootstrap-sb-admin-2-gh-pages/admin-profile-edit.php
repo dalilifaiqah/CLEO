@@ -286,18 +286,11 @@
                                         <div class="card-body">
                                             <div class="row mb-3">
                                                 <div class="col-sm-3">
+                                                <form action = /MasterCLEO/Moderna-pro/2_admin_pages_here/startbootstrap-sb-admin-2-gh-pages/admineditprofile.php method = "POST">
                                                     <h6 class="mb-0">Name</h6>
                                                 </div>
                                                 <div class="col-sm-9 text-secondary">
-                                                    <input type="text" class="form-control" value="">
-                                                </div>
-                                            </div>
-                                            <div class="row mb-3">
-                                                <div class="col-sm-3">
-                                                    <h6 class="mb-0">Username</h6>
-                                                </div>
-                                                <div class="col-sm-9 text-secondary">
-                                                    <input type="text" class="form-control" value="">
+                                                    <input type="text" class="form-control" value="" name = "name">
                                                 </div>
                                             </div>
                                             <div class="row mb-3">
@@ -305,7 +298,7 @@
                                                     <h6 class="mb-0">E-mail</h6>
                                                 </div>
                                                 <div class="col-sm-9 text-secondary">
-                                                    <input type="text" class="form-control" value="">
+                                                    <input type="text" class="form-control" value="" name="email" >
                                                 </div>
                                             </div>
                                             <div class="row mb-3">
@@ -313,7 +306,7 @@
                                                     <h6 class="mb-0">Mobile</h6>
                                                 </div>
                                                 <div class="col-sm-9 text-secondary">
-                                                    <input type="text" class="form-control" value="">
+                                                    <input type="text" class="form-control" value="" name="mobile">
                                                 </div>
                                             </div>
                                             <div class="row mb-3">
@@ -321,13 +314,14 @@
                                                     <h6 class="mb-0">Address</h6>
                                                 </div>
                                                 <div class="col-sm-9 text-secondary">
-                                                    <input type="text" class="form-control" value="">
+                                                    <input type="text" class="form-control" value="" name="address">
                                                 </div>
                                             </div>
                                             <div class="row">
                                                 <div class="col-sm-3"></div>
                                                 <div class="col-sm-9 text-secondary">
-                                                    <input onclick="location.href='admin-profile.html'" type="button" class="btn btn-primary px-4" value="Save Changes">
+                                                    <input type="submit" class="btn btn-primary px-4" value="Save Changes" name="admineditprofile">
+                                                </form> 
                                                 </div>
                                             </div>
                                         </div>
@@ -375,12 +369,11 @@
                                             <div class="row">
                                                 <div class="col-sm-3"></div>
                                                 <div class="col-sm-9 text-secondary">
-                                                    <input onclick="location.href='admin-profile.html'" type="button" class="btn btn-primary px-4" value="Save Changes">
+                                                    <input onclick="location.href='admin-profile.php'" type="button" class="btn btn-primary px-4" value="Save Changes">
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    
                                 </div>
                             </div>
                         </div>

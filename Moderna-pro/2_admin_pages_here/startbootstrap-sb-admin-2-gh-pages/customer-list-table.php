@@ -247,39 +247,33 @@
                                         }
                                     }
                                     ?>
-                                        <form action="" name="form1" method="POST">
-                                        <div class="form-group">                                            
-                                            <input type="text" class="form-control" id="name" placeholder="Enter Name To DELETE" name="name">
-                                        </div>
                                         
-
-                                        <td>
-                                            <a href="#" class="btn btn-primary btn-icon-split">
-                                                <span class="text">Edit</span>
-                                            </a>
-                                            <button type="submit" name="delete" class="btn btn-danger btn-icon-split">
-                                                <span class="text">Delete</span>
-                                            </button>
-                                        
-                                        </form>
-                                        </td>
-
-                                        <?php
-                                        
-                                        if(isset($_POST["delete"]))
-                                        {
-                                            $conn = mysqli_connect("localhost","admin1","admin1","cleo");
-                                            if ($conn-> connect_error){
-                                            die("Connection failed:".$conn-> connect_error);
-                                        }
-                                            $sql="delete from customer where name='$POST(name)'" or die (mysqli_error($link));
-                                            
-                                        }
-
-                                        ?>
 
                                     </tr>
                                     <tbody>
+
+                                    <form action="" method="POST">
+                                        <div class="form-group">                                            
+                                            <input type="text" class="form-control" placeholder="Enter ID To DELETE" name="id">
+                                            <input type="submit" name="delete" value="Delete Data" >
+
+                                        </div>
+                                        </form>
+                                        
+                                    
+                                        <?php
+                                        
+                                        $connection = mysqli_connect("localhost","admin1","admin1");
+                                        $db = mysqli_select_db($connection, 'cleo');
+                                        
+                                        if(isset($_POST['delete']))
+                                        {
+                                            $id = $_POST['id'];
+
+                                            $query = "DELETE FROM `customer` WHERE id='$id' ";
+                                            $query_run = mysqli_query($connection,$query);
+                                        }                                       
+                                        ?>
                                        
                                      
                                     </tbody>

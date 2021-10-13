@@ -341,7 +341,7 @@
                                   <hr>
                                   <div class="row">
                                     <div class="col-sm-12">
-                                      <a class="btn btn-info "  href="admin-profile-edit.html">Edit profile</a>
+                                      <a class="btn btn-info "  href="admin-profile-edit.php">Edit profile</a>
                                     </div>
                                   </div>
                                 </div>

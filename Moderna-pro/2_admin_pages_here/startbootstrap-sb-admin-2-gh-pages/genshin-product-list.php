@@ -253,7 +253,28 @@
                                     }
                                     ?>
                                     <tbody>
-                                      
+                                    <form action="" method="POST">
+                                        <div class="form-group">                                            
+                                            <input type="text" class="form-control" placeholder="Enter ID To DELETE" name="id">
+                                            <input type="submit" name="delete" value="Delete Data" >
+
+                                        </div>
+                                        </form>
+                                        
+                                    
+                                        <?php
+                                        
+                                        $connection = mysqli_connect("localhost","admin1","admin1");
+                                        $db = mysqli_select_db($connection, 'cleo');
+                                        
+                                        if(isset($_POST['delete']))
+                                        {
+                                            $id = $_POST['id'];
+
+                                            $query = "DELETE FROM `genshindb` WHERE id='$id' ";
+                                            $query_run = mysqli_query($connection,$query);
+                                        }                                       
+                                        ?>
                                     </tbody>
                                 </table>
                             </div>

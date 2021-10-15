@@ -80,7 +80,7 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="dashboard.html">
                 <div class="sidebar-brand-icon">
                     <img src="../../assets/img/CLEO-Logo.png" alt="logo">
                     <!--<i class="fas fa-laugh-wink"></i>-->
@@ -93,7 +93,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="dashboard.html">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
@@ -226,7 +226,7 @@
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="userDropdown">
-                                <a class="dropdown-item" href="profile_with_data_and_skills.html">
+                                <a class="dropdown-item" href="admin-profile.php">
                                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Profile
                                 </a>
@@ -298,7 +298,7 @@
                                                     <h6 class="mb-0">E-mail</h6>
                                                 </div>
                                                 <div class="col-sm-9 text-secondary">
-                                                    <input type="text" class="form-control" value="" name="email" >
+                                                    <input type="text" class="form-control" value="" name = "email" >
                                                 </div>
                                             </div>
                                             <div class="row mb-3">
@@ -306,7 +306,7 @@
                                                     <h6 class="mb-0">Mobile</h6>
                                                 </div>
                                                 <div class="col-sm-9 text-secondary">
-                                                    <input type="text" class="form-control" value="" name="mobile">
+                                                    <input type="text" class="form-control" value="" name = "mobile">
                                                 </div>
                                             </div>
                                             <div class="row mb-3">
@@ -314,13 +314,13 @@
                                                     <h6 class="mb-0">Address</h6>
                                                 </div>
                                                 <div class="col-sm-9 text-secondary">
-                                                    <input type="text" class="form-control" value="" name="address">
+                                                    <input type="text" class="form-control" value="" name = "address">
                                                 </div>
                                             </div>
                                             <div class="row">
                                                 <div class="col-sm-3"></div>
                                                 <div class="col-sm-9 text-secondary">
-                                                    <input type="submit" class="btn btn-primary px-4" value="Save Changes" name="admineditprofile">
+                                                    <input type="submit" class="btn btn-primary px-4" value="Save Changes" name = "admineditprofile">
                                                 </form> 
                                                 </div>
                                             </div>

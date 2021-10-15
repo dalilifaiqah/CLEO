@@ -80,7 +80,7 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="dashboard.html">
                 <div class="sidebar-brand-icon">
                     <img src="../../assets/img/CLEO-Logo.png" alt="logo">
                     <!--<i class="fas fa-laugh-wink"></i>-->
@@ -93,7 +93,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="dashboard.html">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
@@ -226,7 +226,7 @@
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="userDropdown">
-                                <a class="dropdown-item" href="profile_with_data_and_skills.html">
+                                <a class="dropdown-item" href="admin-profile.php">
                                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Profile
                                 </a>
@@ -236,7 +236,7 @@
                                 </a>
                             </div>
                         </li>
-
+                       
                     </ul>
 
                 </nav>
@@ -266,7 +266,7 @@
                           <!-- Breadcrumb -->
                           <!--<nav aria-label="breadcrumb" class="main-breadcrumb">
                             <ol class="breadcrumb">
-                              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                              <li class="breadcrumb-item"><a href="dashboard.html">Home</a></li>
                               <li class="breadcrumb-item"><a href="javascript:void(0)">User</a></li>
                               <li class="breadcrumb-item active" aria-current="page">User Profile</li>
                             </ol>
@@ -358,7 +358,7 @@
                           <div>
                             <div class="row float-right">
                               <div class="col-sm-12">
-                                <a class="btn btn-info"  href="index.html">Back to dashboard</a>
+                                <a class="btn btn-info"  href="dashboard.html">Back to dashboard</a>
                               </div>
                             </div>
                           </div>

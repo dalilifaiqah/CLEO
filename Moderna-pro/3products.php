@@ -605,7 +605,7 @@ $row=mysqli_fetch_array($query);
             </div>
   
           </div>
-        </div>
+        </div> 
       </div>
   
       <div class="container">

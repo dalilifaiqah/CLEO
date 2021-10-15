@@ -54,7 +54,7 @@
 
             <!-- Nav Item - Customer's List -->
             <li class="nav-item">
-                <a class="nav-link" href="customer-list-table.html">
+                <a class="nav-link" href="customer-list-table.php">
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>Customer List</span></a>
             </li>
@@ -79,11 +79,20 @@
                 </div>
             </li>
 
-            <!-- Nav Item - Feedbacks -->
+            <!-- Nav Item - Feedbacks list Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link" href="feedback-list.php">
-                    <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Feedbacks</span></a>
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Feedbacks</span>
+                </a>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="feedback-list-customer.php">Customer</a>
+                        <a class="collapse-item" href="feedback-list-guest.php">Guest</a>
+                    </div>
+                </div>
             </li>
 
             <!-- Nav Item - Order Purchase -->

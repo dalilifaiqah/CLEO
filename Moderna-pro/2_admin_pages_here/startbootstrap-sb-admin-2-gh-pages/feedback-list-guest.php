@@ -9,15 +9,22 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../assets/img/CLEO-Logo.png">
-    <title>CLEO Mobile Legends Product List</title>
+    <title>CLEO Feedback List</title>
 
-    <!-- Custom fonts for this template -->
+    <!-- google font -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700">
+
+	<!-- aiz core css -->
+	<link rel="stylesheet" href="css\active-ecommerce-cms\vendors.css">
+    <link rel="stylesheet" href="css\active-ecommerce-cms\aiz-core.css">
+
+    <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
 
-    <!-- Custom styles for this template -->
+    <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
 
     <!-- Custom styles for this page -->
@@ -60,7 +67,7 @@
             </li>
 
             <!-- Nav Item - Product's List Collapse Menu -->
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
                     aria-expanded="true" aria-controls="collapseUtilities">
                     <i class="fas fa-fw fa-wrench"></i>
@@ -79,8 +86,8 @@
                 </div>
             </li>
 
-           <!-- Nav Item - Feedbacks list Collapse Menu -->
-           <li class="nav-item">
+            <!-- Nav Item - Feedbacks list Collapse Menu -->
+            <li class="nav-item active">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fas fa-fw fa-cog"></i>
@@ -95,12 +102,12 @@
                 </div>
             </li>
 
-        <!-- Nav Item - Order Purchase -->
-        <li class="nav-item">
-            <a class="nav-link" href="order-purchase-list.html">
-                <i class="fas fa-fw fa-chart-area"></i>
-                <span>Order Purchase</span></a>
-        </li>
+            <!-- Nav Item - Order Purchase -->
+            <li class="nav-item">
+                <a class="nav-link" href="order-purchase-list.html">
+                    <i class="fas fa-fw fa-chart-area"></i>
+                    <span>Order Purchase</span></a>
+            </li>
 
             <!-- Divider -->
             <!--<hr class="sidebar-divider">-->
@@ -191,7 +198,7 @@
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="userDropdown">
-                                <a class="dropdown-item" href="admin-profile.php">
+                                <a class="dropdown-item" href="admin-profile.html">
                                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Profile
                                 </a>
@@ -211,36 +218,23 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">Mobile Legends</h1>
+                    <h1 class="h3 mb-2 text-gray-800">Guest Feedbacks</h1>
 
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3" style="background-color: whitesmoke;">
-                            <h6 class="m-0 font-weight-bold text-primary">Product List
-                                <a href="add-product-page.html" class="btn btn-success btn-icon-split" style="float: right;">
-                                    <span class="text">Add New Product</span>
-                                </a>
-                            </h6>
+                            <h6 class="m-0 font-weight-bold text-primary">Feedback List</h6>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                                    <col style="width: 15%;">
-                                    <col style="width: 10%;">
-                                    <col style="width: 10%;">
-                                    <col style="width: 10%;">
-                                    <col style="width: 15%;">
-                                    <col style="width: 15%;">
-                                    <col style="width: 10%;">
                                     <thead>
                                         <tr>
-                                            <th>Image</th>
+                                            <th>ID</th>
                                             <th>Name</th>
-                                            <th>Added by</th>
-                                            <th>Type</th>
-                                            <th>Info</th>
-                                            <th>Stock</th>
-                                            <th>Options</th>
+                                            <th>Email</th>
+                                            <th>Subjects</th>
+                                            <th>Messages</th>
                                         </tr>
                                     </thead>
                                     <?php
@@ -248,40 +242,18 @@
                                     if ($conn-> connect_error){
                                         die("Connection failed:".$conn-> connect_error);
                                     }
-                                    $sql = "SELECT id, name, addby, tag from mobiledb";
+                                    $sql = "SELECT id, name, email, subject, message from 3contactus";
                                     $result = $conn-> query($sql);
 
                                     if($result-> num_rows > 0) {
                                         while ($row = $result-> fetch_assoc()) {
-                                            echo "<tr><td>".$row["id"]."</td><td>".$row["name"]."</td><td>".$row["addby"]."</td>
-                                            <td>".$row["tag"]."</td></tr>";
+                                            echo "<tr><td>".$row["id"]."</td><td>".$row["name"]."</td><td>".$row["email"]."</td>
+                                            <td>".$row["subject"]."</td><td>".$row["message"]."</td></tr>";
                                         }
                                     }
                                     ?>
-
                                     <tbody>
-                                    <form action="" method="POST">
-                                        <div class="form-group">                                            
-                                            <input type="text" class="form-control" placeholder="Enter ID To DELETE" name="id">
-                                            <input type="submit" name="delete" value="Delete Data" >
-
-                                        </div>
-                                        </form>
-                                        
-                                    
-                                        <?php
-                                        
-                                        $connection = mysqli_connect("localhost","admin1","admin1");
-                                        $db = mysqli_select_db($connection, 'cleo');
-                                        
-                                        if(isset($_POST['delete']))
-                                        {
-                                            $id = $_POST['id'];
-
-                                            $query = "DELETE FROM `mobiledb` WHERE id='$id' ";
-                                            $query_run = mysqli_query($connection,$query);
-                                        }                                       
-                                        ?>                                       
+                                      
                                     </tbody>
                                 </table>
                             </div>
@@ -293,19 +265,6 @@
 
             </div>
             <!-- End of Main Content -->
-
-            <!-- Footer -->
-            <footer class="sticky-footer bg-white">
-                <div class="container my-auto">
-                    <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2020</span>
-                    </div>
-                </div>
-            </footer>
-            <!-- End of Footer -->
-
-        </div>
-        <!-- End of Content Wrapper -->
 
     </div>
     <!-- End of Page Wrapper -->
@@ -330,7 +289,6 @@
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">No</button>
                     <a class="btn btn-primary" href="../../Guesthomepage.php">Yes</a>
-                </div>
             </div>
         </div>
     </div>

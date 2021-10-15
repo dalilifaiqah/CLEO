@@ -56,7 +56,7 @@
 
             <!-- Nav Item - Customer's List -->
             <li class="nav-item active">
-                <a class="nav-link" href="customer-list-table.html">
+                <a class="nav-link" href="customer-list-table.php">
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>Customer List</span></a>
             </li>
@@ -72,20 +72,29 @@
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Video Games:</h6>
-                        <a class="collapse-item" href="genshin-product-list.html">Genshin Impact</a>
-                        <a class="collapse-item" href="valorant-product-list.html">Valorant</a>
-                        <a class="collapse-item" href="mobilelegends-product-list.html">Mobile Legends</a>
-                        <a class="collapse-item" href="pubg-product-list.html">PUBG</a>
-                        <a class="collapse-item" href="apexlegends-product-list.html">Apex Legends</a>
+                        <a class="collapse-item" href="genshin-product-list.php">Genshin Impact</a>
+                        <a class="collapse-item" href="valorant-product-list.php">Valorant</a>
+                        <a class="collapse-item" href="mobilelegends-product-list.php">Mobile Legends</a>
+                        <a class="collapse-item" href="pubg-product-list.php">PUBG</a>
+                        <a class="collapse-item" href="apexlegends-product-list.php">Apex Legends</a>
                     </div>
                 </div>
             </li>
 
-            <!-- Nav Item - Feedbacks -->
+            <!-- Nav Item - Feedbacks list Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link" href="feedback-list.html">
-                    <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Feedbacks</span></a>
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Feedbacks</span>
+                </a>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="feedback-list-customer.php">Customer</a>
+                        <a class="collapse-item" href="feedback-list-guest.php">Guest</a>
+                    </div>
+                </div>
             </li>
 
             <!-- Nav Item - Order Purchase -->

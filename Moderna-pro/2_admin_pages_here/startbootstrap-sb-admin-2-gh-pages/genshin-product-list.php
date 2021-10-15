@@ -61,7 +61,7 @@
 
             <!-- Nav Item - Customer's List -->
             <li class="nav-item">
-                <a class="nav-link" href="customer-list-table.html">
+                <a class="nav-link" href="customer-list-table.php">
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>Customer List</span></a>
             </li>
@@ -86,11 +86,20 @@
                 </div>
             </li>
 
-            <!-- Nav Item - Feedbacks -->
-            <li class="nav-item ">
-                <a class="nav-link" href="feedback-list.php">
-                    <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Feedbacks</span></a>
+            <!-- Nav Item - Feedbacks list Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Feedbacks</span>
+                </a>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="feedback-list-customer.php">Customer</a>
+                        <a class="collapse-item" href="feedback-list-guest.php">Guest</a>
+                    </div>
+                </div>
             </li>
 
             <!-- Nav Item - Order Purchase -->
@@ -214,7 +223,11 @@
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3" style="background-color: whitesmoke;">
-                            <h6 class="m-0 font-weight-bold text-primary">Genshin Impact Product List</h6>
+                            <h6 class="m-0 font-weight-bold text-primary">Product List
+                                <a href="add-product-page.html" class="btn btn-success btn-icon-split" style="float: right;">
+                                    <span class="text">Add New Product</span>
+                                </a>
+                            </h6>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">

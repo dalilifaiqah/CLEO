@@ -147,7 +147,7 @@ $row=mysqli_fetch_array($query);
 
             <div class="col-lg-6 profile" >
 
-                <form action="/MasterCLEO/3viewprofile.php" method="POST"  class="php-email-form" style="background-color: #fff;">
+                <form action="/MasterCLEO/Moderna-pro/customereditprofile.php" method="POST"  class="php-email-form" style="background-color: #fff;">
                       <div class="row " >
                         <div class="col-md-12 ">
                             <h3>Profile Info</h3>

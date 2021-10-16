@@ -13,7 +13,7 @@ $row=mysqli_fetch_array($query);
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>CLEO</title>
+  <title>Edit Profile Picture</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -129,11 +129,11 @@ $row=mysqli_fetch_array($query);
                 <div class="row">
                     <div class="col-md-12 profile-user">
                         <div class="info-box">
-                            <form action="/MasterCLEO/3viewprofile.php" method="POST">
+                            <form action="/MasterCLEO/Moderna-pro/3viewprofile.php" method="POST">
                               <img class="avatar " src="/MasterCLEO/Moderna-pro/assets/img/team-6.jpg" alt="..." id="" for=""><br>
                               <!--<a href="3editpicture.php" style="font-size:18px;">Edit<i class="bi bi-pencil" style="border:none; font-size:20px;" ></i></a>-->
                               <input class="file-input" type="file" id="fileUpload" accept="image/*" style="margin-left: 130px; margin-bottom: 5px;">
-                              <br><button type="submit"class="warnabutton center" style="width:20%; border:none;">Save</button>
+                              <br><button type="submit"class="warnabutton center" style="width:20%; border:none; background-color: #FFBF00; color:black; height: 35px;">Save</button>
                             </form>
                             <!--<i class="bx bx-phone-call"></i>-->
                             <h3><?php echo $row['name']; ?></h3>

@@ -13,7 +13,7 @@ $row=mysqli_fetch_array($query);
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Lesly Mobile Legends</title>
+  <title>Lesley Mobile Legends</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -150,7 +150,7 @@ $row=mysqli_fetch_array($query);
               <div class="portfolio-info" style="background-color: white;">
                 <h3>Product informations</h3>
                 <ul>
-                  <li><strong>Name </strong>: Lesly</li>
+                  <li><strong>Name </strong>: Lesley</li>
                   <li><strong>Category </strong>: Mobile Legends</li>
                   <li id="Leslyprofile" value="Lesly"><strong>Price </strong>: RM 1000.00</li> <!---->
                   <li><strong>Quantity (Max 5)</strong>: 
@@ -180,7 +180,7 @@ $row=mysqli_fetch_array($query);
             <div class="portfolio-description">
               <h2>Descriptions</h2>
               <p>
-                This <strong>ONLY</strong> requires the hero Lesly.
+                This <strong>ONLY</strong> requires the hero Lesley.
 
                 <h3><strong>FAQ</strong></h3>
                 <strong>- How to purchase?</strong>

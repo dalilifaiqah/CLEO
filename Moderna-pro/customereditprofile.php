@@ -23,9 +23,9 @@ function customereditprofile()
     
       $email = $_POST['email'];
       $newname = $_POST['name'];
-      $newaddress = $_POST['address'];
+      $newpassword = $_POST['password'];
      
-      $sql = "UPDATE admin SET name = '$_POST[name]', address = '$_POST[address]' WHERE email = '$_POST[email]'";
+      $sql = "UPDATE admin SET name = '$_POST[name]', password = '$_POST[password]' WHERE email = '$_POST[email]'";
     }
     
     if ($con2->query($sql) === TRUE){

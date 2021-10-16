@@ -60,10 +60,10 @@ $row=mysqli_fetch_array($query);
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="" href="Customerhomepage.php">Home</a></li>
-          <li><a href="3about.html">About Us</a></li>
+          <li><a href="3about.php">About Us</a></li>
           <!--<li><a href="services.html">Services</a></li>-->
-          <li><a class="active" href="3products.html">Products</a></li>
-          <li><a href="3team.html">Team</a></li>
+          <li><a class="active" href="3products.php">Products</a></li>
+          <li><a href="3team.php">Team</a></li>
           <!--<li><a href="blog.html">Blog</a></li>-->
           <!--<li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -82,12 +82,12 @@ $row=mysqli_fetch_array($query);
               <li><a href="#">Drop Down 4</a></li>
             </ul>
           </li>-->
-          <li><a href="3contact.html">Contact Us</a></li>
+          <li><a href="3contact.php">Contact Us</a></li>
           <li class="dropdown"><a href="#"><span><?php echo $row['name']; ?></span> <i class="bi bi-chevron-down"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </i></a>
             <ul>
-              <li><a href="3viewprofile.html">My Profile</a></li>
-              <li><a href="3cart.html">Cart</a></li>
-              <li><a href="3purchasehistory.html">Purchase History</a></li>
+              <li><a href="3viewprofile.php">My Profile</a></li>
+              <li><a href="3cart.php">Cart</a></li>
+              <li><a href="3purchasehistory.php">Purchase History</a></li>
             </ul>
           </li>
           <!--<li><a href="/MasterCLEO/Moderna-pro/customer dashboard/paper-dashboard-master/examples/3dashboard.html">My Dashboard  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>-->
@@ -111,7 +111,7 @@ $row=mysqli_fetch_array($query);
           <h2>Valorant</h2>
           <ol>
             <li><a href="Guesthomepage.php">Home</a></li>
-            <li><a href="3products.html">Products</a></li>
+            <li><a href="3products.php">Products</a></li>
             <li>Valorant</li>
           </ol>
         </div>
@@ -152,10 +152,10 @@ $row=mysqli_fetch_array($query);
                 <ul>
                   <li><strong>Name </strong>: Singularity Bundle</li>
                   <li><strong>Category </strong>: Valorant</li>
-                  <li id="Singularityprofile" value="Singularity"><strong>Price </strong>: RM </li> <!---->
+                  <li id="Singularityprofile" value="Singularity"><strong>Price </strong>: RM 230.00</li> <!---->
                   <li><strong>Quantity (Max 5)</strong>: 
                     
-                    <form>
+                    <form action="" method="POST">
                       <input type="number" id="Quantity" name="Quantity" min="1" max="5">
                       <!--<input type="text" id="Weapon" name="Weapon">-->
                       <!--<label class="radio-inline">
@@ -197,7 +197,7 @@ $row=mysqli_fetch_array($query);
                 <br> Add to cart the skin you needed <br>
                 <strong>- How do i get my account?</strong>
                 <br> As soon as you make your payment, we will process the account for you. Within the 24 hours, please check your email for the account ID.
-                <br><br> For any other enquiries, send us your feedback in <a href="3contact.html">Contact Us</a> page.
+                <br><br> For any other enquiries, send us your feedback in <a href="3contact.php">Contact Us</a> page.
                 <!--Information about the Stocks : <br>
                 <strong>BlastX-1</strong> - Full Set BlastX Bundle <br>
                 <strong>BlastX-2</strong> - BlastX (Phantom, Odin) + Reaver (Vandal) <br>
@@ -240,9 +240,9 @@ $row=mysqli_fetch_array($query);
             <h4>Useful Links</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="Customerhomepage.php">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="3about.html">About Us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="3team.html">Team</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="3contact.html">Contact Us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="3about.php">About Us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="3team.php">Team</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="3contact.php">Contact Us</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="https://www.freeprivacypolicy.com/live/02e3012e-de66-4b6a-a831-8de595a84496">Terms and Condition</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="https://www.freeprivacypolicy.com/live/3629ced9-9e17-40cc-abbf-dfd879b204e8">Privacy policy</a></li>
             </ul>
@@ -251,8 +251,8 @@ $row=mysqli_fetch_array($query);
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>What We Sell</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Player Accounts</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Skins</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="3products.php">Player Accounts</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="3products.php">Skins</a></li>
             </ul>
           </div>
 

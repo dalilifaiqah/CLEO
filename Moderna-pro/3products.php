@@ -60,10 +60,10 @@ $row=mysqli_fetch_array($query);
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="" href="Customerhomepage.php">Home</a></li>
-          <li><a href="3about.html">About Us</a></li>
+          <li><a href="3about.php">About Us</a></li>
           <!--<li><a href="services.html">Services</a></li>-->
-          <li><a class="active" href="3products.html">Products</a></li>
-          <li><a href="3team.html">Team</a></li>
+          <li><a class="active" href="3products.php">Products</a></li>
+          <li><a href="3team.php">Team</a></li>
           <!--<li><a href="blog.html">Blog</a></li>-->
           <!--<li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -82,12 +82,12 @@ $row=mysqli_fetch_array($query);
               <li><a href="#">Drop Down 4</a></li>
             </ul>
           </li>-->
-          <li><a href="3contact.html">Contact Us</a></li>
+          <li><a href="3contact.php">Contact Us</a></li>
           <li class="dropdown"><a href="#"><span><?php echo $row['name']; ?></span> <i class="bi bi-chevron-down"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </i></a>
             <ul>
-              <li><a href="3viewprofile.html">My Profile</a></li>
-              <li><a href="3cart.html">Cart</a></li>
-              <li><a href="3purchasehistory.html">Purchase History</a></li>
+              <li><a href="3viewprofile.php">My Profile</a></li>
+              <li><a href="3cart.php">Cart</a></li>
+              <li><a href="3purchasehistory.php">Purchase History</a></li>
             </ul>
           </li>
           <!--<li><a href="/MasterCLEO/Moderna-pro/customer dashboard/paper-dashboard-master/examples/3dashboard.html">My Dashboard  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>-->
@@ -110,8 +110,8 @@ $row=mysqli_fetch_array($query);
         <div class="d-flex justify-content-between align-items-center">
           <h2>Our Products</h2>
           <ol>
-            <li><a href="#">Home</a></li>
-            <li>Our Products</li>
+            <li><a href="Customerhomepage.php">Home</a></li>
+            <li><a href="3products.php">Our Products</a></li>
           </ol>
         </div>
 
@@ -146,7 +146,7 @@ $row=mysqli_fetch_array($query);
                 <div>
                   <a href="assets/img/portfolio/size-formated/BlastX-Valo.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" 
                   title="BlastX Bundle"><i class="bx bx-plus"></i></a>
-                  <a href="3BlastX.html" title="BlastX Bundle"><i class="bx bx-link"></i></a>
+                  <a href="3BlastX.php" title="BlastX Bundle"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
@@ -159,7 +159,7 @@ $row=mysqli_fetch_array($query);
                 <h3>Oni Bundle</h3>
                 <div>
                   <a href="assets/img/portfolio/size-formated/oni-valo.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Oni Bundle"><i class="bx bx-plus"></i></a>
-                  <a href="3Oni.html" title="Oni Bundle"><i class="bx bx-link"></i></a>
+                  <a href="3Oni.php" title="Oni Bundle"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
@@ -172,7 +172,7 @@ $row=mysqli_fetch_array($query);
                 <h3>Kamisato Ayaka</h3>
                 <div>
                   <a href="assets/img/portfolio/size-formated/kamisatoayaka-genshin.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Kamisato Ayaka"><i class="bx bx-plus"></i></a>
-                  <a href="3KamisatoAyaka.html" title="Kamisato Ayaka"><i class="bx bx-link"></i></a>
+                  <a href="3KamisatoAyaka.php" title="Kamisato Ayaka"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
@@ -185,7 +185,7 @@ $row=mysqli_fetch_array($query);
                 <h3>Klee</h3>
                 <div>
                   <a href="assets/img/portfolio/size-formated/klee-genshin.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Klee"><i class="bx bx-plus"></i></a>
-                  <a href="3Klee.html" title="Klee"><i class="bx bx-link"></i></a>
+                  <a href="3Klee.php" title="Klee"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
@@ -198,7 +198,7 @@ $row=mysqli_fetch_array($query);
                 <h3>Raiden Shogun</h3>
                 <div>
                   <a href="assets/img/portfolio/size-formated/raidenshogun-genshin.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Raiden Shogun"><i class="bx bx-plus"></i></a>
-                  <a href="3RaidenShogun.html" title="Raiden Shogun"><i class="bx bx-link"></i></a>
+                  <a href="3RaidenShogun.php" title="Raiden Shogun"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
@@ -211,7 +211,7 @@ $row=mysqli_fetch_array($query);
                 <h3>Genesis Crystals</h3>
                 <div>
                   <a href="assets/img/portfolio/size-formated/genshinimpactlogo.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Genesis Crystals"><i class="bx bx-plus"></i></a>
-                  <a href="3GenshinPoints.html" title="Genesis Crystals"><i class="bx bx-link"></i></a>
+                  <a href="3GenshinPoints.php" title="Genesis Crystals"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
@@ -224,7 +224,7 @@ $row=mysqli_fetch_array($query);
                 <h3>Singularity Bundle</h3>
                 <div>
                   <a href="assets/img/portfolio/size-formated/singularity-valo.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Singularity Bundle"><i class="bx bx-plus"></i></a>
-                  <a href="3Singularity.html" title="Singularity Bundle"><i class="bx bx-link"></i></a>
+                  <a href="3Singularity.php" title="Singularity Bundle"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
@@ -237,7 +237,7 @@ $row=mysqli_fetch_array($query);
                 <h3>Valorant Points</h3>
                 <div>
                   <a href="assets/img/portfolio/size-formated/valorantlogo.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Valorant Points"><i class="bx bx-plus"></i></a>
-                  <a href="3Valopoints.html" title="Valorant Points"><i class="bx bx-link"></i></a>
+                  <a href="3Valopoints.php" title="Valorant Points"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
@@ -250,7 +250,7 @@ $row=mysqli_fetch_array($query);
                 <h3>Sovereign Bundle</h3>
                 <div>
                   <a href="assets/img/portfolio/size-formated/sovereign-valo.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Sovereign Bundle"><i class="bx bx-plus"></i></a>
-                  <a href="3Sovereign.html" title="Sovereign Bundle"><i class="bx bx-link"></i></a>
+                  <a href="3Sovereign.php" title="Sovereign Bundle"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
@@ -263,7 +263,7 @@ $row=mysqli_fetch_array($query);
                 <h3>Xiao</h3>
                 <div>
                   <a href="assets/img/portfolio/size-formated/xiao-genshin.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Xiao"><i class="bx bx-plus"></i></a>
-                  <a href="3Xiao.html" title="Xiao"><i class="bx bx-link"></i></a>
+                  <a href="3Xiao.php" title="Xiao"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
@@ -276,7 +276,7 @@ $row=mysqli_fetch_array($query);
                 <h3>The Spectrum</h3>
                 <div>
                   <a href="assets/img/portfolio/size-formated/zedd-valo.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="The Spectrum"><i class="bx bx-plus"></i></a>
-                  <a href="3Spectrum.html" title="The Spectrum"><i class="bx bx-link"></i></a>
+                  <a href="3Spectrum.php" title="The Spectrum"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
@@ -289,7 +289,7 @@ $row=mysqli_fetch_array($query);
                 <h3>Zhongli</h3>
                 <div>
                   <a href="assets/img/portfolio/size-formated/zhongli-genshin.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Zhongli"><i class="bx bx-plus"></i></a>
-                  <a href="3Zhongli.html" title="Zhongli"><i class="bx bx-link"></i></a>
+                  <a href="3Zhongli.php" title="Zhongli"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
@@ -302,7 +302,7 @@ $row=mysqli_fetch_array($query);
                 <h3>Sun</h3>
                 <div>
                   <a href="assets/img/portfolio/size-formated/sun-mobileLegend.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Sun Hero"><i class="bx bx-plus"></i></a>
-                  <a href="3Sun.html" title="Sun Hero"><i class="bx bx-link"></i></a>
+                  <a href="3Sun.php" title="Sun Hero"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
@@ -315,7 +315,7 @@ $row=mysqli_fetch_array($query);
                 <h3>Vintage Rock ScarL</h3>
                 <div>
                   <a href="assets/img/portfolio/size-formated/scarL-pubg.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Vintage Rock ScarL"><i class="bx bx-plus"></i></a>
-                  <a href="3VintageRock.html" title="Vintage Rock ScarL"><i class="bx bx-link"></i></a>
+                  <a href="3VintageRock.php" title="Vintage Rock ScarL"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
@@ -328,7 +328,7 @@ $row=mysqli_fetch_array($query);
                 <h3>Trifecta ScarL</h3>
                 <div>
                   <a href="assets/img/portfolio/size-formated/scarL2-pubg.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Trifecta ScarL"><i class="bx bx-plus"></i></a>
-                  <a href="3Trifecta.html" title="Trifecta ScarL"><i class="bx bx-link"></i></a>
+                  <a href="3Trifecta.php" title="Trifecta ScarL"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
@@ -341,7 +341,7 @@ $row=mysqli_fetch_array($query);
                 <h3>Apex Coins</h3>
                 <div>
                   <a href="assets/img/portfolio/size-formated/apexlegendlogo.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Apex Coins"><i class="bx bx-plus"></i></a>
-                  <a href="3apexcoin.html" title="Apex Coins"><i class="bx bx-link"></i></a>
+                  <a href="3apexcoin.php" title="Apex Coins"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
@@ -354,7 +354,7 @@ $row=mysqli_fetch_array($query);
                 <h3>Pan of Judgement</h3>
                 <div>
                   <a href="assets/img/portfolio/size-formated/panskin-pubg.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Pan of Judgement"><i class="bx bx-plus"></i></a>
-                  <a href="3Judgementpan.html" title="Pan of Judgement"><i class="bx bx-link"></i></a>
+                  <a href="3Judgementpan.php" title="Pan of Judgement"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
@@ -367,7 +367,7 @@ $row=mysqli_fetch_array($query);
                 <h3>Laughing Fool Octane</h3>
                 <div>
                   <a href="assets/img/portfolio/size-formated/octane-apex.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Laughing Fool Octane"><i class="bx bx-plus"></i></a>
-                  <a href="3octane.html" title="Laughing Fool Octane"><i class="bx bx-link"></i></a>
+                  <a href="3octane.php" title="Laughing Fool Octane"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
@@ -380,7 +380,7 @@ $row=mysqli_fetch_array($query);
                 <h3>Moskov</h3>
                 <div>
                   <a href="assets/img/portfolio/size-formated/moskov-mobileLegend.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Moskov Hero"><i class="bx bx-plus"></i></a>
-                  <a href="3Moskov.html" title="Moskov Hero"><i class="bx bx-link"></i></a>
+                  <a href="3Moskov.php" title="Moskov Hero"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
@@ -393,7 +393,7 @@ $row=mysqli_fetch_array($query);
                 <h3>Red Line M16A4</h3>
                 <div>
                   <a href="assets/img/portfolio/size-formated/M16A4(2)-pubg.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Red Line M16A4"><i class="bx bx-plus"></i></a>
-                  <a href="3RedLine.html" title="Red Line M16A4"><i class="bx bx-link"></i></a>
+                  <a href="3RedLine.php" title="Red Line M16A4"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
@@ -406,7 +406,7 @@ $row=mysqli_fetch_array($query);
                 <h3>Lesly</h3>
                 <div>
                   <a href="assets/img/portfolio/size-formated/lesly-mobileLegend.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Lesly Hero"><i class="bx bx-plus"></i></a>
-                  <a href="3Lesly.html" title="Lesly Hero"><i class="bx bx-link"></i></a>
+                  <a href="3Lesly.php" title="Lesly Hero"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
@@ -419,7 +419,7 @@ $row=mysqli_fetch_array($query);
                 <h3>Desert Digital Kar98</h3>
                 <div>
                   <a href="assets/img/portfolio/size-formated/kar98(2)-pubg.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Desert Digital Kar98"><i class="bx bx-plus"></i></a>
-                  <a href="3DesertDigital.html" title="Desert Digital Kar98"><i class="bx bx-link"></i></a>
+                  <a href="3DesertDigital.php" title="Desert Digital Kar98"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
@@ -432,7 +432,7 @@ $row=mysqli_fetch_array($query);
                 <h3>Harley</h3>
                 <div>
                   <a href="assets/img/portfolio/size-formated/harley-mobileLegend.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Harley Hero"><i class="bx bx-plus"></i></a>
-                  <a href="3Harley.html" title="Harley Hero"><i class="bx bx-link"></i></a>
+                  <a href="3Harley.php" title="Harley Hero"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
@@ -445,7 +445,7 @@ $row=mysqli_fetch_array($query);
                 <h3>Pearly White Fuse</h3>
                 <div>
                   <a href="assets/img/portfolio/size-formated/fuse-apex.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Pearly White Fuse"><i class="bx bx-plus"></i></a>
-                  <a href="3Fuse.html" title="Pearly White Fuse"><i class="bx bx-link"></i></a>
+                  <a href="3Fuse.php" title="Pearly White Fuse"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
@@ -458,7 +458,7 @@ $row=mysqli_fetch_array($query);
                 <h3>Deadly Byte Crypto</h3>
                 <div>
                   <a href="assets/img/portfolio/size-formated/crypto-apex.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Deadly Byte Crypto"><i class="bx bx-plus"></i></a>
-                  <a href="3Crypto.html" title="Deadly Byte Crypto"><i class="bx bx-link"></i></a>
+                  <a href="3Crypto.php" title="Deadly Byte Crypto"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
@@ -471,7 +471,7 @@ $row=mysqli_fetch_array($query);
                 <h3>Chang-E</h3>
                 <div>
                   <a href="assets/img/portfolio/size-formated/chang-e-mobileLegend.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Chang-E Hero"><i class="bx bx-plus"></i></a>
-                  <a href="3Chang-E.html" title="Chang-E Hero"><i class="bx bx-link"></i></a>
+                  <a href="3Chang-E.php" title="Chang-E Hero"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
@@ -484,7 +484,7 @@ $row=mysqli_fetch_array($query);
                 <h3>BlackHeart Caustic</h3>
                 <div>
                   <a href="assets/img/portfolio/size-formated/caustic-apex.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="BlackHeart Caustic"><i class="bx bx-plus"></i></a>
-                  <a href="3Caustic.html" title="BlackHeart Caustic"><i class="bx bx-link"></i></a>
+                  <a href="3Caustic.php" title="BlackHeart Caustic"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
@@ -497,7 +497,7 @@ $row=mysqli_fetch_array($query);
                 <h3>UC PUBG</h3>
                 <div>
                   <a href="assets/img/portfolio/size-formated/pubglogo.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="UC PUBG"><i class="bx bx-plus"></i></a>
-                  <a href="3UC.html" title="UC PUBG"><i class="bx bx-link"></i></a>
+                  <a href="3UC.php" title="UC PUBG"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
@@ -510,7 +510,7 @@ $row=mysqli_fetch_array($query);
                 <h3>Projector of The Patch Bloodhound</h3>
                 <div>
                   <a href="assets/img/portfolio/size-formated/bloodhound-apex.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Projector of The Patch Bloodhound"><i class="bx bx-plus"></i></a>
-                  <a href="3Bloodhound.html" title="Projector of The Patch Bloodhound"><i class="bx bx-link"></i></a>
+                  <a href="3Bloodhound.php" title="Projector of The Patch Bloodhound"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
@@ -523,7 +523,7 @@ $row=mysqli_fetch_array($query);
                 <h3>Mobile Legends Diamonds</h3>
                 <div>
                   <a href="assets/img/portfolio/size-formated/mobilelegendlogo.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Mobile Legends Diamonds"><i class="bx bx-plus"></i></a>
-                  <a href="3Diamonds.html" title="Mobile Legends Diamonds"><i class="bx bx-link"></i></a>
+                  <a href="3Diamonds.php" title="Mobile Legends Diamonds"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
@@ -563,9 +563,9 @@ $row=mysqli_fetch_array($query);
               <h4>Useful Links</h4>
               <ul>
                 <li><i class="bx bx-chevron-right"></i> <a href="Customerhomepage.php">Home</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="3about.html">About Us</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="3team.html">Team</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="3contact.html">Contact Us</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="3about.php">About Us</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="3team.php">Team</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="3contact.php">Contact Us</a></li>
                 <li><i class="bx bx-chevron-right"></i> <a href="https://www.freeprivacypolicy.com/live/02e3012e-de66-4b6a-a831-8de595a84496">Terms and Condition</a></li>
                 <li><i class="bx bx-chevron-right"></i> <a href="https://www.freeprivacypolicy.com/live/3629ced9-9e17-40cc-abbf-dfd879b204e8">Privacy policy</a></li>
               </ul>
@@ -574,8 +574,8 @@ $row=mysqli_fetch_array($query);
             <div class="col-lg-3 col-md-6 footer-links">
               <h4>What We Sell</h4>
               <ul>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Player Accounts</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Skins</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="3products.php">Player Accounts</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="3products.php">Skins</a></li>
               </ul>
             </div>
   

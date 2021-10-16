@@ -60,10 +60,10 @@ $row=mysqli_fetch_array($query);
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="" href="Guesthomepage.php">Home</a></li>
-          <li><a href="1about.html">About Us</a></li>
+          <li><a href="1about.php">About Us</a></li>
           <!--<li><a href="services.html">Services</a></li>-->
-          <li><a href="1products.html">Products</a></li>
-          <li><a href="1team.html">Team</a></li>
+          <li><a href="1products.php">Products</a></li>
+          <li><a href="1team.php">Team</a></li>
           <!--<li><a href="blog.html">Blog</a></li>-->
           <!--<li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -82,12 +82,12 @@ $row=mysqli_fetch_array($query);
               <li><a href="#">Drop Down 4</a></li>
             </ul>
           </li>-->
-          <li><a href="3contact.html">Contact Us</a></li>
+          <li><a href="3contact.php">Contact Us</a></li>
           <li class="dropdown"><a href="#"><span><?php echo $row['name']; ?></span> <i class="bi bi-chevron-down"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </i></a>
             <ul>
-              <li><a href="3viewprofile.html">My Profile</a></li>
-              <li><a href="3cart.html">Cart</a></li>
-              <li><a href="3purchasehistory.html">Purchase History</a></li>
+              <li><a href="3viewprofile.php">My Profile</a></li>
+              <li><a href="3cart.php">Cart</a></li>
+              <li><a href="3purchasehistory.php">Purchase History</a></li>
             </ul>
           </li>
           <!--<li><a href="/MasterCLEO/Moderna-pro/customer dashboard/paper-dashboard-master/examples/3dashboard.html">My Dashboard  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>-->
@@ -110,8 +110,8 @@ $row=mysqli_fetch_array($query);
         <div class="d-flex justify-content-between align-items-center">
           <h2>Contact Us</h2>
           <ol>
-            <li><a href="#">Home</a></li>
-            <li>Contact Us</li>
+            <li><a href="Customerhomepage.php">Home</a></li>
+            <li><a href="3contact.php">Contact Us</a></li>
           </ol>
         </div>
 
@@ -220,9 +220,9 @@ $row=mysqli_fetch_array($query);
             <h4>Useful Links</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="Guesthomepage.php">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="1about.html">About Us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="1team.html">Team</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="1contact.html">Contact Us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="1about.php">About Us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="1team.php">Team</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="1contact.php">Contact Us</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="https://www.freeprivacypolicy.com/live/02e3012e-de66-4b6a-a831-8de595a84496">Terms and Condition</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="https://www.freeprivacypolicy.com/live/3629ced9-9e17-40cc-abbf-dfd879b204e8">Privacy policy</a></li>
             </ul>
@@ -231,8 +231,8 @@ $row=mysqli_fetch_array($query);
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>What We Sell</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Player Accounts</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Skins</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="3products.php">Player Accounts</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="3products.php">Skins</a></li>
             </ul>
           </div>
 

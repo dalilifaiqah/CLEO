@@ -92,7 +92,7 @@ $row=mysqli_fetch_array($query);
           </li>
           <!--<li><a href="/MasterCLEO/Moderna-pro/customer dashboard/paper-dashboard-master/examples/3dashboard.html">My Dashboard  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>-->
           <li><form action=/MasterCLEO/Moderna-pro/CustomerDB.php method="POST">
-          <input type="submit" name="logout" id="submit" class="form-submit submit sign-up-btn" style="" value="Log out"/>
+          <input type="submit" name="logout" id="submit" class="form-submit submit sign-up-btn" value="Log out"/>
         </form></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -133,10 +133,12 @@ $row=mysqli_fetch_array($query);
                               <img class="avatar " src="/MasterCLEO/Moderna-pro/assets/img/team-6.jpg" alt="..." id=""><br>
                               <a href="3editpicture.php" style="font-size:18px;">Edit<i class="bi bi-pencil" style="border:none; font-size:20px;" ></i></a>
                         
-                            <!--<i class="bx bx-phone-call"></i>-->
+                            
                             <h3><?php echo $row['name']; ?></h3>
                             <h4><?php echo $row['email']; ?></h4>
+                            
                             <!--<a href="3editpicture.php"><p>Edit Profile Picture</p></a>-->
+
                             <!--<a href="mailto: cleosheesh@gmail.com"><p>cleosheesh@gmail.com</p></a>-->
                         </div>
                     </div>
@@ -145,31 +147,35 @@ $row=mysqli_fetch_array($query);
 
             <div class="col-lg-6 profile" >
 
-                <form action="/MasterCLEO/Moderna-pro/3editinfo.php" method="POST"  class="php-email-form" style="background-color: #fff;">
-                    <div class="row " >
+                <form action="/MasterCLEO/3viewprofile.php" method="POST"  class="php-email-form" style="background-color: #fff;">
+                      <div class="row " >
                         <div class="col-md-12 ">
                             <h3>Profile Info</h3>
                         </div>
                         <div class="col-md-6">
                             <p style="margin: 0 0 0 0;">Username</p>
-                            <input type="text" name="username" class="form-control" id="username" placeholder="<?php echo $row['name']; ?>" disabled="">
+                            <input type="text" name="username" class="form-control" id="username" placeholder="<?php echo $row['name']; ?>" >
                         </div>
                         <div class="col-md-6 ">
                             <p style="margin: 0 0 0 0;">Email</p>
-                            <input type="email" class="form-control" name="email" id="email" placeholder="<?php echo $row['email']; ?>" disabled="">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="<?php echo $row['email']; ?>" >
                         </div>
-                    </div>
+                      </div>
                     
-                    <div class="row">
+                      <div class="row">
                         <div class="col-md-6">
                             <p style="margin-top: 10px; margin-bottom: 0;">Password</p>
-                            <input type="text" name="firstname" class="form-control" id="firstname" placeholder="<?php echo $row['password']; ?>" disabled="">
+                            <input type="text" name="firstname" class="form-control " id="firstname" placeholder="<?php echo $row['password']; ?>" >
                         </div>
-
-                    <div class="my-3"></div>
-                    <br><br><br><br>
-                    
-                      <button class="warnabutton center" type="submit" >Edit Profile Info</button>
+                      </div>
+                      <div class="my-3">
+                      </div>
+                      <br><br><br><br>
+                      <div class="row" style="width:100%;">
+                        <button class="warnabutton center" type="submit" style="background-color: #FFBF00;">Save Changes</button> &nbsp;&nbsp;&nbsp;
+                      
+                        <a href="3viewprofile.php"style="margin-top:10px;" >Cancel</a>
+                      </div>
                 </form>
             
             </div>
@@ -184,7 +190,7 @@ $row=mysqli_fetch_array($query);
       <div class="container-fluid p-0">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.2219901290355!2d-74.00369368400567!3d40.71312937933185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a23e28c1191%3A0x49f75d3281df052a!2s150%20Park%20Row%2C%20New%20York%2C%20NY%2010007%2C%20USA!5e0!3m2!1sen!2sbg!4v1579767901424!5m2!1sen!2sbg" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
       </div>
-    </section> End Map Section-->
+    </section> End Map Section -->
 
   </main><!-- End #main -->
 

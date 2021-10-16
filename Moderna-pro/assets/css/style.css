@@ -1750,12 +1750,16 @@ section {
   border: 2px dotted #a2cce3;
 }
 
+
+
 .profile .warnabutton {
   background: #68A4C4;
   border-width: 1px;
     border-radius: 30px;
     padding-right: 23px;
     padding-left: 23px;
+    color: white;
+    width: 30% ;
   /*transition: 0.4s;*/
 }
 .profile .php-email-form {

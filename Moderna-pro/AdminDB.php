@@ -1,9 +1,12 @@
 <?php
+session_start();
 if (isset($_POST['signup'])) {
     signup($_POST['signup']);
 }else if(isset($_POST['login'])) {
     login($_POST['login']);
-}
+}else if(isset($_POST['logout'])) {
+    logout($_POST['logout']);
+}    
 ?>
 
 <?php
@@ -52,9 +55,17 @@ if (isset($_POST['signup'])) {
 
         if($count2 == 1){
             //$row = $result->fetch_assoc();
-            header("Location: /MasterCLEO/Moderna-pro/2_admin_pages_here/startbootstrap-sb-admin-2-gh-pages/");
+            $_SESSION['email'] = $email;
+            header("Location: /MasterCLEO/Moderna-pro/2_admin_pages_here/startbootstrap-sb-admin-2-gh-pages/dashboard.php");
         }else{
             echo '<br>Login failed';
         }
     }
+
+
+    function logout(){
+        session_destroy();
+        header("Location:4logout.html");
+    }
+
 ?>

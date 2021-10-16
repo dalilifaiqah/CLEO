@@ -25,11 +25,11 @@ function customereditprofile()
       $newname = $_POST['name'];
       $newpassword = $_POST['password'];
      
-      $sql = "UPDATE admin SET name = '$_POST[name]', password = '$_POST[password]' WHERE email = '$_POST[email]'";
+      $sql = "UPDATE customer SET name = '$_POST[name]', password = '$_POST[password]' WHERE email = '$_POST[email]'";
     }
     
     if ($con2->query($sql) === TRUE){
-      header("Location: /MasterCLEO/Moderna-pro/2_admin_pages_here/startbootstrap-sb-admin-2-gh-pages/3viewprofile.php");
+      header("Location: /MasterCLEO/Moderna-pro/3viewprofile.php");
             }else{
                 echo '<br>Update failed';
             }

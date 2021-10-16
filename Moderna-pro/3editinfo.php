@@ -154,7 +154,7 @@ $row=mysqli_fetch_array($query);
                         </div>
                         <div class="col-md-6">
                             <p style="margin: 0 0 0 0;">Username</p>
-                            <input type="text" name="username" class="form-control" id="username" placeholder="<?php echo $row['name']; ?>" >
+                            <input type="text" name="name" class="form-control" id="name" placeholder="<?php echo $row['name']; ?>" >
                         </div>
                         <div class="col-md-6 ">
                             <p style="margin: 0 0 0 0;">Email</p>
@@ -165,14 +165,14 @@ $row=mysqli_fetch_array($query);
                       <div class="row">
                         <div class="col-md-6">
                             <p style="margin-top: 10px; margin-bottom: 0;">Password</p>
-                            <input type="text" name="firstname" class="form-control " id="firstname" placeholder="<?php echo $row['password']; ?>" >
+                            <input type="text" name="password" class="form-control " id="password" placeholder="<?php echo $row['password']; ?>" >
                         </div>
                       </div>
                       <div class="my-3">
                       </div>
                       <br><br><br><br>
                       <div class="row" style="width:100%;">
-                        <button class="warnabutton center" type="submit" style="background-color: #FFBF00;">Save Changes</button> &nbsp;&nbsp;&nbsp;
+                        <button class="warnabutton center" type="submit" name = customereditprofile style="background-color: #FFBF00;">Save Changes</button> &nbsp;&nbsp;&nbsp;
                       
                         <a href="3viewprofile.php"style="margin-top:10px;" >Cancel</a>
                       </div>

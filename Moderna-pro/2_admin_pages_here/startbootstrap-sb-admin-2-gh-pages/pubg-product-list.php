@@ -43,7 +43,7 @@ $row=mysqli_fetch_array($query);
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="dashboard.html">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="dashboard.php">
                 <div class="sidebar-brand-icon">
                     <img src="../../assets/img/CLEO-Logo.png" alt="logo">
                     <!--<i class="fas fa-laugh-wink"></i>-->
@@ -56,7 +56,7 @@ $row=mysqli_fetch_array($query);
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
-                <a class="nav-link" href="dashboard.html">
+                <a class="nav-link" href="dashboard.php">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
@@ -78,12 +78,14 @@ $row=mysqli_fetch_array($query);
                 <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Video Games:</h6>
+                        <h6 class="collapse-header">Video_Games:</h6>
                         <a class="collapse-item" href="genshin-product-list.php">Genshin Impact</a>
                         <a class="collapse-item" href="valorant-product-list.php">Valorant</a>
                         <a class="collapse-item" href="mobilelegends-product-list.php">Mobile Legends</a>
                         <a class="collapse-item" href="pubg-product-list.php">PUBG</a>
                         <a class="collapse-item" href="apexlegends-product-list.php">Apex Legends</a>
+                        <h6 class="collapse-header">Game_Points:</h6>
+                        <a class="collapse-item" href="gamepoints-product-list.php">Game Points</a>
                     </div>
                 </div>
             </li>
@@ -106,7 +108,7 @@ $row=mysqli_fetch_array($query);
 
             <!-- Nav Item - Order Purchase -->
             <li class="nav-item">
-                <a class="nav-link" href="order-purchase-list.html">
+                <a class="nav-link" href="order-purchase-list.php">
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>Order Purchase</span></a>
             </li>
@@ -225,31 +227,22 @@ $row=mysqli_fetch_array($query);
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3" style="background-color: whitesmoke;">
-                            <h6 class="m-0 font-weight-bold text-primary">Product List
-                                <a href="add-product-page.html" class="btn btn-success btn-icon-split" style="float: right;">
-                                    <span class="text">Add New Product</span>
-                                </a>
+                            <h6 class="m-0 font-weight-bold text-primary">PUBG Product List
                             </h6>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                <col style="width: 8%;">
                                     <col style="width: 15%;">
                                     <col style="width: 10%;">
-                                    <col style="width: 10%;">
-                                    <col style="width: 10%;">
-                                    <col style="width: 15%;">
-                                    <col style="width: 15%;">
                                     <col style="width: 10%;">
                                     <thead>
                                         <tr>
-                                            <th>Image</th>
+                                            <th>ID</th>
                                             <th>Name</th>
                                             <th>Added by</th>
-                                            <th>Type</th>
-                                            <th>Info</th>
-                                            <th>Stock</th>
-                                            <th>Options</th>
+                                            <th>Price</th>
                                         </tr>
                                     </thead>
                                     <?php

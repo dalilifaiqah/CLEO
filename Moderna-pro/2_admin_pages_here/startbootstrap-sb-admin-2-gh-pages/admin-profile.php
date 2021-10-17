@@ -88,7 +88,7 @@ $row=mysqli_fetch_array($query);
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="dashboard.html">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="dashboard.php">
                 <div class="sidebar-brand-icon">
                     <img src="../../assets/img/CLEO-Logo.png" alt="logo">
                     <!--<i class="fas fa-laugh-wink"></i>-->
@@ -101,7 +101,7 @@ $row=mysqli_fetch_array($query);
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
-                <a class="nav-link" href="dashboard.html">
+                <a class="nav-link" href="dashboard.php">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
@@ -123,26 +123,37 @@ $row=mysqli_fetch_array($query);
                 <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Video Games:</h6>
+                        <h6 class="collapse-header">Video_Games:</h6>
                         <a class="collapse-item" href="genshin-product-list.php">Genshin Impact</a>
                         <a class="collapse-item" href="valorant-product-list.php">Valorant</a>
                         <a class="collapse-item" href="mobilelegends-product-list.php">Mobile Legends</a>
                         <a class="collapse-item" href="pubg-product-list.php">PUBG</a>
                         <a class="collapse-item" href="apexlegends-product-list.php">Apex Legends</a>
+                        <h6 class="collapse-header">Game_Points:</h6>
+                        <a class="collapse-item" href="gamepoints-product-list.php">Game Points</a>
                     </div>
                 </div>
             </li>
 
-            <!-- Nav Item - Feedbacks -->
+            <!-- Nav Item - Feedbacks list Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link" href="feedback-list.php">
-                    <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Feedbacks</span></a>
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Feedbacks</span>
+                </a>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="feedback-list-customer.php">Customer</a>
+                        <a class="collapse-item" href="feedback-list-guest.php">Guest</a>
+                    </div>
+                </div>
             </li>
 
             <!-- Nav Item - Order Purchase -->
             <li class="nav-item">
-                <a class="nav-link" href="order-purchase-list.html">
+                <a class="nav-link" href="order-purchase-list.php">
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>Order Purchase</span></a>
             </li>
@@ -274,7 +285,7 @@ $row=mysqli_fetch_array($query);
                           <!-- Breadcrumb -->
                           <!--<nav aria-label="breadcrumb" class="main-breadcrumb">
                             <ol class="breadcrumb">
-                              <li class="breadcrumb-item"><a href="dashboard.html">Home</a></li>
+                              <li class="breadcrumb-item"><a href="dashboard.php">Home</a></li>
                               <li class="breadcrumb-item"><a href="javascript:void(0)">User</a></li>
                               <li class="breadcrumb-item active" aria-current="page">User Profile</li>
                             </ol>
@@ -356,7 +367,7 @@ $row=mysqli_fetch_array($query);
                           <div>
                             <div class="row float-right">
                               <div class="col-sm-12">
-                                <a class="btn btn-info"  href="dashboard.html">Back to dashboard</a>
+                                <a class="btn btn-info"  href="dashboard.php">Back to dashboard</a>
                               </div>
                             </div>
                           </div>

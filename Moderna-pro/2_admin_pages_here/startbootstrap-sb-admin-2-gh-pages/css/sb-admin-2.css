@@ -11279,3 +11279,11 @@ footer.sticky-footer .copyright {
 body.sidebar-toggled footer.sticky-footer {
   width: 100%;
 }
+ /* added */
+ 
+#profilepicture {
+  display: block;
+  width: 60%;
+  margin: 10px auto;
+  border-radius: 50%;
+}

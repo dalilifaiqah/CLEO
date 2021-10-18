@@ -288,15 +288,21 @@ $row=mysqli_fetch_array($query);
                                     <div class="card">
                                         <div class="card-body">
                                             <div class="d-flex flex-column align-items-center text-center">
-                                                <img src="https://bootdey.com/img/Content/avatar/avatar6.png" alt="Admin" class="rounded-circle p-1 bg-primary" width="110">
                                                 <div class="mt-3">
+                                                <img src="images/<?php echo $row['profilepicture']; ?>" onclick = "triggerClick()"  width="110" id = "profilepicture" name = "profilepicture" >  <!-- class="rounded-circle p-1 bg-primary" -->
+                                             
+                                                    <form action = /MasterCLEO/Moderna-pro/2_admin_pages_here/startbootstrap-sb-admin-2-gh-pages/admineditprofile.php method = "POST">
                                                     <h4>Afnan</h4>
                                                     <p class="text-secondary mb-1">Back-end Programmer</p>
                                                     <p class="text-muted font-size-sm">Selangor, Malaysia</p>
-                                                    <button class="btn btn-outline-primary">Choose picture</button>
-                                                    <button class="btn btn-primary">Save changes</button>
+                                                    <!--<button class="btn btn-outline-primary">Choose picture</button>-->
+                                                  <!--  <button class="btn btn-primary" name = admineditprofile>Save changes</button> -
                                                 </div>
-                                            </div>
+                                                <div class = "btn btn-outline-primary">
+                                                    <!--<span>Upload Photo</span>-->
+                                                    <input class = "file-input" type = "file" onchange = "displayImage(this)" id = "profilepicture" name = "profilepicture">Upload Profile Picture</input>
+                                                </div>
+                                            </div> 
                                             
                                         </div>
                                     </div>
@@ -310,7 +316,7 @@ $row=mysqli_fetch_array($query);
                                                     <h6 class="mb-0">Name</h6>
                                                 </div>
                                                 <div class="col-sm-9 text-secondary">
-                                                    <input type="text" class="form-control" value="" name = "name">
+                                                    <input type="text" class="form-control" value="" name = "name" placeholder="<?php echo $row['name']; ?>" required>
                                                 </div>
                                             </div>
                                             <div class="row mb-3">
@@ -318,7 +324,7 @@ $row=mysqli_fetch_array($query);
                                                     <h6 class="mb-0">E-mail</h6>
                                                 </div>
                                                 <div class="col-sm-9 text-secondary">
-                                                    <input type="text" class="form-control" value="" name = "email" >
+                                                    <input type="text" class="form-control" value="" name = "email" placeholder="<?php echo $row['email']; ?>" required>
                                                 </div>
                                             </div>
                                             <div class="row mb-3">
@@ -326,7 +332,7 @@ $row=mysqli_fetch_array($query);
                                                     <h6 class="mb-0">Mobile</h6>
                                                 </div>
                                                 <div class="col-sm-9 text-secondary">
-                                                    <input type="text" class="form-control" value="" name = "mobile">
+                                                    <input type="text" class="form-control" value="" name = "mobile" placeholder="<?php echo $row['mobile']; ?>" required>
                                                 </div>
                                             </div>
                                             <div class="row mb-3">
@@ -334,9 +340,10 @@ $row=mysqli_fetch_array($query);
                                                     <h6 class="mb-0">Address</h6>
                                                 </div>
                                                 <div class="col-sm-9 text-secondary">
-                                                    <input type="text" class="form-control" value="" name = "address">
+                                                    <input type="text" class="form-control" value="" name = "address" placeholder="<?php echo $row['address']; ?>" required>
                                                 </div>
                                             </div>
+
                                             <div class="row">
                                                 <div class="col-sm-3"></div>
                                                 <div class="col-sm-9 text-secondary">
@@ -928,6 +935,25 @@ $row=mysqli_fetch_array($query);
         }
     </script>
 
+<!-- additional javascript  -->
+    <script src ="scripts.js">
+
+    function triggerClick(){
+    document.querySelector('#profilepicture').click();
+}
+
+function displayImage(e){
+    if (e.files[0]){
+        var reader = new FileReader();
+
+        reader.onload = function(e) {
+            document.querySelector('#profilepicture').setAttribute('src', e.target.result);
+        }
+        reader.readAsDataURL(e.files[0]);
+    }
+}
+
+    </script> 
 
 </body>
 

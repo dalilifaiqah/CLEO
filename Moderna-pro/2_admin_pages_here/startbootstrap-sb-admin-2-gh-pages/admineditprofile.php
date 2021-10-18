@@ -25,10 +25,11 @@ function admineditprofile()
     
       $email = $_POST['email'];
       $newname = $_POST['name'];
+      $newpfp = $_POST['profilepicture'];
       $newmobile = $_POST['mobile'];
       $newaddress = $_POST['address'];
      
-      $sql = "UPDATE admin SET name = '$_POST[name]', mobile = '$_POST[mobile]', address = '$_POST[address]' WHERE email = '$_POST[email]'";
+      $sql = "UPDATE admin SET name = '$_POST[name]', profilepicture = '$_POST[profilepicture]', mobile = '$_POST[mobile]', address = '$_POST[address]' WHERE email = '$_POST[email]'";
     }
     
     if ($con2->query($sql) === TRUE){

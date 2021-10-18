@@ -297,7 +297,7 @@ $row=mysqli_fetch_array($query);
                               <div class="card">
                                 <div class="card-body">
                                   <div class="d-flex flex-column align-items-center text-center">
-                                    <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Admin" class="rounded-circle" width="150">
+                                    <img src="images/<?php echo $row['profilepicture']; ?>" id = "profilepicture" name = "profilepicture" class="rounded-circle" width="150" for = "file">
                                     <div class="mt-3">
                                       <h4><?php echo $row['name']; ?></h4>
                                       <p class="text-secondary mb-1"><?php echo $row['email']; ?></p>
@@ -307,7 +307,9 @@ $row=mysqli_fetch_array($query);
                                   </div>
                                 </div>
                               </div>
-                              
+
+                      
+                            
                             </div>
                             <div class="col-md-8">
                               <div class="card mb-3">

@@ -129,11 +129,11 @@ $row=mysqli_fetch_array($query);
                 <div class="row">
                     <div class="col-md-12 profile-user">
                         <div class="info-box">
-                            <form action="/MasterCLEO/Moderna-pro/3viewprofile.php" method="POST">
-                              <img class="avatar " src="/MasterCLEO/Moderna-pro/assets/img/team-6.jpg" alt="..." id="" for=""><br>
+                            <form action="/MasterCLEO/Moderna-pro/customereditprofile.php" method="POST">
+                            <img src="images/<?php echo $row['profilepicture']; ?>" id="profilepicture" name = "profilepicture" for=""><br>
                               <!--<a href="3editpicture.php" style="font-size:18px;">Edit<i class="bi bi-pencil" style="border:none; font-size:20px;" ></i></a>-->
-                              <input class="file-input" type="file" id="fileUpload" accept="image/*" style="margin-left: 130px; margin-bottom: 5px;">
-                              <br><button type="submit"class="warnabutton center" style="width:20%; border:none; background-color: #FFBF00; color:black; height: 35px;">Save</button>
+                              <input class="file-input" type="file" id="profilepicture" name = "profilepicture" accept="image/*" style="margin-left: 130px; margin-bottom: 5px;">
+                              <br><button type="submit" class="warnabutton center" name = "customereditprofile" style="width:20%; border:none; background-color: #FFBF00; color:black; height: 35px;">Save</button>
                             </form>
                             <!--<i class="bx bx-phone-call"></i>-->
                             <h3><?php echo $row['name']; ?></h3>

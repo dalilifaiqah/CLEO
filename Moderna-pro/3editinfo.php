@@ -130,10 +130,17 @@ $row=mysqli_fetch_array($query);
                     <div class="col-md-12 profile-user">
                         <div class="info-box">
                             
-                              <img class="avatar " src="/MasterCLEO/Moderna-pro/assets/img/team-6.jpg" alt="..." id=""><br>
-                              <a href="3editpicture.php" style="font-size:18px;">Edit<i class="bi bi-pencil" style="border:none; font-size:20px;" ></i></a>
-                        
-                            
+                        <!-- ADDED SOMETHING HERE -->
+                              <!-- <img src="images/" alt="..." id=""><br>
+                              <a href="3editpicture.php" style="font-size:18px;">Edit<i class="bi bi-pencil" style="border:none; font-size:20px;" ></i></a> -->
+                              <img src="images/<?php echo $row['profilepicture']; ?>" id="profilepicture" name = "profilepicture" for=""><br>
+                              <form action= "/MasterCLEO/Moderna-pro/customereditprofile.php" method="POST">
+                              
+                              <!--<a href="3editpicture.php" style="font-size:18px;">Edit<i class="bi bi-pencil" style="border:none; font-size:20px;" ></i></a>-->
+                              <input class="file-input" type="file" id="profilepicture" name = "profilepicture" style="margin-left: 130px; margin-bottom: 5px;">
+                         <!--     <br><button type="submit" class="warnabutton center" name = "customereditprofile" style="width:20%; border:none; background-color: #FFBF00; color:black; height: 35px;">Save</button> -->
+                            </form>
+                            <!-- FINISH ADDING --> 
                             <h3><?php echo $row['name']; ?></h3>
                             <h4><?php echo $row['email']; ?></h4>
                             
@@ -172,7 +179,7 @@ $row=mysqli_fetch_array($query);
                       </div>
                       <br><br><br><br>
                       <div class="row" style="width:100%;">
-                        <button class="warnabutton center" type="submit" name = customereditprofile style="background-color: #FFBF00;">Save Changes</button> &nbsp;&nbsp;&nbsp;
+                        <button class="warnabutton center" type="submit" name = "customereditprofile" style="background-color: #FFBF00;">Save Changes</button> &nbsp;&nbsp;&nbsp;
                       
                         <a href="3viewprofile.php"style="margin-top:10px;" >Cancel</a>
                       </div>

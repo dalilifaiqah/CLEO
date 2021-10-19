@@ -298,7 +298,7 @@ $row=mysqli_fetch_array($query);
                                                     <!--<button class="btn btn-outline-primary">Choose picture</button>-->
                                                   <!--  <button class="btn btn-primary" name = admineditprofile>Save changes</button> -
                                                 </div>
-                                                <div class = "btn btn-outline-primary">
+                                                <div class = "btn btn-outline-primary"-->
                                                     <!--<span>Upload Photo</span>-->
                                                     <input class = "file-input" type = "file" onchange = "displayImage(this)" id = "profilepicture" name = "profilepicture">Upload Profile Picture</input>
                                                 </div>

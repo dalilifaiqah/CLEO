@@ -130,10 +130,16 @@ $row=mysqli_fetch_array($query);
                     <div class="col-md-12 profile-user">
                         <div class="info-box">
                             
-                              <img src="images/<?php echo $row['profilepicture']; ?>" alt="..." name = "profilepicture" id="profilepicture"><br>
+                              <!-- <img src="images/(add echo row here)" alt="..." name = "profilepicture" id="profilepicture"><br> -->
                               <!-- <a href="3editpicture.php" style="font-size:18px;">Edit<i class="bi bi-pencil" style="border:none; font-size:20px;" ></i></a> --> 
                         
                             <!--<i class="bx bx-phone-call"></i>-->
+                           <?php 
+                            echo "<tr>";
+                            echo "<td>";?> <img src="<?php echo $row['profilepicture']; ?>" height = "100" width = "100" name = "profilepicture"><?php echo "</td>";
+                            echo "</tr>";
+                           ?>
+
                             <h3><?php echo $row['name']; ?></h3>
                             <h4><?php echo $row['email']; ?></h4>
                             <!--<a href="3editpicture.php"><p>Edit Profile Picture</p></a>-->

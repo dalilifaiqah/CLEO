@@ -152,7 +152,7 @@ $row=mysqli_fetch_array($query);
                 </div>
             </div>
 
-            <div class="col-lg-6 profile" >
+            <div class="col-lg-6 profile" style="background-color: white">
 
                 <form action="/MasterCLEO/Moderna-pro/customereditprofile.php" method="POST"  class="php-email-form" style="background-color: #fff;">
                       <div class="row " >

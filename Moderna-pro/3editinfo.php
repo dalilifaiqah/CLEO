@@ -139,7 +139,7 @@ $row=mysqli_fetch_array($query);
                               <!--<a href="3editpicture.php" style="font-size:18px;">Edit<i class="bi bi-pencil" style="border:none; font-size:20px;" ></i></a>-->
                               <input class="file-input" type="file" id="profilepicture" name = "profilepicture" style="margin-left: 130px; margin-bottom: 5px;">
                          <!--     <br><button type="submit" class="warnabutton center" name = "customereditprofile" style="width:20%; border:none; background-color: #FFBF00; color:black; height: 35px;">Save</button> -->
-                            </form>
+                            
                             <!-- FINISH ADDING --> 
                             <h3><?php echo $row['name']; ?></h3>
                             <h4><?php echo $row['email']; ?></h4>
@@ -161,18 +161,18 @@ $row=mysqli_fetch_array($query);
                         </div>
                         <div class="col-md-6">
                             <p style="margin: 0 0 0 0;">Username</p>
-                            <input type="text" name="name" class="form-control" id="name" placeholder="<?php echo $row['name']; ?>" >
+                            <input type="text" name="name" class="form-control" id="name" placeholder="<?php echo $row['name']; ?>" required >
                         </div>
                         <div class="col-md-6 ">
                             <p style="margin: 0 0 0 0;">Email</p>
-                            <input type="email" class="form-control" name="email" id="email" placeholder="<?php echo $row['email']; ?>" >
+                            <input type="email" class="form-control" name="email" id="email" placeholder="<?php echo $row['email']; ?>" required>
                         </div>
                       </div>
                     
                       <div class="row">
                         <div class="col-md-6">
                             <p style="margin-top: 10px; margin-bottom: 0;">Password</p>
-                            <input type="text" name="password" class="form-control " id="password" placeholder="<?php echo $row['password']; ?>" >
+                            <input type="text" name="password" class="form-control " id="password" placeholder="<?php echo $row['password']; ?>" minlength = "6" required>
                         </div>
                       </div>
                       <div class="my-3">

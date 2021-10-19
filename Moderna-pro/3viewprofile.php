@@ -131,7 +131,7 @@ $row=mysqli_fetch_array($query);
                         <div class="info-box">
                             
                               <img src="images/<?php echo $row['profilepicture']; ?>" alt="..." name = "profilepicture" id="profilepicture"><br>
-                              <a href="3editpicture.php" style="font-size:18px;">Edit<i class="bi bi-pencil" style="border:none; font-size:20px;" ></i></a>
+                              <!-- <a href="3editpicture.php" style="font-size:18px;">Edit<i class="bi bi-pencil" style="border:none; font-size:20px;" ></i></a> --> 
                         
                             <!--<i class="bx bx-phone-call"></i>-->
                             <h3><?php echo $row['name']; ?></h3>

@@ -332,7 +332,7 @@ $row=mysqli_fetch_array($query);
                                                     <h6 class="mb-0">Mobile</h6>
                                                 </div>
                                                 <div class="col-sm-9 text-secondary">
-                                                    <input type="text" class="form-control" value="" name = "mobile" placeholder="<?php echo $row['mobile']; ?>" required>
+                                                    <input type="text" class="form-control" value="" name = "mobile" placeholder="<?php echo $row['mobile']; ?>" minlength = "10" required>
                                                 </div>
                                             </div>
                                             <div class="row mb-3">

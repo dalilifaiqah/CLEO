@@ -1,9 +1,11 @@
 <?php
+
 $con = mysqli_connect("localhost","admin1","admin1","cleo"); 
 session_start(); 
 $email=$_SESSION['email']; 
 $query=mysqli_query($con,"SELECT * FROM customer WHERE email='$email' "); 
 $row=mysqli_fetch_array($query);
+ 
 ?>
 
 <!DOCTYPE html>
@@ -134,6 +136,7 @@ $row=mysqli_fetch_array($query);
                               <!-- <img src="images/" alt="..." id=""><br>
                               <a href="3editpicture.php" style="font-size:18px;">Edit<i class="bi bi-pencil" style="border:none; font-size:20px;" ></i></a> -->
                               <img src="images/<?php echo $row['profilepicture']; ?>" id="profilepicture" name = "profilepicture" for=""><br>
+        
                               <form action= "/MasterCLEO/Moderna-pro/customereditprofile.php" method="POST" class="php-email-form" style="background-color: #fff; white; box-shadow: none;">
                               
                               <!--<a href="3editpicture.php" style="font-size:18px;">Edit<i class="bi bi-pencil" style="border:none; font-size:20px;" ></i></a>-->

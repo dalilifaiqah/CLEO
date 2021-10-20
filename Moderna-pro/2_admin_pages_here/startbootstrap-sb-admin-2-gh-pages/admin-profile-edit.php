@@ -292,9 +292,9 @@ $row=mysqli_fetch_array($query);
                                                 <img src="images/<?php echo $row['profilepicture']; ?>" onclick = "triggerClick()"  width="110" id = "profilepicture" name = "profilepicture" >  <!-- class="rounded-circle p-1 bg-primary" -->
                                              
                                                     <form action = /MasterCLEO/Moderna-pro/2_admin_pages_here/startbootstrap-sb-admin-2-gh-pages/admineditprofile.php method = "POST">
-                                                    <h4>Afnan</h4>
+                                                    <h4><?php echo $row['name']; ?></h4>
                                                     <p class="text-secondary mb-1">Back-end Programmer</p>
-                                                    <p class="text-muted font-size-sm">Selangor, Malaysia</p>
+                                                    <p class="text-muted font-size-sm"><?php echo $row['address']; ?></p>
                                                     <!--<button class="btn btn-outline-primary">Choose picture</button>-->
                                                   <!--  <button class="btn btn-primary" name = admineditprofile>Save changes</button> -
                                                 </div>

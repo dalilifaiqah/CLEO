@@ -13,7 +13,7 @@ $row=mysqli_fetch_array($query);
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title><?php echo $row['name']; ?>'s Profile</title>
+  <title>Edit Profile Info</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -92,7 +92,7 @@ $row=mysqli_fetch_array($query);
           </li>
           <!--<li><a href="/MasterCLEO/Moderna-pro/customer dashboard/paper-dashboard-master/examples/3dashboard.html">My Dashboard  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>-->
           <li><form action=/MasterCLEO/Moderna-pro/CustomerDB.php method="POST">
-          <input type="submit" name="logout" id="submit" class="form-submit submit sign-up-btn" style="" value="Log out"/>
+          <input type="submit" name="logout" id="submit" class="form-submit submit sign-up-btn" value="Log out"/>
         </form></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -110,8 +110,8 @@ $row=mysqli_fetch_array($query);
         <div class="d-flex justify-content-between align-items-center">
           <h2>My Profile</h2>
           <ol>
-            <li class="display: list-item;"><a href="Customerhomepage.php" >Home</a></li>
-            <li class="display: list-item;"><a href="3viewprofile.php">My Profile</li>
+            <li><a href="Customerhomepage.php">Home</a></li>
+            <li><a href="3viewprofile.php">My Profile</a></li>
           </ol>
         </div>
 
@@ -128,7 +128,7 @@ $row=mysqli_fetch_array($query);
 
                 <div class="row">
                     <div class="col-md-12 profile-user">
-                        <div class="info-box">
+                        <div class="info-box" style="padding: 123px 0 150px 0; box-shadow:none;">
                             
                               <!-- <img src="images/(add echo row here)" alt="..." name = "profilepicture" id="profilepicture"><br> -->
                               <!-- <a href="3editpicture.php" style="font-size:18px;">Edit<i class="bi bi-pencil" style="border:none; font-size:20px;" ></i></a> --> 
@@ -151,33 +151,37 @@ $row=mysqli_fetch_array($query);
 
             <div class="col-lg-6 profile" >
 
-                <div class="php-email-form" style="background-color: #fff;">
-                    <div class="row " >
+                <div   class="php-email-form" style="background-color: white; box-shadow: none;">
+                      <div class="row " >
                         <div class="col-md-12 ">
                             <h3>Profile Info</h3>
                         </div>
                         <div class="col-md-6">
                             <p style="margin: 0 0 0 0;">Username</p>
-                            <input type="text" name="name" class="form-control" id="name" placeholder="<?php echo $row['name']; ?>" >
+                            <input type="text" name="name" class="form-control" id="name" placeholder="<?php echo $row['name']; ?>" disabled >
                         </div>
                         <div class="col-md-6 ">
                             <p style="margin: 0 0 0 0;">Email</p>
-                            <input type="email" class="form-control" name="email" id="email" placeholder="<?php echo $row['email']; ?>" disabled="">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="<?php echo $row['email']; ?>" disabled>
                         </div>
-                    </div>
+                      </div>
                     
-                    <div class="row">
+                      <div class="row">
                         <div class="col-md-6">
                             <p style="margin-top: 10px; margin-bottom: 0;">Password</p>
-                            <input type="text" name="password" class="form-control" id="password" placeholder="<?php echo $row['password']; ?>" disabled="">
+                            <input type="text" name="password" class="form-control " id="password" placeholder="<?php echo $row['password']; ?>" minlength = "6" disabled>
                         </div>
+                      </div>
+                      <div class="my-3">
+                      </div>
+                      <br><br><br><br>
+                      <div class="row" style="width:100%;">
+                      <form action="/MasterCLEO/Moderna-pro/3editinfo.php" method="POST">
+                        <button class="warnabutton center" type="submit"  >Edit Profile Info</button> &nbsp;&nbsp;&nbsp;
+                      </form>
+                        <!--<a href="3viewprofile.php"style="margin-top:10px;" >Cancel</a>-->
+                      </div>
                     </div>
-                    <div class="my-3"></div>
-                    <br><br><br><br>
-                    <div class="row" style="width:100%">
-                      <button class="warnabutton center" type="submit" >Edit Profile Info</button>
-                    </div>
-                  </div>
             
             </div>
 
@@ -191,7 +195,7 @@ $row=mysqli_fetch_array($query);
       <div class="container-fluid p-0">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.2219901290355!2d-74.00369368400567!3d40.71312937933185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a23e28c1191%3A0x49f75d3281df052a!2s150%20Park%20Row%2C%20New%20York%2C%20NY%2010007%2C%20USA!5e0!3m2!1sen!2sbg!4v1579767901424!5m2!1sen!2sbg" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
       </div>
-    </section> End Map Section-->
+    </section> End Map Section -->
 
   </main><!-- End #main -->
 
@@ -221,10 +225,10 @@ $row=mysqli_fetch_array($query);
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="Guesthomepage.php">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="1about.php">About Us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="1team.php">Team</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="1contact.php">Contact Us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="Customerhomepage.php">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="3about.php">About Us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="3team.php">Team</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="3contact.php">Contact Us</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="https://www.freeprivacypolicy.com/live/02e3012e-de66-4b6a-a831-8de595a84496">Terms and Condition</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="https://www.freeprivacypolicy.com/live/3629ced9-9e17-40cc-abbf-dfd879b204e8">Privacy policy</a></li>
             </ul>

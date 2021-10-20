@@ -19,7 +19,7 @@ $row=mysqli_fetch_array($query);
     <meta name="author" content="">
     <link rel="icon" href="../../assets/img/CLEO-Logo.png">
     <title>CLEO Valorant Product List</title>
-    <link rel="icon" href="../../assets/img/CLEO-Logo.png">
+    
     <!-- Custom fonts for this template -->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link
@@ -267,11 +267,10 @@ $row=mysqli_fetch_array($query);
                                     <tbody>
                                     <form action="" method="POST">
                                         <div class="form-group">                                            
-                                            <input type="text" class="form-control" placeholder="Enter ID To DELETE" name="id">
-                                            <input type="submit" name="delete" value="Delete Data" >
-
+                                            <input type="text" class="col-lg-2 form-control" placeholder="Enter ID To DELETE" name="id" style="float: left;">
+                                            <input class="yellow-buttonloh" type="submit" name="delete" value="Delete Data" style="height:37px; width:100px; margin: 0px 5px">
                                         </div>
-                                        </form>
+                                    </form>
                                         
                                     
                                         <?php

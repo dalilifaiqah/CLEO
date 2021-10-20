@@ -324,7 +324,7 @@ $row=mysqli_fetch_array($query);
                                                     <h6 class="mb-0">E-mail</h6>
                                                 </div>
                                                 <div class="col-sm-9 text-secondary">
-                                                    <input type="text" class="form-control" value="" name = "email" placeholder="<?php echo $row['email']; ?>" required>
+                                                    <input type="email" class="form-control" value="" name = "email" placeholder="<?php echo $row['email']; ?>" required>
                                                 </div>
                                             </div>
                                             <div class="row mb-3">

@@ -154,8 +154,8 @@ $row=mysqli_fetch_array($query);
 
             <div class="col-lg-6 profile" >
 
-                <div   class="php-email-form" style="background-color: white; box-shadow: none;">
-                    <form action="/MasterCLEO/Moderna-pro/customereditprofile.php" method="POST"  class="php-email-form" style="background-color: #fff;">
+                <!--<div   class="php-email-form" style="background-color: ">-->
+                    <form action="/MasterCLEO/Moderna-pro/customereditprofile.php" method="POST"  class="php-email-form" style="background-color: #fff; white; box-shadow: none;">
                         <div class="row " >
                         <div class="col-md-12 ">
                             <h3>Profile Info</h3>
@@ -185,7 +185,7 @@ $row=mysqli_fetch_array($query);
                         <a href="3viewprofile.php"style="margin-top:10px;" >Cancel</a>
                       </div>
                     </form>
-                </div>
+                <!--</div>-->
             
             </div>
 

@@ -134,7 +134,7 @@ $row=mysqli_fetch_array($query);
                               <!-- <img src="images/" alt="..." id=""><br>
                               <a href="3editpicture.php" style="font-size:18px;">Edit<i class="bi bi-pencil" style="border:none; font-size:20px;" ></i></a> -->
                               <img src="images/<?php echo $row['profilepicture']; ?>" id="profilepicture" name = "profilepicture" for=""><br>
-                              <form action= "/MasterCLEO/Moderna-pro/customereditprofile.php" method="POST">
+                              <!--<form action= "/MasterCLEO/Moderna-pro/customereditprofile.php" method="POST">-->
                               
                               <!--<a href="3editpicture.php" style="font-size:18px;">Edit<i class="bi bi-pencil" style="border:none; font-size:20px;" ></i></a>-->
                               <input class="file-input" type="file" id="profilepicture" name = "profilepicture" style="margin-left: 130px; margin-bottom: 5px;">

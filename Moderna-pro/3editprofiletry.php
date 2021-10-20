@@ -128,13 +128,13 @@ $row=mysqli_fetch_array($query);
 
                 <div class="row">
                     <div class="col-md-12 profile-user">
-                        <div class="info-box">
+                        <div class="info-box" style="padding: 123px 0 150px 0; box-shadow:none;">
                             
-                        <!-- ADDED SOMETHING HERE -->
+                            <!-- ADDED SOMETHING HERE -->
                               <!-- <img src="images/" alt="..." id=""><br>
                               <a href="3editpicture.php" style="font-size:18px;">Edit<i class="bi bi-pencil" style="border:none; font-size:20px;" ></i></a> -->
                               <img src="images/<?php echo $row['profilepicture']; ?>" id="profilepicture" name = "profilepicture" for=""><br>
-                              <form action= "/MasterCLEO/Moderna-pro/customereditprofile.php" method="POST">
+                              <!--<form action= "/MasterCLEO/Moderna-pro/customereditprofile.php" method="POST">-->
                               
                               <!--<a href="3editpicture.php" style="font-size:18px;">Edit<i class="bi bi-pencil" style="border:none; font-size:20px;" ></i></a>-->
                               <input class="file-input" type="file" id="profilepicture" name = "profilepicture" style="margin-left: 130px; margin-bottom: 5px;">
@@ -152,10 +152,11 @@ $row=mysqli_fetch_array($query);
                 </div>
             </div>
 
-            <div class="col-lg-6 profile" style="background-color: white">
+            <div class="col-lg-6 profile" >
 
-                <form action="/MasterCLEO/Moderna-pro/customereditprofile.php" method="POST"  class="php-email-form" style="background-color: #fff;">
-                      <div class="row " >
+                <div   class="php-email-form" style="background-color: white; box-shadow: none;">
+                    <form action="/MasterCLEO/Moderna-pro/customereditprofile.php" method="POST"  class="php-email-form" style="background-color: #fff;">
+                        <div class="row " >
                         <div class="col-md-12 ">
                             <h3>Profile Info</h3>
                         </div>
@@ -183,7 +184,8 @@ $row=mysqli_fetch_array($query);
                       
                         <a href="3viewprofile.php"style="margin-top:10px;" >Cancel</a>
                       </div>
-                </form>
+                    </form>
+                </div>
             
             </div>
 
@@ -227,10 +229,10 @@ $row=mysqli_fetch_array($query);
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="Guesthomepage.php">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="1about.php">About Us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="1team.php">Team</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="1contact.php">Contact Us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="Customerhomepage.php">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="3about.php">About Us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="3team.php">Team</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="3contact.php">Contact Us</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="https://www.freeprivacypolicy.com/live/02e3012e-de66-4b6a-a831-8de595a84496">Terms and Condition</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="https://www.freeprivacypolicy.com/live/3629ced9-9e17-40cc-abbf-dfd879b204e8">Privacy policy</a></li>
             </ul>

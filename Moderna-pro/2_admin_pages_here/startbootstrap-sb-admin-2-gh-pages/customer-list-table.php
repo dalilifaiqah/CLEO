@@ -265,7 +265,7 @@ $row=mysqli_fetch_array($query);
                                             <td>".$row["password"]."</td>
                                             <td>".$row["date"]."</td>
                                             <td>".$row["verified"]."</td>
-                                            <td  scope='col'><input type='submit' class='btn yellow-buttonloh' value='Edit' name='customerEdit'></td>
+                                            <td  scope='col'><input type='submit' class='btn yellow-buttonloh' value='Edit' name='customereditprofile'></td>
                                             </tr>";
                                         }
                                     }

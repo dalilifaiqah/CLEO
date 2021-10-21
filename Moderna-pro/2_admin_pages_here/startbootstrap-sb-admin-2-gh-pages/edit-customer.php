@@ -303,7 +303,7 @@
                                                     <h6 class="mb-0">Name</h6>
                                                 </div>
                                                 <div class="col-sm-9 text-secondary">
-                                                    <input type="email" class="form-control" value="" name = "name" placeholder="<?php echo $row['name']; ?>" required>
+                                                    <input type="text" class="form-control" value="" name = "name" placeholder="<?php echo $row['name']; ?>" required>
                                                 </div>
                                             </div>
                                             <div class="row mb-3">
@@ -311,7 +311,7 @@
                                                     <h6 class="mb-0">E-mail</h6>
                                                 </div>
                                                 <div class="col-sm-9 text-secondary">
-                                                    <input type="text" class="form-control" value="" name = "email" placeholder="<?php echo $row['email']; ?>" minlength = "10" required>
+                                                    <input type="email" class="form-control" value="" name = "email" placeholder="<?php echo $row['email']; ?>" minlength = "10" required>
                                                 </div>
                                             </div>
                                             <div class="row mb-3">
@@ -322,12 +322,12 @@
                                                     <input type="text" class="form-control" value="" name = "password" placeholder="<?php echo $row['password']; ?>" required>
                                                 </div>
                                             </div>
-                                            <div class="row mb-3">
+                                            <!--<div class="row mb-3">
                                                 <div class="col-sm-3">
                                                     <h6 class="mb-0">Date</h6>
                                                 </div>
                                                 <div class="col-sm-9 text-secondary">
-                                                    <input type="text" class="form-control" value="" name = "date" placeholder="<?php echo $row['date']; ?>" required>
+                                                    <input type="text" class="form-control" value="" name = "date" placeholder="" required>
                                                 </div>
                                             </div>
                                             <div class="row mb-3">
@@ -335,14 +335,14 @@
                                                     <h6 class="mb-0">Verified</h6>
                                                 </div>
                                                 <div class="col-sm-9 text-secondary">
-                                                    <input type="text" class="form-control" value="" name = "verified" placeholder="<?php echo $row['verified']; ?>" required>
+                                                    <input type="text" class="form-control" value="" name = "verified" placeholder="" required>
                                                 </div>
-                                            </div>
+                                            </div>-->
 
                                             <div class="row">
                                                 <div class="col-sm-3"></div>
                                                 <div class="col-sm-9 text-secondary">
-                                                    <input type="submit" class="btn btn-primary px-4" value="Save Changes" name = "admineditprofile">
+                                                    <input type="submit" class="btn btn-primary px-4" value="Save Changes" name = "customer-list-table">
                                                 </form> 
                                                 </div>
                                             </div>

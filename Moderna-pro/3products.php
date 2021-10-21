@@ -403,10 +403,10 @@ $row=mysqli_fetch_array($query);
             <div class="portfolio-item">
               <img src="assets/img/portfolio/size-formated/lesly-mobileLegend.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h3>Lesly</h3>
+                <h3>Lesley</h3>
                 <div>
-                  <a href="assets/img/portfolio/size-formated/lesly-mobileLegend.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Lesly Hero"><i class="bx bx-plus"></i></a>
-                  <a href="3Lesly.php" title="Lesly Hero"><i class="bx bx-link"></i></a>
+                  <a href="assets/img/portfolio/size-formated/lesly-mobileLegend.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Lesley Hero"><i class="bx bx-plus"></i></a>
+                  <a href="3Lesly.php" title="Lesley Hero"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>

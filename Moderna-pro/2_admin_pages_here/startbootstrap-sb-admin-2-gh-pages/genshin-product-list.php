@@ -244,12 +244,14 @@ $row=mysqli_fetch_array($query);
                                     <col style="width: 15%;">
                                     <col style="width: 10%;">
                                     <col style="width: 10%;">
+                                    <col style="width: 3%">
                                 <thead>
                                         <tr>
                                             <th>ID</th>
                                             <th>Name</th>
                                             <th>Added by</th>
                                             <th>Price</th>
+                                            <th>Edit</th>
                                         </tr>
                                     </thead>
                                     <?php
@@ -262,8 +264,13 @@ $row=mysqli_fetch_array($query);
 
                                     if($result-> num_rows > 0) {
                                         while ($row = $result-> fetch_assoc()) {
-                                            echo "<tr><td>".$row["id"]."</td><td>".$row["name"]."</td><td>".$row["addby"]."</td>
-                                            <td>".$row["tag"]."</td></tr>";
+                                            echo "<tr>
+                                            <td>".$row["id"]."</td>
+                                            <td>".$row["name"]."</td>
+                                            <td>".$row["addby"]."</td>
+                                            <td>".$row["tag"]."</td>
+                                            <td  scope='col'><input type='submit' class='btn yellow-buttonloh' value='Edit' name='productEdit'></td>
+                                            </tr>";
                                         }
                                     }
                                     ?>

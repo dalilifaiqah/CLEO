@@ -242,6 +242,7 @@ $row=mysqli_fetch_array($query);
                                             <th>Password</th>
                                             <th>Date</th>
                                             <th>Verified</th>
+                                            <th>Edit</th>
                                         </tr>
                                     </thead>
                                     
@@ -258,10 +259,13 @@ $row=mysqli_fetch_array($query);
                                     if($result-> num_rows > 0) {
                                         while ($row = $result-> fetch_assoc()) {
                                             echo "<tr>
-                                            <td>".$row["id"]."</td><td>".$row["name"]."</td><td>".$row["email"]."</td>
-                                            <td>".$row["password"]."</td><td>".$row["date"]."</td><td>".$row["verified"]."</td>
-                                            
-                                            
+                                            <td>".$row["id"]."</td>
+                                            <td>".$row["name"]."</td>
+                                            <td>".$row["email"]."</td>
+                                            <td>".$row["password"]."</td>
+                                            <td>".$row["date"]."</td>
+                                            <td>".$row["verified"]."</td>
+                                            <td  scope='col'><input type='submit' class='btn yellow-buttonloh' value='Edit' name='customerEdit'></td>
                                             </tr>";
                                         }
                                     }

@@ -1,9 +1,9 @@
 <?php
-$con = mysqli_connect("localhost","admin1","admin1","cleo"); 
-session_start(); 
-$email=$_SESSION['email']; 
-$query=mysqli_query($con,"SELECT * FROM admin WHERE email='$email' "); 
-$row=mysqli_fetch_array($query);
+#$con = mysqli_connect("localhost","admin1","admin1","cleo"); 
+#session_start(); 
+#$email=$_SESSION['email']; 
+#$query=mysqli_query($con,"SELECT * FROM admin WHERE email='$email' "); 
+#$row=mysqli_fetch_array($query);
 ?>
 
 
@@ -18,7 +18,7 @@ $row=mysqli_fetch_array($query);
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../assets/img/CLEO-Logo.png">
-    <title>CLEO Admin Profile-edit</title>
+    <title>CLEO Admin Edit Customer</title>
 
     <!-- google font -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700">
@@ -267,7 +267,7 @@ $row=mysqli_fetch_array($query);
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0" style="color: #fff;">Admin Profile Edit</h1>
+                        <h1 class="h3 mb-0" style="color: #fff;">Admin Edit Customer</h1>
                         <!--<a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
                                 class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>-->
                     </div>
@@ -285,39 +285,25 @@ $row=mysqli_fetch_array($query);
                         </div>
                         <div class="main-body">
                             <div class="row">
-                                <div class="col-lg-4">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <div class="d-flex flex-column align-items-center text-center">
-                                                <div class="mt-3">
-                                                <img src="images/<?php echo $row['profilepicture']; ?>" onclick = "triggerClick()"  width="110" id = "profilepicture" name = "profilepicture" >  <!-- class="rounded-circle p-1 bg-primary" -->
-                                             
-                                                    <form action = /MasterCLEO/Moderna-pro/2_admin_pages_here/startbootstrap-sb-admin-2-gh-pages/admineditprofile.php method = "POST">
-                                                    <h4><?php echo $row['name']; ?></h4>
-                                                    <p class="text-secondary mb-1">Back-end Programmer</p>
-                                                    <p class="text-muted font-size-sm"><?php echo $row['address']; ?></p>
-                                                    <!--<button class="btn btn-outline-primary">Choose picture</button>-->
-                                                  <!--  <button class="btn btn-primary" name = admineditprofile>Save changes</button> -
-                                                </div>
-                                                <div class = "btn btn-outline-primary"-->
-                                                    <!--<span>Upload Photo</span>-->
-                                                    <input class = "file-input" type = "file" onchange = "displayImage(this)" id = "profilepicture" name = "profilepicture">Upload Profile Picture</input>
-                                                </div>
-                                            </div> 
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-8">
-                                    <div class="card">
+                                
+                                <div class="col-lg-12" style="margin: auto;">
+                                    <div class="card" style="margin: auto;">
                                         <div class="card-body">
                                             <div class="row mb-3">
                                                 <div class="col-sm-3">
                                                 <form action = /MasterCLEO/Moderna-pro/2_admin_pages_here/startbootstrap-sb-admin-2-gh-pages/admineditprofile.php method = "POST">
+                                                    <h6 class="mb-0">ID</h6>
+                                                </div>
+                                                <div class="col-sm-9 text-secondary">
+                                                    <input type="text" class="form-control" value="" name = "id" placeholder="<?php echo $row['id']; ?>" required>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <div class="col-sm-3">
                                                     <h6 class="mb-0">Name</h6>
                                                 </div>
                                                 <div class="col-sm-9 text-secondary">
-                                                    <input type="text" class="form-control" value="" name = "name" placeholder="<?php echo $row['name']; ?>" required>
+                                                    <input type="email" class="form-control" value="" name = "name" placeholder="<?php echo $row['name']; ?>" required>
                                                 </div>
                                             </div>
                                             <div class="row mb-3">
@@ -325,23 +311,31 @@ $row=mysqli_fetch_array($query);
                                                     <h6 class="mb-0">E-mail</h6>
                                                 </div>
                                                 <div class="col-sm-9 text-secondary">
-                                                    <input type="email" class="form-control" value="" name = "email" placeholder="<?php echo $row['email']; ?>" required>
+                                                    <input type="text" class="form-control" value="" name = "email" placeholder="<?php echo $row['email']; ?>" minlength = "10" required>
                                                 </div>
                                             </div>
                                             <div class="row mb-3">
                                                 <div class="col-sm-3">
-                                                    <h6 class="mb-0">Mobile</h6>
+                                                    <h6 class="mb-0">Password</h6>
                                                 </div>
                                                 <div class="col-sm-9 text-secondary">
-                                                    <input type="text" class="form-control" value="" name = "mobile" placeholder="<?php echo $row['mobile']; ?>" minlength = "10" required>
+                                                    <input type="text" class="form-control" value="" name = "password" placeholder="<?php echo $row['password']; ?>" required>
                                                 </div>
                                             </div>
                                             <div class="row mb-3">
                                                 <div class="col-sm-3">
-                                                    <h6 class="mb-0">Address</h6>
+                                                    <h6 class="mb-0">Date</h6>
                                                 </div>
                                                 <div class="col-sm-9 text-secondary">
-                                                    <input type="text" class="form-control" value="" name = "address" placeholder="<?php echo $row['address']; ?>" required>
+                                                    <input type="text" class="form-control" value="" name = "date" placeholder="<?php echo $row['date']; ?>" required>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <div class="col-sm-3">
+                                                    <h6 class="mb-0">Verified</h6>
+                                                </div>
+                                                <div class="col-sm-9 text-secondary">
+                                                    <input type="text" class="form-control" value="" name = "verified" placeholder="<?php echo $row['verified']; ?>" required>
                                                 </div>
                                             </div>
 

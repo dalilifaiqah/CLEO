@@ -254,6 +254,8 @@ $row=mysqli_fetch_array($query);
                                             <th>Edit</th>
                                         </tr>
                                     </thead>
+                                    <tr>
+
                                     <?php
                                     $conn = mysqli_connect("localhost","admin1","admin1","cleo");
                                     if ($conn-> connect_error){
@@ -274,29 +276,33 @@ $row=mysqli_fetch_array($query);
                                         }
                                     }
                                     ?>
+                                    </tr>
                                     <tbody>
-                                    <form action="" method="POST">
-                                        <div class="form-group">                                            
-                                            <input type="text" class="col-lg-2 form-control" placeholder="Enter ID To DELETE" name="id" style="float: left;">
-                                            <input class="yellow-buttonloh" type="submit" name="delete" value="Delete Data" style="height:37px; width:100px; margin: 0px 5px">
-                                        </div>
-                                    </form>
-                                        
-                                    
-                                        <?php
-                                        
-                                        $connection = mysqli_connect("localhost","admin1","admin1");
-                                        $db = mysqli_select_db($connection, 'cleo');
-                                        
-                                        if(isset($_POST['delete']))
-                                        {
-                                            $id = $_POST['id'];
 
-                                            $query = "DELETE FROM `genshindb` WHERE id='$id' ";
-                                            $query_run = mysqli_query($connection,$query);
-                                        }                                       
-                                        ?>
-                                    </tbody>
+                                        <form action="" method="POST">
+                                            <div class="form-group">                                            
+                                                <input type="text" class="col-lg-2 form-control" placeholder="Enter ID To DELETE" name="id" style="float: left;">
+                                                <input class="yellow-buttonloh" type="submit" name="delete" value="Delete Data" style="height:37px; width:100px; margin: 0px 5px">
+                                            </div>
+                                        </form>
+    
+
+                                            <?php
+                                            
+                                            $connection = mysqli_connect("localhost","admin1","admin1");
+                                            $db = mysqli_select_db($connection, 'cleo');
+                                            
+                                            if(isset($_POST['delete']))
+                                            {
+                                                $id = $_POST['id'];
+
+                                                $query = "DELETE FROM `genshindb` WHERE id='$id' ";
+                                                $query_run = mysqli_query($connection,$query);
+                                            }                                       
+                                            ?>
+                                        
+                                        
+                                        </tbody>
                                 </table>
                             </div>
                         </div>

@@ -246,6 +246,7 @@ $row=mysqli_fetch_array($query);
                                             <th>Edit</th>
                                         </tr>
                                     </thead>
+                                    <tr>
                                     <?php
                                     $conn = mysqli_connect("localhost","admin1","admin1","cleo");
                                     if ($conn-> connect_error){
@@ -266,7 +267,7 @@ $row=mysqli_fetch_array($query);
                                         }
                                     }
                                     ?>
-                                
+                                    </tr>
                                     <tbody>
                                     <form action="" method="POST">
                                         <div class="form-group">                                            

@@ -297,7 +297,11 @@ $row=mysqli_fetch_array($query);
                               <div class="card">
                                 <div class="card-body">
                                   <div class="d-flex flex-column align-items-center text-center">
-                                  <img alt="picture" src="<?php echo $_SESSION['profilepicture'];?> ">
+                                   <?php  
+                                    
+                                    ?> <img src="<?php echo $row['profilepicture']; ?>" height = "100" width = "100" name = "profilepicture"><?php echo "</td>";
+                                    
+                                    ?>
                                     <div class="mt-3">
                                       <h4><?php echo $row['name']; ?></h4>
                                       <p class="text-secondary mb-1"><?php echo $row['email']; ?></p>

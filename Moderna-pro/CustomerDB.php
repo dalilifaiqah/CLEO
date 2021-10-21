@@ -40,7 +40,7 @@ if (isset($_POST['signup'])) {
             if ($con->query($sql) === TRUE) {
                 $to = $email;
                 $subject = "Verify Your Email Address";
-                $headers = "From: info.cleo@gmail.com\r\n";
+                $headers = "From: info.cleosheesh@gmail.com\r\n";
                 $headers .= "MIME-Version : 1.0\r\n";
                 $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 

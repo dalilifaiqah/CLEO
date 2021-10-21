@@ -109,7 +109,7 @@ $row=mysqli_fetch_array($query);
 
             <!-- Nav Item - Customer's List -->
             <li class="nav-item ">
-                <a class="nav-link" href="customer-list-table.html">
+                <a class="nav-link" href="customer-list-table.php">
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>Customer List</span></a>
             </li>

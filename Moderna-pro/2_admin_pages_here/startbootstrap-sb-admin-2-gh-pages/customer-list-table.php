@@ -107,11 +107,11 @@ $row=mysqli_fetch_array($query);
                 </div>
             </li>
 
-            <!-- Nav Item - Order Purchase -->
+            <!-- Nav Item - Purchase List -->
             <li class="nav-item">
                 <a class="nav-link" href="order-purchase-list.php">
                     <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Order Purchase</span></a>
+                    <span>Purchase List</span></a>
             </li>
 
             <!-- Divider -->

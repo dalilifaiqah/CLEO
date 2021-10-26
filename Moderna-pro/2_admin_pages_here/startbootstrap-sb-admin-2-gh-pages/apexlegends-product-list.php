@@ -262,7 +262,7 @@ $row=mysqli_fetch_array($query);
                                             <td>".$row["name"]."</td>
                                             <td>".$row["addby"]."</td>
                                             <td>".$row["tag"]."</td>
-                                            <td  scope='col'><a class='btn yellow-buttonloh'  href='edit-product.php'>Edit</a></td>
+                                            <td  scope='col'><a class='btn yellow-buttonloh'  href='apex-edit-product.php'>Edit</a></td>
                                             </tr>";
                                         }
                                     }

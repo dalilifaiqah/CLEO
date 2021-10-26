@@ -291,7 +291,7 @@
                                         <div class="card-body">
                                             <div class="row mb-3">
                                                 <div class="col-sm-3">
-                                                <form action = /MasterCLEO/Moderna-pro/2_admin_pages_here/startbootstrap-sb-admin-2-gh-pages/admineditprofile.php method = "POST">
+                                                <form action = /MasterCLEO/Moderna-pro/2_admin_pages_here/startbootstrap-sb-admin-2-gh-pages/pubgedit.php method = "POST">
                                                     <h6 class="mb-0">ID</h6>
                                                 </div>
                                                 <div class="col-sm-9 text-secondary">
@@ -303,7 +303,7 @@
                                                     <h6 class="mb-0">Name</h6>
                                                 </div>
                                                 <div class="col-sm-9 text-secondary">
-                                                    <input type="email" class="form-control" value="" name = "name" placeholder="<?php echo $row['name']; ?>" required>
+                                                    <input type="text" class="form-control" value="" name = "name" placeholder="<?php echo $row['name']; ?>" required>
                                                 </div>
                                             </div>
                                             <div class="row mb-3">
@@ -311,7 +311,7 @@
                                                     <h6 class="mb-0">Added by</h6>
                                                 </div>
                                                 <div class="col-sm-9 text-secondary">
-                                                    <input type="text" class="form-control" value="" name = "added-by" placeholder="<?php echo $row['added-by']; ?>" minlength = "10" required>
+                                                    <input type="text" class="form-control" value="" name = "addby" placeholder="<?php echo $row['addby']; ?>" required>
                                                 </div>
                                             </div>
                                             <div class="row mb-3">
@@ -319,14 +319,14 @@
                                                     <h6 class="mb-0">Price</h6>
                                                 </div>
                                                 <div class="col-sm-9 text-secondary">
-                                                    <input type="text" class="form-control" value="" name = "price" placeholder="<?php echo $row['price']; ?>" required>
+                                                    <input type="text" class="form-control" value="" name = "tag" placeholder="<?php echo $row['tag']; ?>" required>
                                                 </div>
                                             </div>
 
                                             <div class="row">
                                                 <div class="col-sm-3"></div>
                                                 <div class="col-sm-9 text-secondary">
-                                                    <input type="submit" class="btn btn-primary px-4" value="Save Changes" name = "admineditprofile">
+                                                    <input type="submit" class="btn btn-primary px-4" value="Save Changes" name = "pubgedit">
                                                 </form> 
                                                 </div>
                                             </div>

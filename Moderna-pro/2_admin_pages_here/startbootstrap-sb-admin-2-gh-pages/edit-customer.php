@@ -291,7 +291,7 @@
                                         <div class="card-body">
                                             <div class="row mb-3">
                                                 <div class="col-sm-3">
-                                                <form action = /MasterCLEO/Moderna-pro/2_admin_pages_here/startbootstrap-sb-admin-2-gh-pages/admineditprofile.php method = "POST">
+                                                <form action = /MasterCLEO/Moderna-pro/customereditprofile2.php method = "POST">
                                                     <h6 class="mb-0">ID</h6>
                                                 </div>
                                                 <div class="col-sm-9 text-secondary">
@@ -342,7 +342,7 @@
                                             <div class="row">
                                                 <div class="col-sm-3"></div>
                                                 <div class="col-sm-9 text-secondary">
-                                                    <input type="submit" class="btn btn-primary px-4" value="Save Changes" name = "customer-list-table">
+                                                    <input type="submit" class="btn btn-primary px-4" value="Save Changes" name = "customereditprofile2">
                                                 </form> 
                                                 </div>
                                             </div>

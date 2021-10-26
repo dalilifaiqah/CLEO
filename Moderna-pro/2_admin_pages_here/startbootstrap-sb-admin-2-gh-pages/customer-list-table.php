@@ -241,8 +241,8 @@ $row=mysqli_fetch_array($query);
                                             <th>Email</th>
                                             <th>Password</th>
                                             <th>Date</th>
-                                            <th>Verified</th>
-                                            <th>Edit</th>
+                                          <!--  <th>Verified</th>
+                                            <th>Edit</th> -->
                                         </tr>
                                     </thead>
                                     
@@ -253,7 +253,7 @@ $row=mysqli_fetch_array($query);
                                     if ($conn-> connect_error){
                                         die("Connection failed:".$conn-> connect_error);
                                     }
-                                    $sql = "SELECT id, name, email, password, date, verified from customer";
+                                    $sql = "SELECT id, name, email, password from customer";
                                     $result = $conn-> query($sql);
 
                                     if($result-> num_rows > 0) {
@@ -263,8 +263,6 @@ $row=mysqli_fetch_array($query);
                                             <td>".$row["name"]."</td>
                                             <td>".$row["email"]."</td>
                                             <td>".$row["password"]."</td>
-                                            <td>".$row["date"]."</td>
-                                            <td>".$row["verified"]."</td>
                                             <td  scope='col'><a class='btn yellow-buttonloh'  href='edit-customer.php'>Edit</a></td>
                                             </tr>";
                                         }

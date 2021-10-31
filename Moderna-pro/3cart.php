@@ -108,10 +108,10 @@ $row=mysqli_fetch_array($query);
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>My Profile</h2>
+          <h2>Shopping Cart</h2>
           <ol>
             <li><a href="Customerhomepage.php">Home</a></li>
-            <li><a href="3viewprofile.php">My Profile</a></li>
+            <li><a href="3viewprofile.php">Shopping Cart</a></li>
           </ol>
         </div>
 
@@ -130,7 +130,7 @@ $row=mysqli_fetch_array($query);
                 <div class="p-5">
                   <div class="d-flex justify-content-between align-items-center mb-5">
                     <h1 class="fw-bold mb-0 text-black">Shopping Cart</h1>
-                    <h6 class="mb-0 text-muted">3 items</h6>
+                    <h6 class="mb-0 text-muted">1 item(s)</h6>
                   </div>
                   <hr class="my-4">
 
@@ -180,11 +180,15 @@ $row=mysqli_fetch_array($query);
                   <hr class="my-4">
 
                   <div class="d-flex justify-content-between mb-4">
-                    <h5 class="text-uppercase">items 3</h5>
+                    <h5 class="text-uppercase">item(s) 1</h5>
                     <h5>RM 0.00</h5>
                   </div>
 
-                  <h5 class="text-uppercase mb-3">Service Tax</h5>
+                  <div class="d-flex justify-content-between mb-4">
+                    <h5 class="text-uppercase mb-3">Service Tax</h5>
+                    <h5>RM 0.00</h5>
+                  </div>
+                  
 
                   <div class="mb-4 pb-2">
                     <select class="select">

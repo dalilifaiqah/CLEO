@@ -159,75 +159,7 @@ $row=mysqli_fetch_array($query);
                       </button>
                     </div>
                     <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
-                      <h6 class="mb-0">€ 44.00</h6>
-                    </div>
-                    <div class="col-md-1 col-lg-1 col-xl-1 text-end">
-                      <a href="#!" class="text-muted"><i class="fas fa-times"></i></a>
-                    </div>
-                  </div>
-
-                  <hr class="my-4">
-
-                  <div class="row mb-4 d-flex justify-content-between align-items-center">
-                    <div class="col-md-2 col-lg-2 col-xl-2">
-                      <img
-                        src="https://mdbootstrap.com/img/Photos/new-templates/bootstrap-shopping-carts/img6.jpg"
-                        class="img-fluid rounded-3" alt="Cotton T-shirt">
-                    </div>
-                    <div class="col-md-3 col-lg-3 col-xl-3">
-                      <h6 class="text-muted">Shirt</h6>
-                      <h6 class="text-black mb-0">Cotton T-shirt</h6>
-                    </div>
-                    <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
-                      <button class="btn btn-link px-2"
-                        onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
-                        <i class="fas fa-minus"></i>
-                      </button>
-
-                      <input id="form1" min="0" name="quantity" value="1" type="number"
-                        class="form-control form-control-sm" />
-
-                      <button class="btn btn-link px-2"
-                        onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
-                        <i class="fas fa-plus"></i>
-                      </button>
-                    </div>
-                    <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
-                      <h6 class="mb-0">€ 44.00</h6>
-                    </div>
-                    <div class="col-md-1 col-lg-1 col-xl-1 text-end">
-                      <a href="#!" class="text-muted"><i class="fas fa-times"></i></a>
-                    </div>
-                  </div>
-
-                  <hr class="my-4">
-
-                  <div class="row mb-4 d-flex justify-content-between align-items-center">
-                    <div class="col-md-2 col-lg-2 col-xl-2">
-                      <img
-                        src="https://mdbootstrap.com/img/Photos/new-templates/bootstrap-shopping-carts/img7.jpg"
-                        class="img-fluid rounded-3" alt="Cotton T-shirt">
-                    </div>
-                    <div class="col-md-3 col-lg-3 col-xl-3">
-                      <h6 class="text-muted">Shirt</h6>
-                      <h6 class="text-black mb-0">Cotton T-shirt</h6>
-                    </div>
-                    <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
-                      <button class="btn btn-link px-2"
-                        onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
-                        <i class="fas fa-minus"></i>
-                      </button>
-
-                      <input id="form1" min="0" name="quantity" value="1" type="number"
-                        class="form-control form-control-sm" />
-
-                      <button class="btn btn-link px-2"
-                        onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
-                        <i class="fas fa-plus"></i>
-                      </button>
-                    </div>
-                    <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
-                      <h6 class="mb-0">€ 44.00</h6>
+                      <h6 class="mb-0">RM 0.00</h6>
                     </div>
                     <div class="col-md-1 col-lg-1 col-xl-1 text-end">
                       <a href="#!" class="text-muted"><i class="fas fa-times"></i></a>
@@ -237,7 +169,7 @@ $row=mysqli_fetch_array($query);
                   <hr class="my-4">
 
                   <div class="pt-5">
-                    <h6 class="mb-0"><a href="#!" class="text-body"><i
+                    <h6 class="mb-0"><a href="3products.php" class="text-body"><i
                           class="fas fa-long-arrow-alt-left me-2"></i>Back to shop</a></h6>
                   </div>
                 </div>
@@ -249,38 +181,41 @@ $row=mysqli_fetch_array($query);
 
                   <div class="d-flex justify-content-between mb-4">
                     <h5 class="text-uppercase">items 3</h5>
-                    <h5>€ 132.00</h5>
+                    <h5>RM 0.00</h5>
                   </div>
 
-                  <h5 class="text-uppercase mb-3">Shipping</h5>
+                  <h5 class="text-uppercase mb-3">Service Tax</h5>
 
                   <div class="mb-4 pb-2">
                     <select class="select">
-                      <option value="1">Standard-Delivery- €5.00</option>
+                      <option value="1">Standard-Delivery- RM5.00</option>
                       <option value="2">Two</option>
                       <option value="3">Three</option>
                       <option value="4">Four</option>
                     </select>
                   </div>
 
-                  <h5 class="text-uppercase mb-3">Give code</h5>
+                  <!-- <h5 class="text-uppercase mb-3">Give code</h5>
 
                   <div class="mb-5">
                     <div class="form-outline">
                       <input type="text" id="form3Examplea2" class="form-control form-control-lg" />
                       <label class="form-label" for="form3Examplea2">Enter your code</label>
                     </div>
-                  </div>
+                  </div> -->
 
                   <hr class="my-4">
 
                   <div class="d-flex justify-content-between mb-5">
                     <h5 class="text-uppercase">Total price</h5>
-                    <h5>€ 137.00</h5>
+                    <h5>RM 0.00</h5>
                   </div>
 
-                  <button type="button" class="btn btn-dark btn-block btn-lg"
-                    data-mdb-ripple-color="dark">Register</button>
+                   <!-- <button type="button" class="btn btn-dark btn-block btn-lg"
+                    data-mdb-ripple-color="dark">Purchase Order</button> -->
+                  
+                  <button type="button" class="btn btn-dark btn-block btn-lg" data-mdb-ripple-color="dark">
+                    <a href="3Checkout.php" style="color: #fff;">Purchase Order</a></button>
 
                 </div>
               </div>
@@ -331,7 +266,7 @@ $row=mysqli_fetch_array($query);
               <li><i class="bx bx-chevron-right"></i> <a href="3about.php">About Us</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="3team.php">Team</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="3contact.php">Contact Us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="https://www.freeprivacypolicy.com/live/02e3012e-de66-4b6a-a831-8de595a84496">Terms and Condition</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://www.freeprivacypolicy.com/live/02e3012e-de66-4b6a-a831-8de595a8096">Terms and Condition</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="https://www.freeprivacypolicy.com/live/3629ced9-9e17-40cc-abbf-dfd879b204e8">Privacy policy</a></li>
             </ul>
           </div>

@@ -13,12 +13,12 @@ $row=mysqli_fetch_array($query);
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Edit Profile Info</title>
+  <title>Shopping Cart</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
    <!-- Favicons -->
-   <link rel="icon" href="assets/img/icon1.png">
+   <link rel="icon" href="assets/img/CLEO-logo.png">
    <!--<link href="assets/img/logo atas.png" rel="icon">
    <link href="assets/img/logo atas.png" rel="logo-atas-icon">-->
 

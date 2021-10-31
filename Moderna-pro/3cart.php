@@ -137,12 +137,12 @@ $row=mysqli_fetch_array($query);
                   <div class="row mb-4 d-flex justify-content-between align-items-center">
                     <div class="col-md-2 col-lg-2 col-xl-2">
                       <img
-                        src="https://mdbootstrap.com/img/Photos/new-templates/bootstrap-shopping-carts/img5.jpg"
-                        class="img-fluid rounded-3" alt="Cotton T-shirt">
+                        src="assets/img/portfolio/scarL-pubg.png"
+                        class="img-fluid rounded-3" alt="ScarL-pubg">
                     </div>
                     <div class="col-md-3 col-lg-3 col-xl-3">
-                      <h6 class="text-muted">Shirt</h6>
-                      <h6 class="text-black mb-0">Cotton T-shirt</h6>
+                      <h6 class="text-muted">PUBG</h6>
+                      <h6 class="text-black mb-0">ScarL</h6>
                     </div>
                     <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
                       <button class="btn btn-link px-2"
@@ -161,9 +161,13 @@ $row=mysqli_fetch_array($query);
                     <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
                       <h6 class="mb-0">RM 0.00</h6>
                     </div>
-                    <div class="col-md-1 col-lg-1 col-xl-1 text-end">
-                      <a href="#!" class="text-muted"><i class="fas fa-times"></i></a>
+                    <div class="col-md-3 col-lg-1 col-xl-2 offset-lg-0" style="text-align: center;">
+                      <a href="#" style="text-align: center;">Remove</a>
                     </div>
+                    <!-- <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                      <a href="#!" class="text-muted"><i class="fas fa-times"></i></a>
+                    </div> -->
+                    
                   </div>
 
                   <hr class="my-4">
@@ -184,20 +188,20 @@ $row=mysqli_fetch_array($query);
                     <h5>RM 0.00</h5>
                   </div>
 
-                  <div class="d-flex justify-content-between mb-4">
+                  <div class="d-flex justify-content-between ">
                     <h5 class="text-uppercase mb-3">Service Tax</h5>
                     <h5>RM 0.00</h5>
                   </div>
                   
 
-                  <div class="mb-4 pb-2">
+                  <!-- <div class="mb-4 pb-2">
                     <select class="select">
                       <option value="1">Standard-Delivery- RM5.00</option>
                       <option value="2">Two</option>
                       <option value="3">Three</option>
                       <option value="4">Four</option>
                     </select>
-                  </div>
+                  </div> -->
 
                   <!-- <h5 class="text-uppercase mb-3">Give code</h5>
 
@@ -208,7 +212,7 @@ $row=mysqli_fetch_array($query);
                     </div>
                   </div> -->
 
-                  <hr class="my-4">
+                  <hr class="my-4" style="margin-top: 0.5rem !important;">
 
                   <div class="d-flex justify-content-between mb-5">
                     <h5 class="text-uppercase">Total price</h5>

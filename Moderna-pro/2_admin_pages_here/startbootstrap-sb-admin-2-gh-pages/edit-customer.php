@@ -41,6 +41,8 @@
     <style>
         body {
             font-size: 16px;}
+        a:hover{
+            text-decoration: none;}
     </style>
 
     <script>
@@ -109,7 +111,7 @@
 
             <!-- Nav Item - Customer's List -->
             <li class="nav-item ">
-                <a class="nav-link" href="customer-list-table.html">
+                <a class="nav-link" href="customer-list-table.php">
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>Customer List</span></a>
             </li>
@@ -280,7 +282,8 @@
                 
                     <div class="container col-lg-12">
                         <div>
-                            <button class="yellow-buttonloh" type="button" style="float:right;margin: 0px 20px;width:100px;height:33px;">Cancel</button>
+                            <button class="yellow-buttonloh" type="button" style="float:right;margin: 0px 20px;width:100px;height:33px;">
+                            <a href="customer-list-table.php" style="color: #fff;">Back</a></button>
                             <br>
                         </div>
                         <div class="main-body">

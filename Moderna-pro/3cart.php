@@ -119,7 +119,7 @@ $row=mysqli_fetch_array($query);
     </section><!-- End Contact Section -->
 
     <!-- ======= Contact Section ======= -->
-    <section class="profile h-100 h-custom" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500" style="background-color: #d2c9ff;">
+    <section class="profile h-100 h-custom" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500" style="background-color: #90769e;">
   <div class="container py-5 h-100">
     <div class="row d-flex justify-content-center align-items-center h-100">
       <div class="col-12">
@@ -142,7 +142,7 @@ $row=mysqli_fetch_array($query);
                     </div>
                     <div class="col-md-3 col-lg-3 col-xl-3">
                       <h6 class="text-muted">PUBG</h6>
-                      <h6 class="text-black mb-0">ScarL</h6>
+                      <h6 class="text-black mb-0">Vintage Rock ScarL</h6>
                     </div>
                     <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
                       <button class="btn btn-link px-2"
@@ -159,7 +159,7 @@ $row=mysqli_fetch_array($query);
                       </button>
                     </div>
                     <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
-                      <h6 class="mb-0">RM 0.00</h6>
+                      <h6 class="mb-0">RM 150.00</h6>
                     </div>
                     <div class="col-md-3 col-lg-1 col-xl-2 offset-lg-0" style="text-align: center;">
                       <a href="#" style="text-align: center;">Remove</a>
@@ -185,12 +185,12 @@ $row=mysqli_fetch_array($query);
 
                   <div class="d-flex justify-content-between mb-4">
                     <h5 class="text-uppercase">item(s) 1</h5>
-                    <h5>RM 0.00</h5>
+                    <h5>RM 150.00</h5>
                   </div>
 
                   <div class="d-flex justify-content-between ">
                     <h5 class="text-uppercase mb-3">Service Tax</h5>
-                    <h5>RM 0.00</h5>
+                    <h5>RM 5.00</h5>
                   </div>
                   
 
@@ -216,7 +216,7 @@ $row=mysqli_fetch_array($query);
 
                   <div class="d-flex justify-content-between mb-5">
                     <h5 class="text-uppercase">Total price</h5>
-                    <h5>RM 0.00</h5>
+                    <h5>RM 155.00</h5>
                   </div>
 
                    <!-- <button type="button" class="btn btn-dark btn-block btn-lg"

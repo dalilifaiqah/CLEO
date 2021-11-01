@@ -13,7 +13,7 @@ $row=mysqli_fetch_array($query);
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Edit Profile Info</title>
+  <title><?php echo $row['name']; ?>'s Profile</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -169,7 +169,7 @@ $row=mysqli_fetch_array($query);
                       <div class="row">
                         <div class="col-md-6">
                             <p style="margin-top: 10px; margin-bottom: 0;">Password</p>
-                            <input type="text" name="password" class="form-control " id="password" placeholder="<?php echo $row['password']; ?>" minlength = "6" disabled>
+                            <input type="password" name="password" class="form-control " id="password" value="<?php echo $row['password']; ?>" minlength = "6" disabled >
                         </div>
                       </div>
                       <div class="my-3">

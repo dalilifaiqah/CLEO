@@ -148,16 +148,17 @@ $row=mysqli_fetch_array($query);
           </div>
 
           <div class="col-lg-7">
+          <form method="post" action="cartdb.php">
             <div class="portfolio-info" style="background-color: white;">
               <h3>Product informations</h3>
               <ul>
-                <li><strong>Name </strong>: BlastX Bundle</li>
-                <li><strong>Category </strong>: Valorant</li>
-                <li id="blastxprofile" value="Blastx"><strong>Price </strong>: RM 230.00</li> <!---->
+                <li><strong>Name </strong>: <input name="hidden_name" value="blastx" /></li>
+                <li><strong>Price </strong>: </li>
+                <li><strong>Category </strong>: Valorant</li> 
                 <li><strong>Quantity (Max 5)</strong>: 
                   
-                  <form action="" method="POST">
-                    <input type="number" id="Quantity" name="Quantity" min="1" max="5">
+                  
+                    <input type="number" id="Quantity" name="quantity" min="1" max="5">
                     <!--<input type="text" id="CustomerID" name="CustomerID">-->
                     <!--<label class="radio-inline">
                       <input type="radio" name="optradio" checked> BlastX-1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -169,7 +170,7 @@ $row=mysqli_fetch_array($query);
                       <input type="radio" name="optradio"> BlastX-3
                     </label>-->
                     <br><br>
-                    <button type="submit" class="p1button" title="Add to Cart" >Add to Cart</a></button>
+                    <button type="submit" name="add_to_cart" class="p1button" title="Add to Cart" >Add to Cart</a></button>
                   </form>
                 
                 </li>
@@ -199,6 +200,7 @@ $row=mysqli_fetch_array($query);
                 <strong>- How do i get my account?</strong>
                 <br> As soon as you make your payment, we will process the account for you. Within the 24 hours, please check your email for the account ID.
                 <br><br> For any other enquiries, send us your feedback in <a href="3contact.php">Contact Us</a> page.
+                  
                 <!--Information about the Stocks : <br>
                 <strong>BlastX-1</strong> - Full Set BlastX Bundle <br>
                 <strong>BlastX-2</strong> - BlastX (Phantom, Odin) + Reaver (Vandal) <br>

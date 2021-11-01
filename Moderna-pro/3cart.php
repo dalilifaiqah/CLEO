@@ -4,6 +4,23 @@ session_start();
 $email=$_SESSION['email']; 
 $query=mysqli_query($con,"SELECT * FROM customer WHERE email='$email' "); 
 $row=mysqli_fetch_array($query);
+
+if(isset($_GET["action"]))
+{
+	if($_GET["action"] == "delete")
+	{
+		foreach($_SESSION["shopping_cart"] as $keys => $values)
+		{
+			if($values["item_id"] == $_GET["id"])
+			{
+				unset($_SESSION["shopping_cart"][$keys]);
+				echo '<script>alert("Item Removed")</script>';
+				echo '<script>window.location="3cart.php"</script>';
+			}
+		}
+	}
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -135,35 +152,59 @@ $row=mysqli_fetch_array($query);
                   <hr class="my-4">
 
                   <div class="row mb-4 d-flex justify-content-between align-items-center">
-                    <div class="col-md-2 col-lg-2 col-xl-2">
-                      <img
-                        src="assets/img/portfolio/scarL-pubg.png"
-                        class="img-fluid rounded-3" alt="ScarL-pubg">
-                    </div>
-                    <div class="col-md-3 col-lg-3 col-xl-3">
-                      <h6 class="text-muted">PUBG</h6>
-                      <h6 class="text-black mb-0">Vintage Rock ScarL</h6>
-                    </div>
+        <div class="table-responsive">
+				<table class="table table-bordered">
+					<tr>
+						<th width="40%">Item Name</th>
+						<th width="10%">Quantity</th>
+						<th width="20%">Price</th>
+						<th width="15%">Total</th>
+						<th width="5%">Action</th>
+					</tr>
+					<?php
+					if(!empty($_SESSION["shopping_cart"]))
+					{
+						$total = 0;
+						foreach($_SESSION["shopping_cart"] as $keys => $values)
+						{
+					?>
+					<tr>
+						<td><?php echo $values["item_name"]; ?></td>
+						<td><?php echo $values["item_quantity"]; ?></td>
+						<td>$ <?php echo $values["item_price"]; ?></td>
+						<td>$ <?php echo number_format($values["item_quantity"] * $values["item_price"], 2);?></td>
+						<td><a href="3Blastx.php?action=delete&id=<?php echo $values["item_id"]; ?>"><span class="text-danger">Remove</span></a></td>
+					</tr>
+					<?php
+							$total = $total + ($values["item_quantity"] * $values["item_price"]);
+						}
+					?>
+					<tr>
+						<td colspan="3" align="right">Total</td>
+						<td align="right">$ <?php echo number_format($total, 2); ?></td>
+						<td></td>
+					</tr>
+					<?php
+					}
+					?>
+						
+				</table>
+			</div>
                     <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
                       <button class="btn btn-link px-2"
                         onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
                         <i class="fas fa-minus"></i>
                       </button>
 
-                      <input id="form1" min="0" name="quantity" value="1" type="number"
-                        class="form-control form-control-sm" />
+                      
 
                       <button class="btn btn-link px-2"
                         onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
                         <i class="fas fa-plus"></i>
                       </button>
                     </div>
-                    <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
-                      <h6 class="mb-0">RM 150.00</h6>
-                    </div>
-                    <div class="col-md-3 col-lg-1 col-xl-2 offset-lg-0" style="text-align: center;">
-                      <a href="#" style="text-align: center;">Remove</a>
-                    </div>
+                    
+                   
                     <!-- <div class="col-md-1 col-lg-1 col-xl-1 text-end">
                       <a href="#!" class="text-muted"><i class="fas fa-times"></i></a>
                     </div> -->

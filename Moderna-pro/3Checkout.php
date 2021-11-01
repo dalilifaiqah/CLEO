@@ -92,7 +92,7 @@ $row=mysqli_fetch_array($query);
             <ul>
               <li><a class="active" href="3viewprofile.php">My Profile</a></li>
               <li><a href="3cart.php">Cart</a></li>
-              <li><a href="3purchasehistory.php">Purchase History</a></li>
+              <li><a href="3Purchasehistory.php">Purchase History</a></li>
             </ul>
           </li>
           <!--<li><a href="/MasterCLEO/Moderna-pro/customer dashboard/paper-dashboard-master/examples/3dashboard.html">My Dashboard  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>-->
@@ -113,10 +113,10 @@ $row=mysqli_fetch_array($query);
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>My Profile</h2>
+          <h2>Checkout</h2>
           <ol>
             <li><a href="Customerhomepage.php">Home</a></li>
-            <li><a href="3viewprofile.php">My Profile</a></li>
+            <li><a href="3Checkout.php">Checkout</a></li>
           </ol>
         </div>
 

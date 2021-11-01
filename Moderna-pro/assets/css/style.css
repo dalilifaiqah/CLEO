@@ -1857,6 +1857,38 @@ section {
   }
 }
 
+.profile .profile-pagination {
+  color: #387ea2;
+}
+
+.profile .profile-pagination ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.profile .profile-pagination li {
+  margin: 0 5px;
+  transition: 0.3s;
+}
+
+.profile .profile-pagination li a {
+  color: #1e4356;
+  padding: 7px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile .profile-pagination li.active, .profile .profile-pagination li:hover {
+  background: #68A4C4;
+}
+
+.profile .profile-pagination li.active a, .profile .profile-pagination li:hover a {
+  color: #fff;
+}
+
 /*--------------------------------------------------------------
 # Map
 --------------------------------------------------------------*/

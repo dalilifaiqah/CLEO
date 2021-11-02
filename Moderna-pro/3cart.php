@@ -158,7 +158,7 @@ if(isset($_GET["action"]))
 						<th width="40%">Item Name</th>
 						<th width="10%">Quantity</th>
 						<th width="20%">Price</th>
-						<th width="15%">Total</th>
+						
 						<th width="5%">Action</th>
 					</tr>
 					<?php
@@ -171,19 +171,15 @@ if(isset($_GET["action"]))
 					<tr>
 						<td><?php echo $values["item_name"]; ?></td>
 						<td><?php echo $values["item_quantity"]; ?></td>
-						<td>$ <?php echo $values["item_price"]; ?></td>
-						<td>$ <?php echo number_format($values["item_quantity"] * $values["item_price"], 2);?></td>
+						<td>RM <?php echo $values["item_price"]; ?></td>
+						
 						<td><a href="3cart.php?action=delete&id=<?php echo $values["item_id"]; ?>"><span class="text-danger">Remove</span></a></td>
 					</tr>
 					<?php
 							$total = $total + ($values["item_quantity"] * $values["item_price"]);
 						}
 					?>
-					<tr>
-						<td colspan="3" align="right">Total</td>
-						<td align="right">$ <?php echo number_format($total, 2); ?></td>
-						<td></td>
-					</tr>
+					
 					<?php
 					}
 					?>
@@ -225,8 +221,8 @@ if(isset($_GET["action"]))
                   <hr class="my-4">
 
                   <div class="d-flex justify-content-between mb-4">
-                    <h5 class="text-uppercase">item(s) 1</h5>
-                    <h5>RM 150.00</h5>
+                    <h5 class="text-uppercase">item(s) <?php echo $values["item_quantity"]; ?></h5>
+                    <h5>RM <?php echo number_format($total, 2); ?></h5>
                   </div>
 
                   <div class="d-flex justify-content-between ">
@@ -257,7 +253,7 @@ if(isset($_GET["action"]))
 
                   <div class="d-flex justify-content-between mb-5">
                     <h5 class="text-uppercase">Total price</h5>
-                    <h5>RM 155.00</h5>
+                    <h5>RM <?php echo number_format($total, 2)+(5); ?>.00</h5>
                   </div>
 
                    <!-- <button type="button" class="btn btn-dark btn-block btn-lg"

@@ -21,7 +21,7 @@ if(isset($_POST["add_to_cart"]))
 		else
 		{
 			echo '<script>alert("Item Already Added")</script>';
-			
+			header("Location: /MasterCLEO/Moderna-pro/3cart.php");
 		}
 	}
 	else

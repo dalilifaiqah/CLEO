@@ -152,9 +152,9 @@ $row=mysqli_fetch_array($query);
             <div class="portfolio-info" style="background-color: white;">
               <h3>Product informations</h3>
               <ul>
-                <li><strong>Name </strong>: <input class="nokotak" type="text" name="hidden_name" value="Blastx Bundle" disabled/></li>
+                <li><strong>Name </strong>: <input class="nokotak" type="text" name="hidden_name" value="Blastx Bundle" readonly/></li>
                 <li><strong>Category </strong>: Valorant</li> 
-                <li><strong>Price </strong>: RM <input class="nokotak" type="text" name="hidden_price" value="99.00" disabled /></li>
+                <li><strong>Price </strong>: RM <input class="nokotak" type="text" name="hidden_price" value="99.00" readonly/></li>
                 <li><strong>Quantity (Max 5)</strong>: 
                   
                   

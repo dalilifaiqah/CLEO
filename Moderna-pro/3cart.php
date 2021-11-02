@@ -152,7 +152,7 @@ if(isset($_GET["action"]))
                   <hr class="my-4">
                   <div class="row mb-4 d-flex justify-content-between align-items-center">
         <div class="table-responsive">
-				<table class="table table-bordered">
+				<table class="table table-hover">
 					<tr>
 						<th width="40%">Item Name</th>
 						<th width="10%">Quantity</th>

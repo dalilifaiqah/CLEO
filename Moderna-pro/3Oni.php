@@ -151,9 +151,9 @@ $row=mysqli_fetch_array($query);
             <div class="portfolio-info" style="background-color: white;">
               <h3>Product informations</h3>
               <ul>
-                <li><strong>Name </strong>: <input class="nokotak" name="hidden_name" value="Oni Bundle" disabled /></li>
+                <li><strong>Name </strong>: <input class="nokotak" name="hidden_name" value="Oni Bundle" readonly /></li>
                 <li><strong>Category </strong>: Valorant</li>
-                <li><strong>Price </strong>: RM <input class="nokotak" name="hidden_price" value="130.00" disabled /></li>
+                <li><strong>Price </strong>: RM <input class="nokotak" name="hidden_price" value="130.00" readonly /></li>
                 <li><strong>Quantity (Max 5)</strong>: 
                   
                   

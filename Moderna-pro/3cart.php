@@ -147,17 +147,16 @@ if(isset($_GET["action"]))
                 <div class="p-5">
                   <div class="d-flex justify-content-between align-items-center mb-5">
                     <h1 class="fw-bold mb-0 text-black">Shopping Cart</h1>
-                    <h6 class="mb-0 text-muted">1 item(s)</h6>
+                    
                   </div>
                   <hr class="my-4">
-
                   <div class="row mb-4 d-flex justify-content-between align-items-center">
         <div class="table-responsive">
 				<table class="table table-bordered">
 					<tr>
 						<th width="40%">Item Name</th>
 						<th width="10%">Quantity</th>
-						<th width="20%">Price</th>
+						<th width="20%">Price (x1)</th>
 						
 						<th width="5%">Action</th>
 					</tr>

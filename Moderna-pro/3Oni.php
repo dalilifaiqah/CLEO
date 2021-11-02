@@ -153,7 +153,7 @@ $row=mysqli_fetch_array($query);
               <ul>
                 <li><strong>Name </strong>: <input name="hidden_name" value="Oni Bundle" /></li>
                 <li><strong>Category </strong>: Valorant</li>
-                <li><strong>Price </strong>: <input name="hidden_price" value="130" /></li>
+                <li><strong>Price </strong>: <input name="hidden_price" value="130.00" /></li>
                 <li><strong>Quantity (Max 5)</strong>: 
                   
                   

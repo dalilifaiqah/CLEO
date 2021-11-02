@@ -35,6 +35,7 @@ if(isset($_POST["add_to_cart"]))
 		$_SESSION["shopping_cart"][0] = $item_array;
 		header("Location: /MasterCLEO/Moderna-pro/3cart.php");
 	}
+	header("Location: /MasterCLEO/Moderna-pro/3cart.php");
 }
 
 ?>

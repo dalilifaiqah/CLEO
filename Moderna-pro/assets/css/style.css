@@ -1353,6 +1353,13 @@ section {
   /*transition: 0.4s;*/
 }
 
+.portfolio-info .nokotak{
+  border:none;
+  background: transparent;
+  outline: none;
+  display: inline-block;
+  color: #000;
+}
 
 .portfolio .portfolio-item .portfolio-info h3 {
   font-size: 22px;

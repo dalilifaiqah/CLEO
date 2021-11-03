@@ -154,7 +154,7 @@ $row=mysqli_fetch_array($query);
               <ul>
                 <li><strong>Name </strong>: <input class="nokotak" type="text" name="hidden_name" value="Blastx Bundle" readonly/></li>
                 <li><strong>Category </strong>: Valorant</li> 
-                <li><strong>Price </strong>: RM <input class="nokotak" type="text" name="hidden_price" value="99.00" readonly/></li>
+                <li><strong>Price </strong>: RM <input class="nokotak" type="text" name="hidden_price" value="230.00" readonly/></li>
                 <li><strong>Quantity (Max 5)</strong>: 
                   
                   

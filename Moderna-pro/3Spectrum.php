@@ -147,16 +147,17 @@ $row=mysqli_fetch_array($query);
             </div>
   
             <div class="col-lg-7">
+            <form method="post" action="cartdb.php">
               <div class="portfolio-info" style="background-color: white;">
                 <h3>Product informations</h3>
                 <ul>
-                  <li><strong>Name </strong>: The Spectrum Bundle</li>
+                <li><strong>Name </strong>: <input class="nokotak" type="text" name="hidden_name" value="Spectrum Bundle" readonly/></li>
                   <li><strong>Category </strong>: Valorant</li>
-                  <li id="Spectrumprofile" value="Spectrum"><strong>Price </strong>: RM 320.00</li> <!---->
+                  <li><strong>Price </strong>: RM <input class="nokotak" type="text" name="hidden_price" value="320.00" readonly/></li>
                   <li><strong>Quantity (Max 5)</strong>: 
                     
-                    <form action="" method="POST">
-                      <input type="number" id="Quantity" name="Quantity" min="1" max="5">
+                    
+                      <input type="number" id="Quantity" name="quantity" min="1" max="5">
                       <!--<input type="text" id="Weapon" name="Weapon">-->
                       <!--<label class="radio-inline">
                         <input type="radio" name="optradio" checked> BlastX-1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -168,7 +169,7 @@ $row=mysqli_fetch_array($query);
                         <input type="radio" name="optradio"> BlastX-3
                       </label>-->
                       <br><br>
-                    <button type="submit" class="p1button" title="Add to Cart" >Add to Cart</a></button>
+                      <button type="submit" name="add_to_cart" class="p1button" title="Add to Cart" >Add to Cart</a></button>
                   </form>
                 
                 </li>

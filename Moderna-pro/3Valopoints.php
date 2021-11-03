@@ -151,12 +151,13 @@ $row=mysqli_fetch_array($query);
             </div>
   
             <div class="col-lg-7">
+            <form method="post" action="cartdb.php">
               <div class="portfolio-info" style="background-color: white;">
                 <h3>Product informations</h3>
                 <ul>
-                  <li><strong>Name </strong>: 1600 Valorant Points</li>
+                <li><strong>Name </strong>: <input class="nokotak" type="text" name="hidden_name" value="1600 Valorant Points" readonly/></li>
                   <li><strong>Category </strong>: Valorant</li>
-                  <li id="Valopointsprofile" value="Valopoints"><strong>Price </strong>: RM 50.00</li> <!---->
+                  <li><strong>Price </strong>: RM <input class="nokotak" type="text" name="hidden_price" value="50.00" readonly/></li>
                   <li><strong>Quantity </strong>: 
                     
                     <form action="" method="POST">
@@ -164,7 +165,7 @@ $row=mysqli_fetch_array($query);
                       <!--<input type="text" id="CustomerID" name="CustomerID">-->
                       
                       <br><br>
-                    <button type="submit" class="p1button" title="Add to Cart" >Add to Cart</a></button>
+                      <button type="submit" name="add_to_cart" class="p1button" title="Add to Cart" >Add to Cart</a></button>
                   </form>
                 
                 </li>

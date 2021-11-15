@@ -21,7 +21,7 @@ $row=mysqli_fetch_array($query);
    <link rel="icon" href="assets/img/CLEO-logo.png">
    <!--<link href="assets/img/logo atas.png" rel="icon">
    <link href="assets/img/logo atas.png" rel="logo-atas-icon">-->
-
+   <link src="https://checkout.stripe.com/checkout.js" >
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
 
@@ -119,120 +119,16 @@ $row=mysqli_fetch_array($query);
     </section><!-- End Contact Section -->
 
     <!-- ======= Contact Section ======= -->
-    <section class="profile h-100 h-custom" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500" style="background-color: #90769e;">
-  <div class="container py-5 h-100">
-    <div class="row d-flex justify-content-center align-items-center h-100">
-      <div class="col-12">
-        <div class="card card-registration card-registration-2" style="border-radius: 15px;">
-          <div class="card-body p-0">
-            <div class="row g-0">
-              <div class="col-lg-8">
-                <div class="p-5">
-                  <div class="d-flex justify-content-between align-items-center mb-5">
-                    <h1 class="fw-bold mb-0 text-black">Shopping Cart</h1>
-                    <h6 class="mb-0 text-muted">1 item(s)</h6>
-                  </div>
-                  <hr class="my-4">
-
-                  <div class="row mb-4 d-flex justify-content-between align-items-center">
-                    <div class="col-md-2 col-lg-2 col-xl-2">
-                      <img
-                        src="assets/img/portfolio/scarL-pubg.png"
-                        class="img-fluid rounded-3" alt="ScarL-pubg">
-                    </div>
-                    <div class="col-md-3 col-lg-3 col-xl-3">
-                      <h6 class="text-muted">PUBG</h6>
-                      <h6 class="text-black mb-0">Vintage Rock ScarL</h6>
-                    </div>
-                    <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
-                      <button class="btn btn-link px-2"
-                        onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
-                        <i class="fas fa-minus"></i>
-                      </button>
-
-                      <input id="form1" min="0" name="quantity" value="1" type="number"
-                        class="form-control form-control-sm" />
-
-                      <button class="btn btn-link px-2"
-                        onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
-                        <i class="fas fa-plus"></i>
-                      </button>
-                    </div>
-                    <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
-                      <h6 class="mb-0">RM 150.00</h6>
-                    </div>
-                    <div class="col-md-3 col-lg-1 col-xl-2 offset-lg-0" style="text-align: center;">
-                      <a href="#" style="text-align: center;">Remove</a>
-                    </div>
-                    <!-- <div class="col-md-1 col-lg-1 col-xl-1 text-end">
-                      <a href="#!" class="text-muted"><i class="fas fa-times"></i></a>
-                    </div> -->
+            <div class="stripe-button">    
+                <script
                     
-                  </div>
-
-                  <hr class="my-4">
-
-                  <div class="pt-5">
-                    <h6 class="mb-0"><a href="3products.php" class="text-body"><i
-                          class="fas fa-long-arrow-alt-left me-2"></i>Back to shop</a></h6>
-                  </div>
-                </div>
+                    data-key="Your Test Key"
+                    data-amount=<?php echo str_replace(",","",$_GET["price"]) * 100?>
+                    data-name="<?php echo $_GET["item_name"]?>"
+                    data-currency="MYR"
+                    data-locale="auto">
+                </script>
               </div>
-              <div class="col-lg-4 bg-grey">
-                <div class="p-5">
-                  <h3 class="fw-bold mb-5 mt-2 pt-1">Summary</h3>
-                  <hr class="my-4">
-
-                  <div class="d-flex justify-content-between mb-4">
-                    <h5 class="text-uppercase">item(s) 1</h5>
-                    <h5>RM 150.00</h5>
-                  </div>
-
-                  <div class="d-flex justify-content-between ">
-                    <h5 class="text-uppercase mb-3">Service Tax</h5>
-                    <h5>RM 5.00</h5>
-                  </div>
-                  
-
-                  <!-- <div class="mb-4 pb-2">
-                    <select class="select">
-                      <option value="1">Standard-Delivery- RM5.00</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                      <option value="4">Four</option>
-                    </select>
-                  </div> -->
-
-                  <!-- <h5 class="text-uppercase mb-3">Give code</h5>
-
-                  <div class="mb-5">
-                    <div class="form-outline">
-                      <input type="text" id="form3Examplea2" class="form-control form-control-lg" />
-                      <label class="form-label" for="form3Examplea2">Enter your code</label>
-                    </div>
-                  </div> -->
-
-                  <hr class="my-4" style="margin-top: 0.5rem !important;">
-
-                  <div class="d-flex justify-content-between mb-5">
-                    <h5 class="text-uppercase">Total price</h5>
-                    <h5>RM 155.00</h5>
-                  </div>
-
-                   <!-- <button type="button" class="btn btn-dark btn-block btn-lg"
-                    data-mdb-ripple-color="dark">Purchase Order</button> -->
-                  
-                  <button type="button" class="btn btn-dark btn-block btn-lg" data-mdb-ripple-color="dark">
-                    <a href="3Checkout.php" style="color: #fff;">Purchase Order</a></button>
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 </section><!-- End Contact Section -->
 
     <!-- ======= Map Section ======= -->

@@ -150,14 +150,17 @@ if(isset($_GET["action"]))
                     
                   </div>
                   <hr class="my-4">
+                  
                   <div class="row mb-4 d-flex justify-content-between align-items-center">
-        <div class="table-responsive">
-				<table class="table table-hover">
+
+
+      <form action=/MasterCLEO/Moderna-pro/Payment.php method="POST">         
+                  <div class="table-responsive">
+                  <table class="table table-hover">
 					<tr>
 						<th width="40%">Item Name</th>
 						<th width="10%">Quantity</th>
 						<th width="20%">Price (x1)</th>
-						
 						<th width="5%">Action</th>
 					</tr>
 					<?php
@@ -230,37 +233,25 @@ if(isset($_GET["action"]))
                   </div>
                   
 
-                  <!-- <div class="mb-4 pb-2">
-                    <select class="select">
-                      <option value="1">Standard-Delivery- RM5.00</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                      <option value="4">Four</option>
-                    </select>
-                  </div> -->
-
-                  <!-- <h5 class="text-uppercase mb-3">Give code</h5>
-
-                  <div class="mb-5">
-                    <div class="form-outline">
-                      <input type="text" id="form3Examplea2" class="form-control form-control-lg" />
-                      <label class="form-label" for="form3Examplea2">Enter your code</label>
-                    </div>
-                  </div> -->
-
                   <hr class="my-4" style="margin-top: 0.5rem !important;">
 
                   <div class="d-flex justify-content-between mb-5">
                     <h5 class="text-uppercase">Total price</h5>
                     <h5>RM <?php echo number_format($total, 2)+(5); ?>.00</h5>
                   </div>
-
-                   <!-- <button type="button" class="btn btn-dark btn-block btn-lg"
-                    data-mdb-ripple-color="dark">Purchase Order</button> -->
                   
-                  <button type="button" class="btn btn-dark btn-block btn-lg" data-mdb-ripple-color="dark">
-                    <a href="3Checkout.php" style="color: #fff;">Purchase Order</a></button>
+                  <input  type="hidden" name='totalPrice' id='totalPrice'  placeholder='Enter your email address' value="<?php echo number_format($total, 2)+(5); ?>" >
+                  <input  name='custEmail' id='custEmail'  placeholder='Enter your email address' >
+                  <input  name='custName' id='custName'  placeholder='Enter your Name' >
+                  <input  name='custPhone' id='custPhone'  placeholder='Enter your Phone Number' >
 
+
+                  <br><br><input type="submit" id="submit" class="btn btn-dark btn-block btn-lg" value="Proceed"/>
+                    </button>
+                  
+                  </form>
+                    
+                
                 </div>
               </div>
             </div>

@@ -60,6 +60,14 @@ if(isset($_GET["action"]))
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  <style>
+    input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+    </style>
 </head>
 
 <body>
@@ -240,11 +248,14 @@ if(isset($_GET["action"]))
                     <h5>RM <?php echo number_format($total, 2)+(5); ?>.00</h5>
                   </div>
                   
+                  <h5 class="">Please fill in your details.</h5>
+                  <div class="portfolio-info" >
                   <input  type="hidden" name='totalPrice' id='totalPrice'  placeholder='Enter your email address' value="<?php echo number_format($total, 2)+(5); ?>" >
-                  <input  name='custEmail' id='custEmail'  placeholder='Enter your email address' >
-                  <input  name='custName' id='custName'  placeholder='Enter your Name' >
-                  <input  name='custPhone' id='custPhone'  placeholder='Enter your Phone Number' >
-
+                  
+                  <input class="nokotak" style="border-bottom: 1px solid black;margin-bottom:20px;width:215px" type="email" name='custEmail' id='custEmail'  value="<?php echo $row['email']; ?>" readonly >
+                  <input class="nokotak" style="border-bottom: 1px solid black;margin-bottom:20px;width:215px" type="text" name='custName' id='custName'  placeholder='Enter your Name' required>
+                  <input class="nokotak" style="border-bottom: 1px solid black;margin-bottom:20px;width:215px;" type="number"  name='custPhone' id='custPhone'  placeholder='Enter your Phone Number' minlength = "10" required/>
+                  </div>
 
                   <br><br><input type="submit" id="submit" class="btn btn-dark btn-block btn-lg" value="Proceed"/>
                     </button>

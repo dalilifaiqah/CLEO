@@ -256,7 +256,7 @@ $row=mysqli_fetch_array($query);
                                     if ($conn-> connect_error){
                                         die("Connection failed:".$conn-> connect_error);
                                     }
-                                    $sql = "SELECT transactionID, name, email, phoneNumber, price from userpayment";
+                                    $sql = "SELECT * from userpayment";
                                     $result = $conn-> query($sql);
 
                                     if($result-> num_rows > 0) {

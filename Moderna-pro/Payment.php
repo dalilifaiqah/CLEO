@@ -1,5 +1,9 @@
 <?php
+session_start();
+?>
 
+<?php
+session_destroy();
 $email=$_POST['custEmail'];
 $name=$_POST['custName'];
 $phoneNumber=$_POST['custPhone'];

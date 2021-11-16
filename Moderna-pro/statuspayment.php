@@ -40,7 +40,7 @@ if ($billpaymentStatus==1) {
 
   //check if sql success
   if ($conn->query($sql) === TRUE) {
-      header("Location:/MasterCLEO/Moderna-pro/4logout.html");
+      header("Location:/MasterCLEO/Moderna-pro/4successfulpayment.html");
     } else {
       echo "Error: " . $sql . "<br>" . $conn->error;
     }    

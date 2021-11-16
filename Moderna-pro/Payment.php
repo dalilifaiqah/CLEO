@@ -4,6 +4,7 @@ session_start();
 
 <?php
 session_destroy();
+$product=$_POST['productName'];
 $email=$_POST['custEmail'];
 $name=$_POST['custName'];
 $phoneNumber=$_POST['custPhone'];
@@ -13,7 +14,7 @@ $totalPrice=($totalPrice*100);
   $some_data = array(
     'userSecretKey'=>'d44nsh92-tbln-nvav-tg0v-pzredqe21ydr',
     'categoryCode'=>'ahuen4zb',
-    'billName'=>'CLeo Games Checkout',
+    'billName'=>$product,
     'billDescription'=>'Cleo Checkout',
     'billPriceSetting'=>1,
     'billPayorInfo'=>1,

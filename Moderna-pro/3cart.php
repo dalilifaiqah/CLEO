@@ -251,6 +251,7 @@ input::-webkit-inner-spin-button {
                   <h5 class="">Please fill in your details.</h5>
                   <div class="portfolio-info" >
                   <input  type="hidden" name='totalPrice' id='totalPrice'  placeholder='Enter your email address' value="<?php echo number_format($total, 2)+(5); ?>" >
+                  <input  type="hidden" name='productName' id='totalPrice'  placeholder='Enter your email address' value="<?php echo $values["item_name"]; ?>" >
                   
                   <input class="nokotak" style="border-bottom: 1px solid black;margin-bottom:20px;width:215px" type="email" name='custEmail' id='custEmail'  value="<?php echo $row['email']; ?>" readonly >
                   <input class="nokotak" style="border-bottom: 1px solid black;margin-bottom:20px;width:215px" type="text" name='custName' id='custName'  placeholder='Enter your Name' required>

@@ -1,5 +1,5 @@
 <?php
-include "connectiondb.php";
+$con = mysqli_connect("localhost","admin1","admin1","cleo"); 
 session_start();
 $email = $_SESSION['email'];
 $query = mysqli_query($con, "SELECT * FROM customer WHERE email='$email' ");
@@ -136,7 +136,7 @@ if (isset($_POST['submit'])) {
                 <div class="row">
                     <div class="col-md-12 profile-user">
                         <div class="info-box">
-                              
+                               
                         
 
                               <!--<a href="3editpicture.php" style="font-size:18px;">Edit<i class="bi bi-pencil" style="border:none; font-size:20px;" ></i></a>-->
@@ -156,7 +156,7 @@ if (isset($_POST['submit'])) {
 
             <div class="col-lg-6 profile" >
 
-                <form action="/MasterCLEO/Moderna-pro/3editinfo.php" method="POST"  class="php-email-form" style="background-color: #fff;">
+            <div   class="php-email-form" style="background-color: white; box-shadow: none;">
                     <div class="row " >
                         <div class="col-md-12 ">
                             <h3>Profile Info</h3>
@@ -181,7 +181,7 @@ if (isset($_POST['submit'])) {
                     <br><br><br><br>
                     
                       <button class="warnabutton center" type="submit" >Edit Profile Info</button>
-                </form>
+                
             
             </div>
 

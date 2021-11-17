@@ -129,20 +129,21 @@ include ("includes/config.php");
 
                 <div class="row">
                     <div class="col-md-12 profile-user">
-                        <div class="info-box" style="padding: 123px 0 150px 0; box-shadow:none;">
+                        <div class="info-box" style="padding: 70px 0 70px 0; box-shadow:none;">
                             
                               <!-- <img src="images/(add echo row here)" alt="..." name = "profilepicture" id="profilepicture"><br> -->
-                              <a href="3editpicture.php" style="font-size:18px;">Edit<i class="bi bi-pencil" style="border:none; font-size:20px;" ></i></a> 
+                              
                         
                             <!--<i class="bx bx-phone-call"></i>-->
                             <?php
                               if ($row['profilepicture'] == '') {
-                                echo "<img width='200' height='230' src='pictures/default.jpg' alt='Default Profile Pic'>";
+                                echo "<img width='110' height='125' src='pictures/default-profile.jpg' alt='Default Profile Pic'>";
                               } else {
-                                echo "<img width='220' height='230' src='pictures/" . $row['profilepicture'] . "' alt='Profile Pic' >";
+                                echo "<img width='125' height='125' src='pictures/" . $row['profilepicture'] . "' alt='Profile Pic' >";
                               }
                             ?>
-
+                            <br>
+                            <a href="3editpicture.php" style="font-size:18px; ">Edit<i class="bi bi-pencil" style="border:none; font-size:18px;" ></i></a> 
                             <h3><?php echo $row['name']; ?></h3>
                             <h4><?php echo $row['email']; ?></h4>
                             <!--<a href="3editpicture.php"><p>Edit Profile Picture</p></a>-->

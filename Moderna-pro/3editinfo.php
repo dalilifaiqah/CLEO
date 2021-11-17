@@ -159,15 +159,19 @@ $sql = "SELECT * from customer ";
 
                 <div class="row">
                     <div class="col-md-12 profile-user">
-                        <div class="info-box" style="padding: 123px 0 150px 0; box-shadow:none;">
+                        <div class="info-box" style="padding: 90px 0 90px 0; box-shadow:none;">
                             
                             <!-- ADDED SOMETHING HERE -->
                               <!-- <img src="images/" alt="..." id=""><br>
                               <a href="3editpicture.php" style="font-size:18px;">Edit<i class="bi bi-pencil" style="border:none; font-size:20px;" ></i></a> -->
                               <!-- <img src="images/put the code here " id="profilepicture" name = "profilepicture" for=""><br> --> 
-                              <a>
-                              <img width='130' height='180' src='../pictures/<?php echo htmlentities ($result->profilepicture); ?>' alt='Profile Pic'>
-                              </a>
+                              <?php
+                              if ($row['profilepicture'] == '') {
+                                echo "<img width='110' height='125' src='pictures/default-profile.jpg' alt='Default Profile Pic'>";
+                              } else {
+                                echo "<img width='125' height='125' src='pictures/" . $row['profilepicture'] . "' alt='Profile Pic' >";
+                              }
+                            ?>
                              <!-- <form action= "/MasterCLEO/Moderna-pro/customereditprofile.php" method="POST" class="php-email-form" style="background-color: #fff; white; box-shadow: none;"> -->
                             
                               <!--<a href="3editpicture.php" style="font-size:18px;">Edit<i class="bi bi-pencil" style="border:none; font-size:20px;" ></i></a>-->
@@ -195,8 +199,8 @@ $sql = "SELECT * from customer ";
 
             <div class="col-lg-6 profile" >
 
-                <div class="php-email-form" style="background-color: #fff; white; box-shadow: none;">
-                    <form action="/MasterCLEO/Moderna-pro/customereditprofile.php" method="POST"  class="php-email-form" style="background-color: #fff; white; box-shadow: none;">
+                <div class="php-email-form" style="background-color: #fff; white; box-shadow: none;padding: 30px 0 30px 0; margin-bottom:0px">
+                    <form action="/MasterCLEO/Moderna-pro/customereditprofile.php" method="POST"  class="php-email-form" style="background-color: #fff; white; box-shadow: none; margin-bottom:0px; ">
                         <div class="row " >
                         <div class="col-md-12 ">
                             <h3>Profile Info</h3>
@@ -219,10 +223,9 @@ $sql = "SELECT * from customer ";
                       </div>
                       <div class="my-3">
                       </div>
-                      <br><br><br><br>
-                      <div class="row" style="width:100%;">
-                        <button class="warnabutton center" type="submit" name = "customereditprofile" style="background-color: #FFBF00;">Save Changes</button> &nbsp;&nbsp;&nbsp;
-                      
+                      <br><br>
+                      <div class="row" style="width:80%;">
+                        <button class="warnabutton center" type="submit" name = "customereditprofile" style="background-color: #FFBF00;color:#000; width:40%;margin-left:15px;">Save Changes</button><a href="3viewprofile.php" style="font-size:30px;width:10%">&#10006;</a>
                         
                       </div>
                     </form>

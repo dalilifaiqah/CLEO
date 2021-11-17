@@ -135,15 +135,25 @@ if (isset($_POST['submit'])) {
 
                 <div class="row">
                     <div class="col-md-12 profile-user">
-                        <div class="info-box">
+                        <div class="info-box" style="padding: 80px 0 75px 0;box-shadow:none;margin-bottom:0px;">
                                
-                        
-
+                        <br>
+                            <?php
+                              if ($row['profilepicture'] == '') {
+                                echo "<img width='110' height='125' src='pictures/default-profile.jpg' alt='Default Profile Pic'>";
+                              } else {
+                                echo "<img width='125' height='125' src='pictures/" . $row['profilepicture'] . "' alt='Profile Pic' >";
+                              }
+                            ?>
+                            <br><br>
                               <!--<a href="3editpicture.php" style="font-size:18px;">Edit<i class="bi bi-pencil" style="border:none; font-size:20px;" ></i></a>-->
                               <form action="" method="POST" enctype="multipart/form-data">
                               <input id = "upload" type="file" name = "file" onchange="submitImage()" style="margin-left: 130px; margin-bottom: 5px;">
                               <br><button type="submit" class="warnabutton center" name = "submit" style="width:20%; border:none; background-color: #FFBF00; color:black; height: 35px;">Save</button>
+                              <a href="3viewprofile.php">&#10006;</a>
                               </form>
+                              
+                              <br>
                             <!--<i class="bx bx-phone-call"></i>-->
                             <h3><?php echo $row['name']; ?></h3>
                             <h4><?php echo $row['email']; ?></h4>

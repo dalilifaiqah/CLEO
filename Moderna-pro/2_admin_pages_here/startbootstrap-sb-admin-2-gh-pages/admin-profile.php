@@ -303,9 +303,9 @@ $row=mysqli_fetch_array($query);
                                   
                                   <?php
                                         if ($row['profilepicture'] == '') {
-                                            echo "<img width='200' height='230' src='../../pictures/default.jpg' alt='Default Profile Pic'>";
+                                            echo "<img width='125' height='125' src='../../pictures/default-profile.jpg' alt='Default Profile Pic'>";
                                         } else {
-                                            echo "<img width='220' height='230' src='../../pictures/" . $row['profilepicture'] . "' alt='Profile Pic' >";
+                                            echo "<img width='125' height='125' src='../../pictures/" . $row['profilepicture'] . "' alt='Profile Pic' >";
                                         }
                                     ?>
 
@@ -318,7 +318,7 @@ $row=mysqli_fetch_array($query);
                                       <button class="btn btn-outline-primary">Message</button>--><br>
                                       <div class="row">
                                         <div class="col-sm-12">
-                                        <a class="btn btn-info "  href="admin-edit-picture.php">Edit picture</a>
+                                        <a class="btn btn-info " style="color:#000;" href="admin-edit-picture.php">Edit picture</a>
                                         </div>
                                       </div>
                                     </div>
@@ -367,10 +367,10 @@ $row=mysqli_fetch_array($query);
                                       Bay Area, San Francisco, CA
                                     </div>
                                   </div>-->
-                                  <hr><br>
+                                  <hr><br><br>
                                   <div class="row">
                                     <div class="col-sm-12">
-                                      <a class="btn btn-info "  href="admin-profile-edit.php">Edit profile</a>
+                                      <a class="btn btn-info " style="margin-bottom:10px; color:#000;" href="admin-profile-edit.php">Edit profile</a>
                                     </div>
                                   </div>
                                 </div>
@@ -387,7 +387,7 @@ $row=mysqli_fetch_array($query);
                           <div>
                             <div class="row float-right">
                               <div class="col-sm-12">
-                                <a class="btn btn-info"  href="dashboard.php">Back to dashboard</a>
+                                <a class="btn btn-info" style="color:#000"  href="dashboard.php">Back to dashboard</a>
                               </div>
                             </div>
                           </div>

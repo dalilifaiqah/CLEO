@@ -291,20 +291,28 @@ $row=mysqli_fetch_array($query);
                         <div class="main-body">
                             <div class="row">
                                 <div class="col-lg-4">
-                                    <div class="card">
-                                    <div class="card">
+                                    
+                                        <div class="card">
                                             <div class="card-body">
                                                 <div class="d-flex flex-column align-items-center text-center">
                                                     <!-- ========= PICTURE VIEW LET IT BE EMPTY ========= --> 
-                                                    <div class="mt-3">
+                                                    <div class="mt-3" style="padding: 25px 25px 25px 25px">
+                                                        <?php
+                                                            if ($row['profilepicture'] == '') {
+                                                                echo "<img width='125' height='125' src='../../pictures/default-profile.jpg' alt='Default Profile Pic'>";
+                                                            } else {
+                                                                echo "<img width='125' height='125' src='../../pictures/" . $row['profilepicture'] . "' alt='Profile Pic' >";
+                                                            }
+                                                        ?>
+                                                        <br><br>
                                                         <h4><?php echo $row['name']; ?></h4>
                                                         <p class="text-secondary mb-1"><?php echo $row['email']; ?></p>
                                                         <!--<button class="btn btn-primary">Follow</button>
                                                         <button class="btn btn-outline-primary">Message</button>-->
                                                     </div>
                                                 </div>
-                                                </div>
                                             </div>
+                                        </div>
                                         <!--<div class="card-body">
                                             <div class="d-flex flex-column align-items-center text-center">
                                                 <div class="mt-3">
@@ -324,7 +332,7 @@ $row=mysqli_fetch_array($query);
                                             </div>
                                             
                                         </div>-->
-                                    </div>
+                                    
                                 </div>
                                 <div class="col-lg-8">
                                     <div class="card">
@@ -362,11 +370,11 @@ $row=mysqli_fetch_array($query);
                                                     <input type="text" class="form-control" value="" name = "address" placeholder="<?php echo $row['address']; ?>" required>
                                                 </div>
                                             </div>
-
+                                            <br>
                                             <div class="row">
                                                 <div class="col-sm-3"></div>
                                                 <div class="col-sm-9 text-secondary">
-                                                    <input type="submit" class="btn btn-primary px-4" value="Save Changes" name = "admineditprofile">
+                                                    <input type="submit" class="btn btn-primary px-4" style="color:#000"value="Save Changes" name = "admineditprofile">
                                                 </form> 
                                                 </div>
                                             </div>

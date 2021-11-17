@@ -318,9 +318,13 @@ if (isset($_POST['submit'])) {
                                     <div class="card">
                                         <div class="card-body">
                                             <div class="d-flex flex-column align-items-center text-center">
-                                                <div class="mt-3">
+                                                <div class="mt-3" style="padding: 23px 25px 23px 25px">
                                                 
                                             <!--        <form action = /MasterCLEO/Moderna-pro/2_admin_pages_here/startbootstrap-sb-admin-2-gh-pages/admineditprofile.php method = "POST"> -->
+                                                    <form action="" method="POST" enctype="multipart/form-data">
+                                                    <input id = "upload" type="file" name = "file" onchange="submitImage()" style="margin-left: 130px; margin-bottom: 5px; margin-top:5px">
+                                                    <br><button type="submit" class="btn btn-primary px-4" style="color:#000" name = "submit" >Save</button>        
+                                                    <br><br>
                                                     <h4><?php echo $row['name']; ?></h4>
                                                     <p class="text-secondary mb-1">Back-end Programmer</p>
                                                     <p class="text-muted font-size-sm"><?php echo $row['address']; ?></p>
@@ -330,12 +334,10 @@ if (isset($_POST['submit'])) {
                                                 <div class = "btn btn-outline-primary"-->
                                                     <!--<span>Upload Photo</span>-->
                                                     <!-- ========= DISPLAY PROFILE PICTURE ====== --> 
-                                                    <form action="" method="POST" enctype="multipart/form-data">
-                                                    <input id = "upload" type="file" name = "file" onchange="submitImage()" style="margin-left: 130px; margin-bottom: 5px;">
-                                                <br><button type="submit" class="btn btn-primary px-4" name = "submit" style="margin-left: 70px">Save</button>
+                                                    
              
                                                     <!-- <input class = "file-input"  type = "file" onchange = "displayImage(this)" id = "profilepicture" name = "profilepicture">Upload Profile Picture</input>--> 
-                                                    <br><br>
+                                                    
                                                     <div class="row">
                                                         <div class="col-sm-3">
                                                             <div class="col-sm-9 text-secondary">
@@ -389,7 +391,7 @@ if (isset($_POST['submit'])) {
                                     </div>
                                   </div>-->
                                   <hr>
-                                  <br><br><br>
+                                  <br><br><br><br>
                               </div>
                 
                               <div class="row gutters-sm">

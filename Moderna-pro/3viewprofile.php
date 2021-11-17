@@ -137,9 +137,9 @@ include ("includes/config.php");
                             <!--<i class="bx bx-phone-call"></i>-->
                             <?php
                               if ($row['profilepicture'] == '') {
-                                echo "<img width='200' height='230' src='../pictures/default.jpg' alt='Default Profile Pic'>";
+                                echo "<img width='200' height='230' src='pictures/default.jpg' alt='Default Profile Pic'>";
                               } else {
-                                echo "<img width='220' height='230' src='../pictures/" . $row['profilepicture'] . "' alt='Profile Pic' >";
+                                echo "<img width='220' height='230' src='pictures/" . $row['profilepicture'] . "' alt='Profile Pic' >";
                               }
                             ?>
 

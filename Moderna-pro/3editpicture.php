@@ -136,7 +136,7 @@ if (isset($_POST['submit'])) {
                 <div class="row">
                     <div class="col-md-12 profile-user">
                         <div class="info-box">
-                              
+                               
                         
 
                               <!--<a href="3editpicture.php" style="font-size:18px;">Edit<i class="bi bi-pencil" style="border:none; font-size:20px;" ></i></a>-->

@@ -1,11 +1,40 @@
 <?php
+session_start(); 
+include ("includes/config.php");
+$id = $_SESSION['id'];
+
+if(isset($_POST['submit']))
+    {
+        $id=intval($_GET['id']);
+        $vimage1=$_FILES["img1"]["name"];
+        move_uploaded_file($_FILES["img1"]["tmp_name"],"../pictures/".$_FILES["img1"]["name"]);
+
+        $sql="UPDATE customer SET profilepicture=:vimage1 WHERE id=:id";
+        $query = $dbh->prepare($sql);
+        $query->bindParam(':vimage1',$vimage1,PDO::PARAM_STR);
+        $query->bindParam(':id',$id,PDO::PARAM_STR);
+        $query->execute();
+
+        echo "<script>alert('You have updated your profile image.');</script>";
+    }
+
 
 $con = mysqli_connect("localhost","admin1","admin1","cleo"); 
-session_start(); 
+
 $email=$_SESSION['email']; 
 $query=mysqli_query($con,"SELECT * FROM customer WHERE email='$email' "); 
 $row=mysqli_fetch_array($query);
- 
+
+$sql = "SELECT * from customer ";
+                $query = $dbh -> prepare($sql);
+                $query->execute();
+                $results=$query->fetchAll(PDO::FETCH_OBJ);
+                $cnt=1;
+                if($query->rowCount() > 0)
+                {
+                foreach($results as $result)
+                {
+
 ?>
 
 <!DOCTYPE html>
@@ -135,13 +164,22 @@ $row=mysqli_fetch_array($query);
                             <!-- ADDED SOMETHING HERE -->
                               <!-- <img src="images/" alt="..." id=""><br>
                               <a href="3editpicture.php" style="font-size:18px;">Edit<i class="bi bi-pencil" style="border:none; font-size:20px;" ></i></a> -->
-                              <img src="images/<?php echo $row['profilepicture']; ?>" id="profilepicture" name = "profilepicture" for=""><br>
-        
-                              <form action= "/MasterCLEO/Moderna-pro/customereditprofile.php" method="POST" class="php-email-form" style="background-color: #fff; white; box-shadow: none;">
-                              
+                              <!-- <img src="images/put the code here " id="profilepicture" name = "profilepicture" for=""><br> --> 
+                              <a>
+                              <img width='130' height='180' src='../pictures/<?php echo htmlentities ($result->profilepicture); ?>' alt='Profile Pic'>
+                              </a>
+                             <!-- <form action= "/MasterCLEO/Moderna-pro/customereditprofile.php" method="POST" class="php-email-form" style="background-color: #fff; white; box-shadow: none;"> -->
+                            
                               <!--<a href="3editpicture.php" style="font-size:18px;">Edit<i class="bi bi-pencil" style="border:none; font-size:20px;" ></i></a>-->
-                              <input class="file-input" type="file" id="profilepicture" name = "profilepicture" style="margin-left: 130px; margin-bottom: 5px;">
-                         <!--     <br><button type="submit" class="warnabutton center" name = "customereditprofile" style="width:20%; border:none; background-color: #FFBF00; color:black; height: 35px;">Save</button> -->
+                              <!-- <input class="file-input" type="file" id="profilepicture" name = "profilepicture" style="margin-left: 130px; margin-bottom: 5px;"> -->
+                              
+                              <!-- DISPLAY CUSTOMER PROFILE PICTURE --> 
+                            <!--  <form action="" method="POST" enctype="multipart/form-data">
+                                <input type="file" name="img1"  onchange="submitImage()" ><br>
+                                <button type="submit" name="submit" >Submit</button>
+                              </form>
+                            -->
+                              <!--     <br><button type="submit" class="warnabutton center" name = "customereditprofile" style="width:20%; border:none; background-color: #FFBF00; color:black; height: 35px;">Save</button> -->
                             
                             <!-- FINISH ADDING --> 
                             <h3><?php echo $row['name']; ?></h3>
@@ -185,7 +223,7 @@ $row=mysqli_fetch_array($query);
                       <div class="row" style="width:100%;">
                         <button class="warnabutton center" type="submit" name = "customereditprofile" style="background-color: #FFBF00;">Save Changes</button> &nbsp;&nbsp;&nbsp;
                       
-                        <a href="3viewprofile.php"style="margin-top:10px;" >Cancel</a>
+                        
                       </div>
                     </form>
                 <!--</div>-->
@@ -304,3 +342,7 @@ $row=mysqli_fetch_array($query);
 </body>
 
 </html>
+
+<?php 
+                }}
+?>

@@ -308,7 +308,7 @@ $row=mysqli_fetch_array($query);
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2020</span>
+                        <span>Copyright &copy; CLEO 2021</span>
                     </div>
                 </div>
             </footer>

@@ -205,7 +205,7 @@ $row=mysqli_fetch_array($query);
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="member">
               <div class="member-img">
-                <img src="/MasterCLEO/Moderna-pro/assets/img/ad.jpeg" class="img-fluid" alt="">
+                <img src="/MasterCLEO/Moderna-pro/assets/img/adriel.jpeg" class="img-fluid" alt="">
                 <div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>

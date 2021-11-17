@@ -127,11 +127,11 @@ $row=mysqli_fetch_array($query);
     <section class="profile" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
     <div class="container">
       <div class="row" >
-        <div class="info-box" style="padding: 123px 10px 122px 10px;">
+        <div class="info-box" style="padding: 70px 10px 70px 10px;">
                 <div class="text-center" style="margin-bottom:50px;">
                     <h1>Purchase History</h1>
                 </div>
-          <div class="row" style="width:90%; margin: auto;">
+          <!--<div class="row" style="width:90%; margin: auto;">
             <div class="col-md-6 bop ayg">
               <div class="boq bor">
                 <div class="axm bpy">
@@ -147,7 +147,7 @@ $row=mysqli_fetch_array($query);
                 <span class="bv bbc"></span>
               </div>
             </div>
-          </div>
+          </div>-->
             <br>
           <table class="table table-hover" style="width:90%; margin: auto;">
                     <thead >
@@ -179,11 +179,11 @@ $row=mysqli_fetch_array($query);
                                         }
                                     }
                                     ?>
-                
+                    
                     </tbody>
           </table>
 <br><br>
-          <div class="row" style="width:16%; margin: auto;">
+          <!--<div class="row" style="width:16%; margin: auto;">
             <div class="profile-pagination">
                 <table class="justify-content-center ">
                   <thead>
@@ -199,7 +199,7 @@ $row=mysqli_fetch_array($query);
                   </thead>
                 </table>
             </div>
-          </div>
+          </div>-->
 
         </div>
       </div>

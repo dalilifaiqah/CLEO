@@ -32,13 +32,13 @@ var ctx = document.getElementById("myBarChart");
 var myBarChart = new Chart(ctx, {
   type: 'bar',
   data: {
-    labels: ["Genshin Impact", "Valorant", "Mobile Legend", "PUBG", "Apex Legend"],
+    labels: ["Genshin Impact", "Valorant", "Mobile Legend", "PUBG", "Apex Legend", "Gamepoints"],
     datasets: [{
       label: "Revenue",
       backgroundColor: "#B7569A",
       hoverBackgroundColor: "#883C82",
       borderColor: "#4e73df",
-      data: [13000, 3312, 6251, 9841, 3821],
+      data: [13000, 3312, 6251, 9841, 3821, 12000],
     }],
   },
   options: {

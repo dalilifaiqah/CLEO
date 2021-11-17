@@ -306,7 +306,12 @@ $row=mysqli_fetch_array($query);
                                       <h4><?php echo $row['name']; ?></h4>
                                       <p class="text-secondary mb-1"><?php echo $row['email']; ?></p>
                                       <!--<button class="btn btn-primary">Follow</button>
-                                      <button class="btn btn-outline-primary">Message</button>-->
+                                      <button class="btn btn-outline-primary">Message</button>--><br>
+                                      <div class="row">
+                                        <div class="col-sm-12">
+                                        <a class="btn btn-info "  href="admin-edit-picture.php">Edit picture</a>
+                                        </div>
+                                      </div>
                                     </div>
                                   </div>
                                 </div>
@@ -353,7 +358,7 @@ $row=mysqli_fetch_array($query);
                                       Bay Area, San Francisco, CA
                                     </div>
                                   </div>-->
-                                  <hr>
+                                  <hr><br>
                                   <div class="row">
                                     <div class="col-sm-12">
                                       <a class="btn btn-info "  href="admin-profile-edit.php">Edit profile</a>

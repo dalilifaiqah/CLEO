@@ -6,7 +6,6 @@ $query=mysqli_query($con,"SELECT * FROM admin WHERE email='$email' ");
 $row=mysqli_fetch_array($query);
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,7 +17,7 @@ $row=mysqli_fetch_array($query);
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../assets/img/CLEO-Logo.png">
-    <title>CLEO Admin Profile-edit</title>
+    <title>CLEO Admin Profile</title>
 
     <!-- google font -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700">
@@ -256,7 +255,7 @@ $row=mysqli_fetch_array($query);
                                 </a>
                             </div>
                         </li>
-
+                       
                     </ul>
 
                 </nav>
@@ -267,19 +266,21 @@ $row=mysqli_fetch_array($query);
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0" style="color: #fff;">Admin Profile Edit</h1>
+                        <h1 class="h3 mb-0" style="color: #fff;">Admin Profile</h1>
                         <!--<a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
                                 class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>-->
                     </div>
 
                     <!-- Content Row -->
                     <div class="row">
-                        
-                    </div>
 
-                
-                    <div class="container col-lg-12">
-                        <div>
+                        <div class="aiz-main-content">
+                            <div class="px-15px px-lg-25px">
+                                    <div class="">
+                </div>
+
+                <div class="container col-lg-12">
+                <div>
                             <button class="yellow-buttonloh" type="button" onClick="backtoadminprofile()" style="float:right;margin: 0px 20px;width:100px;height:33px;">Cancel</button>
                             <script>
                                 function backtoadminprofile() {
@@ -288,101 +289,105 @@ $row=mysqli_fetch_array($query);
                                 </script>
                             <br>
                         </div>
-                        <div class="main-body">
-                            <div class="row">
-                                <div class="col-lg-4">
-                                    <div class="card">
-                                    <div class="card">
-                                            <div class="card-body">
-                                                <div class="d-flex flex-column align-items-center text-center">
-                                                    <?php  
-                                                        
-                                                        ?> <img src="<?php echo $row['profilepicture']; ?>" height = "100" width = "100" name = "profilepicture"><?php echo "</td>";
-                                                        
-                                                        ?>
-                                                    <div class="mt-3">
-                                                        <h4><?php echo $row['name']; ?></h4>
-                                                        <p class="text-secondary mb-1"><?php echo $row['email']; ?></p>
-                                                        <!--<button class="btn btn-primary">Follow</button>
-                                                        <button class="btn btn-outline-primary">Message</button>-->
-                                                    </div>
-                                                </div>
-                                                </div>
-                                            </div>
-                                        <!--<div class="card-body">
-                                            <div class="d-flex flex-column align-items-center text-center">
-                                                <div class="mt-3">
-                                                <img src="images/" onclick = "triggerClick()"  width="110" id = "profilepicture" name = "profilepicture" >   class="rounded-circle p-1 bg-primary"
-                                             
-                                                    <form action = /MasterCLEO/Moderna-pro/2_admin_pages_here/startbootstrap-sb-admin-2-gh-pages/admineditprofile.php method = "POST">
-                                                    <h4></h4>
-                                                    <p class="text-secondary mb-1">Back-end Programmer</p>
-                                                    <p class="text-muted font-size-sm"></p>
-                                                    <button class="btn btn-outline-primary">Choose picture</button>
-                                                    <button class="btn btn-primary" name = admineditprofile>Save changes</button> -
-                                                </div>
-                                                <div class = "btn btn-outline-primary"
-                                                    <span>Upload Photo</span>
-                                                    <input class = "file-input" type = "file" onchange = "displayImage(this)" id = "profilepicture" name = "profilepicture">Upload Profile Picture</input>
-                                                </div>
-                                            </div>
-                                            
-                                        </div>-->
-                                    </div>
-                                </div>
-                                <div class="col-lg-8">
+                    <div class="main-body">
+                    
+                          <!-- Breadcrumb -->
+                          <!--<nav aria-label="breadcrumb" class="main-breadcrumb">
+                            <ol class="breadcrumb">
+                              <li class="breadcrumb-item"><a href="dashboard.php">Home</a></li>
+                              <li class="breadcrumb-item"><a href="javascript:void(0)">User</a></li>
+                              <li class="breadcrumb-item active" aria-current="page">User Profile</li>
+                            </ol>
+                          </nav>-->
+                          <!-- /Breadcrumb -->
+                    
+                          <div class="row gutters-sm">
+                          <div class="col-lg-4">
                                     <div class="card">
                                         <div class="card-body">
-                                            <div class="row mb-3">
-                                                <div class="col-sm-3">
-                                                <form action = /MasterCLEO/Moderna-pro/2_admin_pages_here/startbootstrap-sb-admin-2-gh-pages/admineditprofile.php method = "POST">
-                                                    <h6 class="mb-0">Name</h6>
+                                            <div class="d-flex flex-column align-items-center text-center">
+                                                <div class="mt-3">
+                                                <img src="images/<?php echo $row['profilepicture']; ?>" onclick = "triggerClick()"  width="110" id = "profilepicture" name = "profilepicture" >  <!-- class="rounded-circle p-1 bg-primary" -->
+                                             
+                                                    <form action = /MasterCLEO/Moderna-pro/2_admin_pages_here/startbootstrap-sb-admin-2-gh-pages/admineditprofile.php method = "POST">
+                                                    <h4><?php echo $row['name']; ?></h4>
+                                                    <p class="text-secondary mb-1">Back-end Programmer</p>
+                                                    <p class="text-muted font-size-sm"><?php echo $row['address']; ?></p>
+                                                    <!--<button class="btn btn-outline-primary">Choose picture</button>-->
+                                                  <!--  <button class="btn btn-primary" name = admineditprofile>Save changes</button> -
                                                 </div>
-                                                <div class="col-sm-9 text-secondary">
-                                                    <input type="text" class="form-control" value="" name = "name" placeholder="<?php echo $row['name']; ?>" required>
+                                                <div class = "btn btn-outline-primary"-->
+                                                    <!--<span>Upload Photo</span>-->
+                                                    <input class = "file-input"  type = "file" onchange = "displayImage(this)" id = "profilepicture" name = "profilepicture">Upload Profile Picture</input>
+                                                    <br><br>
+                                                    <div class="row">
+                                                        <div class="col-sm-3">
+                                                            <div class="col-sm-9 text-secondary">
+                                                                <input type="submit" class="btn btn-primary px-4" style="margin-left: 70px" value="Save Changes" name = "admineditpicture">
+                                                            
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="row mb-3">
-                                                <div class="col-sm-3">
-                                                    <h6 class="mb-0">E-mail</h6>
-                                                </div>
-                                                <div class="col-sm-9 text-secondary">
-                                                    <input type="email" class="form-control" value="" name = "email" placeholder="<?php echo $row['email']; ?>" required>
-                                                </div>
-                                            </div>
-                                            <div class="row mb-3">
-                                                <div class="col-sm-3">
-                                                    <h6 class="mb-0">Mobile</h6>
-                                                </div>
-                                                <div class="col-sm-9 text-secondary">
-                                                    <input type="text" class="form-control" value="" name = "mobile" placeholder="<?php echo $row['mobile']; ?>" minlength = "10" required>
-                                                </div>
-                                            </div>
-                                            <div class="row mb-3">
-                                                <div class="col-sm-3">
-                                                    <h6 class="mb-0">Address</h6>
-                                                </div>
-                                                <div class="col-sm-9 text-secondary">
-                                                    <input type="text" class="form-control" value="" name = "address" placeholder="<?php echo $row['address']; ?>" required>
-                                                </div>
-                                            </div>
-
-                                            <div class="row">
-                                                <div class="col-sm-3"></div>
-                                                <div class="col-sm-9 text-secondary">
-                                                    <input type="submit" class="btn btn-primary px-4" value="Save Changes" name = "admineditprofile">
-                                                </form> 
-                                                </div>
-                                            </div>
+                                            </div> 
+                                            
                                         </div>
                                     </div>
-                                    
                                 </div>
+                            <div class="col-md-8">
+                              <div class="card mb-3">
+                                <div class="card-body">
+                                  <div class="row">
+                                    <div class="col-sm-3">
+                                      <h6 class="mb-0">Name</h6>
+                                    </div>
+                                    <div class="col-sm-9 text-secondary">
+                                    <?php echo $row['name']; ?>
+                                    </div>
+                                  </div>
+                                  <hr>
+                                  <div class="row">
+                                    <div class="col-sm-3">
+                                      <h6 class="mb-0">E-mail</h6>
+                                    </div>
+                                    <div class="col-sm-9 text-secondary">
+                                    <?php echo $row['email']; ?>
+                                    </div>
+                                  </div>
+                                  <hr>
+                                  <div class="row">
+                                    <div class="col-sm-3">
+                                      <h6 class="mb-0">Password</h6>
+                                    </div>
+                                    <div class="col-sm-9 text-secondary">
+                                    <?php echo $row['password']; ?>
+                                    </div>
+                                  </div>
+                                  <!--<hr>
+                                  <div class="row">
+                                    <div class="col-sm-3">
+                                      <h6 class="mb-0">Address</h6>
+                                    </div>
+                                    <div class="col-sm-9 text-secondary">
+                                      Bay Area, San Francisco, CA
+                                    </div>
+                                  </div>-->
+                                  <hr>
+                                  <br><br><br>
+                              </div>
                 
+                              <div class="row gutters-sm">
                                 
+                              </div>
+                
+                
+                
                             </div>
+                          </div>
+                          
+                
                         </div>
-                    
+                    </div>
 
         </div>
         <!-- End of Content Wrapper -->
@@ -913,25 +918,6 @@ $row=mysqli_fetch_array($query);
         }
     </script>
 
-<!-- additional javascript  -->
-    <script src ="scripts.js">
-
-    function triggerClick(){
-    document.querySelector('#profilepicture').click();
-}
-
-function displayImage(e){
-    if (e.files[0]){
-        var reader = new FileReader();
-
-        reader.onload = function(e) {
-            document.querySelector('#profilepicture').setAttribute('src', e.target.result);
-        }
-        reader.readAsDataURL(e.files[0]);
-    }
-}
-
-    </script> 
 
 </body>
 

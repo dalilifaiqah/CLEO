@@ -4,10 +4,11 @@ session_start();
 $email=$_SESSION['email']; 
 $query=mysqli_query($con,"SELECT * FROM customer WHERE email='$email' "); 
 $row=mysqli_fetch_array($query);
+include ("includes/config.php");
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> 
 
 <head>
   <meta charset="utf-8">
@@ -131,14 +132,16 @@ $row=mysqli_fetch_array($query);
                         <div class="info-box" style="padding: 123px 0 150px 0; box-shadow:none;">
                             
                               <!-- <img src="images/(add echo row here)" alt="..." name = "profilepicture" id="profilepicture"><br> -->
-                              <!-- <a href="3editpicture.php" style="font-size:18px;">Edit<i class="bi bi-pencil" style="border:none; font-size:20px;" ></i></a> --> 
+                              <a href="3editpicture.php" style="font-size:18px;">Edit<i class="bi bi-pencil" style="border:none; font-size:20px;" ></i></a> 
                         
                             <!--<i class="bx bx-phone-call"></i>-->
-                           <?php 
-                            echo "<tr>";
-                            echo "<td>";?> <img src="<?php echo $row['profilepicture']; ?>" height = "100" width = "100" name = "profilepicture" id="profilepicture"><?php echo "</td>";
-                            echo "</tr>";
-                           ?>
+                            <?php
+                              if ($row['profilepicture'] == '') {
+                                echo "<img width='200' height='230' src='../pictures/default.jpg' alt='Default Profile Pic'>";
+                              } else {
+                                echo "<img width='220' height='230' src='../pictures/" . $row['profilepicture'] . "' alt='Profile Pic' >";
+                              }
+                            ?>
 
                             <h3><?php echo $row['name']; ?></h3>
                             <h4><?php echo $row['email']; ?></h4>
@@ -179,7 +182,7 @@ $row=mysqli_fetch_array($query);
                       <form action="/MasterCLEO/Moderna-pro/3editinfo.php" method="POST">
                         <button class="warnabutton center" type="submit"  >Edit Profile Info</button> &nbsp;&nbsp;&nbsp;
                       </form>
-                        <!--<a href="3viewprofile.php"style="margin-top:10px;" >Cancel</a>-->
+                    
                       </div>
                     </div>
             

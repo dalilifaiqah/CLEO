@@ -242,15 +242,30 @@ $row=mysqli_fetch_array($query);
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
+                                            <th>Transaction ID</th>
                                             <th>Name</th>
-                                            <th>Products</th>
-                                            <th>Account ID</th>
-                                            <th>Quantity</th>
+                                            <th>Email</th>
+                                            <th>Phone Number</th>
                                             <th>Price</th>
-                                            <th>Paid</th>
-                                            <th>Done</th>
+                                            
+                                            
                                         </tr>
                                     </thead>
+                                    <?php
+                                    $conn = mysqli_connect("localhost","admin1","admin1","cleo");
+                                    if ($conn-> connect_error){
+                                        die("Connection failed:".$conn-> connect_error);
+                                    }
+                                    $sql = "SELECT * from userpayment";
+                                    $result = $conn-> query($sql);
+
+                                    if($result-> num_rows > 0) {
+                                        while ($row = $result-> fetch_assoc()) {
+                                            echo "<tr><td>".$row["transactionID"]."</td><td>".$row["name"]."</td><td>".$row["email"]."</td>
+                                            <td>".$row["phoneNumber"]."</td><td>".$row["price"]."</td></tr>";
+                                        }
+                                    }
+                                    ?>
                                     
                                     <tbody>
                                         

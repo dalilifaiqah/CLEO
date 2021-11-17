@@ -152,55 +152,34 @@ $row=mysqli_fetch_array($query);
           <table class="table table-hover" style="width:90%; margin: auto;">
                     <thead >
                         <tr >
-                            <th ><input type="checkbox" class="bsn" id="selectAll"></th>
-                            <th>Order</th>
-                            <th>Category</th>
-                            <th>Products</th>
-                            <th>Date</th>
-                            <th>Total</th>
+                            
+                            <th>Transaction ID</th>
+                                      <th>Name</th>
+                                      <th>Email</th>
+                                      <th>Phone Number</th>
+                                      <th>Price</th>
                         </tr>
                     </thead>
+                    
                     <tbody>
-                        <tr>
-                            <td ><input type="checkbox" class="bso"></td>
-                            <td><a href="#">#10001</a></td>
-                            <td>Genshin Impact</td>
-                            <td>Kamisato Ayaka</td>
-                            <td>01/11/2021</td>
-                            <td>RM 200.00</td>
-                        </tr>
-                        <tr>
-                            <td><input type="checkbox" class="bso"></td>
-                            <td><a href="#">#10002</a></td>
-                            <td>PUBG</td>
-                            <td>Vintage Rock ScarL</td>
-                            <td>01/11/2021</td>
-                            <td>RM 100.00</td>
-                        </tr>
-                        <tr>
-                            <td><input type="checkbox" class="bso"></td>
-                            <td><a href="#">#10003</a></td>
-                            <td>Mobile Legend</td>
-                            <td>Sun</td>
-                            <td>01/11/2021</td>
-                            <td>RM 100.00</td>
-                        </tr>
-                        <tr >
-                            <td><input type="checkbox" class="bso"></td>
-                            <td><a href="#">#10004</a></td>
-                            <td>Valorant</td>
-                            <td>Singularity Bundle</td>
-                            <td>01/11/2021</td>
-                            <td>RM 300.00</td>
-                        </tr>
-                        <tr>
-                            <td><input type="checkbox" class="bso"></td>
-                            <td><a href="#">#10005</a></td>
-                            <td>Apex Legend</td>
-                            <td>Pearly White Fuse</td>
-                            <td>01/11/2021</td>
-                            <td>RM 200.00</td>
-                        </tr>
+                    <?php
+                                    $conn = mysqli_connect("localhost","admin1","admin1","cleo");
+                                    $userID=$row['id'];
+                                    if ($conn-> connect_error){
+                                        die("Connection failed:".$conn-> connect_error);
+                                    }
+                                    
+                                    $sql = "SELECT * from userpayment where userID=$userID";
+                                    $result = $conn-> query($sql);
+
+                                    if($result-> num_rows > 0) {
+                                        while ($row = $result-> fetch_assoc()) {
+                                            echo "<tr><td>".$row["transactionID"]."</td><td>".$row["name"]."</td><td>".$row["email"]."</td>
+                                            <td>".$row["phoneNumber"]."</td><td>".$row["price"]."</td></tr>";
+                                        }
+                                    }
+                                    ?>
+                
                     </tbody>
           </table>
 <br><br>

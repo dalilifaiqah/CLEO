@@ -4,6 +4,7 @@ session_start();
 $email=$_SESSION['email']; 
 $query=mysqli_query($con,"SELECT * FROM admin WHERE email='$email' "); 
 $row=mysqli_fetch_array($query);
+// include ("includes/config.php");
 ?>
 
 <!DOCTYPE html>
@@ -297,11 +298,19 @@ $row=mysqli_fetch_array($query);
                               <div class="card">
                                 <div class="card-body">
                                   <div class="d-flex flex-column align-items-center text-center">
-                                   <?php  
-                                    
-                                    ?> <img src="<?php echo $row['profilepicture']; ?>" height = "100" width = "100" name = "profilepicture"><?php echo "</td>";
-                                    
+
+                                <!-- ======= DISPLAYING PROFILE PICTURE ======== --> 
+                                  
+                                  <?php
+                                        if ($row['profilepicture'] == '') {
+                                            echo "<img width='200' height='230' src='../pictures/default.jpg' alt='Default Profile Pic'>";
+                                        } else {
+                                            echo "<img width='220' height='230' src='../pictures/" . $row['profilepicture'] . "' alt='Profile Pic' >";
+                                        }
                                     ?>
+
+                                <!-- ======= DISPLAYING PROFILE PICTURE ======== --> 
+
                                     <div class="mt-3">
                                       <h4><?php echo $row['name']; ?></h4>
                                       <p class="text-secondary mb-1"><?php echo $row['email']; ?></p>

@@ -1,10 +1,22 @@
+<!-- ======== WORK ONE DONE ========== --> 
+
 <?php
-$con = mysqli_connect("localhost","admin1","admin1","cleo"); 
-session_start(); 
-$email=$_SESSION['email']; 
-$query=mysqli_query($con,"SELECT * FROM admin WHERE email='$email' "); 
-$row=mysqli_fetch_array($query);
+include "connectiondb.php";
+session_start();
+$email = $_SESSION['email'];
+$query = mysqli_query($con, "SELECT * FROM admin WHERE email='$email' ");
+$row = mysqli_fetch_array($query);
+
+if (isset($_POST['submit'])) {
+  move_uploaded_file($_FILES['file']['tmp_name'],"../pictures/".$_FILES['file']['name']);
+  $con = mysqli_connect("localhost","admin1","admin1","cleo");
+  $q = mysqli_query($con, "UPDATE admin SET profilepicture = '" . $_FILES['file']['name'] . "' WHERE email='$email' ");
+  header("refresh:0; url=admin-profile.php");
+}
 ?>
+
+<!-- ========= WORK ONE DONE ========== --> 
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -307,9 +319,8 @@ $row=mysqli_fetch_array($query);
                                         <div class="card-body">
                                             <div class="d-flex flex-column align-items-center text-center">
                                                 <div class="mt-3">
-                                                <img src="images/<?php echo $row['profilepicture']; ?>" onclick = "triggerClick()"  width="110" id = "profilepicture" name = "profilepicture" >  <!-- class="rounded-circle p-1 bg-primary" -->
-                                             
-                                                    <form action = /MasterCLEO/Moderna-pro/2_admin_pages_here/startbootstrap-sb-admin-2-gh-pages/admineditprofile.php method = "POST">
+                                                
+                                            <!--        <form action = /MasterCLEO/Moderna-pro/2_admin_pages_here/startbootstrap-sb-admin-2-gh-pages/admineditprofile.php method = "POST"> -->
                                                     <h4><?php echo $row['name']; ?></h4>
                                                     <p class="text-secondary mb-1">Back-end Programmer</p>
                                                     <p class="text-muted font-size-sm"><?php echo $row['address']; ?></p>
@@ -318,12 +329,17 @@ $row=mysqli_fetch_array($query);
                                                 </div>
                                                 <div class = "btn btn-outline-primary"-->
                                                     <!--<span>Upload Photo</span>-->
-                                                    <input class = "file-input"  type = "file" onchange = "displayImage(this)" id = "profilepicture" name = "profilepicture">Upload Profile Picture</input>
+                                                    <!-- ========= DISPLAY PROFILE PICTURE ====== --> 
+                                                    <form action="" method="POST" enctype="multipart/form-data">
+                                                    <input id = "upload" type="file" name = "file" onchange="submitImage()" style="margin-left: 130px; margin-bottom: 5px;">
+                                                <br><button type="submit" class="btn btn-primary px-4" name = "submit" style="margin-left: 70px">Save</button>
+             
+                                                    <!-- <input class = "file-input"  type = "file" onchange = "displayImage(this)" id = "profilepicture" name = "profilepicture">Upload Profile Picture</input>--> 
                                                     <br><br>
                                                     <div class="row">
                                                         <div class="col-sm-3">
                                                             <div class="col-sm-9 text-secondary">
-                                                                <input type="submit" class="btn btn-primary px-4" style="margin-left: 70px" value="Save Changes" name = "admineditpicture">
+                                                            <!--     <input type="submit" class="btn btn-primary px-4" style="margin-left: 70px" value="Save Changes" name = "admineditpicture"> --> 
                                                             
                                                             </div>
                                                         </div>

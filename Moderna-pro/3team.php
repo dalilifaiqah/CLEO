@@ -92,7 +92,7 @@ $row=mysqli_fetch_array($query);
             </ul>
           </li>
           <!--<li><a href="/MasterCLEO/Moderna-pro/customer dashboard/paper-dashboard-master/examples/3dashboard.html">My Dashboard  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>-->
-          <li><form action=/MasterCLEO/Moderna-pro/CustomerDB.php method="POST">
+          <li><form action=CustomerDB.php method="POST">
           <input type="submit" name="logout" id="submit" class="form-submit submit sign-up-btn" style="" value="Log out"/>
         </form>
           </li>
@@ -129,7 +129,7 @@ $row=mysqli_fetch_array($query);
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="member">
               <div class="member-img">
-                <img src="/MasterCLEO/Moderna-pro/assets/img/lili.jpg" class="img-fluid" alt="">
+                <img src="/assets/img/lili.jpg" class="img-fluid" alt="">
                 <!--<div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
@@ -148,7 +148,7 @@ $row=mysqli_fetch_array($query);
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="member">
               <div class="member-img">
-                <img src="/MasterCLEO/Moderna-pro/assets/img/af.jpg" class="img-fluid" alt="">
+                <img src="/assets/img/af.jpg" class="img-fluid" alt="">
                 <!--<div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
@@ -186,7 +186,7 @@ $row=mysqli_fetch_array($query);
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="member">
               <div class="member-img">
-                <img src="/MasterCLEO/Moderna-pro/assets/img/aimill.jpeg" class="img-fluid" alt="">
+                <img src="/assets/img/aimill.jpeg" class="img-fluid" alt="">
                 <!--<div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
@@ -205,7 +205,7 @@ $row=mysqli_fetch_array($query);
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="member">
               <div class="member-img">
-                <img src="/MasterCLEO/Moderna-pro/assets/img/adriel.jpeg" class="img-fluid" alt="">
+                <img src="/assets/img/adriel.jpeg" class="img-fluid" alt="">
                 <!--<div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>

@@ -122,7 +122,7 @@ $sql = "SELECT * from customer ";
             </ul>
           </li>
           <!--<li><a href="/MasterCLEO/Moderna-pro/customer dashboard/paper-dashboard-master/examples/3dashboard.html">My Dashboard  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>-->
-          <li><form action=/MasterCLEO/Moderna-pro/CustomerDB.php method="POST">
+          <li><form action=CustomerDB.php method="POST">
           <input type="submit" name="logout" id="submit" class="form-submit submit sign-up-btn" value="Log out"/>
         </form></li>
         </ul>
@@ -200,7 +200,7 @@ $sql = "SELECT * from customer ";
             <div class="col-lg-6 profile" >
 
                 <div class="php-email-form" style="background-color: #fff; white; box-shadow: none;padding: 30px 0 30px 0; margin-bottom:0px">
-                    <form action="/MasterCLEO/Moderna-pro/customereditprofile.php" method="POST"  class="php-email-form" style="background-color: #fff; white; box-shadow: none; margin-bottom:0px; ">
+                    <form action="customereditprofile.php" method="POST"  class="php-email-form" style="background-color: #fff; white; box-shadow: none; margin-bottom:0px; ">
                         <div class="row " >
                         <div class="col-md-12 ">
                             <h3>Profile Info</h3>

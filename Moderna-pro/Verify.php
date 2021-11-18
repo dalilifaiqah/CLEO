@@ -17,7 +17,7 @@ if (isset($_GET['vkey'])){
         $update = $con->query("UPDATE customer SET verified = 1 WHERE vkey = '$vkey' LIMIT 1");
 
         if($update){
-            header("Location:/MasterCLEO/Moderna-pro/customer%20email%20verification/Emailsuccessful.html");
+            header("Location:/customer%20email%20verification/Emailsuccessful.html");
         }else{
             echo $mysqli->error;
         }

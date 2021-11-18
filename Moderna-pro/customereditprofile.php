@@ -30,7 +30,7 @@ function customereditprofile()
     }
     
     if ($con2->query($sql) === TRUE){
-      header("Location: /MasterCLEO/Moderna-pro/3viewprofile.php");
+      header("Location: 3viewprofile.php");
             }else{
                 echo '<br>Update failed';
             }

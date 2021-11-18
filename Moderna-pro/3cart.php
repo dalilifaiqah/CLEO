@@ -116,7 +116,7 @@ input::-webkit-inner-spin-button {
             </ul>
           </li>
           <!--<li><a href="/MasterCLEO/Moderna-pro/customer dashboard/paper-dashboard-master/examples/3dashboard.html">My Dashboard  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>-->
-          <li><form action=/MasterCLEO/Moderna-pro/CustomerDB.php method="POST">
+          <li><form action=CustomerDB.php method="POST">
           <input type="submit" name="logout" id="submit" class="form-submit submit sign-up-btn" value="Log out"/>
         </form></li>
         </ul>
@@ -162,7 +162,7 @@ input::-webkit-inner-spin-button {
                   <div class="row mb-4 d-flex justify-content-between align-items-center">
 
 
-      <form action=/MasterCLEO/Moderna-pro/Payment.php method="POST">         
+      <form action=Payment.php method="POST">         
                   <div class="table-responsive">
                   <table class="table table-hover">
 					<tr>

@@ -44,13 +44,13 @@ if (isset($_POST['signup'])) {
                 $headers .= "MIME-Version : 1.0\r\n";
                 $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 
-                $message = "<a href='http://localhost/MasterCLEO/Moderna-pro/Verify.php?vkey=$vkey'>Click Here To Verify Your Email Address</a>";
+                $message = "<a href='http://Verify.php?vkey=$vkey'>Click Here To Verify Your Email Address</a>";
 
                 mail($to, $subject, $message, $headers);
 
                
                      echo "Sign up successfully";
-                     header("Location: /MasterCLEO/Moderna-pro/colorlib-regform-9/colorlib-regform-9/CustomerLogin.php");
+                     header("Location: /colorlib-regform-9/colorlib-regform-9/CustomerLogin.php");
                 }else{
                     echo "error";
                 }
@@ -78,10 +78,10 @@ if (isset($_POST['signup'])) {
             $_SESSION['email'] = $email;
     
             if ($verified == 1) { 
-                header("Location:/MasterCLEO/Moderna-pro/Customerhomepage.php");
+                header("Location:Customerhomepage.php");
                            
             } else {
-                header("Location:/MasterCLEO/Moderna-pro/customer%20email%20verification/Emailnotverified.html");
+                header("Location:/customer%20email%20verification/Emailnotverified.html");
             }
             
         } else {

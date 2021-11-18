@@ -19,7 +19,7 @@ if(!$con3){
 }
 
 if ($con3->query($sql) === TRUE){
-  header("Location: /MasterCLEO/Moderna-pro/4forgotpasswordS.html");
+  header("Location: 4forgotpasswordS.html");
         }else{
             echo '<br>Login failed';
         }

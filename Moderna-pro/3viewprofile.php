@@ -92,7 +92,7 @@ include ("includes/config.php");
             </ul>
           </li>
           <!--<li><a href="/MasterCLEO/Moderna-pro/customer dashboard/paper-dashboard-master/examples/3dashboard.html">My Dashboard  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>-->
-          <li><form action=/MasterCLEO/Moderna-pro/CustomerDB.php method="POST">
+          <li><form action=CustomerDB.php method="POST">
           <input type="submit" name="logout" id="submit" class="form-submit submit sign-up-btn" value="Log out"/>
         </form></li>
         </ul>
@@ -180,7 +180,7 @@ include ("includes/config.php");
                       </div>
                       <br><br><br><br>
                       <div class="row" style="width:100%;">
-                      <form action="/MasterCLEO/Moderna-pro/3editinfo.php" method="POST">
+                      <form action="3editinfo.php" method="POST">
                         <button class="warnabutton center" type="submit"  >Edit Profile Info</button> &nbsp;&nbsp;&nbsp;
                       </form>
                     

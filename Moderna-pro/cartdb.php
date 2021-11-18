@@ -21,7 +21,7 @@ if(isset($_POST["add_to_cart"]))
 		else
 		{
 			echo '<script>alert("Item Already Added")</script>';
-			header("Location: /MasterCLEO/Moderna-pro/3cart.php");
+			header("Location: 3cart.php");
 		}
 	}
 	else
@@ -33,9 +33,9 @@ if(isset($_POST["add_to_cart"]))
 			'item_quantity'		=>	$_POST["quantity"]
 		);
 		$_SESSION["shopping_cart"][0] = $item_array;
-		header("Location: /MasterCLEO/Moderna-pro/3cart.php");
+		header("Location: 3cart.php");
 	}
-	header("Location: /MasterCLEO/Moderna-pro/3cart.php");
+	header("Location: 3cart.php");
 }
 
 ?>

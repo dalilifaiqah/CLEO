@@ -33,7 +33,7 @@ if (isset($_POST['signup'])) {
 
                 if ($con2 ->query($sql) ==true) {
                      echo "Sign up successfully";
-                     header("Location: /MasterCLEO/Moderna-pro/colorlib-regform-9/colorlib-regform-9/CustomerLogin.php");
+                     header("Location: /colorlib-regform-9/colorlib-regform-9/CustomerLogin.php");
                 }else{
                     echo "error";
                 }            
@@ -56,7 +56,7 @@ if (isset($_POST['signup'])) {
         if($count2 == 1){
             //$row = $result->fetch_assoc();
             $_SESSION['email'] = $email;
-            header("Location: /MasterCLEO/Moderna-pro/2_admin_pages_here/startbootstrap-sb-admin-2-gh-pages/dashboard.php");
+            header("Location: /2_admin_pages_here/startbootstrap-sb-admin-2-gh-pages/dashboard.php");
         }else{
             echo '<br>Login failed';
         }

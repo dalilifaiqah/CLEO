@@ -91,7 +91,7 @@ $row=mysqli_fetch_array($query);
             </ul>
           </li>
           <!--<li><a href="/MasterCLEO/Moderna-pro/customer dashboard/paper-dashboard-master/examples/3dashboard.html">My Dashboard  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>-->
-          <li><form action=/MasterCLEO/Moderna-pro/CustomerDB.php method="POST">
+          <li><form action=CustomerDB.php method="POST">
           <input type="submit" name="logout" id="submit" class="form-submit submit sign-up-btn" style="" value="Log out"/>
         </form>
           </li>
@@ -155,7 +155,7 @@ $row=mysqli_fetch_array($query);
 
           <div class="col-lg-6">
 
-            <form action="/MasterCLEO/3contact.php" method="POST"  class="php-email-form">
+            <form action="3contact.php" method="POST"  class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>

@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-	<link rel="icon" href="/MasterCLEO/Moderna-pro/assets/img/icon1.png">
+	<link rel="icon" href="/assets/img/icon1.png">
 	
   	<title>CLEO</title>
     <meta charset="utf-8">
@@ -20,7 +20,7 @@
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-md-6 text-center mb-5">
-					<img src="/MasterCLEO/Moderna-pro/assets/img/icon1.png">
+					<img src="/assets/img/icon1.png">
 					<h2 class="heading-section">CLEO Admin</h2>
 				</div>
 			</div>
@@ -30,7 +30,7 @@
 		      	<h3 class="mb-4 text-center">Log In</h3>
 				  
 			<div class="signin-content">
-				  <form action=/MasterCLEO/Moderna-pro/AdminDB.php method="POST" id="signin-form" class="signin-form">
+				  <form action=AdminDB.php method="POST" id="signin-form" class="signin-form">
 		      		<div class="form-group">
 		      			<input type="email" name="email" class="form-control" placeholder="Email" required>
 		      		</div>

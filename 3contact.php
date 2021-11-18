@@ -22,7 +22,7 @@ if(!$con3){
 
   if ($con3->query($sql) === TRUE){
         //echo "<h2>Thanks, your request has been submitted!</h2>";
-        header("Location:/MasterCLEO/Moderna-pro/3successfulfeedback.php");
+        header("Location:3successfulfeedback.php");
   }
 
 ?>

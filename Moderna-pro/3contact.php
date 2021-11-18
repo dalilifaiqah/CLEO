@@ -155,7 +155,7 @@ $row=mysqli_fetch_array($query);
 
           <div class="col-lg-6">
 
-            <form action="3contact.php" method="POST"  class="php-email-form">
+            <form action="3contactfx.php" method="POST"  class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -218,9 +218,9 @@ $row=mysqli_fetch_array($query);
             <h4>Useful Links</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="Customerhomepage.php">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="1about.php">About Us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="1team.php">Team</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="1contact.php">Contact Us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="3about.php">About Us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="3team.php">Team</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="3contact.php">Contact Us</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="https://www.freeprivacypolicy.com/live/02e3012e-de66-4b6a-a831-8de595a84496">Terms and Condition</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="https://www.freeprivacypolicy.com/live/3629ced9-9e17-40cc-abbf-dfd879b204e8">Privacy policy</a></li>
             </ul>

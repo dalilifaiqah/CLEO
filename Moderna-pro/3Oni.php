@@ -130,7 +130,7 @@ $row=mysqli_fetch_array($query);
               <div class="swiper-wrapper align-items-center">
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/size-formated/Oni-Valo.jpg" alt="">
+                  <img src="assets/img/portfolio/size-formated/oni-valo.jpg" alt="">
                 </div>
 
                 <div class="swiper-slide">

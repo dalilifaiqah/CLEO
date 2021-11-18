@@ -206,7 +206,7 @@ $row=mysqli_fetch_array($query);
                                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Profile
                                 </a>
-                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                <a class="dropdown-item" href="../../4logout.html" data-toggle="modal" data-target="#logoutModal">
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Logout
                                 </a>
@@ -249,7 +249,7 @@ $row=mysqli_fetch_array($query);
                                     </thead>
                                     <tr>
                                     <?php
-                                    $conn = mysqli_connect("localhost","admin1","admin1","cleo");
+                                    $conn = mysqli_connect("localhost","ourcleoc_cleoadmin","Cleo_12345_","ourcleoc_cleo"); 
                                     if ($conn-> connect_error){
                                         die("Connection failed:".$conn-> connect_error);
                                     }
@@ -280,9 +280,9 @@ $row=mysqli_fetch_array($query);
                                     
                                         <?php
                                         
-                                        $connection = mysqli_connect("localhost","admin1","admin1");
-                                        $db = mysqli_select_db($connection, 'cleo');
-                                        
+                                        $connection = mysqli_connect("localhost","ourcleoc_cleoadmin","Cleo_12345_");
+                                        $db = mysqli_select_db($connection, 'ourcleoc_cleo');
+                                       
                                         if(isset($_POST['delete']))
                                         {
                                             $id = $_POST['id'];
@@ -339,7 +339,7 @@ $row=mysqli_fetch_array($query);
                 <div class="modal-body">Are you sure?</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">No</button>
-                    <form action=AdminDB.php method="POST">
+                    <form action="../../AdminDB.php" method="POST">
                     <input class="btn btn-primary" type="submit" name="logout" id="submit" value="Yes" />
                     </form>
                 </div>

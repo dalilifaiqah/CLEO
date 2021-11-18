@@ -43,7 +43,7 @@ if (isset($_POST['signup'])) {
     function login(){
         $servername = "localhost";
         $username = "ourcleoc_cleoadmin";
-        $password = "ourcleoc_cleoadmin";
+        $password = "Cleo_12345_";
         $dbname = "ourcleoc_cleo";
         $sql2 = new mysqli($servername, $username, $password, $dbname);
 

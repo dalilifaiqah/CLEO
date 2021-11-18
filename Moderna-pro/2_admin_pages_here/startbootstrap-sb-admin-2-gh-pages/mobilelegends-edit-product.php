@@ -252,7 +252,7 @@
                                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Profile
                                 </a>
-                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                <a class="dropdown-item" href="../../4logout.html" data-toggle="modal" data-target="#logoutModal">
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Logout
                                 </a>
@@ -368,7 +368,7 @@
                 <div class="modal-body">Are you sure?</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">No</button>
-                    <form action= AdminDB.php method="POST">
+                    <form action= "../../AdminDB.php" method="POST">
                     <input class="btn btn-primary" type="submit" name="logout" id="submit" value="Yes" />
                     </form>
                 </div>

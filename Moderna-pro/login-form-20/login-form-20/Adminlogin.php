@@ -30,7 +30,7 @@
 		      	<h3 class="mb-4 text-center">Log In</h3>
 				  
 			<div class="signin-content">
-				  <form action=AdminDB.php method="POST" id="signin-form" class="signin-form">
+				  <form action="../../AdminDB.php" method="POST" id="signin-form" class="signin-form">
 		      		<div class="form-group">
 		      			<input type="email" name="email" class="form-control" placeholder="Email" required>
 		      		</div>

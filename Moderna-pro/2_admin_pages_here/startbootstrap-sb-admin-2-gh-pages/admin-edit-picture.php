@@ -9,7 +9,7 @@ $row = mysqli_fetch_array($query);
 
 if (isset($_POST['submit'])) {
   move_uploaded_file($_FILES['file']['tmp_name'],"../pictures/".$_FILES['file']['name']);
-  $con = mysqli_connect("localhost","admin1","admin1","cleo");
+  $con = mysqli_connect("localhost","ourcleoc_cleoadmin","Cleo_12345_","ourcleoc_cleo");
   $q = mysqli_query($con, "UPDATE admin SET profilepicture = '" . $_FILES['file']['name'] . "' WHERE email='$email' ");
   header("refresh:0; url=admin-profile.php");
 }

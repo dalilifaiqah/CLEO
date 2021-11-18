@@ -1,9 +1,10 @@
 <?php
-$con = mysqli_connect("localhost","ourcleoc_cleoadmin","Cleo_12345_","ourcleoc_cleo");
-session_start(); 
-$email=$_SESSION['email']; 
-$query=mysqli_query($con,"SELECT * FROM customer WHERE email='$email' "); 
-$row=mysqli_fetch_array($query);
+$con = mysqli_connect("localhost", "ourcleoc_cleoadmin", "Cleo_12345_", "ourcleoc_cleo");
+session_start();
+$email = $_SESSION['email'];
+$query = mysqli_query($con, "SELECT * FROM customer WHERE email='$email' ");
+$row = mysqli_fetch_array($query);
+include("includes/config.php");
 ?>
 
 <!DOCTYPE html>
@@ -13,15 +14,15 @@ $row=mysqli_fetch_array($query);
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Shopping Cart</title>
+  <title><?php echo $row['name']; ?>'s Profile</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-   <!-- Favicons -->
-   <link rel="icon" href="assets/img/CLEO-logo.png">
-   <!--<link href="assets/img/logo atas.png" rel="icon">
+  <!-- Favicons -->
+  <link rel="icon" href="assets/img/icon1.png">
+  <!--<link href="assets/img/logo atas.png" rel="icon">
    <link href="assets/img/logo atas.png" rel="logo-atas-icon">-->
-   <link src="https://checkout.stripe.com/checkout.js" >
+
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
 
@@ -83,7 +84,7 @@ $row=mysqli_fetch_array($query);
             </ul>
           </li>-->
           <li><a href="3contact.php">Contact Us</a></li>
-          <li class="dropdown"><a class="active"href="#"><span><?php echo $row['name']; ?></span> <i class="bi bi-chevron-down"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </i></a>
+          <li class="dropdown"><a class="active" href="#"><span><?php echo $row['name']; ?></span> <i class="bi bi-chevron-down"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </i></a>
             <ul>
               <li><a class="active" href="3viewprofile.php">My Profile</a></li>
               <li><a href="3cart.php">Cart</a></li>
@@ -91,9 +92,11 @@ $row=mysqli_fetch_array($query);
             </ul>
           </li>
           <!--<li><a href="/MasterCLEO/Moderna-pro/customer dashboard/paper-dashboard-master/examples/3dashboard.html">My Dashboard  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>-->
-          <li><form action="CustomerDB.php" method="POST">
-          <input type="submit" name="logout" id="submit" class="form-submit submit sign-up-btn" value="Log out"/>
-        </form></li>
+          <li>
+            <form action="CustomerDB.php" method="POST">
+              <input type="submit" name="logout" id="submit" class="form-submit submit sign-up-btn" value="Log out" />
+            </form>
+          </li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -108,10 +111,10 @@ $row=mysqli_fetch_array($query);
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Shopping Cart</h2>
+          <h2>My Profile</h2>
           <ol>
             <li><a href="Customerhomepage.php">Home</a></li>
-            <li><a href="3viewprofile.php">Shopping Cart</a></li>
+            <li><a href="3viewprofile.php">My Profile</a></li>
           </ol>
         </div>
 
@@ -119,17 +122,79 @@ $row=mysqli_fetch_array($query);
     </section><!-- End Contact Section -->
 
     <!-- ======= Contact Section ======= -->
-            <div class="stripe-button">    
-                <script
-                    
-                    data-key="Your Test Key"
-                    data-amount=<?php echo str_replace(",","",$_GET["price"]) * 100?>
-                    data-name="<?php echo $_GET["item_name"]?>"
-                    data-currency="MYR"
-                    data-locale="auto">
-                </script>
+    <section class="profile" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6">
+
+            <div class="row">
+              <div class="col-md-12 profile-user">
+                <div class="info-box" style="padding: 70px 0 70px 0; box-shadow:none;">
+
+                  <!-- <img src="images/(add echo row here)" alt="..." name = "profilepicture" id="profilepicture"><br> -->
+
+
+                  <!--<i class="bx bx-phone-call"></i>-->
+                  <?php
+                  if ($row['profilepicture'] == '') {
+                    echo "<img width='110' height='125' src='pictures/default-profile.jpg' alt='Default Profile Pic'>";
+                  } else {
+                    echo "<img width='125' height='125' src='pictures/" . $row['profilepicture'] . "' alt='Profile Pic' >";
+                  }
+                  ?>
+                  <br>
+                  <a href="3editpicture.php" style="font-size:18px; ">Edit<i class="bi bi-pencil" style="border:none; font-size:18px;"></i></a>
+                  <h3><?php echo $row['name']; ?></h3>
+                  <h4><?php echo $row['email']; ?></h4>
+                  <!--<a href="3editpicture.php"><p>Edit Profile Picture</p></a>-->
+                  <!--<a href="mailto: cleosheesh@gmail.com"><p>cleosheesh@gmail.com</p></a>-->
+                </div>
               </div>
-</section><!-- End Contact Section -->
+            </div>
+          </div>
+
+          <div class="col-lg-6 profile">
+
+            <div class="php-email-form" style="background-color: white; box-shadow: none;">
+              <div class="row ">
+                <div class="col-md-12 ">
+                  <h3>Profile Info</h3>
+                </div>
+                <div class="col-md-6">
+                  <p style="margin: 0 0 0 0;">Username</p>
+                  <input type="text" name="name" class="form-control" id="name" placeholder="<?php echo $row['name']; ?>" disabled>
+                </div>
+                <div class="col-md-6 ">
+                  <p style="margin: 0 0 0 0;">Email</p>
+                  <input type="email" class="form-control" name="email" id="email" placeholder="<?php echo $row['email']; ?>" disabled>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6">
+                  <p style="margin-top: 10px; margin-bottom: 0;">Password</p>
+                  <input type="password" name="password" class="form-control " id="password" value="<?php echo $row['password']; ?>" minlength="6" disabled>
+                </div>
+              </div>
+              <div class="my-3">
+              </div>
+              <br><br><br><br>
+              <div class="row" style="width:100%;">
+                <form action="3editinfo.php" method="POST">
+                  <button class="warnabutton center" type="submit">Edit Profile Info</button> &nbsp;&nbsp;&nbsp;
+                </form>
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
 
     <!-- ======= Map Section ======= -->
     <!--<section class="map mt-2">
@@ -170,7 +235,7 @@ $row=mysqli_fetch_array($query);
               <li><i class="bx bx-chevron-right"></i> <a href="3about.php">About Us</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="3team.php">Team</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="3contact.php">Contact Us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="https://www.freeprivacypolicy.com/live/02e3012e-de66-4b6a-a831-8de595a8096">Terms and Condition</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://www.freeprivacypolicy.com/live/02e3012e-de66-4b6a-a831-8de595a84496">Terms and Condition</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="https://www.freeprivacypolicy.com/live/3629ced9-9e17-40cc-abbf-dfd879b204e8">Privacy policy</a></li>
             </ul>
           </div>
@@ -186,10 +251,10 @@ $row=mysqli_fetch_array($query);
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Contact Us</h4>
             <p>
-                Jalan Rejang 4, Taman Setapak Jaya, <br>
-                54100 Kuala Lumpur,<br>
-                Wilayah Persekutuan Kuala Lumpur<br><br>
-                <strong>Email:</strong><a href="mailto: cleosheesh@gmail.com"> cleosheesh@gmail.com</a><br>
+              Jalan Rejang 4, Taman Setapak Jaya, <br>
+              54100 Kuala Lumpur,<br>
+              Wilayah Persekutuan Kuala Lumpur<br><br>
+              <strong>Email:</strong><a href="mailto: cleosheesh@gmail.com"> cleosheesh@gmail.com</a><br>
             </p><br>
             <!--<h4>Admin</h4>
             <ul>
@@ -207,8 +272,8 @@ $row=mysqli_fetch_array($query);
               <a href="https://www.linkedin.com/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
             </div>
           </div>
-          
-          
+
+
         </div>
       </div>
     </div>
@@ -217,7 +282,7 @@ $row=mysqli_fetch_array($query);
       <div class="copyright">
         &copy; Copyright <strong><span>CLEO</span></strong>. All Rights Reserved
       </div>
-      
+
     </div>
   </footer><!-- End Footer -->
 

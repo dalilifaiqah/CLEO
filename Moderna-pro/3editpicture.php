@@ -13,6 +13,7 @@ if (isset($_POST['submit'])) {
 }
 ?>
 
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -140,9 +141,9 @@ if (isset($_POST['submit'])) {
                         <br>
                             <?php
                               if ($row['profilepicture'] == '') {
-                                echo "<img width='110' height='125' src='../default-profile.jpg' alt='Default Profile Pic'>";
+                                echo "<img width='110' height='125' src='pictures/default-profile.jpg' alt='Default Profile Pic'>";
                               } else {
-                                echo "<img width='125' height='125' src='../" . $row['profilepicture'] . "' alt='Profile Pic' >";
+                                echo "<img width='125' height='125' src='pictures/" . $row['profilepicture'] . "' alt='Profile Pic' >";
                               }
                             ?>
                             <br><br>

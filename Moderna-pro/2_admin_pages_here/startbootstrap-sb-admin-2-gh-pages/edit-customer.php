@@ -294,7 +294,7 @@
                                         <div class="card-body">
                                             <div class="row mb-3">
                                                 <div class="col-sm-3">
-                                                <form action = customereditprofile2.php method = "POST">
+                                                <form action = "../../customereditprofile2.php" method = "POST">
                                                     <h6 class="mb-0">ID</h6>
                                                 </div>
                                                 <div class="col-sm-9 text-secondary">

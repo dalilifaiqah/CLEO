@@ -167,9 +167,9 @@ $sql = "SELECT * from customer ";
                               <!-- <img src="images/put the code here " id="profilepicture" name = "profilepicture" for=""><br> --> 
                               <?php
                               if ($row['profilepicture'] == '') {
-                                echo "<img width='110' height='125' src='../default-profile.jpg' alt='Default Profile Pic'>";
+                                echo "<img width='110' height='125' src='pictures/default-profile.jpg' alt='Default Profile Pic'>";
                               } else {
-                                echo "<img width='125' height='125' src='../" . $row['profilepicture'] . "' alt='Profile Pic' >";
+                                echo "<img width='125' height='125' src='pictures/" . $row['profilepicture'] . "' alt='Profile Pic' >";
                               }
                             ?>
                              <!-- <form action= "/MasterCLEO/Moderna-pro/customereditprofile.php" method="POST" class="php-email-form" style="background-color: #fff; white; box-shadow: none;"> -->

@@ -339,7 +339,7 @@ $row=mysqli_fetch_array($query);
                                         <div class="card-body">
                                             <div class="row mb-3">
                                                 <div class="col-sm-3">
-                                                <form action = 2_admin_pages_here/startbootstrap-sb-admin-2-gh-pages/admineditprofile.php method = "POST">
+                                                <form action = "/2_admin_pages_here/startbootstrap-sb-admin-2-gh-pages/admineditprofile.php" method = "POST">
                                                     <h6 class="mb-0">Name</h6>
                                                 </div>
                                                 <div class="col-sm-9 text-secondary">

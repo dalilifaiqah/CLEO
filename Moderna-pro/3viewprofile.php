@@ -1,10 +1,10 @@
 <?php
-$con = mysqli_connect("localhost","ourcleoc_cleoadmin","Cleo_12345_","ourcleoc_cleo"); 
-session_start(); 
-$email=$_SESSION['email']; 
-$query=mysqli_query($con,"SELECT * FROM customer WHERE email='$email' "); 
-$row=mysqli_fetch_array($query);
-include ("includes/config.php");
+$con = mysqli_connect("localhost", "ourcleoc_cleoadmin", "Cleo_12345_", "ourcleoc_cleo");
+session_start();
+$email = $_SESSION['email'];
+$query = mysqli_query($con, "SELECT * FROM customer WHERE email='$email' ");
+$row = mysqli_fetch_array($query);
+include("includes/config.php");
 ?>
 
 <!DOCTYPE html>

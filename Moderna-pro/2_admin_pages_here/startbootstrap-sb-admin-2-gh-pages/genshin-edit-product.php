@@ -1,9 +1,9 @@
 <?php
-#$con = mysqli_connect("localhost","admin1","admin1","cleo"); 
-#session_start(); 
-#$email=$_SESSION['email']; 
-#$query=mysqli_query($con,"SELECT * FROM admin WHERE email='$email' "); 
-#$row=mysqli_fetch_array($query);
+$con = mysqli_connect("localhost","ourcleoc_cleoadmin","Cleo_12345_","ourcleoc_cleo"); 
+session_start(); 
+$email=$_SESSION['email']; 
+$query=mysqli_query($con,"SELECT * FROM admin WHERE email='$email' "); 
+$row=mysqli_fetch_array($query);
 ?>
 
 
@@ -294,7 +294,7 @@
                                         <div class="card-body">
                                             <div class="row mb-3">
                                                 <div class="col-sm-3">
-                                                <form action = 2_admin_pages_here/startbootstrap-sb-admin-2-gh-pages/genshinedit.php method = "POST">
+                                                <form action = "/2_admin_pages_here/startbootstrap-sb-admin-2-gh-pages/genshinedit.php" method = "POST">
                                                     <h6 class="mb-0">ID</h6>
                                                 </div>
                                                 <div class="col-sm-9 text-secondary">

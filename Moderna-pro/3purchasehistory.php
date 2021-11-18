@@ -116,7 +116,7 @@ $row=mysqli_fetch_array($query);
           <h2>Purchase History</h2>
           <ol>
             <li><a href="Customerhomepage.php">Home</a></li>
-            <li><a href="3purchasehistory.php">Purchase History</a></li>
+            <li><a href="3Purchasehistory.php">Purchase History</a></li>
           </ol>
         </div>
 

@@ -32,7 +32,7 @@ function admineditprofile()
     }
     
     if ($con2->query($sql) === TRUE){
-      header("Location: /MasterCLEO/Moderna-pro/2_admin_pages_here/startbootstrap-sb-admin-2-gh-pages/admin-profile.php");
+      header("Location: 2_admin_pages_here/startbootstrap-sb-admin-2-gh-pages/admin-profile.php");
             }else{
                 echo '<br>Update failed';
             }

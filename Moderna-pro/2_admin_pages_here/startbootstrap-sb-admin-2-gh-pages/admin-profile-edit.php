@@ -318,7 +318,7 @@ $row=mysqli_fetch_array($query);
                                                 <div class="mt-3">
                                                 <img src="images/" onclick = "triggerClick()"  width="110" id = "profilepicture" name = "profilepicture" >   class="rounded-circle p-1 bg-primary"
                                              
-                                                    <form action = /MasterCLEO/Moderna-pro/2_admin_pages_here/startbootstrap-sb-admin-2-gh-pages/admineditprofile.php method = "POST">
+                                                    <form action = 2_admin_pages_here/startbootstrap-sb-admin-2-gh-pages/admineditprofile.php method = "POST">
                                                     <h4></h4>
                                                     <p class="text-secondary mb-1">Back-end Programmer</p>
                                                     <p class="text-muted font-size-sm"></p>
@@ -339,7 +339,7 @@ $row=mysqli_fetch_array($query);
                                         <div class="card-body">
                                             <div class="row mb-3">
                                                 <div class="col-sm-3">
-                                                <form action = /MasterCLEO/Moderna-pro/2_admin_pages_here/startbootstrap-sb-admin-2-gh-pages/admineditprofile.php method = "POST">
+                                                <form action = 2_admin_pages_here/startbootstrap-sb-admin-2-gh-pages/admineditprofile.php method = "POST">
                                                     <h6 class="mb-0">Name</h6>
                                                 </div>
                                                 <div class="col-sm-9 text-secondary">
@@ -413,7 +413,7 @@ $row=mysqli_fetch_array($query);
                 <div class="modal-body">Are you sure?</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">No</button>
-                    <form action=/MasterCLEO/Moderna-pro/AdminDB.php method="POST">
+                    <form action=AdminDB.php method="POST">
                     <input class="btn btn-primary" type="submit" name="logout" id="submit" value="Yes" />
                     </form>
                 </div>

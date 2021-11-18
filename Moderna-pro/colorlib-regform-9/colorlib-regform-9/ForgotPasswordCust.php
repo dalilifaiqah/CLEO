@@ -2,7 +2,7 @@
 
 $servername = "localhost";
 $username = "ourcleoc_cleoadmin";
-$password = "ourcleoc_cleoadmin";
+$password = "Cleo_12345_";
 $dbname = "ourcleoc_cleo";
 
 

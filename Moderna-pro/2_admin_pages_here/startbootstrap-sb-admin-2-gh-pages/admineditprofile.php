@@ -12,10 +12,10 @@ if(isset($_POST['admineditprofile'])) {
 
 function admineditprofile()
 {
-    $servername = "localhost";
-    $username = "ourcleoc_cleoadmin";
-    $password = "ourcleoc_cleoadmin";
-    $dbname = "ourcleoc_cleo";
+  $servername = "localhost";
+  $username = "ourcleoc_cleoadmin";
+  $password = "Cleo_12345_";
+  $dbname = "ourcleoc_cleo";
 
    
     

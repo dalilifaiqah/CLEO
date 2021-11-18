@@ -1,7 +1,7 @@
 <?php 
 session_start();
-$connect = mysqli_connect("localhost","ourcleoc_cleoadmin","ourcleoc_cleoadmin","ourcleoc_cleo");
-
+$con = mysqli_connect("localhost","ourcleoc_cleoadmin","Cleo_12345_","ourcleoc_cleo");
+// connect instead of con if you get an error (might be)
 if(isset($_POST["add_to_cart"]))
 {
 	if(isset($_SESSION["shopping_cart"]))

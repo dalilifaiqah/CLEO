@@ -1,5 +1,5 @@
 <?php
-$mysqli = new mysqli("localhost","ourcleoc_cleoadmin","ourcleoc_cleoadmin","ourcleoc_cleo") or die(mysqli_error($mysqli));
+$mysqli = new mysqli("localhost","ourcleoc_cleoadmin","Cleo_12345_","ourcleoc_cleo") or die(mysqli_error($mysqli));
 
 if (isset($_POST['save'])){
     $name = $_POST['name'];

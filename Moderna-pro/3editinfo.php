@@ -19,7 +19,7 @@ if(isset($_POST['submit']))
     }
 
 
-  $con = mysqli_connect("localhost","ourcleoc_cleoadmin","ourcleoc_cleoadmin","ourcleoc_cleo"); 
+    $con = mysqli_connect("localhost","ourcleoc_cleoadmin","Cleo_12345_","ourcleoc_cleo"); 
 
 $email=$_SESSION['email']; 
 $query=mysqli_query($con,"SELECT * FROM customer WHERE email='$email' "); 

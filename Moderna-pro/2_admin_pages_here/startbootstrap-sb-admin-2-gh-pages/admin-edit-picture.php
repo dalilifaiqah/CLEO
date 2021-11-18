@@ -320,7 +320,7 @@ if (isset($_POST['submit'])) {
                                             <div class="d-flex flex-column align-items-center text-center">
                                                 <div class="mt-3" style="padding: 23px 25px 23px 25px">
                                                 
-                                            <!--        <form action = /MasterCLEO/Moderna-pro/2_admin_pages_here/startbootstrap-sb-admin-2-gh-pages/admineditprofile.php method = "POST"> -->
+                                            <!--        <form action = 2_admin_pages_here/startbootstrap-sb-admin-2-gh-pages/admineditprofile.php method = "POST"> -->
                                                     <form action="" method="POST" enctype="multipart/form-data">
                                                     <input id = "upload" type="file" name = "file" onchange="submitImage()" style="margin-left: 130px; margin-bottom: 5px; margin-top:5px">
                                                     <br><button type="submit" class="btn btn-primary px-4" style="color:#000" name = "submit" >Save</button>        
@@ -432,7 +432,7 @@ if (isset($_POST['submit'])) {
                 <div class="modal-body">Are you sure?</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">No</button>
-                    <form action=/MasterCLEO/Moderna-pro/AdminDB.php method="POST">
+                    <form action=AdminDB.php method="POST">
                     <input class="btn btn-primary" type="submit" name="logout" id="submit" value="Yes" />
                     </form>
                 </div>

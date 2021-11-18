@@ -420,7 +420,7 @@ $row=mysqli_fetch_array($query);
                 <div class="modal-body">Are you sure?</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">No</button>
-                    <form action=/MasterCLEO/Moderna-pro/AdminDB.php method="POST">
+                    <form action=AdminDB.php method="POST">
                     <input class="btn btn-primary" type="submit" name="logout" id="submit" value="Yes" />
                     </form>
                 </div>

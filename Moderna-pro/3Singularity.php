@@ -110,7 +110,7 @@ $row=mysqli_fetch_array($query);
         <div class="d-flex justify-content-between align-items-center">
           <h2>Valorant</h2>
           <ol>
-            <li><a href="Guesthomepage.php">Home</a></li>
+            <li><a href="Customerhomepage.php">Home</a></li>
             <li><a href="3products.php">Products</a></li>
             <li>Valorant</li>
           </ol>

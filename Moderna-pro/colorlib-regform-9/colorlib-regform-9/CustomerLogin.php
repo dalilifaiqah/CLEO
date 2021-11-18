@@ -30,7 +30,7 @@ if(isset($_SESSION['email'])){
             <div class="signup-content">
                 <form action=/MasterCLEO/Moderna-pro/CustomerDB.php method="POST" id="signup-form" class="signup-form" style="margin-bottom:35px">
                     <div class="form-group" style="display: inline;">
-                        <a href="../../Guesthomepage.php">
+                        <a href="../../index.php">
                             <img src="../../assets/img/home-icon.png" alt="Homepage" align="right" style="width:20px;height:20px;"></a>
                         <!--<p id="clickpara" style="display:inline;cursor: pointer;">Homepage</p>-->
                         <!--<a href="../../Customerhomepage.php" style="color:white; underline:none;">Homepage</a>-->

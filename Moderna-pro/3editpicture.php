@@ -235,7 +235,7 @@ if (isset($_POST['submit'])) {
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="Guesthomepage.php">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="Customerhomepage.php">Home</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="1about.php">About Us</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="1team.php">Team</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="1contact.php">Contact Us</a></li>

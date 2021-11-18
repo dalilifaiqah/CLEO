@@ -247,7 +247,7 @@ $row=mysqli_fetch_array($query);
                                     </thead>
                                     <tr>
                                     <?php
-                                    $conn = mysqli_connect("localhost","admin1","admin1","cleo");
+                                    $conn = mysqli_connect("localhost","ourcleoc_cleoadmin","Cleo_12345_","ourcleoc_cleo");  
                                     if ($conn-> connect_error){
                                         die("Connection failed:".$conn-> connect_error);
                                     }
@@ -278,8 +278,8 @@ $row=mysqli_fetch_array($query);
                                     
                                         <?php
                                         
-                                        $connection = mysqli_connect("localhost","admin1","admin1");
-                                        $db = mysqli_select_db($connection, 'cleo');
+                                        $connection = mysqli_connectmysqli_connect("localhost","ourcleoc_cleoadmin","Cleo_12345_");  
+                                        $db = mysqli_select_db($connection, 'ourcleoc_cleo');
                                         
                                         if(isset($_POST['delete']))
                                         {

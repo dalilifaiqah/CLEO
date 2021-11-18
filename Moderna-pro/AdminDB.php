@@ -41,10 +41,10 @@ if (isset($_POST['signup'])) {
     }
 
     function login(){
-        $servername = "localhost"; 
-        $username = "admin1";
-        $password = "admin1"; 
-        $dbname = "cleo";
+        $servername = "localhost";
+        $username = "ourcleoc_cleoadmin";
+        $password = "ourcleoc_cleoadmin";
+        $dbname = "ourcleoc_cleo";
         $sql2 = new mysqli($servername, $username, $password, $dbname);
 
         $email = $sql2->real_escape_string($_POST['email']);

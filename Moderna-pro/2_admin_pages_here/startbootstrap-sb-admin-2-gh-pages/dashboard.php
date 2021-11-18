@@ -394,7 +394,7 @@ $row=mysqli_fetch_array($query);
                     </div>
 
                     <!-- Bar chart 1 -->
-                    <div class="card shadow mb-4">
+                    <!-- <div class="card shadow mb-4">
                         <div class="card-header card-header-color py-3" style="background-color: whitesmoke;">
                             <h6 class="m-0 font-weight-bold text-primary">Category Wise Product Sales</h6>
                         </div>
@@ -403,7 +403,7 @@ $row=mysqli_fetch_array($query);
                                 <canvas id="myBarChart" style="display: block; height: 320px; width: 826px;" class="chartjs-render-monitor" width="991" height="384"></canvas>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- Bar chart 2 -->
                     <!--<div class="card shadow mb-4">
                         <div class="card-header py-3">
@@ -422,15 +422,7 @@ $row=mysqli_fetch_array($query);
             </div>
             <!-- End of Main Content -->
 
-            <!-- Footer -->
-            <footer class="sticky-footer bg-white">
-                <div class="container my-auto">
-                    <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; CLEO 2021</span>
-                    </div>
-                </div>
-            </footer>
-            <!-- End of Footer -->
+            
 
         </div>
         <!-- End of Content Wrapper -->

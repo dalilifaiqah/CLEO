@@ -4,9 +4,9 @@ if (isset($_GET['vkey'])){
     $vkey = $_GET['vkey'];
 
     $servername = "localhost";
-    $username = "admin1";
-    $password = "admin1";
-    $dbname = "cleo";
+    $username = "ourcleoc_cleoadmin";
+    $password = "ourcleoc_cleoadmin";
+    $dbname = "ourcleoc_cleo";
     
     $con = new mysqli($servername, $username, $password, $dbname);
 

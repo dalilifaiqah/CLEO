@@ -16,10 +16,10 @@ if (isset($_POST['signup'])) {
     
         //1.connect to mysql
         
-        $servername = "localhost"; 
-        $username = "admin1";
-        $password = "admin1"; 
-        $dbname = "cleo";
+        $servername = "localhost";
+        $username = "ourcleoc_cleoadmin";
+        $password = "ourcleoc_cleoadmin";
+        $dbname = "ourcleoc_cleo";
         $con = new mysqli($servername, $username, $password, $dbname);
 
         if (!$con){

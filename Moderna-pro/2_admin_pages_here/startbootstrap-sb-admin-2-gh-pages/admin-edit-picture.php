@@ -1,7 +1,7 @@
 <!-- ======== WORK ONE DONE ========== --> 
 
 <?php
-$con = mysqli_connect("localhost","admin1","admin1","cleo"); 
+$con = mysqli_connect("localhost","ourcleoc_cleoadmin","ourcleoc_cleoadmin","ourcleoc_cleo"); 
 session_start();
 $email = $_SESSION['email'];
 $query = mysqli_query($con, "SELECT * FROM admin WHERE email='$email' ");

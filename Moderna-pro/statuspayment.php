@@ -29,7 +29,7 @@ $billpaymentInvoiceNo=$result[0]['billpaymentInvoiceNo'];
 
 if ($billpaymentStatus==1) {    
   //connect database connection
-  $conn = new mysqli("localhost", "admin1", "admin1", "cleo"); 
+  $conn = new mysqli("localhost","ourcleoc_cleoadmin","ourcleoc_cleoadmin","ourcleoc_cleo"); 
   $query = mysqli_query($conn, "SELECT * FROM customer WHERE email='$billEmail' ");
   $row = mysqli_fetch_array($query);
   $userID = $row['id'];

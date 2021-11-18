@@ -10,10 +10,10 @@ if(isset($_POST['customereditprofile2'])) {
 
 function customereditprofile2()
 {
-    $servername = "localhost";
-    $username = "admin1";
-    $password = "admin1";
-    $dbname = "cleo";
+  $servername = "localhost";
+  $username = "ourcleoc_cleoadmin";
+  $password = "ourcleoc_cleoadmin";
+  $dbname = "ourcleoc_cleo";
     
     $con2 = new mysqli($servername, $username, $password, $dbname);
     

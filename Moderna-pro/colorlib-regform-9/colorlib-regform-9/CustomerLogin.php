@@ -28,7 +28,7 @@ if(isset($_SESSION['email'])){
         
         <div class="container">
             <div class="signup-content">
-                <form action=CustomerDB.php method="POST" id="signup-form" class="signup-form" style="margin-bottom:35px">
+                <form action="../../CustomerDB.php" method="POST" id="signup-form" class="signup-form" style="margin-bottom:35px">
                     <div class="form-group" style="display: inline;">
                         <a href="../../index.php">
                             <img src="../../assets/img/home-icon.png" alt="Homepage" align="right" style="width:20px;height:20px;"></a>

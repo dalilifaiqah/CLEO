@@ -23,6 +23,9 @@ if(!$con2){
   if ($con2->query($sql) === TRUE){
         //echo "<h2>Thanks, your request has been submitted!</h2>";
         header("Location:1successfulfeedback.html");
+  
+  }else {
+    echo "error";
   }
 
 ?>

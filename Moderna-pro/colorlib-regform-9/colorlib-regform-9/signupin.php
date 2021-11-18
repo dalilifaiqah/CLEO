@@ -19,7 +19,7 @@
 
         <div class="container">
             <div class="signup-content">
-                <form action=CustomerDB.php method="POST" id="signup-form" class="signup-form">
+                <form action="../../CustomerDB.php" method="POST" id="signup-form" class="signup-form">
                     <h2>Sign up </h2>
                     <p class="desc" style="margin-bottom: 20px;">Create a new account for <span>CLEO</span></p>
                     <div class="form-group">

@@ -18,7 +18,7 @@ if (isset($_POST['signup'])) {
         
         $servername = "localhost";
         $username = "ourcleoc_cleoadmin";
-        $password = "ourcleoc_cleoadmin";
+        $password = "Cleo_12345_";
         $dbname = "ourcleoc_cleo";
         $con = new mysqli($servername, $username, $password, $dbname);
 
@@ -50,7 +50,7 @@ if (isset($_POST['signup'])) {
 
                
                      echo "Sign up successfully";
-                     header("Location: /colorlib-regform-9/colorlib-regform-9/CustomerLogin.php");
+                     header("Location: colorlib-regform-9/colorlib-regform-9/CustomerLogin.php");
                 }else{
                     echo "error";
                 }
@@ -61,7 +61,7 @@ if (isset($_POST['signup'])) {
         
         $servername = "localhost";
         $username = "ourcleoc_cleoadmin";
-        $password = "ourcleoc_cleoadmin";
+        $password = "Cleo_12345_";
         $dbname = "ourcleoc_cleo";
         $sql = new mysqli($servername, $username, $password, $dbname);
 

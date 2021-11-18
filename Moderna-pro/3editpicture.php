@@ -1,13 +1,13 @@
 <?php
-$con = mysqli_connect("localhost","ourcleoc_cleoadmin","Cleo_12345_","ourcleoc_cleo"); 
+$con = mysqli_connect("localhost", "ourcleoc_cleoadmin", "Cleo_12345_", "ourcleoc_cleo");
 session_start();
 $email = $_SESSION['email'];
 $query = mysqli_query($con, "SELECT * FROM customer WHERE email='$email' ");
 $row = mysqli_fetch_array($query);
 
 if (isset($_POST['submit'])) {
-  move_uploaded_file($_FILES['file']['tmp_name'],"../pictures/".$_FILES['file']['name']);
-  $con = mysqli_connect("localhost","admin1","admin1","cleo");
+  move_uploaded_file($_FILES['file']['tmp_name'], "pictures/" . $_FILES['file']['name']);
+  $con = mysqli_connect("localhost", "ourcleoc_cleoadmin", "Cleo_12345_", "ourcleoc_cleo");
   $q = mysqli_query($con, "UPDATE customer SET profilepicture = '" . $_FILES['file']['name'] . "' WHERE email='$email' ");
   header("refresh:0; url=3viewprofile.php");
 }
@@ -140,9 +140,9 @@ if (isset($_POST['submit'])) {
                         <br>
                             <?php
                               if ($row['profilepicture'] == '') {
-                                echo "<img width='110' height='125' src='pictures/default-profile.jpg' alt='Default Profile Pic'>";
+                                echo "<img width='110' height='125' src='../default-profile.jpg' alt='Default Profile Pic'>";
                               } else {
-                                echo "<img width='125' height='125' src='pictures/" . $row['profilepicture'] . "' alt='Profile Pic' >";
+                                echo "<img width='125' height='125' src='../" . $row['profilepicture'] . "' alt='Profile Pic' >";
                               }
                             ?>
                             <br><br>
@@ -236,9 +236,9 @@ if (isset($_POST['submit'])) {
             <h4>Useful Links</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="Customerhomepage.php">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="1about.php">About Us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="1team.php">Team</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="1contact.php">Contact Us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="3about.php">About Us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="3team.php">Team</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="3contact.php">Contact Us</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="https://www.freeprivacypolicy.com/live/02e3012e-de66-4b6a-a831-8de595a84496">Terms and Condition</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="https://www.freeprivacypolicy.com/live/3629ced9-9e17-40cc-abbf-dfd879b204e8">Privacy policy</a></li>
             </ul>

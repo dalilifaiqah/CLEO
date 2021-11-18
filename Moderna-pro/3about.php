@@ -324,7 +324,7 @@ $row=mysqli_fetch_array($query);
               <li><i class="bx bx-chevron-right"></i> <a href="Customerhomepage.php">Home</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="3about.php">About Us</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="3team.php">Team</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="1contact.php">Contact Us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="3contact.php">Contact Us</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="https://www.freeprivacypolicy.com/live/02e3012e-de66-4b6a-a831-8de595a84496">Terms and Condition</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="https://www.freeprivacypolicy.com/live/3629ced9-9e17-40cc-abbf-dfd879b204e8">Privacy policy</a></li>
             </ul>

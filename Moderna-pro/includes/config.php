@@ -1,9 +1,9 @@
 <?php 
 // DB credentials.
 define('DB_HOST','localhost');
-define('DB_USER','admin1');
-define('DB_PASS','admin1');
-define('DB_NAME','cleo');
+define('DB_USER','ourcleoc_cleoadmin');
+define('DB_PASS','Cleo_12345_');
+define('DB_NAME','ourcleoc_cleo');
 // Establish database connection.
 try
 {
@@ -14,4 +14,3 @@ catch (PDOException $e)
 exit("Error: " . $e->getMessage());
 }
 ?>
-

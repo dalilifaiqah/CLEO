@@ -130,12 +130,12 @@ $row=mysqli_fetch_array($query);
             <div class="member">
               <div class="member-img">
                 <img src="/MasterCLEO/Moderna-pro/assets/img/lili.jpg" class="img-fluid" alt="">
-                <div class="social">
+                <!--<div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
                   <a href=""><i class="bi bi-instagram"></i></a>
                   <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
+                </div>-->
               </div>
               <div class="member-info">
                 <h4>Nur Dalili Faiqah Binti Mohd Ghazali</h4>
@@ -149,12 +149,12 @@ $row=mysqli_fetch_array($query);
             <div class="member">
               <div class="member-img">
                 <img src="/MasterCLEO/Moderna-pro/assets/img/af.jpg" class="img-fluid" alt="">
-                <div class="social">
+                <!--<div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
                   <a href=""><i class="bi bi-instagram"></i></a>
                   <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
+                </div>-->
               </div>
               <div class="member-info">
                 <h4>Nur Afrina Izzati Binti Ahmad</h4>
@@ -168,12 +168,12 @@ $row=mysqli_fetch_array($query);
             <div class="member">
               <div class="member-img">
                 <img src="assets/img/ma.jpeg" class="img-fluid" alt="">
-                <div class="social">
+                <!--<div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
                   <a href=""><i class="bi bi-instagram"></i></a>
                   <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
+                </div>-->
               </div>
               <div class="member-info">
                 <h4>Mohamad Arief Bin Mohd Sufian</h4>
@@ -187,12 +187,12 @@ $row=mysqli_fetch_array($query);
             <div class="member">
               <div class="member-img">
                 <img src="/MasterCLEO/Moderna-pro/assets/img/aimill.jpeg" class="img-fluid" alt="">
-                <div class="social">
+                <!--<div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
                   <a href=""><i class="bi bi-instagram"></i></a>
                   <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
+                </div>-->
               </div>
               <div class="member-info">
                 <h4>Mohamad Aimil Bin Mohamad Arif</h4>
@@ -206,12 +206,12 @@ $row=mysqli_fetch_array($query);
             <div class="member">
               <div class="member-img">
                 <img src="/MasterCLEO/Moderna-pro/assets/img/adriel.jpeg" class="img-fluid" alt="">
-                <div class="social">
+                <!--<div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
                   <a href=""><i class="bi bi-instagram"></i></a>
                   <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
+                </div>-->
               </div>
               <div class="member-info">
                 <h4>Mohamad Adriel Hakiem Bin Mohd Darul Yusriman</h4>
@@ -225,12 +225,12 @@ $row=mysqli_fetch_array($query);
             <div class="member">
               <div class="member-img">
                 <img src="assets/img/nan.jpeg" class="img-fluid" alt="">
-                <div class="social">
+                <!--<div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
                   <a href=""><i class="bi bi-instagram"></i></a>
                   <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
+                </div>-->
               </div>
               <div class="member-info">
                 <h4>Muhammad Afnan Bin Nasrulhadi</h4>

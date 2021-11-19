@@ -86,7 +86,7 @@ if (isset($_POST['signup'])) {
             
         } else {
             //Invalid login
-            header("Location:4Loginfail.html");
+            header("Location: 4loginfail.html");
         }
     }
 

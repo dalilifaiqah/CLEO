@@ -25,6 +25,9 @@ $row=mysqli_fetch_array($query);
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
 
+        <link rel="stylesheet" href="css\active-ecommerce-cms\vendors.css">
+    <link rel="stylesheet" href="css\active-ecommerce-cms\aiz-core.css">       
+
     <!-- Custom styles for this template -->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
 
@@ -44,7 +47,7 @@ $row=mysqli_fetch_array($query);
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="dashboard.php">
                 <div class="sidebar-brand-icon">
-                    <img class="fas" src="../../assets/img/CLEO-Logo.png" alt="logo">
+                    <img src="../../assets/img/CLEO-Logo.png" alt="logo">
                     <!--<i class="fas fa-laugh-wink"></i>-->
                 </div>
                 <div class="sidebar-brand-text mx-3">CLEO Admin</div>
@@ -61,7 +64,7 @@ $row=mysqli_fetch_array($query);
             </li>
 
             <!-- Nav Item - Customer's List -->
-            <li class="nav-item">
+            <li class="nav-item ">
                 <a class="nav-link" href="customer-list-table.php">
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>Customer List</span></a>
@@ -105,11 +108,11 @@ $row=mysqli_fetch_array($query);
                 </div>
             </li>
 
-            <!-- Nav Item - Order Purchase -->
+            <!-- Nav Item - Purchase List -->
             <li class="nav-item">
                 <a class="nav-link" href="order-purchase-list.php">
                     <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Order Purchase</span></a>
+                    <span>Purchase List</span></a>
             </li>
 
             <!-- Divider -->
@@ -148,7 +151,7 @@ $row=mysqli_fetch_array($query);
                     </form>
 
                     <!-- Topbar Search -->
-                    <form
+                    <!--<form
                         class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
                         <div class="input-group">
                             <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
@@ -159,7 +162,7 @@ $row=mysqli_fetch_array($query);
                                 </button>
                             </div>
                         </div>
-                    </form>
+                    </form>-->
 
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
@@ -268,7 +271,7 @@ $row=mysqli_fetch_array($query);
                                     ?>
                                     </tr>
                                     <tbody>
-                                    <form action="" method="POST">
+                                    <form action="/2_admin_pages_here/startbootstrap-sb-admin-2-gh-pages/gamepoints-product-list.php" method="POST">
                                         <div class="form-group">                                            
                                             <input type="text" class="col-lg-2 form-control" placeholder="Enter ID To DELETE" name="id" style="float: left;">
                                             <input class="yellow-buttonloh" type="submit" name="delete" value="Delete Data" style="height:37px; width:100px; margin: 0px 5px">
@@ -287,6 +290,7 @@ $row=mysqli_fetch_array($query);
 
                                             $query = "DELETE FROM `gamepointdb` WHERE id='$id' ";
                                             $query_run = mysqli_query($connection,$query);
+                                            header("Location: /2_admin_pages_here/startbootstrap-sb-admin-2-gh-pages/gamepoints-product-list.php");
                                         }                                       
                                         ?>
                                     </tbody>

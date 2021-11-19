@@ -13,7 +13,7 @@ function genshinedit()
         $servername = "localhost";
         $username = "ourcleoc_cleoadmin";
         $password = "Cleo_12345_";
-        $dbname = "ourcleoc_cleo";$
+        $dbname = "ourcleoc_cleo";
     
     $con2 = new mysqli($servername, $username, $password, $dbname);
     
@@ -30,7 +30,7 @@ function genshinedit()
     }
     
     if ($con2->query($sql) === TRUE){
-      header("Location: 2_admin_pages_here/startbootstrap-sb-admin-2-gh-pages/genshin-product-list.php");
+      header("Location: /2_admin_pages_here/startbootstrap-sb-admin-2-gh-pages/genshin-product-list.php");
             }else{
                 echo '<br>Update failed';
             }

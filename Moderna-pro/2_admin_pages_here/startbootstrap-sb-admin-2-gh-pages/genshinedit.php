@@ -13,7 +13,7 @@ function genshinedit()
         $servername = "localhost";
         $username = "ourcleoc_cleoadmin";
         $password = "Cleo_12345_";
-        $dbname = "ourcleoc_cleo";$
+        $dbname = "ourcleoc_cleo";
     
     $con2 = new mysqli($servername, $username, $password, $dbname);
     

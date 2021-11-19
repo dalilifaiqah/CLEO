@@ -1,9 +1,9 @@
 <?php
-$con = mysqli_connect("localhost","ourcleoc_cleoadmin","Cleo_12345_","ourcleoc_cleo"); 
-session_start(); 
-$email=$_SESSION['email']; 
-$query=mysqli_query($con,"SELECT * FROM admin WHERE email='$email' "); 
-$row=mysqli_fetch_array($query);
+#$con = mysqli_connect("localhost","ourcleoc_cleoadmin","Cleo_12345_","ourcleoc_cleo"); 
+#session_start(); 
+#$email=$_SESSION['email']; 
+#$query=mysqli_query($con,"SELECT * FROM admin WHERE email='$email' "); 
+#$row=mysqli_fetch_array($query);
 ?>
 
 
@@ -197,7 +197,7 @@ $row=mysqli_fetch_array($query);
                     </form>
 
                     <!-- Topbar Search -->
-                    <form
+                    <!--<form
                         class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
                         <div class="input-group">
                             <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
@@ -208,7 +208,7 @@ $row=mysqli_fetch_array($query);
                                 </button>
                             </div>
                         </div>
-                    </form>
+                    </form>-->
 
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">

@@ -156,7 +156,7 @@ $row=mysqli_fetch_array($query);
                     </form>
 
                     <!-- Topbar Search -->
-                    <form
+                    <!--<form
                         class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
                         <div class="input-group">
                             <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
@@ -167,7 +167,7 @@ $row=mysqli_fetch_array($query);
                                 </button>
                             </div>
                         </div>
-                    </form>
+                    </form>-->
 
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
@@ -278,7 +278,7 @@ $row=mysqli_fetch_array($query);
                                     </tr>
                                     <tbody>
 
-                                        <form action="" method="POST">
+                                        <form action="/2_admin_pages_here/startbootstrap-sb-admin-2-gh-pages/genshin-product-list.php" method="POST">
                                             <div class="form-group">                                            
                                                 <input type="text" class="col-lg-2 form-control" placeholder="Enter ID To DELETE" name="id" style="float: left;">
                                                 <input class="yellow-buttonloh" type="submit" name="delete" value="Delete Data" style="height:37px; width:100px; margin: 0px 5px">
@@ -297,6 +297,7 @@ $row=mysqli_fetch_array($query);
 
                                                 $query = "DELETE FROM `genshindb` WHERE id='$id' ";
                                                 $query_run = mysqli_query($connection,$query);
+                                                
                                             }                                       
                                             ?>
                                         

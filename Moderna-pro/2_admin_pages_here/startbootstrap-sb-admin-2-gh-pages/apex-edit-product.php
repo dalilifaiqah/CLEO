@@ -197,7 +197,7 @@
                     </form>
 
                     <!-- Topbar Search -->
-                    <form
+                    <!--<form
                         class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
                         <div class="input-group">
                             <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
@@ -208,7 +208,7 @@
                                 </button>
                             </div>
                         </div>
-                    </form>
+                    </form>-->
 
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
@@ -294,7 +294,7 @@
                                         <div class="card-body">
                                             <div class="row mb-3">
                                                 <div class="col-sm-3">
-                                                <form action = 2_admin_pages_here/startbootstrap-sb-admin-2-gh-pages/apexedit.php method = "POST">
+                                                <form action = "/2_admin_pages_here/startbootstrap-sb-admin-2-gh-pages/apexedit.php" method = "POST">
                                                     <h6 class="mb-0">ID</h6>
                                                 </div>
                                                 <div class="col-sm-9 text-secondary">

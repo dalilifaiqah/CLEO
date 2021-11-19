@@ -30,7 +30,7 @@ function mledit()
     }
     
     if ($con2->query($sql) === TRUE){
-      header("Location: 2_admin_pages_here/startbootstrap-sb-admin-2-gh-pages/mobilelegends-product-list.php");
+      header("Location: /2_admin_pages_here/startbootstrap-sb-admin-2-gh-pages/mobilelegends-product-list.php");
             }else{
                 echo '<br>Update failed';
             }

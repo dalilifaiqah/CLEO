@@ -19,8 +19,6 @@ $row=mysqli_fetch_array($query);
 
   <!-- Favicons -->
   <link rel="icon" href="assets/img/icon1.png">
-  <!--<link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">-->
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
@@ -53,35 +51,14 @@ $row=mysqli_fetch_array($query);
 
       <div class="logo">
         <h1 style="font-family: Arial" class="text-light"><a href="Customerhomepage.php"><span>CLEO</span></a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
 
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="" href="Customerhomepage.php">Home</a></li>
           <li><a href="3about.php">About Us</a></li>
-          <!--<li><a href="services.html">Services</a></li>-->
           <li><a class="active" href="3products.php">Products</a></li>
           <li><a href="3team.php">Team</a></li>
-          <!--<li><a href="blog.html">Blog</a></li>-->
-          <!--<li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li>-->
           <li><a href="3contact.php">Contact Us</a></li>
           <li class="dropdown"><a href="#"><span><?php echo $row['name']; ?></span> <i class="bi bi-chevron-down"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </i></a>
             <ul>
@@ -90,7 +67,6 @@ $row=mysqli_fetch_array($query);
               <li><a href="3purchasehistory.php">Purchase History</a></li>
             </ul>
           </li>
-          <!--<li><a href="/MasterCLEO/Moderna-pro/customer dashboard/paper-dashboard-master/examples/3dashboard.html">My Dashboard  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>-->
           <li><form action="CustomerDB.php" method="POST">
           <input type="submit" name="logout" id="submit" class="form-submit submit sign-up-btn" style="" value="Log out"/>
         </form></li>
@@ -136,11 +112,6 @@ $row=mysqli_fetch_array($query);
                   <div class="swiper-slide">
                     <img src="assets/img/portfolio/size-formated/genshinimpactlogo.jpg" alt="">
                   </div>
-  
-                  <!--<div class="swiper-slide">
-                    <img src="assets/img/portfolio/portfolio-3.jpg" alt="">
-                  </div>-->
-  
                 </div>
                 <div class="swiper-pagination"></div>
               </div>
@@ -155,28 +126,12 @@ $row=mysqli_fetch_array($query);
                   <li><strong>Category </strong>: Genshin Impact</li>
                   <li><strong>Price </strong>: RM <input class="nokotak" type="text" name="hidden_price" value="350.00" readonly/></li>
                   <li><strong>Quantity (Max 5)</strong>: 
-                    
-                    
                       <input type="number" id="Quantity" name="quantity" min="1" max="5">
-                      <!--<input type="text" id="CustomerID" name="CustomerID">-->
-                      <!--<label class="radio-inline">
-                        <input type="radio" name="optradio" checked> BlastX-1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                      </label>
-                      <label class="radio-inline">
-                        <input type="radio" name="optradio"> BlastX-2 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                      </label>
-                      <label class="radio-inline">
-                        <input type="radio" name="optradio"> BlastX-3
-                      </label>-->
                       <br><br>
                       <button type="submit" name="add_to_cart" class="p1button" title="Add to Cart" >Add to Cart</a></button>
                   </form>
-                
                 </li>
-
-                <!--<li><strong>Project URL </strong>: <a href="#">www.example.com</a></li>-->
               </ul>
-              
             </div>
             <div class="portfolio-description">
               <h2>Descriptions</h2>
@@ -198,11 +153,7 @@ $row=mysqli_fetch_array($query);
                 <strong>- How do i get my account?</strong>
                 <br> As soon as you make your payment, we will process the account for you. Within the 24 hours, please check your email for the account ID.
                 <br><br> For any other enquiries, send us your feedback in <a href="3contact.php">Contact Us</a> page.
-                <!--Information about the Stocks : <br>
-                <strong>BlastX-1</strong> - Full Set BlastX Bundle <br>
-                <strong>BlastX-2</strong> - BlastX (Phantom, Odin) + Reaver (Vandal) <br>
-                <strong>BlastX-3</strong> - BlastX (Phantom, Spectre, Odin, Knife) + Magepunk (Ghost, Spectre) + Reaver (Vandal, Sheriff) + Singularity (Phantom, Ares) + SOL (Ares, Sheriff)-->
-               </p>
+                </p>
             </div>
           </div>
 
@@ -215,23 +166,6 @@ $row=mysqli_fetch_array($query);
 
   <!-- ======= Footer ======= -->
   <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
-
-    <!--<div class="footer-newsletter">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <h4>Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-          </div>
-          <div class="col-lg-6">
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>-->
-
     <div class="footer-top">
       <div class="container">
         <div class="row">
@@ -264,15 +198,12 @@ $row=mysqli_fetch_array($query);
             Wilayah Persekutuan Kuala Lumpur<br><br>
             <strong>Email:</strong><a href="mailto: cleosheesh@gmail.com"> cleosheesh@gmail.com</a><br>
             </p><br>
-            <!--<h4>Admin</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="login-form-20/login-form-20/Adminlogin.php">Admin Log In</a></li>
-            </ul>-->
           </div>
 
           <div class="col-lg-3 col-md-6 footer-info">
             <h3>About CLEO</h3>
-            <p>CLEO is a place where Malaysian video gamers come together to explore and find their perfect in-game materials to bring up their in game experiences to the next level.</p>
+            <p>CLEO is a place where Malaysian video gamers come together to explore and find their perfect in-game materials to bring up
+               their in game experiences to the next level.</p>
             <div class="social-links mt-3">
               <a href="https://twitter.com/" class="twitter"><i class="bx bxl-twitter"></i></a>
               <a href="https://www.facebook.com/" class="facebook"><i class="bx bxl-facebook"></i></a>
@@ -280,7 +211,6 @@ $row=mysqli_fetch_array($query);
               <a href="https://www.linkedin.com/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
             </div>
           </div>
-
         </div>
       </div>
     </div>
@@ -307,7 +237,5 @@ $row=mysqli_fetch_array($query);
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
 </body>
-
 </html>

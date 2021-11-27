@@ -19,8 +19,6 @@ $row=mysqli_fetch_array($query);
 
   <!-- Favicons -->
   <link rel="icon" href="assets/img/icon1.png">
-  <!--<link href="assets/img/logo atas.png" rel="icon">
-  <link href="assets/img/logo atas.png" rel="logo-atas-icon">-->
   
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
@@ -53,35 +51,14 @@ $row=mysqli_fetch_array($query);
 
       <div class="logo">
         <h1 style="font-family: Arial" class="text-light"><a href="Customerhomepage.php"><span>CLEO</span></a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
 
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="" href="Customerhomepage.php">Home</a></li>
           <li><a href="3about.php">About Us</a></li>
-          <!--<li><a href="services.html">Services</a></li>-->
           <li><a class="active" href="3products.php">Products</a></li>
           <li><a href="3team.php">Team</a></li>
-          <!--<li><a href="blog.html">Blog</a></li>-->
-          <!--<li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li>-->
           <li><a href="3contact.php">Contact Us</a></li>
           <li class="dropdown"><a href="#"><span><?php echo $row['name']; ?></span> <i class="bi bi-chevron-down"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </i></a>
             <ul>
@@ -90,7 +67,6 @@ $row=mysqli_fetch_array($query);
               <li><a href="3purchasehistory.php">Purchase History</a></li>
             </ul>
           </li>
-          <!--<li><a href="/MasterCLEO/Moderna-pro/customer dashboard/paper-dashboard-master/examples/3dashboard.html">My Dashboard  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>-->
           <li><form action="CustomerDB.php" method="POST">
           <input type="submit" name="logout" id="submit" class="form-submit submit sign-up-btn" style="" value="Log out"/>
         </form></li>
@@ -114,7 +90,6 @@ $row=mysqli_fetch_array($query);
             <li><a href="3products.php">Our Products</a></li>
           </ol>
         </div>
-
       </div>
     </section><!-- End Our Portfolio Section -->
 
@@ -158,7 +133,8 @@ $row=mysqli_fetch_array($query);
               <div class="portfolio-info">
                 <h3>Oni Bundle</h3>
                 <div>
-                  <a href="assets/img/portfolio/size-formated/oni-valo.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Oni Bundle"><i class="bx bx-plus"></i></a>
+                  <a href="assets/img/portfolio/size-formated/oni-valo.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                   title="Oni Bundle"><i class="bx bx-plus"></i></a>
                   <a href="3Oni.php" title="Oni Bundle"><i class="bx bx-link"></i></a>
                 </div>
               </div>
@@ -171,20 +147,21 @@ $row=mysqli_fetch_array($query);
               <div class="portfolio-info">
                 <h3>Kamisato Ayaka</h3>
                 <div>
-                  <a href="assets/img/portfolio/size-formated/kamisatoayaka-genshin.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Kamisato Ayaka"><i class="bx bx-plus"></i></a>
+                  <a href="assets/img/portfolio/size-formated/kamisatoayaka-genshin.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                   title="Kamisato Ayaka"><i class="bx bx-plus"></i></a>
                   <a href="3KamisatoAyaka.php" title="Kamisato Ayaka"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
           </div>
-<!--aiwjdiaojdajcwi-->
           <div class="col-lg-4 col-md-6 portfolio-wrap filter-GenshinImpact">
             <div class="portfolio-item">
               <img src="assets/img/portfolio/size-formated/klee-genshin.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h3>Klee</h3>
                 <div>
-                  <a href="assets/img/portfolio/size-formated/klee-genshin.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Klee"><i class="bx bx-plus"></i></a>
+                  <a href="assets/img/portfolio/size-formated/klee-genshin.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" 
+                  title="Klee"><i class="bx bx-plus"></i></a>
                   <a href="3Klee.php" title="Klee"><i class="bx bx-link"></i></a>
                 </div>
               </div>
@@ -197,7 +174,8 @@ $row=mysqli_fetch_array($query);
               <div class="portfolio-info">
                 <h3>Raiden Shogun</h3>
                 <div>
-                  <a href="assets/img/portfolio/size-formated/raidenshogun-genshin.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Raiden Shogun"><i class="bx bx-plus"></i></a>
+                  <a href="assets/img/portfolio/size-formated/raidenshogun-genshin.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                   title="Raiden Shogun"><i class="bx bx-plus"></i></a>
                   <a href="3RaidenShogun.php" title="Raiden Shogun"><i class="bx bx-link"></i></a>
                 </div>
               </div>
@@ -210,7 +188,8 @@ $row=mysqli_fetch_array($query);
               <div class="portfolio-info">
                 <h3>Genesis Crystals</h3>
                 <div>
-                  <a href="assets/img/portfolio/size-formated/genshinimpactlogo.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Genesis Crystals"><i class="bx bx-plus"></i></a>
+                  <a href="assets/img/portfolio/size-formated/genshinimpactlogo.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                   title="Genesis Crystals"><i class="bx bx-plus"></i></a>
                   <a href="3GenshinPoints.php" title="Genesis Crystals"><i class="bx bx-link"></i></a>
                 </div>
               </div>
@@ -223,20 +202,21 @@ $row=mysqli_fetch_array($query);
               <div class="portfolio-info">
                 <h3>Singularity Bundle</h3>
                 <div>
-                  <a href="assets/img/portfolio/size-formated/singularity-valo.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Singularity Bundle"><i class="bx bx-plus"></i></a>
+                  <a href="assets/img/portfolio/size-formated/singularity-valo.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" 
+                  title="Singularity Bundle"><i class="bx bx-plus"></i></a>
                   <a href="3Singularity.php" title="Singularity Bundle"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
           </div>
-          <!--***-->
           <div class="col-lg-4 col-md-6 portfolio-wrap filter-GamePoints">
             <div class="portfolio-item">
               <img src="assets/img/portfolio/size-formated/valorantlogo.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h3>Valorant Points</h3>
                 <div>
-                  <a href="assets/img/portfolio/size-formated/valorantlogo.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Valorant Points"><i class="bx bx-plus"></i></a>
+                  <a href="assets/img/portfolio/size-formated/valorantlogo.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Valorant Points"><i class="bx bx-plus"></i></a>
                   <a href="3Valopoints.php" title="Valorant Points"><i class="bx bx-link"></i></a>
                 </div>
               </div>
@@ -249,7 +229,8 @@ $row=mysqli_fetch_array($query);
               <div class="portfolio-info">
                 <h3>Sovereign Bundle</h3>
                 <div>
-                  <a href="assets/img/portfolio/size-formated/sovereign-valo.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Sovereign Bundle"><i class="bx bx-plus"></i></a>
+                  <a href="assets/img/portfolio/size-formated/sovereign-valo.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                   title="Sovereign Bundle"><i class="bx bx-plus"></i></a>
                   <a href="3Sovereign.php" title="Sovereign Bundle"><i class="bx bx-link"></i></a>
                 </div>
               </div>
@@ -262,7 +243,8 @@ $row=mysqli_fetch_array($query);
               <div class="portfolio-info">
                 <h3>Xiao</h3>
                 <div>
-                  <a href="assets/img/portfolio/size-formated/xiao-genshin.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Xiao"><i class="bx bx-plus"></i></a>
+                  <a href="assets/img/portfolio/size-formated/xiao-genshin.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                   title="Xiao"><i class="bx bx-plus"></i></a>
                   <a href="3Xiao.php" title="Xiao"><i class="bx bx-link"></i></a>
                 </div>
               </div>
@@ -275,7 +257,8 @@ $row=mysqli_fetch_array($query);
               <div class="portfolio-info">
                 <h3>The Spectrum</h3>
                 <div>
-                  <a href="assets/img/portfolio/size-formated/zedd-valo.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="The Spectrum"><i class="bx bx-plus"></i></a>
+                  <a href="assets/img/portfolio/size-formated/zedd-valo.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" 
+                  title="The Spectrum"><i class="bx bx-plus"></i></a>
                   <a href="3Spectrum.php" title="The Spectrum"><i class="bx bx-link"></i></a>
                 </div>
               </div>
@@ -288,7 +271,8 @@ $row=mysqli_fetch_array($query);
               <div class="portfolio-info">
                 <h3>Zhongli</h3>
                 <div>
-                  <a href="assets/img/portfolio/size-formated/zhongli-genshin.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Zhongli"><i class="bx bx-plus"></i></a>
+                  <a href="assets/img/portfolio/size-formated/zhongli-genshin.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" 
+                  title="Zhongli"><i class="bx bx-plus"></i></a>
                   <a href="3Zhongli.php" title="Zhongli"><i class="bx bx-link"></i></a>
                 </div>
               </div>
@@ -301,7 +285,8 @@ $row=mysqli_fetch_array($query);
               <div class="portfolio-info">
                 <h3>Sun</h3>
                 <div>
-                  <a href="assets/img/portfolio/size-formated/sun-mobileLegend.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Sun Hero"><i class="bx bx-plus"></i></a>
+                  <a href="assets/img/portfolio/size-formated/sun-mobileLegend.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" 
+                  title="Sun Hero"><i class="bx bx-plus"></i></a>
                   <a href="3Sun.php" title="Sun Hero"><i class="bx bx-link"></i></a>
                 </div>
               </div>
@@ -314,7 +299,8 @@ $row=mysqli_fetch_array($query);
               <div class="portfolio-info">
                 <h3>Vintage Rock ScarL</h3>
                 <div>
-                  <a href="assets/img/portfolio/size-formated/scarL-pubg.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Vintage Rock ScarL"><i class="bx bx-plus"></i></a>
+                  <a href="assets/img/portfolio/size-formated/scarL-pubg.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                   title="Vintage Rock ScarL"><i class="bx bx-plus"></i></a>
                   <a href="3VintageRock.php" title="Vintage Rock ScarL"><i class="bx bx-link"></i></a>
                 </div>
               </div>
@@ -327,20 +313,21 @@ $row=mysqli_fetch_array($query);
               <div class="portfolio-info">
                 <h3>Trifecta ScarL</h3>
                 <div>
-                  <a href="assets/img/portfolio/size-formated/scarL2-pubg.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Trifecta ScarL"><i class="bx bx-plus"></i></a>
+                  <a href="assets/img/portfolio/size-formated/scarL2-pubg.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                   title="Trifecta ScarL"><i class="bx bx-plus"></i></a>
                   <a href="3Trifecta.php" title="Trifecta ScarL"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
           </div>
-          <!--***-->
           <div class="col-lg-4 col-md-6 portfolio-wrap filter-GamePoints">
             <div class="portfolio-item">
               <img src="assets/img/portfolio/size-formated/apexlegendlogo.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h3>Apex Coins</h3>
                 <div>
-                  <a href="assets/img/portfolio/size-formated/apexlegendlogo.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Apex Coins"><i class="bx bx-plus"></i></a>
+                  <a href="assets/img/portfolio/size-formated/apexlegendlogo.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                   title="Apex Coins"><i class="bx bx-plus"></i></a>
                   <a href="3apexcoin.php" title="Apex Coins"><i class="bx bx-link"></i></a>
                 </div>
               </div>
@@ -353,7 +340,8 @@ $row=mysqli_fetch_array($query);
               <div class="portfolio-info">
                 <h3>Pan of Judgement</h3>
                 <div>
-                  <a href="assets/img/portfolio/size-formated/panskin-pubg.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Pan of Judgement"><i class="bx bx-plus"></i></a>
+                  <a href="assets/img/portfolio/size-formated/panskin-pubg.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" 
+                  title="Pan of Judgement"><i class="bx bx-plus"></i></a>
                   <a href="3Judgementpan.php" title="Pan of Judgement"><i class="bx bx-link"></i></a>
                 </div>
               </div>
@@ -366,7 +354,8 @@ $row=mysqli_fetch_array($query);
               <div class="portfolio-info">
                 <h3>Laughing Fool Octane</h3>
                 <div>
-                  <a href="assets/img/portfolio/size-formated/octane-apex.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Laughing Fool Octane"><i class="bx bx-plus"></i></a>
+                  <a href="assets/img/portfolio/size-formated/octane-apex.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" 
+                  title="Laughing Fool Octane"><i class="bx bx-plus"></i></a>
                   <a href="3octane.php" title="Laughing Fool Octane"><i class="bx bx-link"></i></a>
                 </div>
               </div>
@@ -379,7 +368,8 @@ $row=mysqli_fetch_array($query);
               <div class="portfolio-info">
                 <h3>Moskov</h3>
                 <div>
-                  <a href="assets/img/portfolio/size-formated/moskov-mobileLegend.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Moskov Hero"><i class="bx bx-plus"></i></a>
+                  <a href="assets/img/portfolio/size-formated/moskov-mobileLegend.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" 
+                  title="Moskov Hero"><i class="bx bx-plus"></i></a>
                   <a href="3Moskov.php" title="Moskov Hero"><i class="bx bx-link"></i></a>
                 </div>
               </div>
@@ -392,7 +382,8 @@ $row=mysqli_fetch_array($query);
               <div class="portfolio-info">
                 <h3>Red Line M16A4</h3>
                 <div>
-                  <a href="assets/img/portfolio/size-formated/M16A4(2)-pubg.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Red Line M16A4"><i class="bx bx-plus"></i></a>
+                  <a href="assets/img/portfolio/size-formated/M16A4(2)-pubg.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" 
+                  title="Red Line M16A4"><i class="bx bx-plus"></i></a>
                   <a href="3RedLine.php" title="Red Line M16A4"><i class="bx bx-link"></i></a>
                 </div>
               </div>
@@ -405,7 +396,8 @@ $row=mysqli_fetch_array($query);
               <div class="portfolio-info">
                 <h3>Lesley</h3>
                 <div>
-                  <a href="assets/img/portfolio/size-formated/lesly-mobileLegend.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Lesley Hero"><i class="bx bx-plus"></i></a>
+                  <a href="assets/img/portfolio/size-formated/lesly-mobileLegend.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" 
+                  title="Lesley Hero"><i class="bx bx-plus"></i></a>
                   <a href="3Lesly.php" title="Lesley Hero"><i class="bx bx-link"></i></a>
                 </div>
               </div>
@@ -418,7 +410,8 @@ $row=mysqli_fetch_array($query);
               <div class="portfolio-info">
                 <h3>Desert Digital Kar98</h3>
                 <div>
-                  <a href="assets/img/portfolio/size-formated/kar98(2)-pubg.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Desert Digital Kar98"><i class="bx bx-plus"></i></a>
+                  <a href="assets/img/portfolio/size-formated/kar98(2)-pubg.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                   title="Desert Digital Kar98"><i class="bx bx-plus"></i></a>
                   <a href="3DesertDigital.php" title="Desert Digital Kar98"><i class="bx bx-link"></i></a>
                 </div>
               </div>
@@ -431,7 +424,8 @@ $row=mysqli_fetch_array($query);
               <div class="portfolio-info">
                 <h3>Harley</h3>
                 <div>
-                  <a href="assets/img/portfolio/size-formated/harley-mobileLegend.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Harley Hero"><i class="bx bx-plus"></i></a>
+                  <a href="assets/img/portfolio/size-formated/harley-mobileLegend.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                   title="Harley Hero"><i class="bx bx-plus"></i></a>
                   <a href="3Harley.php" title="Harley Hero"><i class="bx bx-link"></i></a>
                 </div>
               </div>
@@ -444,7 +438,8 @@ $row=mysqli_fetch_array($query);
               <div class="portfolio-info">
                 <h3>Pearly White Fuse</h3>
                 <div>
-                  <a href="assets/img/portfolio/size-formated/fuse-apex.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Pearly White Fuse"><i class="bx bx-plus"></i></a>
+                  <a href="assets/img/portfolio/size-formated/fuse-apex.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" 
+                  title="Pearly White Fuse"><i class="bx bx-plus"></i></a>
                   <a href="3Fuse.php" title="Pearly White Fuse"><i class="bx bx-link"></i></a>
                 </div>
               </div>
@@ -457,7 +452,8 @@ $row=mysqli_fetch_array($query);
               <div class="portfolio-info">
                 <h3>Deadly Byte Crypto</h3>
                 <div>
-                  <a href="assets/img/portfolio/size-formated/crypto-apex.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Deadly Byte Crypto"><i class="bx bx-plus"></i></a>
+                  <a href="assets/img/portfolio/size-formated/crypto-apex.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" 
+                  title="Deadly Byte Crypto"><i class="bx bx-plus"></i></a>
                   <a href="3Crypto.php" title="Deadly Byte Crypto"><i class="bx bx-link"></i></a>
                 </div>
               </div>
@@ -470,7 +466,8 @@ $row=mysqli_fetch_array($query);
               <div class="portfolio-info">
                 <h3>Chang-E</h3>
                 <div>
-                  <a href="assets/img/portfolio/size-formated/chang-e-mobileLegend.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Chang-E Hero"><i class="bx bx-plus"></i></a>
+                  <a href="assets/img/portfolio/size-formated/chang-e-mobileLegend.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                   title="Chang-E Hero"><i class="bx bx-plus"></i></a>
                   <a href="3Chang-E.php" title="Chang-E Hero"><i class="bx bx-link"></i></a>
                 </div>
               </div>
@@ -483,20 +480,22 @@ $row=mysqli_fetch_array($query);
               <div class="portfolio-info">
                 <h3>BlackHeart Caustic</h3>
                 <div>
-                  <a href="assets/img/portfolio/size-formated/caustic-apex.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="BlackHeart Caustic"><i class="bx bx-plus"></i></a>
+                  <a href="assets/img/portfolio/size-formated/caustic-apex.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" 
+                  title="BlackHeart Caustic"><i class="bx bx-plus"></i></a>
                   <a href="3Caustic.php" title="BlackHeart Caustic"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
           </div>
-          <!--***-->
+          
           <div class="col-lg-4 col-md-6 portfolio-wrap filter-GamePoints">
             <div class="portfolio-item">
               <img src="assets/img/portfolio/size-formated/pubglogo.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h3>UC PUBG</h3>
                 <div>
-                  <a href="assets/img/portfolio/size-formated/pubglogo.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="UC PUBG"><i class="bx bx-plus"></i></a>
+                  <a href="assets/img/portfolio/size-formated/pubglogo.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="UC PUBG">
+                    <i class="bx bx-plus"></i></a>
                   <a href="3UC.php" title="UC PUBG"><i class="bx bx-link"></i></a>
                 </div>
               </div>
@@ -509,20 +508,22 @@ $row=mysqli_fetch_array($query);
               <div class="portfolio-info">
                 <h3>Projector of The Patch Bloodhound</h3>
                 <div>
-                  <a href="assets/img/portfolio/size-formated/bloodhound-apex.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Projector of The Patch Bloodhound"><i class="bx bx-plus"></i></a>
+                  <a href="assets/img/portfolio/size-formated/bloodhound-apex.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                   title="Projector of The Patch Bloodhound"><i class="bx bx-plus"></i></a>
                   <a href="3Bloodhound.php" title="Projector of The Patch Bloodhound"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
           </div>
-          <!--***-->
+          
           <div class="col-lg-4 col-md-6 portfolio-wrap filter-GamePoints">
             <div class="portfolio-item">
               <img src="assets/img/portfolio/size-formated/mobilelegendlogo.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h3>Mobile Legends Diamonds</h3>
                 <div>
-                  <a href="assets/img/portfolio/size-formated/mobilelegendlogo.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Mobile Legends Diamonds"><i class="bx bx-plus"></i></a>
+                  <a href="assets/img/portfolio/size-formated/mobilelegendlogo.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Mobile Legends Diamonds">
+                    <i class="bx bx-plus"></i></a>
                   <a href="3Diamonds.php" title="Mobile Legends Diamonds"><i class="bx bx-link"></i></a>
                 </div>
               </div>
@@ -538,23 +539,6 @@ $row=mysqli_fetch_array($query);
 
   <!-- ======= Footer ======= -->
   <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
-
-    <!--<div class="footer-newsletter">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <h4>Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-          </div>
-          <div class="col-lg-6">
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>-->
-
     <div class="footer-top">
         <div class="container">
           <div class="row">
@@ -587,15 +571,12 @@ $row=mysqli_fetch_array($query);
               Wilayah Persekutuan Kuala Lumpur<br><br>
               <strong>Email:</strong><a href="mailto: cleosheesh@gmail.com"> cleosheesh@gmail.com</a><br>
               </p><br>
-              <!--<h4>Admin</h4>
-              <ul>
-                <li><i class="bx bx-chevron-right"></i> <a href="login-form-20/login-form-20/Adminlogin.php">Admin Log In</a></li>
-              </ul>-->
             </div>
   
             <div class="col-lg-3 col-md-6 footer-info">
               <h3>About CLEO</h3>
-              <p>CLEO is a place where Malaysian video gamers come together to explore and find their perfect in-game materials to bring up their in game experiences to the next level.</p>
+              <p>CLEO is a place where Malaysian video gamers come together to explore and find their perfect in-game materials to bring up
+                 their in game experiences to the next level.</p>
               <div class="social-links mt-3">
                 <a href="https://twitter.com/" class="twitter"><i class="bx bxl-twitter"></i></a>
                 <a href="https://www.facebook.com/" class="facebook"><i class="bx bxl-facebook"></i></a>

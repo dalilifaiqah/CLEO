@@ -20,8 +20,6 @@ $row=mysqli_fetch_array($query);
 
    <!-- Favicons -->
    <link rel="icon" href="assets/img/icon1.png">
-   <!--<link href="assets/img/logo atas.png" rel="icon">
-   <link href="assets/img/logo atas.png" rel="logo-atas-icon">-->
    
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
@@ -54,35 +52,14 @@ $row=mysqli_fetch_array($query);
 
       <div class="logo">
         <h1 style="font-family: Arial" class="text-light"><a href="Customerhomepage.php"><span>CLEO</span></a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
 
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class=" " href="Customerhomepage.php">Home</a></li>
           <li><a href="3about.php">About Us</a></li>
-          <!--<li><a href="services.html">Services</a></li>-->
           <li><a href="3products.php">Products</a></li>
           <li><a class="active" href="3team.php">Team</a></li>
-          <!--<li><a href="blog.html">Blog</a></li>-->
-          <!--<li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li>-->
           <li><a href="3contact.php">Contact Us</a></li>
           <li class="dropdown"><a href="#"><span><?php echo $row['name']; ?></span> <i class="bi bi-chevron-down"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </i></a>
             <ul>
@@ -91,7 +68,6 @@ $row=mysqli_fetch_array($query);
               <li><a href="3purchasehistory.php">Purchase History</a></li>
             </ul>
           </li>
-          <!--<li><a href="/MasterCLEO/Moderna-pro/customer dashboard/paper-dashboard-master/examples/3dashboard.html">My Dashboard  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>-->
           <li><form action="CustomerDB.php" method="POST">
           <input type="submit" name="logout" id="submit" class="form-submit submit sign-up-btn" style="" value="Log out"/>
         </form>
@@ -130,12 +106,6 @@ $row=mysqli_fetch_array($query);
             <div class="member">
               <div class="member-img">
                 <img src="/assets/img/lili.jpg" class="img-fluid" alt="">
-                <!--<div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>-->
               </div>
               <div class="member-info">
                 <h4>Nur Dalili Faiqah Binti Mohd Ghazali</h4>
@@ -149,12 +119,6 @@ $row=mysqli_fetch_array($query);
             <div class="member">
               <div class="member-img">
                 <img src="/assets/img/af.jpg" class="img-fluid" alt="">
-                <!--<div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>-->
               </div>
               <div class="member-info">
                 <h4>Nur Afrina Izzati Binti Ahmad</h4>
@@ -168,12 +132,6 @@ $row=mysqli_fetch_array($query);
             <div class="member">
               <div class="member-img">
                 <img src="assets/img/ma.jpeg" class="img-fluid" alt="">
-                <!--<div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>-->
               </div>
               <div class="member-info">
                 <h4>Mohamad Arief Bin Mohd Sufian</h4>
@@ -187,12 +145,6 @@ $row=mysqli_fetch_array($query);
             <div class="member">
               <div class="member-img">
                 <img src="/assets/img/aimill.jpeg" class="img-fluid" alt="">
-                <!--<div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>-->
               </div>
               <div class="member-info">
                 <h4>Mohamad Aimil Bin Mohamad Arif</h4>
@@ -206,12 +158,6 @@ $row=mysqli_fetch_array($query);
             <div class="member">
               <div class="member-img">
                 <img src="/assets/img/adriel.jpeg" class="img-fluid" alt="">
-                <!--<div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>-->
               </div>
               <div class="member-info">
                 <h4>Mohamad Adriel Hakiem Bin Mohd Darul Yusriman</h4>
@@ -225,12 +171,6 @@ $row=mysqli_fetch_array($query);
             <div class="member">
               <div class="member-img">
                 <img src="assets/img/nan.jpeg" class="img-fluid" alt="">
-                <!--<div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>-->
               </div>
               <div class="member-info">
                 <h4>Muhammad Afnan Bin Nasrulhadi</h4>
@@ -245,8 +185,10 @@ $row=mysqli_fetch_array($query);
         <div class=" col-md-12">
             <div class="member-info text-center align-items-center">
                 <h4><br><br>Our CLEO Team Members</h4>
-                <p>We are a group of 3rd Year Computer Science (IT) students at Universiti Teknologi Malaysia. <br>We have been tasked to create a web application as a Final Project for our Software Development subject.<br>
-                  To fulfill all the requirements and to meet the time duration that has been set to complete the project ,<br> all team members have actively participated and have given their best to create a well-designed and fully functional web application. </p>
+                <p>We are a group of 3rd Year Computer Science (IT) students at Universiti Teknologi Malaysia. 
+                  <br>We have been tasked to create a web application as a Final Project for our Software Development subject.<br>
+                  To fulfill all the requirements and to meet the time duration that has been set to complete the project ,
+                  <br> all team members have actively participated and have given their best to create a well-designed and fully functional web application. </p>
                   <br><br><br>
             </div>
         </div>
@@ -259,23 +201,6 @@ $row=mysqli_fetch_array($query);
 
   <!-- ======= Footer ======= -->
   <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
-
-    <!--<div class="footer-newsletter">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <h4>Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-          </div>
-          <div class="col-lg-6">
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>-->
-
     <div class="footer-top">
       <div class="container">
         <div class="row">
@@ -308,15 +233,11 @@ $row=mysqli_fetch_array($query);
                 Wilayah Persekutuan Kuala Lumpur<br><br>
                 <strong>Email:</strong><a href="mailto: cleosheesh@gmail.com"> cleosheesh@gmail.com</a><br>
             </p><br>
-            <!--<h4>Admin</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="login-form-20/login-form-20/Adminlogin.php">Admin Log In</a></li>
-            </ul>-->
           </div>
-
           <div class="col-lg-3 col-md-6 footer-info">
             <h3>About CLEO</h3>
-            <p>CLEO is a place where Malaysian video gamers come together to explore and find their perfect in-game materials to bring up their in game experiences to the next level.</p>
+            <p>CLEO is a place where Malaysian video gamers come together to explore and find their perfect in-game materials to 
+              bring up their in game experiences to the next level.</p>
             <div class="social-links mt-3">
               <a href="https://twitter.com/" class="twitter"><i class="bx bxl-twitter"></i></a>
               <a href="https://www.facebook.com/" class="facebook"><i class="bx bxl-facebook"></i></a>
@@ -324,8 +245,6 @@ $row=mysqli_fetch_array($query);
               <a href="https://www.linkedin.com/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
             </div>
           </div>
-          
-          
         </div>
       </div>
     </div>
@@ -352,7 +271,5 @@ $row=mysqli_fetch_array($query);
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
 </body>
-
 </html>

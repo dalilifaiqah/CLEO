@@ -4,7 +4,6 @@ session_start();
 $email=$_SESSION['email']; 
 $query=mysqli_query($con,"SELECT * FROM customer WHERE email='$email' "); 
 $row=mysqli_fetch_array($query);
-
 if(isset($_GET["action"]))
 {
 	if($_GET["action"] == "delete")
@@ -20,7 +19,6 @@ if(isset($_GET["action"]))
 		}
 	}
 }
-
 ?>
 
 <!DOCTYPE html>
@@ -36,8 +34,6 @@ if(isset($_GET["action"]))
 
    <!-- Favicons -->
    <link rel="icon" href="assets/img/CLEO-logo.png">
-   <!--<link href="assets/img/logo atas.png" rel="icon">
-   <link href="assets/img/logo atas.png" rel="logo-atas-icon">-->
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
@@ -78,35 +74,14 @@ input::-webkit-inner-spin-button {
 
       <div class="logo">
         <h1 style="font-family: Arial" class="text-light"><a href="Customerhomepage.php"><span>CLEO</span></a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
 
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="" href="Customerhomepage.php">Home</a></li>
           <li><a href="3about.php">About Us</a></li>
-          <!--<li><a href="services.html">Services</a></li>-->
           <li><a href="3products.php">Products</a></li>
           <li><a href="3team.php">Team</a></li>
-          <!--<li><a href="blog.html">Blog</a></li>-->
-          <!--<li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li>-->
           <li><a href="3contact.php">Contact Us</a></li>
           <li class="dropdown"><a class="active"href="#"><span><?php echo $row['name']; ?></span> <i class="bi bi-chevron-down"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </i></a>
             <ul>
@@ -115,23 +90,19 @@ input::-webkit-inner-spin-button {
               <li><a href="3purchasehistory.php">Purchase History</a></li>
             </ul>
           </li>
-          <!--<li><a href="/MasterCLEO/Moderna-pro/customer dashboard/paper-dashboard-master/examples/3dashboard.html">My Dashboard  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>-->
           <li><form action="CustomerDB.php" method="POST">
           <input type="submit" name="logout" id="submit" class="form-submit submit sign-up-btn" value="Log out"/>
         </form></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
-
     </div>
   </header><!-- End Header -->
 
   <main id="main">
-
     <!-- ======= Contact Section ======= -->
     <section class="breadcrumbs">
       <div class="container">
-
         <div class="d-flex justify-content-between align-items-center">
           <h2>Shopping Cart</h2>
           <ol>
@@ -139,7 +110,6 @@ input::-webkit-inner-spin-button {
             <li><a href="3viewprofile.php">Shopping Cart</a></li>
           </ol>
         </div>
-
       </div>
     </section><!-- End Contact Section -->
 
@@ -155,13 +125,9 @@ input::-webkit-inner-spin-button {
                 <div class="p-5">
                   <div class="d-flex justify-content-between align-items-center mb-5">
                     <h1 class="fw-bold mb-0 text-black">Shopping Cart</h1>
-                    
                   </div>
                   <hr class="my-4">
-                  
                   <div class="row mb-4 d-flex justify-content-between align-items-center">
-
-
       <form action="Payment.php" method="POST">         
                   <div class="table-responsive">
                   <table class="table table-hover">
@@ -189,11 +155,6 @@ input::-webkit-inner-spin-button {
 							$total = $total + ($values["item_quantity"] * $values["item_price"]);
 						}
 					?>
-					
-					<?php
-					}
-					?>
-						
 				</table>
 			</div>
                     <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
@@ -201,24 +162,13 @@ input::-webkit-inner-spin-button {
                         onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
                         <i class="fas fa-minus"></i>
                       </button>
-
-                      
-
                       <button class="btn btn-link px-2"
                         onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
                         <i class="fas fa-plus"></i>
                       </button>
                     </div>
-                    
-                   
-                    <!-- <div class="col-md-1 col-lg-1 col-xl-1 text-end">
-                      <a href="#!" class="text-muted"><i class="fas fa-times"></i></a>
-                    </div> -->
-                    
                   </div>
-
                   <hr class="my-4">
-
                   <div class="pt-5">
                     <h6 class="mb-0"><a href="3products.php" class="text-body"><i
                           class="fas fa-long-arrow-alt-left me-2"></i>Back to shop</a></h6>
@@ -229,41 +179,33 @@ input::-webkit-inner-spin-button {
                 <div class="p-5">
                   <h3 class="fw-bold mb-5 mt-2 pt-1">Summary</h3>
                   <hr class="my-4">
-
                   <div class="d-flex justify-content-between mb-4">
                     <h5 class="text-uppercase">item(s) <?php echo $values["item_quantity"]; ?></h5>
                     <h5>RM <?php echo number_format($total, 2); ?></h5>
                   </div>
-
                   <div class="d-flex justify-content-between ">
                     <h5 class="text-uppercase mb-3">Service Tax</h5>
                     <h5>RM 5.00</h5>
                   </div>
-                  
-
                   <hr class="my-4" style="margin-top: 0.5rem !important;">
-
                   <div class="d-flex justify-content-between mb-5">
                     <h5 class="text-uppercase">Total price</h5>
                     <h5>RM <?php echo number_format($total, 2)+(5); ?>.00</h5>
                   </div>
-                  
                   <h5 class="">Please fill in your details.</h5>
                   <div class="portfolio-info" >
                   <input  type="hidden" name='totalPrice' id='totalPrice'  placeholder='Enter your email address' value="<?php echo number_format($total, 2)+(5); ?>" >
                   <input  type="hidden" name='productName' id='totalPrice'  placeholder='Enter your email address' value="<?php echo $values["item_name"]; ?>" >
-                  
-                  <input class="nokotak" style="border-bottom: 1px solid black;margin-bottom:20px;width:215px" type="email" name='custEmail' id='custEmail'  value="<?php echo $row['email']; ?>" readonly >
-                  <input class="nokotak" style="border-bottom: 1px solid black;margin-bottom:20px;width:215px" type="text" name='custName' id='custName'  placeholder='Enter your Name' required>
-                  <input class="nokotak" style="border-bottom: 1px solid black;margin-bottom:20px;width:215px;" type="number"  name='custPhone' id='custPhone'  placeholder='Enter your Phone Number' minlength = "10" required/>
+                  <input class="nokotak" style="border-bottom: 1px solid black;margin-bottom:20px;width:215px" 
+                  type="email" name='custEmail' id='custEmail'  value="<?php echo $row['email']; ?>" readonly >
+                  <input class="nokotak" style="border-bottom: 1px solid black;margin-bottom:20px;width:215px" 
+                  type="text" name='custName' id='custName'  placeholder='Enter your Name' required>
+                  <input class="nokotak" style="border-bottom: 1px solid black;margin-bottom:20px;width:215px;"
+                   type="number"  name='custPhone' id='custPhone'  placeholder='Enter your Phone Number' minlength = "10" required/>
                   </div>
-
                   <br><br><input type="submit" id="submit" class="btn btn-dark btn-block btn-lg" value="Proceed"/>
                     </button>
-                  
                   </form>
-                    
-                
                 </div>
               </div>
             </div>
@@ -273,35 +215,9 @@ input::-webkit-inner-spin-button {
     </div>
   </div>
 </section><!-- End Contact Section -->
-
-    <!-- ======= Map Section ======= -->
-    <!--<section class="map mt-2">
-      <div class="container-fluid p-0">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.2219901290355!2d-74.00369368400567!3d40.71312937933185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a23e28c1191%3A0x49f75d3281df052a!2s150%20Park%20Row%2C%20New%20York%2C%20NY%2010007%2C%20USA!5e0!3m2!1sen!2sbg!4v1579767901424!5m2!1sen!2sbg" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-      </div>
-    </section> End Map Section -->
-
   </main><!-- End #main -->
-
   <!-- ======= Footer ======= -->
   <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
-
-    <!--<div class="footer-newsletter">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <h4>Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-          </div>
-          <div class="col-lg-6">
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>-->
-
     <div class="footer-top">
       <div class="container">
         <div class="row">
@@ -334,15 +250,12 @@ input::-webkit-inner-spin-button {
                 Wilayah Persekutuan Kuala Lumpur<br><br>
                 <strong>Email:</strong><a href="mailto: cleosheesh@gmail.com"> cleosheesh@gmail.com</a><br>
             </p><br>
-            <!--<h4>Admin</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="login-form-20/login-form-20/Adminlogin.php">Admin Log In</a></li>
-            </ul>-->
           </div>
 
           <div class="col-lg-3 col-md-6 footer-info">
             <h3>About CLEO</h3>
-            <p>CLEO is a place where Malaysian video gamers come together to explore and find their perfect in-game materials to bring up their in game experiences to the next level.</p>
+            <p>CLEO is a place where Malaysian video gamers come together to explore and find their perfect in-game materials to
+               bring up their in game experiences to the next level.</p>
             <div class="social-links mt-3">
               <a href="https://twitter.com/" class="twitter"><i class="bx bxl-twitter"></i></a>
               <a href="https://www.facebook.com/" class="facebook"><i class="bx bxl-facebook"></i></a>
@@ -350,8 +263,6 @@ input::-webkit-inner-spin-button {
               <a href="https://www.linkedin.com/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
             </div>
           </div>
-          
-          
         </div>
       </div>
     </div>
@@ -360,7 +271,6 @@ input::-webkit-inner-spin-button {
       <div class="copyright">
         &copy; Copyright <strong><span>CLEO</span></strong>. All Rights Reserved
       </div>
-      
     </div>
   </footer><!-- End Footer -->
 
@@ -377,7 +287,5 @@ input::-webkit-inner-spin-button {
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
 </body>
-
 </html>

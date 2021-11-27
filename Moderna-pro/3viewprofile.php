@@ -20,8 +20,6 @@ include("includes/config.php");
 
    <!-- Favicons -->
    <link rel="icon" href="assets/img/icon1.png">
-   <!--<link href="assets/img/logo atas.png" rel="icon">
-   <link href="assets/img/logo atas.png" rel="logo-atas-icon">-->
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
@@ -54,35 +52,14 @@ include("includes/config.php");
 
       <div class="logo">
         <h1 style="font-family: Arial" class="text-light"><a href="Customerhomepage.php"><span>CLEO</span></a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
 
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="" href="Customerhomepage.php">Home</a></li>
           <li><a href="3about.php">About Us</a></li>
-          <!--<li><a href="services.html">Services</a></li>-->
           <li><a href="3products.php">Products</a></li>
           <li><a href="3team.php">Team</a></li>
-          <!--<li><a href="blog.html">Blog</a></li>-->
-          <!--<li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li>-->
           <li><a href="3contact.php">Contact Us</a></li>
           <li class="dropdown"><a class="active"href="#"><span><?php echo $row['name']; ?></span> <i class="bi bi-chevron-down"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </i></a>
             <ul>
@@ -91,23 +68,19 @@ include("includes/config.php");
               <li><a href="3purchasehistory.php">Purchase History</a></li>
             </ul>
           </li>
-          <!--<li><a href="/MasterCLEO/Moderna-pro/customer dashboard/paper-dashboard-master/examples/3dashboard.html">My Dashboard  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>-->
           <li><form action="CustomerDB.php" method="POST">
           <input type="submit" name="logout" id="submit" class="form-submit submit sign-up-btn" value="Log out"/>
         </form></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
-
     </div>
   </header><!-- End Header -->
 
   <main id="main">
-
     <!-- ======= Contact Section ======= -->
     <section class="breadcrumbs">
       <div class="container">
-
         <div class="d-flex justify-content-between align-items-center">
           <h2>My Profile</h2>
           <ol>
@@ -115,7 +88,6 @@ include("includes/config.php");
             <li><a href="3viewprofile.php">My Profile</a></li>
           </ol>
         </div>
-
       </div>
     </section><!-- End Contact Section -->
 
@@ -130,11 +102,6 @@ include("includes/config.php");
                 <div class="row">
                     <div class="col-md-12 profile-user">
                         <div class="info-box" style="padding: 70px 0 70px 0; box-shadow:none;">
-                            
-                              <!-- <img src="images/(add echo row here)" alt="..." name = "profilepicture" id="profilepicture"><br> -->
-                              
-                        
-                            <!--<i class="bx bx-phone-call"></i>-->
                             <?php
                               if ($row['profilepicture'] == '') {
                                 echo "<img width='110' height='125' src='../default-profile.jpg' alt='Default Profile Pic'>";
@@ -146,8 +113,6 @@ include("includes/config.php");
                             <a href="3editpicture.php" style="font-size:18px; ">Edit<i class="bi bi-pencil" style="border:none; font-size:18px;" ></i></a> 
                             <h3><?php echo $row['name']; ?></h3>
                             <h4><?php echo $row['email']; ?></h4>
-                            <!--<a href="3editpicture.php"><p>Edit Profile Picture</p></a>-->
-                            <!--<a href="mailto: cleosheesh@gmail.com"><p>cleosheesh@gmail.com</p></a>-->
                         </div>
                     </div>
                 </div>
@@ -193,35 +158,10 @@ include("includes/config.php");
 
       </div>
     </section><!-- End Contact Section -->
-
-    <!-- ======= Map Section ======= -->
-    <!--<section class="map mt-2">
-      <div class="container-fluid p-0">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.2219901290355!2d-74.00369368400567!3d40.71312937933185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a23e28c1191%3A0x49f75d3281df052a!2s150%20Park%20Row%2C%20New%20York%2C%20NY%2010007%2C%20USA!5e0!3m2!1sen!2sbg!4v1579767901424!5m2!1sen!2sbg" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-      </div>
-    </section> End Map Section -->
-
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
-
-    <!--<div class="footer-newsletter">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <h4>Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-          </div>
-          <div class="col-lg-6">
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>-->
-
     <div class="footer-top">
       <div class="container">
         <div class="row">
@@ -254,15 +194,12 @@ include("includes/config.php");
                 Wilayah Persekutuan Kuala Lumpur<br><br>
                 <strong>Email:</strong><a href="mailto: cleosheesh@gmail.com"> cleosheesh@gmail.com</a><br>
             </p><br>
-            <!--<h4>Admin</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="login-form-20/login-form-20/Adminlogin.php">Admin Log In</a></li>
-            </ul>-->
           </div>
 
           <div class="col-lg-3 col-md-6 footer-info">
             <h3>About CLEO</h3>
-            <p>CLEO is a place where Malaysian video gamers come together to explore and find their perfect in-game materials to bring up their in game experiences to the next level.</p>
+            <p>CLEO is a place where Malaysian video gamers come together to explore and find their perfect in-game materials to 
+              bring up their in game experiences to the next level.</p>
             <div class="social-links mt-3">
               <a href="https://twitter.com/" class="twitter"><i class="bx bxl-twitter"></i></a>
               <a href="https://www.facebook.com/" class="facebook"><i class="bx bxl-facebook"></i></a>
@@ -270,8 +207,6 @@ include("includes/config.php");
               <a href="https://www.linkedin.com/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
             </div>
           </div>
-          
-          
         </div>
       </div>
     </div>
@@ -280,7 +215,6 @@ include("includes/config.php");
       <div class="copyright">
         &copy; Copyright <strong><span>CLEO</span></strong>. All Rights Reserved
       </div>
-      
     </div>
   </footer><!-- End Footer -->
 
@@ -297,7 +231,5 @@ include("includes/config.php");
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
 </body>
-
 </html>

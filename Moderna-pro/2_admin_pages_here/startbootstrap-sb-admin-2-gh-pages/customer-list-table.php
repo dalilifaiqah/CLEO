@@ -5,7 +5,6 @@ $email=$_SESSION['email'];
 $query=mysqli_query($con,"SELECT * FROM admin WHERE email='$email' "); 
 $row=mysqli_fetch_array($query);
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -113,15 +112,6 @@ $row=mysqli_fetch_array($query);
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>Purchase List</span></a>
             </li>
-
-            <!-- Divider -->
-            <!--<hr class="sidebar-divider">-->
-
-            <!-- Heading -->
-            <!--<div class="sidebar-heading">
-                Addons
-            </div>-->
-
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
 

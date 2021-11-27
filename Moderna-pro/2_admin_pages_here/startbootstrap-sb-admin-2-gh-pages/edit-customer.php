@@ -5,11 +5,8 @@
 #$query=mysqli_query($con,"SELECT * FROM admin WHERE email='$email' "); 
 #$row=mysqli_fetch_array($query);
 ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
     <meta charset="utf-8">
@@ -76,17 +73,12 @@
         .chartjs-size-monitor,.chartjs-size-monitor-expand,.chartjs-size-monitor-shrink{position:absolute;direction:ltr;left:0;top:0;right:0;
         bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1}.chartjs-size-monitor-expand>div{position:absolute;width:1000000px;
         height:1000000px;left:0;top:0}.chartjs-size-monitor-shrink>div{position:absolute;width:200%;height:200%;left:0;top:0}</style>
-
     <!-- Custom styles for this page -->
     <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
-
 </head>
-
 <body style="background-color: #B7569A;">
-
     <!-- Page Wrapper -->
     <div id="wrapper">
-
         <!-- Sidebar -->
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
@@ -160,15 +152,6 @@
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>Order Purchase</span></a>
             </li>
-
-            <!-- Divider -->
-            <!--<hr class="sidebar-divider">-->
-
-            <!-- Heading -->
-            <!--<div class="sidebar-heading">
-                Addons
-            </div>-->
-
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
 
@@ -176,10 +159,8 @@
             <div class="text-center d-none d-md-inline">
                 <button class="rounded-circle border-0" id="sidebarToggle"></button>
             </div>
-
         </ul>
         <!-- End of Sidebar -->
-
         <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">
 
@@ -195,21 +176,6 @@
                             <i class="fa fa-bars"></i>
                         </button>
                     </form>
-
-                    <!-- Topbar Search -->
-                    <!--<form
-                        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-                        <div class="input-group">
-                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
-                                aria-label="Search" aria-describedby="basic-addon2">
-                            <div class="input-group-append">
-                                <button class="btn btn-primary" type="button" style="background-color: #4E73DF; border-color: #4E73DF;">
-                                    <i class="fas fa-search fa-sm"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </form>-->
-
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
 
@@ -258,28 +224,19 @@
                                 </a>
                             </div>
                         </li>
-
                     </ul>
-
                 </nav>
                 <!-- End of Topbar -->
-
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
                         <h1 class="h3 mb-0" style="color: #fff;">Admin Edit Customer</h1>
-                        <!--<a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-                                class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>-->
                     </div>
 
                     <!-- Content Row -->
-                    <div class="row">
-                        
-                    </div>
-
-                
+                    <div class="row"> </div>
                     <div class="container col-lg-12">
                         <div>
                             <button class="yellow-buttonloh" type="button" style="float:right;margin: 0px 20px;width:100px;height:33px;">
@@ -314,7 +271,8 @@
                                                     <h6 class="mb-0">E-mail</h6>
                                                 </div>
                                                 <div class="col-sm-9 text-secondary">
-                                                    <input type="email" class="form-control" value="" name = "email" placeholder="<?php echo $row['email']; ?>" minlength = "10" required>
+                                                    <input type="email" class="form-control" value="" name = "email" placeholder="<?php echo $row['email']; ?>" 
+                                                    minlength = "10" required>
                                                 </div>
                                             </div>
                                             <div class="row mb-3">
@@ -325,23 +283,6 @@
                                                     <input type="text" class="form-control" value="" name = "password" placeholder="<?php echo $row['password']; ?>" required>
                                                 </div>
                                             </div>
-                                            <!--<div class="row mb-3">
-                                                <div class="col-sm-3">
-                                                    <h6 class="mb-0">Date</h6>
-                                                </div>
-                                                <div class="col-sm-9 text-secondary">
-                                                    <input type="text" class="form-control" value="" name = "date" placeholder="" required>
-                                                </div>
-                                            </div>
-                                            <div class="row mb-3">
-                                                <div class="col-sm-3">
-                                                    <h6 class="mb-0">Verified</h6>
-                                                </div>
-                                                <div class="col-sm-9 text-secondary">
-                                                    <input type="text" class="form-control" value="" name = "verified" placeholder="" required>
-                                                </div>
-                                            </div>-->
-
                                             <div class="row">
                                                 <div class="col-sm-3"></div>
                                                 <div class="col-sm-9 text-secondary">
@@ -351,25 +292,17 @@
                                             </div>
                                         </div>
                                     </div>
-                                    
                                 </div>
-                
-                                
                             </div>
                         </div>
-                    
-
         </div>
         <!-- End of Content Wrapper -->
-
     </div>
     <!-- End of Page Wrapper -->
-
     <!-- Scroll to Top Button-->
     <a class="scroll-to-top rounded" href="#page-top">
         <i class="fas fa-angle-up"></i>
     </a>
-
     <!-- Logout Modal-->
     <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
@@ -551,9 +484,7 @@
         .show > .btn-outline-primary.dropdown-toggle:focus {
           box-shadow: 0 0 0 0.2rem rgba(223, 216, 78, 0.5);
         }
-        
         </style>
-
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -574,11 +505,6 @@
     <script src="js/demo/chart-pie-demo.js"></script>
     <script src="js/demo/chart-bar-demo.js"></script>
     <script src="js/demo/datatables-demo.js"></script>
-
-    <!-- Scripts from orange ecommerce reference template
-    <script src="vendor\active-ecommerce-cms\js\vendors.js"></script>
-	<script src="vendor\active-ecommerce-cms\js\aiz-core.js"></script>-->
-
     <script type="text/javascript">
     AIZ.plugins.chart('#pie-1',{
         type: 'doughnut',
@@ -842,10 +768,7 @@
         }
     });
 </script>
-
     <script type="text/javascript">
-	    
-
         if ($('#lang-change').length > 0) {
             $('#lang-change .dropdown-menu a').each(function() {
                 $(this).on('click', function(e){
@@ -876,7 +799,8 @@
 					for (i = 0; i < items.length; i++) {
 						const text = $(items[i]).find(".aiz-side-nav-text")[0].innerText;
 						const link = $(items[i]).attr('href');
-						 $("#search-menu").append(`<li class="aiz-side-nav-item"><a href="${link}" class="aiz-side-nav-link"><i class="las la-ellipsis-h aiz-side-nav-icon"></i><span>${text}</span></a></li`);
+						 $("#search-menu").append(`<li class="aiz-side-nav-item"><a href="${link}" class="aiz-side-nav-link"><i class="las la-ellipsis-h aiz-side-nav-icon">
+                         </i><span>${text}</span></a></li`);
 					}
 				}else{
 					$("#search-menu").html(`<li class="aiz-side-nav-item"><span	class="text-center text-muted d-block">Nothing Found</span></li>`);
@@ -887,14 +811,12 @@
 			}
         }
     </script>
-
 <!-- additional javascript  -->
     <script src ="scripts.js">
 
     function triggerClick(){
     document.querySelector('#profilepicture').click();
 }
-
 function displayImage(e){
     if (e.files[0]){
         var reader = new FileReader();
@@ -905,9 +827,6 @@ function displayImage(e){
         reader.readAsDataURL(e.files[0]);
     }
 }
-
     </script> 
-
 </body>
-
 </html>

@@ -5,13 +5,9 @@
 #$query=mysqli_query($con,"SELECT * FROM admin WHERE email='$email' "); 
 #$row=mysqli_fetch_array($query);
 ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -29,8 +25,7 @@
 
     <!-- Custom fonts for this template -->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
     <link rel="stylesheet" href="css\active-ecommerce-cms\vendors.css">
     <link rel="stylesheet" href="css\active-ecommerce-cms\aiz-core.css">
@@ -79,14 +74,10 @@
 
     <!-- Custom styles for this page -->
     <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
-
 </head>
-
 <body style="background-color: #B7569A;">
-
     <!-- Page Wrapper -->
     <div id="wrapper">
-
         <!-- Sidebar -->
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
@@ -98,10 +89,8 @@
                 </div>
                 <div class="sidebar-brand-text mx-3">CLEO Admin</div>
             </a>
-
             <!-- Divider -->
             <hr class="sidebar-divider my-0">
-
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
                 <a class="nav-link" href="dashboard.php">
@@ -160,15 +149,6 @@
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>Order Purchase</span></a>
             </li>
-
-            <!-- Divider -->
-            <!--<hr class="sidebar-divider">-->
-
-            <!-- Heading -->
-            <!--<div class="sidebar-heading">
-                Addons
-            </div>-->
-
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
 
@@ -195,24 +175,8 @@
                             <i class="fa fa-bars"></i>
                         </button>
                     </form>
-
-                    <!-- Topbar Search -->
-                    <!--<form
-                        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-                        <div class="input-group">
-                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
-                                aria-label="Search" aria-describedby="basic-addon2">
-                            <div class="input-group-append">
-                                <button class="btn btn-primary" type="button" style="background-color: #4E73DF; border-color: #4E73DF;">
-                                    <i class="fas fa-search fa-sm"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </form>-->
-
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
-
                         <!-- Nav Item - Search Dropdown (Visible Only XS) -->
                         <li class="nav-item dropdown no-arrow d-sm-none">
                             <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
@@ -258,28 +222,19 @@
                                 </a>
                             </div>
                         </li>
-
                     </ul>
-
                 </nav>
                 <!-- End of Topbar -->
-
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
-
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
                         <h1 class="h3 mb-0" style="color: #fff;">Edit Genshin Product</h1>
                         <!--<a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
                                 class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>-->
                     </div>
-
                     <!-- Content Row -->
-                    <div class="row">
-                        
-                    </div>
-
-                
+                    <div class="row"></div>
                     <div class="container col-lg-12">
                         <div>
                         <button class="yellow-buttonloh" type="button" style="float:right;margin: 0px 20px;width:100px;height:33px;">
@@ -335,25 +290,17 @@
                                             </div>
                                         </div>
                                     </div>
-                                    
                                 </div>
-                
-                                
                             </div>
                         </div>
-                    
-
         </div>
         <!-- End of Content Wrapper -->
-
     </div>
     <!-- End of Page Wrapper -->
-
     <!-- Scroll to Top Button-->
     <a class="scroll-to-top rounded" href="#page-top">
         <i class="fas fa-angle-up"></i>
     </a>
-
     <!-- Logout Modal-->
     <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
@@ -535,9 +482,7 @@
         .show > .btn-outline-primary.dropdown-toggle:focus {
           box-shadow: 0 0 0 0.2rem rgba(223, 216, 78, 0.5);
         }
-        
         </style>
-
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -558,11 +503,6 @@
     <script src="js/demo/chart-pie-demo.js"></script>
     <script src="js/demo/chart-bar-demo.js"></script>
     <script src="js/demo/datatables-demo.js"></script>
-
-    <!-- Scripts from orange ecommerce reference template
-    <script src="vendor\active-ecommerce-cms\js\vendors.js"></script>
-	<script src="vendor\active-ecommerce-cms\js\aiz-core.js"></script>-->
-
     <script type="text/javascript">
     AIZ.plugins.chart('#pie-1',{
         type: 'doughnut',
@@ -826,10 +766,7 @@
         }
     });
 </script>
-
     <script type="text/javascript">
-	    
-
         if ($('#lang-change').length > 0) {
             $('#lang-change .dropdown-menu a').each(function() {
                 $(this).on('click', function(e){
@@ -860,7 +797,8 @@
 					for (i = 0; i < items.length; i++) {
 						const text = $(items[i]).find(".aiz-side-nav-text")[0].innerText;
 						const link = $(items[i]).attr('href');
-						 $("#search-menu").append(`<li class="aiz-side-nav-item"><a href="${link}" class="aiz-side-nav-link"><i class="las la-ellipsis-h aiz-side-nav-icon"></i><span>${text}</span></a></li`);
+						 $("#search-menu").append(`<li class="aiz-side-nav-item"><a href="${link}" class="aiz-side-nav-link"><i class="las la-ellipsis-h aiz-side-nav-icon">
+                         </i><span>${text}</span></a></li`);
 					}
 				}else{
 					$("#search-menu").html(`<li class="aiz-side-nav-item"><span	class="text-center text-muted d-block">Nothing Found</span></li>`);
@@ -871,27 +809,20 @@
 			}
         }
     </script>
-
 <!-- additional javascript  -->
     <script src ="scripts.js">
-
     function triggerClick(){
     document.querySelector('#profilepicture').click();
 }
-
 function displayImage(e){
     if (e.files[0]){
         var reader = new FileReader();
-
         reader.onload = function(e) {
             document.querySelector('#profilepicture').setAttribute('src', e.target.result);
         }
         reader.readAsDataURL(e.files[0]);
     }
 }
-
     </script> 
-
 </body>
-
 </html>

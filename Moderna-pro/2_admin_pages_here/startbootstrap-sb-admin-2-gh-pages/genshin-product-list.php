@@ -5,13 +5,9 @@ $email=$_SESSION['email'];
 $query=mysqli_query($con,"SELECT * FROM admin WHERE email='$email' "); 
 $row=mysqli_fetch_array($query);
 ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -22,33 +18,21 @@ $row=mysqli_fetch_array($query);
 
     <!-- google font -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700">
-
-	<!-- aiz core css -->
-	<!-- <link rel="stylesheet" href="css\active-ecommerce-cms\vendors.css">
-    <link rel="stylesheet" href="css\active-ecommerce-cms\aiz-core.css"> -->
-
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link
-        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
 
     <!-- Custom styles for this page -->
     <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
-
 </head>
-
 <body id="page-top">
-
     <!-- Page Wrapper -->
     <div id="wrapper">
-
         <!-- Sidebar -->
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
-
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="dashboard.php">
                 <div class="sidebar-brand-icon">
@@ -119,15 +103,6 @@ $row=mysqli_fetch_array($query);
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>Purchase List</span></a>
             </li>
-
-            <!-- Divider -->
-            <!--<hr class="sidebar-divider">-->
-
-            <!-- Heading -->
-            <!--<div class="sidebar-heading">
-                Addons
-            </div>-->
-
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
 
@@ -154,24 +129,8 @@ $row=mysqli_fetch_array($query);
                             <i class="fa fa-bars"></i>
                         </button>
                     </form>
-
-                    <!-- Topbar Search -->
-                    <!--<form
-                        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-                        <div class="input-group">
-                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
-                                aria-label="Search" aria-describedby="basic-addon2">
-                            <div class="input-group-append">
-                                <button class="btn btn-primary" type="button">
-                                    <i class="fas fa-search fa-sm"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </form>-->
-
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
-
                         <!-- Nav Item - Search Dropdown (Visible Only XS) -->
                         <li class="nav-item dropdown no-arrow d-sm-none">
                             <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
@@ -195,8 +154,6 @@ $row=mysqli_fetch_array($query);
                                 </form>
                             </div>
                         </li>
-
-                        
                         <!-- Nav Item - User Information -->
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
@@ -218,9 +175,7 @@ $row=mysqli_fetch_array($query);
                                 </a>
                             </div>
                         </li>
-
                     </ul>
-
                 </nav>
                 <!-- End of Topbar -->
 
@@ -254,7 +209,6 @@ $row=mysqli_fetch_array($query);
                                         </tr>
                                     </thead>
                                     <tr>
-
                                     <?php
                                     $conn = mysqli_connect("localhost","ourcleoc_cleoadmin","Cleo_12345_","ourcleoc_cleo"); 
                                     if ($conn-> connect_error){
@@ -284,10 +238,7 @@ $row=mysqli_fetch_array($query);
                                                 <input class="yellow-buttonloh" type="submit" name="delete" value="Delete Data" style="height:37px; width:100px; margin: 0px 5px">
                                             </div>
                                         </form>
-    
-
                                             <?php
-                                            
                                             $connection= mysqli_connect("localhost","ourcleoc_cleoadmin","Cleo_12345_");
                                             $db = mysqli_select_db($connection, 'ourcleoc_cleo');
                                             
@@ -300,20 +251,15 @@ $row=mysqli_fetch_array($query);
                                                 
                                             }                                       
                                             ?>
-                                        
-                                        
                                         </tbody>
                                 </table>
                             </div>
                         </div>
                     </div>
-
                 </div>
                 <!-- /.container-fluid -->
-
             </div>
             <!-- End of Main Content -->
-            
             <!-- Footer -->
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
@@ -323,15 +269,12 @@ $row=mysqli_fetch_array($query);
                 </div>
             </footer>
             <!-- End of Footer -->
-
     </div>
     <!-- End of Page Wrapper -->
-
     <!-- Scroll to Top Button-->
     <a class="scroll-to-top rounded" href="#page-top">
         <i class="fas fa-angle-up"></i>
     </a>
-
     <!-- Logout Modal-->
     <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
@@ -369,7 +312,5 @@ $row=mysqli_fetch_array($query);
 
     <!-- Page level custom scripts -->
     <script src="js/demo/datatables-demo.js"></script>
-
 </body>
-
 </html>

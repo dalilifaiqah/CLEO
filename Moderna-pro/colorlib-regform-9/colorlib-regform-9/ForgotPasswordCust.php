@@ -14,8 +14,6 @@ if(!$con3){
 
   $email = $_POST['email'];
   $newpassword = $_POST['password'];
- 
-
   $sql = "UPDATE customer SET password = '$_POST[password]' WHERE email = '$_POST[email]'";
 }
 

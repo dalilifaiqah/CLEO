@@ -8,7 +8,6 @@ if (isset($_POST['signup'])) {
     logout($_POST['logout']);
 }    
 ?>
-
 <?php
     function signup()
     {
@@ -18,7 +17,6 @@ if (isset($_POST['signup'])) {
         $password = "Cleo_12345_";
         $dbname = "ourcleoc_cleo";
         $con2 = new mysqli($servername, $username, $password, $dbname);
-
         if (!$con2){
             echo "error";
         }else{

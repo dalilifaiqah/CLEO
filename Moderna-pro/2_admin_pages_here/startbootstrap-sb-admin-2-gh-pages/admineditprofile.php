@@ -1,24 +1,16 @@
-<!-- UNEDITED --> 
-
 <?php
-
 if(isset($_POST['admineditprofile'])) {
     admineditprofile($_POST['admineditprofile']);
 }
 
 ?>
-
 <?php 
-
 function admineditprofile()
 {
   $servername = "localhost";
   $username = "ourcleoc_cleoadmin";
   $password = "Cleo_12345_";
   $dbname = "ourcleoc_cleo";
-
-   
-    
     $con2 = new mysqli($servername, $username, $password, $dbname);
     
     if(!$con2){
@@ -38,7 +30,5 @@ function admineditprofile()
             }else{
                 echo '<br>Update failed';
             }
-    
 }
-
 ?>

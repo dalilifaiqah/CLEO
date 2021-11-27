@@ -6,12 +6,9 @@ $query=mysqli_query($con,"SELECT * FROM admin WHERE email='$email' ");
 $row=mysqli_fetch_array($query);
 // include ("includes/config.php");
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -77,11 +74,8 @@ $row=mysqli_fetch_array($query);
 
     <!-- Custom styles for this page -->
     <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
-
 </head>
-
 <body style="background-color: #B7569A;">
-
     <!-- Page Wrapper -->
     <div id="wrapper">
 
@@ -158,15 +152,6 @@ $row=mysqli_fetch_array($query);
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>Purchase List</span></a>
             </li>
-
-            <!-- Divider -->
-            <!--<hr class="sidebar-divider">-->
-
-            <!-- Heading -->
-            <!--<div class="sidebar-heading">
-                Addons
-            </div>-->
-
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
 
@@ -193,21 +178,6 @@ $row=mysqli_fetch_array($query);
                             <i class="fa fa-bars"></i>
                         </button>
                     </form>
-
-                    <!-- Topbar Search -->
-                    <!--<form
-                        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-                        <div class="input-group">
-                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
-                                aria-label="Search" aria-describedby="basic-addon2">
-                            <div class="input-group-append">
-                                <button class="btn btn-primary" type="button" style="background-color: #4E73DF; border-color: #4E73DF;">
-                                    <i class="fas fa-search fa-sm"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </form>-->
-
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
 
@@ -268,8 +238,6 @@ $row=mysqli_fetch_array($query);
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
                         <h1 class="h3 mb-0" style="color: #fff;">Admin Profile</h1>
-                        <!--<a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-                                class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>-->
                     </div>
 
                     <!-- Content Row -->
@@ -282,25 +250,12 @@ $row=mysqli_fetch_array($query);
 
                 <div class="container col-lg-12">
                     <div class="main-body">
-                    
-                          <!-- Breadcrumb -->
-                          <!--<nav aria-label="breadcrumb" class="main-breadcrumb">
-                            <ol class="breadcrumb">
-                              <li class="breadcrumb-item"><a href="dashboard.php">Home</a></li>
-                              <li class="breadcrumb-item"><a href="javascript:void(0)">User</a></li>
-                              <li class="breadcrumb-item active" aria-current="page">User Profile</li>
-                            </ol>
-                          </nav>-->
-                          <!-- /Breadcrumb -->
-                    
                           <div class="row gutters-sm">
                             <div class="col-md-4 mb-3">
                               <div class="card">
                                 <div class="card-body">
                                   <div class="d-flex flex-column align-items-center text-center">
-
                                 <!-- ======= DISPLAYING PROFILE PICTURE ======== --> 
-                                  
                                   <?php
                                         if ($row['profilepicture'] == '') {
                                             echo "<img width='125' height='125' src='../../pictures/default-profile.jpg' alt='Default Profile Pic'>";
@@ -308,9 +263,7 @@ $row=mysqli_fetch_array($query);
                                             echo "<img width='125' height='125' src='../../pictures/" . $row['profilepicture'] . "' alt='Profile Pic' >";
                                         }
                                     ?>
-
                                 <!-- ======= DISPLAYING PROFILE PICTURE ======== --> 
-
                                     <div class="mt-3">
                                       <h4><?php echo $row['name']; ?></h4>
                                       <p class="text-secondary mb-1"><?php echo $row['email']; ?></p>
@@ -325,9 +278,6 @@ $row=mysqli_fetch_array($query);
                                   </div>
                                 </div>
                               </div>
-
-                      
-                            
                             </div>
                             <div class="col-md-8">
                               <div class="card mb-3">
@@ -358,15 +308,6 @@ $row=mysqli_fetch_array($query);
                                     <?php echo $row['password']; ?>
                                     </div>
                                   </div>
-                                  <!--<hr>
-                                  <div class="row">
-                                    <div class="col-sm-3">
-                                      <h6 class="mb-0">Address</h6>
-                                    </div>
-                                    <div class="col-sm-9 text-secondary">
-                                      Bay Area, San Francisco, CA
-                                    </div>
-                                  </div>-->
                                   <hr><br><br>
                                   <div class="row">
                                     <div class="col-sm-12">
@@ -375,13 +316,8 @@ $row=mysqli_fetch_array($query);
                                   </div>
                                 </div>
                               </div>
-                
                               <div class="row gutters-sm">
-                                
                               </div>
-                
-                
-                
                             </div>
                           </div>
                           <div>
@@ -394,18 +330,14 @@ $row=mysqli_fetch_array($query);
                 
                         </div>
                     </div>
-
         </div>
         <!-- End of Content Wrapper -->
-
     </div>
     <!-- End of Page Wrapper -->
-
     <!-- Scroll to Top Button-->
     <a class="scroll-to-top rounded" href="#page-top">
         <i class="fas fa-angle-up"></i>
     </a>
-
     <!-- Logout Modal-->
     <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
@@ -610,11 +542,6 @@ $row=mysqli_fetch_array($query);
     <script src="js/demo/chart-pie-demo.js"></script>
     <script src="js/demo/chart-bar-demo.js"></script>
     <script src="js/demo/datatables-demo.js"></script>
-
-    <!-- Scripts from orange ecommerce reference template
-    <script src="vendor\active-ecommerce-cms\js\vendors.js"></script>
-	<script src="vendor\active-ecommerce-cms\js\aiz-core.js"></script>-->
-
     <script type="text/javascript">
     AIZ.plugins.chart('#pie-1',{
         type: 'doughnut',
@@ -878,10 +805,7 @@ $row=mysqli_fetch_array($query);
         }
     });
 </script>
-
     <script type="text/javascript">
-	    
-
         if ($('#lang-change').length > 0) {
             $('#lang-change .dropdown-menu a').each(function() {
                 $(this).on('click', function(e){
@@ -912,7 +836,8 @@ $row=mysqli_fetch_array($query);
 					for (i = 0; i < items.length; i++) {
 						const text = $(items[i]).find(".aiz-side-nav-text")[0].innerText;
 						const link = $(items[i]).attr('href');
-						 $("#search-menu").append(`<li class="aiz-side-nav-item"><a href="${link}" class="aiz-side-nav-link"><i class="las la-ellipsis-h aiz-side-nav-icon"></i><span>${text}</span></a></li`);
+						 $("#search-menu").append(`<li class="aiz-side-nav-item"><a href="${link}" class="aiz-side-nav-link"><i class="las la-ellipsis-h aiz-side-nav-icon">
+                         </i><span>${text}</span></a></li`);
 					}
 				}else{
 					$("#search-menu").html(`<li class="aiz-side-nav-item"><span	class="text-center text-muted d-block">Nothing Found</span></li>`);
@@ -923,8 +848,5 @@ $row=mysqli_fetch_array($query);
 			}
         }
     </script>
-
-
 </body>
-
 </html>

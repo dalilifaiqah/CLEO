@@ -1,5 +1,3 @@
-<!-- ======== WORK ONE DONE ========== --> 
-
 <?php
 $con = mysqli_connect("localhost","ourcleoc_cleoadmin","Cleo_12345_","ourcleoc_cleo"); 
 session_start();
@@ -14,15 +12,9 @@ if (isset($_POST['submit'])) {
   header("refresh:0; url=admin-profile.php");
 }
 ?>
-
-<!-- ========= WORK ONE DONE ========== --> 
-
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -40,9 +32,7 @@ if (isset($_POST['submit'])) {
 
     <!-- Custom fonts for this template -->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
-        rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
     <link rel="stylesheet" href="css\active-ecommerce-cms\vendors.css">
     <link rel="stylesheet" href="css\active-ecommerce-cms\aiz-core.css">
     
@@ -85,17 +75,12 @@ if (isset($_POST['submit'])) {
         .chartjs-size-monitor,.chartjs-size-monitor-expand,.chartjs-size-monitor-shrink{position:absolute;direction:ltr;left:0;top:0;right:0;
         bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1}.chartjs-size-monitor-expand>div{position:absolute;width:1000000px;
         height:1000000px;left:0;top:0}.chartjs-size-monitor-shrink>div{position:absolute;width:200%;height:200%;left:0;top:0}</style>
-
     <!-- Custom styles for this page -->
     <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
-
 </head>
-
 <body style="background-color: #B7569A;">
-
     <!-- Page Wrapper -->
     <div id="wrapper">
-
         <!-- Sidebar -->
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
@@ -169,15 +154,6 @@ if (isset($_POST['submit'])) {
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>Purchase List</span></a>
             </li>
-
-            <!-- Divider -->
-            <!--<hr class="sidebar-divider">-->
-
-            <!-- Heading -->
-            <!--<div class="sidebar-heading">
-                Addons
-            </div>-->
-
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
 
@@ -204,24 +180,8 @@ if (isset($_POST['submit'])) {
                             <i class="fa fa-bars"></i>
                         </button>
                     </form>
-
-                    <!-- Topbar Search -->
-                    <!--<form
-                        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-                        <div class="input-group">
-                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
-                                aria-label="Search" aria-describedby="basic-addon2">
-                            <div class="input-group-append">
-                                <button class="btn btn-primary" type="button" style="background-color: #4E73DF; border-color: #4E73DF;">
-                                    <i class="fas fa-search fa-sm"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </form>-->
-
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
-
                         <!-- Nav Item - Search Dropdown (Visible Only XS) -->
                         <li class="nav-item dropdown no-arrow d-sm-none">
                             <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
@@ -279,18 +239,13 @@ if (isset($_POST['submit'])) {
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
                         <h1 class="h3 mb-0" style="color: #fff;">Admin Profile</h1>
-                        <!--<a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-                                class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>-->
                     </div>
-
                     <!-- Content Row -->
                     <div class="row">
-
                         <div class="aiz-main-content">
                             <div class="px-15px px-lg-25px">
                                     <div class="">
                 </div>
-
                 <div class="container col-lg-12">
                 <div>
                             <button class="yellow-buttonloh" type="button" onClick="backtoadminprofile()" style="float:right;margin: 0px 20px;width:100px;height:33px;">Cancel</button>
@@ -302,53 +257,28 @@ if (isset($_POST['submit'])) {
                             <br>
                         </div>
                     <div class="main-body">
-                    
-                          <!-- Breadcrumb -->
-                          <!--<nav aria-label="breadcrumb" class="main-breadcrumb">
-                            <ol class="breadcrumb">
-                              <li class="breadcrumb-item"><a href="dashboard.php">Home</a></li>
-                              <li class="breadcrumb-item"><a href="javascript:void(0)">User</a></li>
-                              <li class="breadcrumb-item active" aria-current="page">User Profile</li>
-                            </ol>
-                          </nav>-->
-                          <!-- /Breadcrumb -->
-                    
                           <div class="row gutters-sm">
                           <div class="col-lg-4">
                                     <div class="card">
                                         <div class="card-body">
                                             <div class="d-flex flex-column align-items-center text-center">
                                                 <div class="mt-3" style="padding: 23px 25px 23px 25px">
-                                                
-                                            <!--        <form action = 2_admin_pages_here/startbootstrap-sb-admin-2-gh-pages/admineditprofile.php method = "POST"> -->
                                                     <form action="" method="POST" enctype="multipart/form-data">
-                                                    <input id = "upload" type="file" name = "file" onchange="submitImage()" style="margin-left: 130px; margin-bottom: 5px; margin-top:5px">
+                                                    <input id = "upload" type="file" name = "file" onchange="submitImage()" style="margin-left: 130px; margin-bottom: 5px;
+                                                     margin-top:5px">
                                                     <br><button type="submit" class="btn btn-primary px-4" style="color:#000" name = "submit" >Save</button>        
                                                     <br><br>
                                                     <h4><?php echo $row['name']; ?></h4>
                                                     <p class="text-secondary mb-1">Back-end Programmer</p>
                                                     <p class="text-muted font-size-sm"><?php echo $row['address']; ?></p>
-                                                    <!--<button class="btn btn-outline-primary">Choose picture</button>-->
-                                                  <!--  <button class="btn btn-primary" name = admineditprofile>Save changes</button> -
-                                                </div>
-                                                <div class = "btn btn-outline-primary"-->
-                                                    <!--<span>Upload Photo</span>-->
-                                                    <!-- ========= DISPLAY PROFILE PICTURE ====== --> 
-                                                    
-             
-                                                    <!-- <input class = "file-input"  type = "file" onchange = "displayImage(this)" id = "profilepicture" name = "profilepicture">Upload Profile Picture</input>--> 
-                                                    
                                                     <div class="row">
                                                         <div class="col-sm-3">
                                                             <div class="col-sm-9 text-secondary">
-                                                            <!--     <input type="submit" class="btn btn-primary px-4" style="margin-left: 70px" value="Save Changes" name = "admineditpicture"> --> 
-                                                            
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div> 
-                                            
                                         </div>
                                     </div>
                                 </div>
@@ -381,43 +311,23 @@ if (isset($_POST['submit'])) {
                                     <?php echo $row['password']; ?>
                                     </div>
                                   </div>
-                                  <!--<hr>
-                                  <div class="row">
-                                    <div class="col-sm-3">
-                                      <h6 class="mb-0">Address</h6>
-                                    </div>
-                                    <div class="col-sm-9 text-secondary">
-                                      Bay Area, San Francisco, CA
-                                    </div>
-                                  </div>-->
                                   <hr>
                                   <br><br><br><br>
                               </div>
-                
                               <div class="row gutters-sm">
-                                
                               </div>
-                
-                
-                
                             </div>
                           </div>
-                          
-                
                         </div>
                     </div>
-
         </div>
         <!-- End of Content Wrapper -->
-
     </div>
     <!-- End of Page Wrapper -->
-
     <!-- Scroll to Top Button-->
     <a class="scroll-to-top rounded" href="#page-top">
         <i class="fas fa-angle-up"></i>
     </a>
-
     <!-- Logout Modal-->
     <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
@@ -622,11 +532,6 @@ if (isset($_POST['submit'])) {
     <script src="js/demo/chart-pie-demo.js"></script>
     <script src="js/demo/chart-bar-demo.js"></script>
     <script src="js/demo/datatables-demo.js"></script>
-
-    <!-- Scripts from orange ecommerce reference template
-    <script src="vendor\active-ecommerce-cms\js\vendors.js"></script>
-	<script src="vendor\active-ecommerce-cms\js\aiz-core.js"></script>-->
-
     <script type="text/javascript">
     AIZ.plugins.chart('#pie-1',{
         type: 'doughnut',
@@ -924,7 +829,8 @@ if (isset($_POST['submit'])) {
 					for (i = 0; i < items.length; i++) {
 						const text = $(items[i]).find(".aiz-side-nav-text")[0].innerText;
 						const link = $(items[i]).attr('href');
-						 $("#search-menu").append(`<li class="aiz-side-nav-item"><a href="${link}" class="aiz-side-nav-link"><i class="las la-ellipsis-h aiz-side-nav-icon"></i><span>${text}</span></a></li`);
+						 $("#search-menu").append(`<li class="aiz-side-nav-item"><a href="${link}" class="aiz-side-nav-link"><i class="las la-ellipsis-h aiz-side-nav-icon">
+                         </i><span>${text}</span></a></li`);
 					}
 				}else{
 					$("#search-menu").html(`<li class="aiz-side-nav-item"><span	class="text-center text-muted d-block">Nothing Found</span></li>`);
@@ -935,8 +841,5 @@ if (isset($_POST['submit'])) {
 			}
         }
     </script>
-
-
 </body>
-
 </html>

@@ -8,31 +8,23 @@ if (isset($_POST['signup'])) {
     logout($_POST['logout']);
 }
 ?>
-
-
 <?php
     function signup()
     {
-    
         //1.connect to mysql
-        
         $servername = "localhost";
         $username = "ourcleoc_cleoadmin";
         $password = "Cleo_12345_";
         $dbname = "ourcleoc_cleo";
         $con = new mysqli($servername, $username, $password, $dbname);
-
         if (!$con){
             echo "error";
         }else{
-            
         //2.construct sql statement
         $name=$_POST['name'];
         $email=$_POST['email'];
         $password=$_POST['password'];
-        
         $vkey = md5(time() . $name);
-
         $sql = "INSERT INTO customer(name,email,password,vkey)
         values('$name','$email','$password','$vkey')";
         }
@@ -58,18 +50,14 @@ if (isset($_POST['signup'])) {
     }
 
     function login(){
-        
         $servername = "localhost";
         $username = "ourcleoc_cleoadmin";
         $password = "Cleo_12345_";
         $dbname = "ourcleoc_cleo";
         $sql = new mysqli($servername, $username, $password, $dbname);
-
         $email = $sql->real_escape_string($_POST['email']);
         $password = $sql->real_escape_string($_POST['password']);
-
         $resultSet = $sql->query("SELECT * FROM customer WHERE email = '$email' AND password = '$password' LIMIT 1 ");
-
         if ($resultSet->num_rows != 0) {
             //Process login
             $row = $resultSet->fetch_assoc();
@@ -89,8 +77,6 @@ if (isset($_POST['signup'])) {
             header("Location: 4loginfail.html");
         }
     }
-
-
     function logout(){
         session_destroy();
         header("Location:4logout.html");

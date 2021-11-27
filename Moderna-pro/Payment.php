@@ -10,7 +10,6 @@ $name=$_POST['custName'];
 $phoneNumber=$_POST['custPhone'];
 $totalPrice=$_POST['totalPrice'];
 $totalPrice=($totalPrice*100);
-
   $some_data = array(
     'userSecretKey'=>'d44nsh92-tbln-nvav-tg0v-pzredqe21ydr',
     'categoryCode'=>'ahuen4zb',
@@ -37,7 +36,6 @@ $totalPrice=($totalPrice*100);
   curl_setopt($curl, CURLOPT_URL, 'https://dev.toyyibpay.com/index.php/api/createBill');  
   curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
   curl_setopt($curl, CURLOPT_POSTFIELDS, $some_data);
-
   $result = curl_exec($curl);
   $info = curl_getinfo($curl);  
   curl_close($curl);

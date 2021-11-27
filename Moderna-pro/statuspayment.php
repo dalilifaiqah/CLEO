@@ -7,7 +7,6 @@
     );  
 
   $curl = curl_init();
-
   curl_setopt($curl, CURLOPT_POST, 1);
   curl_setopt($curl, CURLOPT_URL, 'https://dev.toyyibpay.com/index.php/api/getBillTransactions');  
   curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);

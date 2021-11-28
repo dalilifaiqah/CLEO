@@ -15,30 +15,22 @@ $row=mysqli_fetch_array($query);
     <meta name="author" content="">
     <link rel="icon" href="../../assets/img/CLEO-Logo.png">
     <title>CLEO Admin Profile-edit</title>
-
     <!-- google font -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700">
-
 	<!-- aiz core css -->
 	<link rel="stylesheet" href="css\active-ecommerce-cms\vendors.css">
     <link rel="stylesheet" href="css\active-ecommerce-cms\aiz-core.css">
-
     <!-- Custom fonts for this template -->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
-        rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
     <link rel="stylesheet" href="css\active-ecommerce-cms\vendors.css">
     <link rel="stylesheet" href="css\active-ecommerce-cms\aiz-core.css">
-    
     <!-- Custom styles for this template -->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
-
     <style>
         body {
             font-size: 16px;}
     </style>
-
     <script>
         var AIZ = AIZ || {};
         AIZ.local = {
@@ -64,52 +56,30 @@ $row=mysqli_fetch_array($query);
             files: 'Files',
         }
     </script>
-    
     <style type="text/css">/* Chart.js */
         @keyframes chartjs-render-animation{from{opacity:.99}to{opacity:1}}.chartjs-render-monitor{animation:chartjs-render-animation 1ms}
         .chartjs-size-monitor,.chartjs-size-monitor-expand,.chartjs-size-monitor-shrink{position:absolute;direction:ltr;left:0;top:0;right:0;
         bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1}.chartjs-size-monitor-expand>div{position:absolute;width:1000000px;
         height:1000000px;left:0;top:0}.chartjs-size-monitor-shrink>div{position:absolute;width:200%;height:200%;left:0;top:0}</style>
-
-    <!-- Custom styles for this page -->
-    <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <!-- Custom styles for this page --><link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 </head>
 <body style="background-color: #B7569A;">
-
-    <!-- Page Wrapper -->
-    <div id="wrapper">
-
-        <!-- Sidebar -->
-        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
-
-            <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="dashboard.php">
+    <!-- Page Wrapper --><div id="wrapper">
+        <!-- Sidebar --><ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+            <!-- Sidebar - Brand --><a class="sidebar-brand d-flex align-items-center justify-content-center" href="dashboard.php">
                 <div class="sidebar-brand-icon">
                     <img src="../../assets/img/CLEO-Logo.png" alt="logo">
-                    <!--<i class="fas fa-laugh-wink"></i>-->
                 </div>
                 <div class="sidebar-brand-text mx-3">CLEO Admin</div>
             </a>
-
-            <!-- Divider -->
-            <hr class="sidebar-divider my-0">
-
-            <!-- Nav Item - Dashboard -->
-            <li class="nav-item">
-                <a class="nav-link" href="dashboard.php">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Dashboard</span></a>
+            <!-- Divider --><hr class="sidebar-divider my-0">
+            <!-- Nav Item - Dashboard --><li class="nav-item">
+                <a class="nav-link" href="dashboard.php"><i class="fas fa-fw fa-tachometer-alt"></i><span>Dashboard</span></a>
             </li>
-
-            <!-- Nav Item - Customer's List -->
-            <li class="nav-item ">
-                <a class="nav-link" href="customer-list-table.php">
-                    <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Customer List</span></a>
+            <!-- Nav Item - Customer's List --><li class="nav-item ">
+                <a class="nav-link" href="customer-list-table.php"><i class="fas fa-fw fa-chart-area"></i><span>Customer List</span></a>
             </li>
-
-            <!-- Nav Item - Product's List Collapse Menu -->
-            <li class="nav-item">
+            <!-- Nav Item - Product's List Collapse Menu --><li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
                     aria-expanded="true" aria-controls="collapseUtilities">
                     <i class="fas fa-fw fa-wrench"></i>
@@ -129,125 +99,74 @@ $row=mysqli_fetch_array($query);
                     </div>
                 </div>
             </li>
-
-            <!-- Nav Item - Feedbacks list Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
-                    aria-expanded="true" aria-controls="collapseTwo">
+            <!-- Nav Item - Feedbacks list Collapse Menu --><li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fas fa-fw fa-cog"></i>
                     <span>Feedbacks</span>
                 </a>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
-                    data-parent="#accordionSidebar">
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <a class="collapse-item" href="feedback-list-customer.php">Customer</a>
                         <a class="collapse-item" href="feedback-list-guest.php">Guest</a>
                     </div>
                 </div>
             </li>
-
-            <!-- Nav Item - Purchase List -->
-            <li class="nav-item">
+            <!-- Nav Item - Purchase List --><li class="nav-item">
                 <a class="nav-link" href="order-purchase-list.php">
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>Purchase List</span></a>
             </li>
-
-            <!-- Divider -->
-            <!--<hr class="sidebar-divider">-->
-
-            <!-- Heading -->
-            <!--<div class="sidebar-heading">
-                Addons
-            </div>-->
-
-            <!-- Divider -->
-            <hr class="sidebar-divider d-none d-md-block">
-
-            <!-- Sidebar Toggler (Sidebar) -->
-            <div class="text-center d-none d-md-inline">
+            <!-- Divider --><hr class="sidebar-divider d-none d-md-block">
+            <!-- Sidebar Toggler (Sidebar) --><div class="text-center d-none d-md-inline">
                 <button class="rounded-circle border-0" id="sidebarToggle"></button>
             </div>
-
-        </ul>
-        <!-- End of Sidebar -->
-
-        <!-- Content Wrapper -->
-        <div id="content-wrapper" class="d-flex flex-column">
-
-            <!-- Main Content -->
-            <div id="content" style="background-color: #B7569A;">
-
-                <!-- Topbar -->
-                <nav class="navbar navbar-expand navbar-light bg-custompurple2 topbar mb-4 static-top shadow">
-
-                    <!-- Sidebar Toggle (Topbar) -->
-                    <form class="form-inline">
-                        <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
-                            <i class="fa fa-bars"></i>
+        </ul><!-- End of Sidebar -->
+        <!-- Content Wrapper --><div id="content-wrapper" class="d-flex flex-column">
+            <!-- Main Content --><div id="content" style="background-color: #B7569A;">
+                <!-- Topbar --><nav class="navbar navbar-expand navbar-light bg-custompurple2 topbar mb-4 static-top shadow">
+                    <!-- Sidebar Toggle (Topbar) --><form class="form-inline">
+                        <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3"><i class="fa fa-bars"></i>
                         </button>
                     </form>
-                    <!-- Topbar Navbar -->
-                    <ul class="navbar-nav ml-auto">
-
-                        <!-- Nav Item - Search Dropdown (Visible Only XS) -->
-                        <li class="nav-item dropdown no-arrow d-sm-none">
-                            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <!-- Topbar Navbar --><ul class="navbar-nav ml-auto">
+                        <!-- Nav Item - Search Dropdown (Visible Only XS) --><li class="nav-item dropdown no-arrow d-sm-none">
+                            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fas fa-search fa-fw"></i>
                             </a>
-                            <!-- Dropdown - Messages -->
-                            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
-                                aria-labelledby="searchDropdown">
+                            <!-- Dropdown - Messages --><div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
                                 <form class="form-inline mr-auto w-100 navbar-search">
                                     <div class="input-group">
                                         <input type="text" class="form-control bg-light border-0 small"
-                                            placeholder="Search for..." aria-label="Search"
-                                            aria-describedby="basic-addon2">
+                                        placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
                                         <div class="input-group-append">
-                                            <button class="btn btn-primary" type="button">
-                                                <i class="fas fa-search fa-sm"></i>
+                                            <button class="btn btn-primary" type="button"><i class="fas fa-search fa-sm"></i>
                                             </button>
                                         </div>
                                     </div>
                                 </form>
                             </div>
                         </li>
-
-                        <!-- Nav Item - User Information -->
-                        <li class="nav-item dropdown no-arrow">
-                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <!-- Nav Item - User Information --><li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 d-none d-lg-inline text-white small"><?php echo $row['name']; ?></span>
-                                <img class="img-profile rounded-circle"
-                                    src="img/undraw_profile.svg">
+                                <img class="img-profile rounded-circle" src="img/undraw_profile.svg">
                             </a>
-                            <!-- Dropdown - User Information -->
-                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
-                                aria-labelledby="userDropdown">
+                            <!-- Dropdown - User Information --><div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
                                 <a class="dropdown-item" href="admin-profile.php">
-                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Profile
+                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i> Profile
                                 </a>
                                 <a class="dropdown-item" href="../../4logout.html" data-toggle="modal" data-target="#logoutModal">
-                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Logout
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i> Logout
                                 </a>
                             </div>
                         </li>
                     </ul>
-                </nav>
-                <!-- End of Topbar -->
-
-                <!-- Begin Page Content -->
-                <div class="container-fluid">
-
-                    <!-- Page Heading -->
-                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                </nav><!-- End of Topbar -->
+                <!-- Begin Page Content --> <div class="container-fluid">
+                    <!-- Page Heading --><div class="d-sm-flex align-items-center justify-content-between mb-4">
                         <h1 class="h3 mb-0" style="color: #fff;">Admin Profile Edit</h1>
                     </div>
-                    <!-- Content Row -->
-                    <div class="row"></div>
+                    <!-- Content Row --><div class="row"></div>
                     <div class="container col-lg-12">
                         <div>
                             <button class="yellow-buttonloh" type="button" onClick="backtoadminprofile()" style="float:right;margin: 0px 20px;width:100px;height:33px;">Cancel</button>
@@ -255,18 +174,15 @@ $row=mysqli_fetch_array($query);
                                 function backtoadminprofile() {
                                     window.location.href="admin-profile.php";
                                 }
-                                </script>
-                            <br>
+                                </script><br>
                         </div>
                         <div class="main-body">
                             <div class="row">
                                 <div class="col-lg-4">
-                                    
                                         <div class="card">
                                             <div class="card-body">
                                                 <div class="d-flex flex-column align-items-center text-center">
-                                                    <!-- ========= PICTURE VIEW LET IT BE EMPTY ========= --> 
-                                                    <div class="mt-3" style="padding: 25px 25px 25px 25px">
+                                                    <!-- ========= PICTURE VIEW LET IT BE EMPTY ========= --> <div class="mt-3" style="padding: 25px 25px 25px 25px">
                                                         <?php
                                                             if ($row['profilepicture'] == '') {
                                                                 echo "<img width='125' height='125' src='../../pictures/default-profile.jpg' alt='Default Profile Pic'>";
@@ -332,23 +248,17 @@ $row=mysqli_fetch_array($query);
                                 </div>
                             </div>
                         </div>
-        </div>
-        <!-- End of Content Wrapper -->
-    </div>
-    <!-- End of Page Wrapper -->
-    <!-- Scroll to Top Button-->
-    <a class="scroll-to-top rounded" href="#page-top">
+        </div><!-- End of Content Wrapper -->
+    </div><!-- End of Page Wrapper -->
+    <!-- Scroll to Top Button--><a class="scroll-to-top rounded" href="#page-top">
         <i class="fas fa-angle-up"></i>
     </a>
-    <!-- Logout Modal-->
-    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
+    <!-- Logout Modal--><div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Exit Admin Dashboard</h5>
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
                     </button>
                 </div>
                 <div class="modal-body">Are you sure?</div>
@@ -361,7 +271,6 @@ $row=mysqli_fetch_array($query);
             </div>
         </div>
     </div>
-
     <style type="text/css">
         body{
             /*margin-top:20px;*/
@@ -375,7 +284,6 @@ $row=mysqli_fetch_array($query);
         .card {
             box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
         }
-        
         .card {
             position: relative;
             display: flex;
@@ -387,18 +295,15 @@ $row=mysqli_fetch_array($query);
             border: 0 solid rgba(0,0,0,.125);
             border-radius: .25rem;
         }
-        
         .card-body {
             flex: 1 1 auto;
             min-height: 1px;
             padding: 1rem;
         }
-        
         .gutters-sm {
             margin-right: -8px;
             margin-left: -8px;
         }
-        
         .gutters-sm>.col, .gutters-sm>[class*=col-] {
             padding-right: 8px;
             padding-left: 8px;
@@ -406,7 +311,6 @@ $row=mysqli_fetch_array($query);
         .mb-3, .my-3 {
             margin-bottom: 1rem!important;
         }
-        
         .bg-gray-300 {
             background-color: #e2e8f0;
         }
@@ -421,123 +325,101 @@ $row=mysqli_fetch_array($query);
           background-color: #FFBF00;
           border-color: #FFBF00;
         }
-        
         .btn-info:hover {
           color: #fff;
           background-color: #CC9900;
           border-color: #CC9900;
         }
-        
         .btn-info:focus, .btn-info.focus {
           color: #fff;
           background-color: #CC9900;
           border-color: #CC9900;
           box-shadow: 0 0 0 0.2rem rgb(212, 199, 84);
         }
-        
         .btn-info.disabled, .btn-info:disabled {
           color: #fff;
           background-color: #FFBF00;
           border-color: #FFBF00;
         }
-        
         .btn-info:not(:disabled):not(.disabled):active, .btn-info:not(:disabled):not(.disabled).active,
         .show > .btn-info.dropdown-toggle {
           color: #fff;
           background-color: #CC9900;
           border-color: #CC9900;
         }
-        
         .btn-info:not(:disabled):not(.disabled):active:focus, .btn-info:not(:disabled):not(.disabled).active:focus,
         .show > .btn-info.dropdown-toggle:focus {
           box-shadow: 0 0 0 0.2rem rgba(212, 206, 84, 0.5);
         }
-        
         .btn-primary {
           color: #fff;
           background-color: #FFBF00;
           border-color: #FFBF00;
         }
-        
         .btn-primary:hover {
           color: #fff;
           background-color: #E6C200;
           border-color: #E6C200;
         }
-        
         .btn-primary:focus, .btn-primary.focus {
           color: #fff;
           background-color: #E6C200;
           border-color: #E6C200;
           box-shadow: 0 0 0 0.2rem rgb(226, 224, 97);
         }
-        
         .btn-primary.disabled, .btn-primary:disabled {
           color: #fff;
           background-color: #dfd84e;
           border-color: #dfd84e;
         }
-        
         .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
         .show > .btn-primary.dropdown-toggle {
           color: #fff;
           background-color: #d4cb26;
           border-color: #d4cb26;
         }
-        
         .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
         .show > .btn-primary.dropdown-toggle:focus {
           box-shadow: 0 0 0 0.2rem rgba(228, 216, 105, 0.5);
         }
-        
         .btn-outline-primary {
           color: #FFBF00;
           border-color: #FFBF00;
         }
-        
         .btn-outline-primary:hover {
           color: #fff;
           background-color: #E6C200;
           border-color: #E6C200;
         }
-        
         .btn-outline-primary:focus, .btn-outline-primary.focus {
           box-shadow: 0 0 0 0.2rem rgba(223, 216, 78, 0.5);
         }
-        
         .btn-outline-primary.disabled, .btn-outline-primary:disabled {
           color: #E6C200;
           background-color: transparent;
         }
-        
         .btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active,
         .show > .btn-outline-primary.dropdown-toggle {
           color: #fff;
           background-color: #E6C200;
           border-color: #E6C200;
         }
-        
         .btn-outline-primary:not(:disabled):not(.disabled):active:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus,
         .show > .btn-outline-primary.dropdown-toggle:focus {
           box-shadow: 0 0 0 0.2rem rgba(223, 216, 78, 0.5);
         }
         </style>
-
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
     <!-- Core plugin JavaScript-->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
-
     <!-- Page level plugins -->
     <script src="vendor/chart.js/Chart.min.js"></script>
     <script src="vendor/datatables/jquery.dataTables.min.js"></script>
     <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
-
     <!-- Page level custom scripts -->
     <script src="js/demo/chart-area-demo.js"></script>
     <script src="js/demo/chart-pie-demo.js"></script>
@@ -547,11 +429,7 @@ $row=mysqli_fetch_array($query);
     AIZ.plugins.chart('#pie-1',{
         type: 'doughnut',
         data: {
-            labels: [
-                'Total published products',
-                'Total sellers products',
-                'Total admin products'
-            ],
+            labels: ['Total published products','Total sellers products','Total admin products'],
             datasets: [
                 {
                     data: [
@@ -559,18 +437,7 @@ $row=mysqli_fetch_array($query);
                         94,
                         51
                     ],
-                    backgroundColor: [
-                        "#fd3995",
-                        "#34bfa3",
-                        "#5d78ff",
-                        '#fdcb6e',
-                        '#d35400',
-                        '#8e44ad',
-                        '#006442',
-                        '#4D8FAC',
-                        '#CA6924',
-                        '#C91F37'
-                    ]
+                    backgroundColor: ["#fd3995","#34bfa3","#5d78ff",'#fdcb6e','#d35400','#8e44ad','#006442','#4D8FAC','#CA6924','#C91F37']
                 }
             ]
         },
@@ -589,15 +456,10 @@ $row=mysqli_fetch_array($query);
             }
         }
     });
-
     AIZ.plugins.chart('#pie-2',{
         type: 'doughnut',
         data: {
-            labels: [
-                'Total sellers',
-                'Total approved sellers',
-                'Total pending sellers'
-            ],
+            labels: ['Total sellers','Total approved sellers','Total pending sellers'],
             datasets: [
                 {
                     data: [
@@ -605,18 +467,7 @@ $row=mysqli_fetch_array($query);
                         10,
                         1
                     ],
-                    backgroundColor: [
-                        "#fd3995",
-                        "#34bfa3",
-                        "#5d78ff",
-                        '#fdcb6e',
-                        '#d35400',
-                        '#8e44ad',
-                        '#006442',
-                        '#4D8FAC',
-                        '#CA6924',
-                        '#C91F37'
-                    ]
+                    backgroundColor: [ "#fd3995","#34bfa3","#5d78ff",'#fdcb6e','#d35400','#8e44ad','#006442','#4D8FAC','#CA6924','#C91F37']
                 }
             ]
         },
@@ -638,48 +489,18 @@ $row=mysqli_fetch_array($query);
     AIZ.plugins.chart('#graph-1',{
         type: 'bar',
         data: {
-            labels: [
-                                'Genshin Impact',
-                                'Valorant',
-                                'Mobile Legend',
-                                'PUBG',
-                                'Apex Legend',
-                            ],
+            labels: ['Genshin Impact','Valorant','Mobile Legend','PUBG','Apex Legend',],
             datasets: [{
                 label: 'Number of Sale',
                 data: [
                     11,7,5,3,2,
                 ],
-                backgroundColor: [
-                                            'rgba(55, 125, 255, 0.4)',
-                                            'rgba(55, 125, 255, 0.4)',
-                                            'rgba(55, 125, 255, 0.4)',
-                                            'rgba(55, 125, 255, 0.4)',
-                                            'rgba(55, 125, 255, 0.4)',
-                                            'rgba(55, 125, 255, 0.4)',
-                                            'rgba(55, 125, 255, 0.4)',
-                                            'rgba(55, 125, 255, 0.4)',
-                                            'rgba(55, 125, 255, 0.4)',
-                                            'rgba(55, 125, 255, 0.4)',
-                                            'rgba(55, 125, 255, 0.4)',
-                                            'rgba(55, 125, 255, 0.4)',
-                                            'rgba(55, 125, 255, 0.4)',
-                                    ],
-                borderColor: [
-                                            'rgba(55, 125, 255, 1)',
-                                            'rgba(55, 125, 255, 1)',
-                                            'rgba(55, 125, 255, 1)',
-                                            'rgba(55, 125, 255, 1)',
-                                            'rgba(55, 125, 255, 1)',
-                                            'rgba(55, 125, 255, 1)',
-                                            'rgba(55, 125, 255, 1)',
-                                            'rgba(55, 125, 255, 1)',
-                                            'rgba(55, 125, 255, 1)',
-                                            'rgba(55, 125, 255, 1)',
-                                            'rgba(55, 125, 255, 1)',
-                                            'rgba(55, 125, 255, 1)',
-                                            'rgba(55, 125, 255, 1)',
-                                    ],
+                backgroundColor: ['rgba(55, 125, 255, 0.4)','rgba(55, 125, 255, 0.4)','rgba(55, 125, 255, 0.4)','rgba(55, 125, 255, 0.4)','rgba(55, 125, 255, 0.4)',
+                'rgba(55, 125, 255, 0.4)','rgba(55, 125, 255, 0.4)','rgba(55, 125, 255, 0.4)','rgba(55, 125, 255, 0.4)','rgba(55, 125, 255, 0.4)','rgba(55, 125, 255, 0.4)',
+                'rgba(55, 125, 255, 0.4)','rgba(55, 125, 255, 0.4)',],
+                borderColor: ['rgba(55, 125, 255, 1)','rgba(55, 125, 255, 1)','rgba(55, 125, 255, 1)','rgba(55, 125, 255, 1)','rgba(55, 125, 255, 1)','rgba(55, 125, 255, 1)',
+                'rgba(55, 125, 255, 1)','rgba(55, 125, 255, 1)','rgba(55, 125, 255, 1)','rgba(55, 125, 255, 1)','rgba(55, 125, 255, 1)','rgba(55, 125, 255, 1)',
+                'rgba(55, 125, 255, 1)',],
                 borderWidth: 1
             }]
         },
@@ -723,48 +544,16 @@ $row=mysqli_fetch_array($query);
     AIZ.plugins.chart('#graph-2',{
         type: 'bar',
         data: {
-            labels: [
-            'Genshin Impact',
-            'Valorant',
-            'Mobile Legend',
-            'PUBG',
-            'Apex Legend',
-                    ],
+            labels: ['Genshin Impact','Valorant','Mobile Legend','PUBG','Apex Legend',],
             datasets: [{
                 label: 'Number of Stock',
-                data: [
-                    20102,19991,7538,6559,20527,
-                ],
-                backgroundColor: [
-                                            'rgba(253, 57, 149, 0.4)',
-                                            'rgba(253, 57, 149, 0.4)',
-                                            'rgba(253, 57, 149, 0.4)',
-                                            'rgba(253, 57, 149, 0.4)',
-                                            'rgba(253, 57, 149, 0.4)',
-                                            'rgba(253, 57, 149, 0.4)',
-                                            'rgba(253, 57, 149, 0.4)',
-                                            'rgba(253, 57, 149, 0.4)',
-                                            'rgba(253, 57, 149, 0.4)',
-                                            'rgba(253, 57, 149, 0.4)',
-                                            'rgba(253, 57, 149, 0.4)',
-                                            'rgba(253, 57, 149, 0.4)',
-                                            'rgba(253, 57, 149, 0.4)',
-                                    ],
-                borderColor: [
-                                            'rgba(253, 57, 149, 1)',
-                                            'rgba(253, 57, 149, 1)',
-                                            'rgba(253, 57, 149, 1)',
-                                            'rgba(253, 57, 149, 1)',
-                                            'rgba(253, 57, 149, 1)',
-                                            'rgba(253, 57, 149, 1)',
-                                            'rgba(253, 57, 149, 1)',
-                                            'rgba(253, 57, 149, 1)',
-                                            'rgba(253, 57, 149, 1)',
-                                            'rgba(253, 57, 149, 1)',
-                                            'rgba(253, 57, 149, 1)',
-                                            'rgba(253, 57, 149, 1)',
-                                            'rgba(253, 57, 149, 1)',
-                                    ],
+                data: [20102,19991,7538,6559,20527,],
+                backgroundColor: ['rgba(253, 57, 149, 0.4)','rgba(253, 57, 149, 0.4)','rgba(253, 57, 149, 0.4)','rgba(253, 57, 149, 0.4)','rgba(253, 57, 149, 0.4)',
+                'rgba(253, 57, 149, 0.4)','rgba(253, 57, 149, 0.4)','rgba(253, 57, 149, 0.4)','rgba(253, 57, 149, 0.4)','rgba(253, 57, 149, 0.4)','rgba(253, 57, 149, 0.4)',
+                'rgba(253, 57, 149, 0.4)','rgba(253, 57, 149, 0.4)',],
+                borderColor: ['rgba(253, 57, 149, 1)','rgba(253, 57, 149, 1)','rgba(253, 57, 149, 1)','rgba(253, 57, 149, 1)','rgba(253, 57, 149, 1)','rgba(253, 57, 149, 1)',
+                'rgba(253, 57, 149, 1)','rgba(253, 57, 149, 1)','rgba(253, 57, 149, 1)','rgba(253, 57, 149, 1)','rgba(253, 57, 149, 1)','rgba(253, 57, 149, 1)',
+                'rgba(253, 57, 149, 1)',],
                 borderWidth: 1
             }]
         },
@@ -816,7 +605,6 @@ $row=mysqli_fetch_array($query);
                     $.post('https://demo.activeitzone.com/ecommerce/language',{_token:'TH9f8WjAlhD1DNiM4FWTmgRjdRx3avBpd3nOHLDQ', locale:locale}, function(data){
                         location.reload();
                     });
-
                 });
             });
         }
@@ -829,7 +617,6 @@ $row=mysqli_fetch_array($query);
 					return item;
 				}
 			});
-
 			if(filter !== ''){
 				$("#main-menu").addClass('d-none');
 				$("#search-menu").html('')
@@ -849,16 +636,13 @@ $row=mysqli_fetch_array($query);
 			}
         }
     </script>
-<!-- additional javascript  -->
-    <script src ="scripts.js">
-
+<!-- additional javascript  --><script src ="scripts.js">
     function triggerClick(){
     document.querySelector('#profilepicture').click();
 }
 function displayImage(e){
     if (e.files[0]){
         var reader = new FileReader();
-
         reader.onload = function(e) {
             document.querySelector('#profilepicture').setAttribute('src', e.target.result);
         }
